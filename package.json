@@ -1,0 +1,19 @@
+{
+  "name": "saints-specification",
+  "version": "1.0.0",
+  "description": "saints specification for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylady/saints-specification.git"
+  },
+  "author": "mylady",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylady/saints-specification/issues"
+  },
+  "homepage": "https://github.com/mylady/saints-specification#readme"
+}
