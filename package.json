@@ -1,7 +1,8 @@
 {
   "name": "saints-specification",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "saints specification for nodejs",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +11,7 @@
     "url": "git+https://github.com/mylady/saints-specification.git"
   },
   "author": "mylady",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/mylady/saints-specification/issues"
   },
