@@ -1,6 +1,6 @@
 {
-  "name": "saints-specification",
-  "version": "1.0.11",
+  "name": "saints-specification-nodejs",
+  "version": "1.0.12",
   "description": "saints specification for nodejs",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mylady/saints-specification.git"
+    "url": "git+https://github.com/mylady/saints-specification-nodejs.git"
   },
   "author": "mylady",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mylady/saints-specification/issues"
+    "url": "https://github.com/mylady/saints-specification-nodejs/issues"
   },
-  "homepage": "https://github.com/mylady/saints-specification#readme"
+  "homepage": "https://github.com/mylady/saints-specification-nodejs#readme"
 }
