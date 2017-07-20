@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DigitalMarquee{
+export default class DigitalMarquee{
     constructor(){
         this.FontSize = 0;
         this.FontColor = '';
@@ -13,5 +13,3 @@ class DigitalMarquee{
         this.Text = '';
     }
 }
-
-module.exports = DigitalMarquee;

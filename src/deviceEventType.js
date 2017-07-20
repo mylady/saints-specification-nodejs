@@ -3,17 +3,20 @@
  */
 'use strict';
 
-module.exports.normalEvent = {
-    name: '一般事件',
-    value: 0
-};
-module.exports.alarmEvent = {
-    name: '报警事件',
-    value: 1
-};
-module.exports.statusEvent = {
-    name: '状态时间',
-    value: 2
+let deviceEventType = {
+    normalEvent: {
+        name: '一般事件',
+        value: 0
+    },
+    alarmEvent: {
+        name: '报警事件',
+        value: 1
+    },
+    statusEvent: {
+        name: '状态时间',
+        value: 2
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(deviceEventType);
+export default deviceEventType;

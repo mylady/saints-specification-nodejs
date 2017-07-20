@@ -3,7 +3,7 @@
  */
 'use strict';
 
-export class CpuInfo {
+export default class CpuInfo {
     constructor(){
         this.CpuModel = '';
         this.CoreNumber = 0;

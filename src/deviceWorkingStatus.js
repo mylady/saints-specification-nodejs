@@ -3,13 +3,16 @@
  */
 'use strict';
 
-module.exports.normal = {
-    name: '正常',
-    value: 0
-};
-module.exports.fault = {
-    name: '故障',
-    value: 1
+let deviceWorkingStatus = {
+    normal: {
+        name: '正常',
+        value: 0
+    },
+    fault: {
+        name: '故障',
+        value: 1
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(deviceWorkingStatus);
+export default deviceWorkingStatus;

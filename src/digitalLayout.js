@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DigitalLayout{
+export default class DigitalLayout{
     constructor(){
         this.Width = 0;
         this.Height = 0;
@@ -14,5 +14,3 @@ class DigitalLayout{
         this.Areas = [];
     }
 }
-
-module.exports = DigitalLayout;

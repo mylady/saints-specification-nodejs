@@ -4,13 +4,16 @@
 
 'use strict';
 
-module.exports.device = {
-    name: '设备信息',
-    value: 0
-};
-module.exports.gb = {
-    name: '国标',
-    value: 1
+let deviceDataType = {
+    device : {
+        name: '设备信息',
+        value: 0
+    },
+    gb : {
+        name: '国标',
+        value: 1
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(deviceDataType);
+export default deviceDataType;

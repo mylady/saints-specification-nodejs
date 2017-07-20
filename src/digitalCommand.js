@@ -3,10 +3,10 @@
  */
 'use strict';
 
-const DigitalLayout = require('./digitalLayout')
-    , DigitalMarquee = require('./digitalMarquee');
+import DigitalLayout from './digitalLayout';
+import DigitalMarquee from './digitalMarquee';
 
-class DigitalCommand {
+export default class DigitalCommand {
     constructor() {
         this.CommandType = 0;
         this.Layout = new DigitalLayout();
@@ -16,5 +16,3 @@ class DigitalCommand {
         this.ElapseTime = 0;
     }
 }
-
-module.exports = DigitalCommand;

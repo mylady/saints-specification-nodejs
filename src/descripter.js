@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class Descripter{
+export default class Descripter{
     constructor(){
         this.Name = '';
         this.Version = '';
@@ -11,5 +11,3 @@ class Descripter{
         this.Configable = false;
     }
 }
-
-module.exports = Descripter;

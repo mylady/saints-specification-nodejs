@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DeviceEventData{
+export default class DeviceEventData{
     constructor(){
         this.ResourceCode = -1;
         this.Address = '';
@@ -16,5 +16,3 @@ class DeviceEventData{
         this.EventExtra = {};
     }
 }
-
-module.exports = DeviceEventData;

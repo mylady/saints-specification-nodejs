@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DigitalLayoutArea{
+export default class DigitalLayoutArea{
     constructor(){
         this.ContentType = 0;
         this.X = 0;
@@ -14,5 +14,3 @@ class DigitalLayoutArea{
         this.SwitchTime = 0;
     }
 }
-
-module.exports = DigitalLayoutArea;

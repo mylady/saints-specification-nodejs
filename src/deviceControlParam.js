@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DeviceControlParam{
+export default class DeviceControlParam{
     constructor(){
         this.ControlCode = -1;
         this.InterfaceCode = 0;
@@ -12,5 +12,3 @@ class DeviceControlParam{
         this.Parameter = [];
     }
 }
-
-module.exports = DeviceControlParam;
