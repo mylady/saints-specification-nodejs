@@ -4,7 +4,7 @@
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -o dist.js",
+    "build": "./node_modules/.bin/babel src -d dist",
     "test": "./node_modules/.bin/babel-node ./test/es6Test.js"
   },
   "repository": {
