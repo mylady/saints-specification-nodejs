@@ -3,33 +3,36 @@
  */
 'use strict';
 
-module.exports.st = {
+let prescriptionType = {
+  st: {
     name: 'ST(立即服药)',
     value: 0
-};
-module.exports.qd = {
+  },
+  qd: {
     name: 'QD(每日一次)',
     value: 1
-};
-module.exports.bid = {
+  },
+  bid: {
     name: 'BID(每日两次)',
     value: 2
-};
-module.exports.tid = {
+  },
+  tid: {
     name: 'TID(每日三次)',
     value: 3
-};
-module.exports.qid = {
+  },
+  qid: {
     name: 'QID(每日四次)',
     value: 4
-};
-module.exports.qn = {
+  },
+  qn: {
     name: 'QN(每晚一次)',
     value: 5
-};
-module.exports.qod = {
+  },
+  qod: {
     name: 'QOD(隔日一次)',
     value: 6
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prescriptionType);
+export default prescriptionType;

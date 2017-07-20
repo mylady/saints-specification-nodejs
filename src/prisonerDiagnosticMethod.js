@@ -3,17 +3,20 @@
  */
 'use strict';
 
-module.exports.medicalTreat = {
+let prisonerDiagnosticMethod = {
+  medicalTreat: {
     name: '药物处置',
     value: 0
-};
-module.exports.nonMedicalTreat = {
+  },
+  nonMedicalTreat: {
     name: '非药物处置',
     value: 1
-};
-module.exports.goHospital = {
+  },
+  goHospital: {
     name: '所外就医',
     value: 2
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerDiagnosticMethod);
+export default prisonerDiagnosticMethod;

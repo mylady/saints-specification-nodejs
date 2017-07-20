@@ -3,17 +3,20 @@
  */
 'use strict';
 
-module.exports.noon = {
+let prisonerDutyType = {
+  noon: {
     name: '午间值班',
     value: 0
-};
-module.exports.night = {
+  },
+  night: {
     name: '夜间值班',
     value: 1
-};
-module.exports.clean = {
+  },
+  clean: {
     name: '大扫除',
     value: 2
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerDutyType);
+export default prisonerDutyType;

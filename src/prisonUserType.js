@@ -3,17 +3,20 @@
  */
 'use strict';
 
-module.exports.admin = {
+let prisonUserType = {
+  admin: {
     name: '管理员',
     value: 0
-};
-module.exports.police = {
+  },
+  police: {
     name: '干警',
     value: 1
-};
-module.exports.doctor = {
+  },
+  doctor: {
     name: '医生',
     value: 2
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonUserType);
+export default prisonUserType;
