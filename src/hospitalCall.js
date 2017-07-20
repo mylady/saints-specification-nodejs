@@ -3,11 +3,9 @@
  */
 'use strict';
 
-class HospitalCall {
+export default class HospitalCall {
     constructor() {
         this.CallType = -1;
-        this.CallContent = ''
+        this.CallContent = '';
     }
 }
-
-module.exports = HospitalCall;
