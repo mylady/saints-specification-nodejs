@@ -3,17 +3,21 @@
  */
 'use strict';
 
-module.exports.health = {
+let prisonerHealthStatus = {
+  health: {
     name: '健康',
     value: 0
-};
-module.exports.medicineCare = {
+  },
+  medicineCare: {
     name: '服药中',
     value: 1
-};
-module.exports.importantCare = {
+  },
+  importantCare: {
     name: '重点看护',
     value: 2
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerHealthStatus);
+
+export default prisonerHealthStatus;

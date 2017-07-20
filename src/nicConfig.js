@@ -2,7 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 
-class NicConfig {
+export class NicConfig {
     constructor(){
         this.MacAddress = '';
         this.IPAddress = '';
@@ -11,5 +11,3 @@ class NicConfig {
         this.Name = '';
     }
 }
-
-module.exports = NicConfig;

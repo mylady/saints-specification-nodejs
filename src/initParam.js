@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class InitParam {
+export class InitParam {
     constructor() {
         this.RemoteIPAddress = '';
         this.RemotePort = 0;
@@ -20,5 +20,3 @@ class InitParam {
         this.Extra = {};
     }
 }
-
-module.exports = InitParam;

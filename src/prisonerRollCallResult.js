@@ -3,13 +3,16 @@
  */
 'use strict';
 
-module.exports.normal = {
+let prisonerRollCallResult = {
+  normal: {
     name: '正常',
     value: 0
-};
-module.exports.abnormal = {
+  },
+  abnormal: {
     name: '异常',
     value: 1
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerRollCallResult);
+export default prisonerRollCallResult;

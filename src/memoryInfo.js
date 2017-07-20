@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class MemoryInfo{
+export class MemoryInfo{
     constructor(){
         this.TotalMemory = 0;
         this.UsedMemory = 0;
@@ -11,5 +11,3 @@ class MemoryInfo{
         this.MemoryPercent = '';
     }
 }
-
-module.exports = MemoryInfo;
