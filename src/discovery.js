@@ -6,7 +6,7 @@ const ProductInfo = require('./productInfo')
     , Settings = require('./specificationSettings')
     , Utils = require('./utils');
 
-class ProductRegister {
+export class ProductRegister {
     constructor(prod) {
         if (!(prod instanceof ProductInfo)) {
             throw new Error('invalid parameter,must be instance of ProductInfo');
@@ -29,7 +29,7 @@ class ProductRegister {
     }
 }
 
-class ServiceRegister {
+export class ServiceRegister {
     constructor(proxy) {
         this._proxy = proxy;
         this._services = [];
@@ -67,7 +67,7 @@ class ServiceRegister {
     }
 }
 
-class ServiceDiscovery {
+export class ServiceDiscovery {
     constructor(proxy) {
         this._proxy = proxy;
     }
@@ -114,7 +114,3 @@ class ServiceDiscovery {
         });
     }
 }
-
-module.exports.ProductRegister = ProductRegister;
-module.exports.ServiceRegister = ServiceRegister;
-module.exports.ServiceDiscovery = ServiceDiscovery;

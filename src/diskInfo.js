@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class DiskInfo {
+export default class DiskInfo {
     constructor() {
         this.TotalDiskSize = 0;
         this.UsedDiskSize = 0;
@@ -11,5 +11,3 @@ class DiskInfo {
         this.DiskPercent = '';
     }
 }
-
-module.exports = DiskInfo;
