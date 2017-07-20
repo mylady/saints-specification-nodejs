@@ -6,13 +6,13 @@ const http = require('http')
     , url = require('url');
 
 
-function post(path, data) {
+export function post(path, data) {
     return doRequest(path, data, {
         method: 'POST'
     });
 }
 
-function postBasicAuth(path, data, username, userpwd) {
+export function postBasicAuth(path, data, username, userpwd) {
     return doRequest(path, data, {
         method: 'POST',
         username: username,
@@ -20,13 +20,13 @@ function postBasicAuth(path, data, username, userpwd) {
     });
 }
 
-function put(path, data) {
+export function put(path, data) {
     return doRequest(path, data, {
         method: 'PUT'
     });
 }
 
-function putBasicAuth(path, data, username, userpwd) {
+export function putBasicAuth(path, data, username, userpwd) {
     return doRequest(path, data, {
         method: 'PUT',
         username: username,
@@ -34,13 +34,13 @@ function putBasicAuth(path, data, username, userpwd) {
     })
 }
 
-function get(path) {
+export function get(path) {
     return doRequest(path, {}, {
         method: 'GET'
     });
 }
 
-function getBasicAuth(path, username, userpwd) {
+export function getBasicAuth(path, username, userpwd) {
     return doRequest(path, {}, {
         method: 'GET',
         username: username,
@@ -48,7 +48,7 @@ function getBasicAuth(path, username, userpwd) {
     })
 }
 
-function doRequest(path, data, option) {
+export function doRequest(path, data, option) {
     return new Promise((resolve, reject) => {
         let parsedUrl = url.parse(path), jsonData = JSON.stringify(data);
 
@@ -100,10 +100,3 @@ function doRequest(path, data, option) {
         req.end();
     });
 }
-
-module.exports.post = post;
-module.exports.postBasicAuth = postBasicAuth;
-module.exports.put = put;
-module.exports.putBasicAuth = putBasicAuth;
-module.exports.get = get;
-module.exports.getBasicAuth = getBasicAuth;

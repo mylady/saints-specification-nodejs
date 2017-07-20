@@ -5,12 +5,10 @@
 
 const ProductInfo = require('./productInfo');
 
-class TransmitMessageClient {
-    constructor(){
+export default class TransmitMessageClient {
+    constructor() {
         this.Product = new ProductInfo();
         this.IPAddresses = [];
         this.MacAddresses = [];
     }
 }
-
-module.exports = TransmitMessageClient;

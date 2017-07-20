@@ -3,8 +3,11 @@
  */
 'use strict';
 
-module.exports.client = 0;
-module.exports.server = 1;
-module.exports.systemService = 2;
+let productType = {
+    client: 0,
+    server: 1,
+    systemService: 2
+};
 
-Object.freeze(module.exports);
+Object.freeze(productType);
+export default productType;

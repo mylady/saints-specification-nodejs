@@ -3,15 +3,17 @@
  */
 'use strict';
 
-module.exports.public = {
-    name: '公立',
-    value: 0
+let schoolNature = {
+    public: {
+        name: '公立',
+        value: 0
+    },
+    private: {
+        name: '私立',
+        value: 1
+    }
 };
-module.exports.private = {
-    name: '私立',
-    value: 1
-};
-
-Object.freeze(module.exports);
+Object.freeze(schoolNature);
+export default schoolNature;
 
 

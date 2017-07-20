@@ -3,8 +3,8 @@
  */
 'use strict';
 
-class ProductInfo {
-    constructor(){
+export default class ProductInfo {
+    constructor() {
         this.ProductName = '';
         this.ProductId = '';
         this.DisplayName = '';
@@ -15,5 +15,3 @@ class ProductInfo {
         this.OS = -1;
     }
 }
-
-module.exports = ProductInfo;

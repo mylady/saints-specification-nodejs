@@ -4,8 +4,8 @@
 'use strict';
 
 
-class UpdateDetail {
-    constructor(){
+export default class UpdateDetail {
+    constructor() {
         this.ProductId = '';
         this.OS = -1;
         this.OldVersion = -1;
@@ -14,5 +14,3 @@ class UpdateDetail {
         this.UpdateAddress = '';
     }
 }
-
-module.exports = UpdateDetail;
