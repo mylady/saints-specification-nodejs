@@ -3,9 +3,11 @@
  */
 'use strict';
 
-module.exports.schoolPlatform = {
-    name: '教育安全管理平台',
-    value: 0
+let videoRecordSource = {
+    schoolPlatform: {
+        name: '教育安全管理平台',
+        value: 0
+    }
 };
-
-Object.freeze(module.exports);
+Object.freeze(videoRecordSource);
+export default videoRecordSource;

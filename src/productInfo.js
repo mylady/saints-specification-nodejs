@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class ProductInfo {
+export default class ProductInfo {
     constructor(){
         this.ProductName = '';
         this.ProductId = '';
@@ -15,5 +15,3 @@ class ProductInfo {
         this.OS = -1;
     }
 }
-
-module.exports = ProductInfo;

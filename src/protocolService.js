@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class ProtocolService {
+export default class ProtocolService {
     constructor() {
         this.ServiceName = '';
         this.ServiceAddress = '';
@@ -13,5 +13,3 @@ class ProtocolService {
         this.ServiceType = -1;
     }
 }
-
-module.exports = ProtocolService;

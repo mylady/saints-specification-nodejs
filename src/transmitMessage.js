@@ -4,7 +4,7 @@
 'use strict';
 
 
-class TransmitMessage {
+export default class TransmitMessage {
     constructor() {
         this.MessageId = '';
         this.MessageType = -1;
@@ -13,5 +13,3 @@ class TransmitMessage {
         this.MessageReceiver = [];
     }
 }
-
-module.exports = TransmitMessage;
