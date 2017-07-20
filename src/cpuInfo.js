@@ -3,7 +3,7 @@
  */
 'use strict';
 
-class CpuInfo {
+export class CpuInfo {
     constructor(){
         this.CpuModel = '';
         this.CoreNumber = 0;
@@ -11,5 +11,3 @@ class CpuInfo {
         this.CpuLoad = '';
     }
 }
-
-module.exports = CpuInfo;

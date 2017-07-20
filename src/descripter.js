@@ -8,6 +8,7 @@ class Descripter{
         this.Name = '';
         this.Version = '';
         this.Support = '';
+        this.Configable = false;
     }
 }
 

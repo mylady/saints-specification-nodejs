@@ -2,9 +2,10 @@
   "name": "saints-specification-nodejs",
   "version": "1.0.32",
   "description": "saints specification for nodejs",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/babel src -o dist.js",
+    "test": "./node_modules/.bin/babel-node ./test/es6Test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/mylady/saints-specification-nodejs/issues"
   },
-  "homepage": "https://github.com/mylady/saints-specification-nodejs#readme"
+  "homepage": "https://github.com/mylady/saints-specification-nodejs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  }
 }

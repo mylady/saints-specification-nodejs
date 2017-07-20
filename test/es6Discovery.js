@@ -2,7 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 
-const lib = require('./../lib');
+const lib = require('./../src');
 
 let sr = new lib.Discovery.ServiceRegister('192.168.0.24');
 
