@@ -3,13 +3,19 @@
  */
 'use strict';
 
-module.exports.manuReport = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var maintainReportType = {
+  manuReport: {
     name: '人工报修',
     value: 0
-};
-module.exports.autoReport = {
+  },
+  autoReport: {
     name: '自动报修',
     value: 1
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(maintainReportType);
+exports.default = maintainReportType;

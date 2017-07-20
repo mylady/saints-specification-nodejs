@@ -3,6 +3,10 @@
  */
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var DigitalLayoutArea = function DigitalLayoutArea() {
@@ -17,4 +21,4 @@ var DigitalLayoutArea = function DigitalLayoutArea() {
     this.SwitchTime = 0;
 };
 
-module.exports = DigitalLayoutArea;
+exports.default = DigitalLayoutArea;

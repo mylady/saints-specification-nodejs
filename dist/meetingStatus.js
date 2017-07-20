@@ -3,41 +3,47 @@
  */
 'use strict';
 
-module.exports.none = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var meetingStatus = {
+  none: {
     name: '无状态',
     value: 0
-};
-module.exports.waitingArraign = {
+  },
+  waitingArraign: {
     name: '待提审',
     value: 1
-};
-module.exports.arraigning = {
+  },
+  arraigning: {
     name: '提审中',
     value: 2
-};
-module.exports.endingArraign = {
+  },
+  endingArraign: {
     name: '提审待结束',
     value: 3
-};
-module.exports.endArraign = {
+  },
+  endArraign: {
     name: '提审结束',
     value: 4
-};
-module.exports.waitingMeeting = {
+  },
+  waitingMeeting: {
     name: '待会见',
     value: 5
-};
-module.exports.meeting = {
+  },
+  meeting: {
     name: '会见中',
     value: 6
-};
-module.exports.endingMeeting = {
+  },
+  endingMeeting: {
     name: '会见待结束',
     value: 7
-};
-module.exports.endMeeting = {
+  },
+  endMeeting: {
     name: '会见结束',
     value: 8
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(meetingStatus);
+exports.default = meetingStatus;

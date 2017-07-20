@@ -1,11 +1,29 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.post = post;
+exports.postBasicAuth = postBasicAuth;
+exports.put = put;
+exports.putBasicAuth = putBasicAuth;
+exports.get = get;
+exports.getBasicAuth = getBasicAuth;
+exports.doRequest = doRequest;
+
+var _http = require('http');
+
+var _http2 = _interopRequireDefault(_http);
+
+var _url = require('url');
+
+var _url2 = _interopRequireDefault(_url);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /**
  * Created by MyLady on 05/05/2017.
  */
-
-var http = require('http'),
-    url = require('url');
 
 function post(path, data) {
     return doRequest(path, data, {
@@ -51,7 +69,7 @@ function getBasicAuth(path, username, userpwd) {
 
 function doRequest(path, data, option) {
     return new Promise(function (resolve, reject) {
-        var parsedUrl = url.parse(path),
+        var parsedUrl = _url2.default.parse(path),
             jsonData = JSON.stringify(data);
 
         var opts = {
@@ -73,7 +91,7 @@ function doRequest(path, data, option) {
             opts.auth = option.username + ':' + option.userpwd;
         }
 
-        var req = http.request(opts, function (res) {
+        var req = _http2.default.request(opts, function (res) {
             if (res.statusCode !== 200) {
                 reject(new Error('status code ' + res.body));
                 return;
@@ -102,10 +120,3 @@ function doRequest(path, data, option) {
         req.end();
     });
 }
-
-module.exports.post = post;
-module.exports.postBasicAuth = postBasicAuth;
-module.exports.put = put;
-module.exports.putBasicAuth = putBasicAuth;
-module.exports.get = get;
-module.exports.getBasicAuth = getBasicAuth;

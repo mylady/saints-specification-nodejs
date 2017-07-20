@@ -3,6 +3,10 @@
  */
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Descripter = function Descripter() {
@@ -11,6 +15,7 @@ var Descripter = function Descripter() {
     this.Name = '';
     this.Version = '';
     this.Support = '';
+    this.Configable = false;
 };
 
-module.exports = Descripter;
+exports.default = Descripter;

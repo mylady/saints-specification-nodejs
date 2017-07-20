@@ -3,20 +3,31 @@
  */
 'use strict';
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-var DigitalLayout = require('./digitalLayout'),
-    DigitalMarquee = require('./digitalMarquee');
+var _digitalLayout = require('./digitalLayout');
+
+var _digitalLayout2 = _interopRequireDefault(_digitalLayout);
+
+var _digitalMarquee = require('./digitalMarquee');
+
+var _digitalMarquee2 = _interopRequireDefault(_digitalMarquee);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var DigitalCommand = function DigitalCommand() {
     _classCallCheck(this, DigitalCommand);
 
     this.CommandType = 0;
-    this.Layout = new DigitalLayout();
-    this.Marquee = new DigitalMarquee();
+    this.Layout = new _digitalLayout2.default();
+    this.Marquee = new _digitalMarquee2.default();
     this.Speech = '';
     this.Value = '';
     this.ElapseTime = 0;
 };
 
-module.exports = DigitalCommand;
+exports.default = DigitalCommand;

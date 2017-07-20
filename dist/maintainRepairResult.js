@@ -3,33 +3,39 @@
  */
 'use strict';
 
-module.exports.nonPicked = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var maintainRepairResult = {
+  nonPicked: {
     name: '未分配',
     value: 0
-};
-module.exports.dispatched = {
+  },
+  dispatched: {
     name: '已分配',
     value: 1
-};
-module.exports.working = {
+  },
+  working: {
     name: '处理中',
     value: 2
-};
-module.exports.transfer = {
+  },
+  transfer: {
     name: '需流转',
     value: 3
-};
-module.exports.needConfirm = {
+  },
+  needConfirm: {
     name: '已完成,待确认',
     value: 4
-};
-module.exports.done = {
+  },
+  done: {
     name: '已完成',
     value: 5
-};
-module.exports.misReport = {
+  },
+  misReport: {
     name: '误报',
     value: 6
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(maintainRepairResult);
+exports.default = maintainRepairResult;

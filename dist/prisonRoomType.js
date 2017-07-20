@@ -3,17 +3,23 @@
  */
 'use strict';
 
-module.exports.general = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonRoomType = {
+  general: {
     name: '通用',
     value: 0
-};
-module.exports.arraignment = {
+  },
+  arraignment: {
     name: '提审',
     value: 0
-};
-module.exports.meeting = {
+  },
+  meeting: {
     name: '会见',
     value: 0
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonRoomType);
+exports.default = prisonRoomType;

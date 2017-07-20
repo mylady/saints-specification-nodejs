@@ -3,8 +3,14 @@
  */
 'use strict';
 
-module.exports.client = 0;
-module.exports.server = 1;
-module.exports.systemService = 2;
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var productType = {
+    client: 0,
+    server: 1,
+    systemService: 2
+};
 
-Object.freeze(module.exports);
+Object.freeze(productType);
+exports.default = productType;

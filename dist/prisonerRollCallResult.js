@@ -3,13 +3,19 @@
  */
 'use strict';
 
-module.exports.normal = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonerRollCallResult = {
+  normal: {
     name: '正常',
     value: 0
-};
-module.exports.abnormal = {
+  },
+  abnormal: {
     name: '异常',
     value: 1
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerRollCallResult);
+exports.default = prisonerRollCallResult;

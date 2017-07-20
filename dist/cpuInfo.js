@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var CpuInfo = exports.CpuInfo = function CpuInfo() {
+var CpuInfo = function CpuInfo() {
     _classCallCheck(this, CpuInfo);
 
     this.CpuModel = '';
@@ -17,3 +17,5 @@ var CpuInfo = exports.CpuInfo = function CpuInfo() {
     this.CpuFrequency = 0.0;
     this.CpuLoad = '';
 };
+
+exports.default = CpuInfo;

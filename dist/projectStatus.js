@@ -3,21 +3,27 @@
  */
 'use strict';
 
-module.exports.admin = {
-    name: '筹备中',
-    value: 0
-};
-module.exports.police = {
-    name: '施工中',
-    value: 1
-};
-module.exports.doctor = {
-    name: '试运行',
-    value: 2
-};
-module.exports.doctor = {
-    name: '已上线',
-    value: 3
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var projectStatus = {
+    preparing: {
+        name: '筹备中',
+        value: 0
+    },
+    constructing: {
+        name: '施工中',
+        value: 0
+    },
+    testing: {
+        name: '试运行',
+        value: 0
+    },
+    online: {
+        name: '已上线',
+        value: 3
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(projectStatus);
+exports.default = projectStatus;

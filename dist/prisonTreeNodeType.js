@@ -3,25 +3,31 @@
  */
 'use strict';
 
-module.exports.none = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonTreeNodeType = {
+  none: {
     name: '无类型',
     value: 0
-};
-module.exports.prisonDistrict = {
+  },
+  prisonDistrict: {
     name: '监区',
     value: 1
-};
-module.exports.prisonCell = {
+  },
+  prisonCell: {
     name: '监房',
     value: 2
-};
-module.exports.prisonBed = {
+  },
+  prisonBed: {
     name: '监床',
     value: 3
-};
-module.exports.prisoner = {
+  },
+  prisoner: {
     name: '在押人员',
     value: 4
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonTreeNodeType);
+exports.default = prisonTreeNodeType;

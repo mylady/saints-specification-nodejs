@@ -3,21 +3,27 @@
  */
 'use strict';
 
-module.exports.owner = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var maintainRoleType = {
+  owner: {
     name: '业主',
     value: 0
-};
-module.exports.manager = {
+  },
+  manager: {
     name: '总包',
     value: 1
-};
-module.exports.maintainer = {
+  },
+  maintainer: {
     name: '运维人员',
     value: 2
-};
-module.exports.supervisor = {
+  },
+  supervisor: {
     name: '监理',
     value: 3
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(maintainRoleType);
+exports.default = maintainRoleType;

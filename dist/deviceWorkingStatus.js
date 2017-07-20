@@ -3,13 +3,19 @@
  */
 'use strict';
 
-module.exports.normal = {
-    name: '正常',
-    value: 0
-};
-module.exports.fault = {
-    name: '故障',
-    value: 1
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var deviceWorkingStatus = {
+    normal: {
+        name: '正常',
+        value: 0
+    },
+    fault: {
+        name: '故障',
+        value: 1
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(deviceWorkingStatus);
+exports.default = deviceWorkingStatus;

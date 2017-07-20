@@ -14,4 +14,5 @@ var cameraType = {
     }
 };
 
+Object.freeze(cameraType);
 exports.default = cameraType;

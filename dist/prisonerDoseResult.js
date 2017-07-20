@@ -3,13 +3,19 @@
  */
 'use strict';
 
-module.exports.accpeted = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonerDoseResult = {
+  accpeted: {
     name: '当场服用',
     value: 0
-};
-module.exports.refused = {
+  },
+  refused: {
     name: '拒绝服用',
     value: 1
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerDoseResult);
+exports.default = prisonerDoseResult;

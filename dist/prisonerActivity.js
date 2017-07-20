@@ -3,49 +3,55 @@
  */
 'use strict';
 
-module.exports.stay = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonerActivity = {
+  stay: {
     name: '在监',
     value: 0
-};
-module.exports.arraignment = {
+  },
+  arraignment: {
     name: '提审',
     value: 1
-};
-module.exports.lawMeeting = {
+  },
+  lawMeeting: {
     name: '律师会见',
     value: 2
-};
-module.exports.familyMeeting = {
+  },
+  familyMeeting: {
     name: '家属会见',
     value: 3
-};
-module.exports.identify = {
+  },
+  identify: {
     name: '出所辨认',
     value: 4
-};
-module.exports.outHospitalize = {
+  },
+  outHospitalize: {
     name: '所外就医',
     value: 5
-};
-module.exports.outHospitalized = {
+  },
+  outHospitalized: {
     name: '外出住院',
     value: 6
-};
-module.exports.court = {
+  },
+  court: {
     name: '开庭',
     value: 7
-};
-module.exports.singleCell = {
+  },
+  singleCell: {
     name: '单独关押',
     value: 8
-};
-module.exports.encaged = {
+  },
+  encaged: {
     name: '禁闭',
     value: 9
-};
-module.exports.other = {
+  },
+  other: {
     name: '其他',
     value: 10
+  }
 };
 
-Object.freeze(module.exports);
+Object.freeze(prisonerActivity);
+exports.default = prisonerActivity;

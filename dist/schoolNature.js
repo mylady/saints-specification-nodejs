@@ -3,13 +3,19 @@
  */
 'use strict';
 
-module.exports.public = {
-    name: '公立',
-    value: 0
-};
-module.exports.private = {
-    name: '私立',
-    value: 1
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var schoolNature = {
+    public: {
+        name: '公立',
+        value: 0
+    },
+    private: {
+        name: '私立',
+        value: 1
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(schoolNature);
+exports.default = schoolNature;

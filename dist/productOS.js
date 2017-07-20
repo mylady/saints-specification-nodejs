@@ -3,8 +3,13 @@
  */
 'use strict';
 
-module.exports.windows = 0;
-module.exports.linux_debian = 1;
-module.exports.android = 2;
-
-Object.freeze(module.exports);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var productOS = {
+    windows: 0,
+    linux_debian: 1,
+    android: 2
+};
+Object.freeze(productOS);
+exports.default = productOS;

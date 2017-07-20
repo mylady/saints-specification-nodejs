@@ -3,6 +3,10 @@
  */
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var TransmitMessage = function TransmitMessage() {
@@ -15,4 +19,4 @@ var TransmitMessage = function TransmitMessage() {
     this.MessageReceiver = [];
 };
 
-module.exports = TransmitMessage;
+exports.default = TransmitMessage;

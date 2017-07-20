@@ -3,6 +3,10 @@
  */
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var HospitalCall = function HospitalCall() {
@@ -12,4 +16,4 @@ var HospitalCall = function HospitalCall() {
     this.CallContent = '';
 };
 
-module.exports = HospitalCall;
+exports.default = HospitalCall;

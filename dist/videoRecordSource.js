@@ -3,9 +3,15 @@
  */
 'use strict';
 
-module.exports.schoolPlatform = {
-  name: '教育安全管理平台',
-  value: 0
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var videoRecordSource = {
+    schoolPlatform: {
+        name: '教育安全管理平台',
+        value: 0
+    }
 };
 
-Object.freeze(module.exports);
+Object.freeze(videoRecordSource);
+exports.default = videoRecordSource;

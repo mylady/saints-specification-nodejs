@@ -3,6 +3,10 @@
  */
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var DeviceEventData = function DeviceEventData() {
@@ -19,4 +23,4 @@ var DeviceEventData = function DeviceEventData() {
     this.EventExtra = {};
 };
 
-module.exports = DeviceEventData;
+exports.default = DeviceEventData;
