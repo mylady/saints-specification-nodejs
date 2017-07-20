@@ -5,7 +5,7 @@
 
 
 export default class UpdateDetail {
-    constructor(){
+    constructor() {
         this.ProductId = '';
         this.OS = -1;
         this.OldVersion = -1;

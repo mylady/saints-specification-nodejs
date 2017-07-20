@@ -3,10 +3,10 @@
  */
 'use strict';
 
-let productType={
-    client : 0,
-    server : 1,
-    systemService : 2
+let productType = {
+    client: 0,
+    server: 1,
+    systemService: 2
 };
 
 Object.freeze(productType);

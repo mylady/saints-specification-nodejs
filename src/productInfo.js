@@ -4,7 +4,7 @@
 'use strict';
 
 export default class ProductInfo {
-    constructor(){
+    constructor() {
         this.ProductName = '';
         this.ProductId = '';
         this.DisplayName = '';

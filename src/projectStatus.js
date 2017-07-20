@@ -4,19 +4,19 @@
 'use strict';
 
 let projectStatus = {
-    preparing : {
+    preparing: {
         name: '筹备中',
         value: 0
     },
-    constructing : {
+    constructing: {
         name: '施工中',
         value: 0
     },
-    testing : {
+    testing: {
         name: '试运行',
         value: 0
     },
-    online : {
+    online: {
         name: '已上线',
         value: 3
     }

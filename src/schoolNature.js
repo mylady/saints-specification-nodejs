@@ -4,11 +4,11 @@
 'use strict';
 
 let schoolNature = {
-    public : {
+    public: {
         name: '公立',
         value: 0
     },
-    private : {
+    private: {
         name: '私立',
         value: 1
     }

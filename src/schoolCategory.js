@@ -4,39 +4,39 @@
 'use strict';
 
 let schoolCategory = {
-    youErYuan : {
+    youErYuan: {
         name: '幼儿园',
         value: 0
     },
-    xiaoXue : {
+    xiaoXue: {
         name: '小学',
         value: 1
     },
-    nongMinGongZiNvXiaoXue : {
+    nongMinGongZiNvXiaoXue: {
         name: '农民工子女小学',
         value: 2
     },
-    chuZhong : {
+    chuZhong: {
         name: '初中',
         value: 3
     },
-    gaoZhong : {
+    gaoZhong: {
         name: '高中',
         value: 4
     },
-    yiGuanZhi : {
+    yiGuanZhi: {
         name: '一贯制',
         value: 5
     },
-    wanZhong : {
+    wanZhong: {
         name: '完中',
         value: 6
     },
-    zhiXiao : {
+    zhiXiao: {
         name: '职校',
         value: 7
     },
-    teShuXueXiao : {
+    teShuXueXiao: {
         name: '特殊学校',
         value: 8
     }

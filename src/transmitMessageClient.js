@@ -6,7 +6,7 @@
 const ProductInfo = require('./productInfo');
 
 export default class TransmitMessageClient {
-    constructor(){
+    constructor() {
         this.Product = new ProductInfo();
         this.IPAddresses = [];
         this.MacAddresses = [];

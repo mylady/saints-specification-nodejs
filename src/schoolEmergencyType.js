@@ -3,7 +3,7 @@
  */
 'use strict';
 let schoolEmergency = {
-    alarm110 : {
+    alarm110: {
         name: '110报警',
         value: 0
     }
