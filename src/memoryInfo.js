@@ -3,7 +3,7 @@
  */
 'use strict';
 
-export class MemoryInfo{
+export default class MemoryInfo{
     constructor(){
         this.TotalMemory = 0;
         this.UsedMemory = 0;

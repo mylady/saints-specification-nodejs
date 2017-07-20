@@ -2,6 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 'use strict';
+
 let maintainRoleType = {
   owner: {
     name: '业主',
@@ -22,5 +23,4 @@ let maintainRoleType = {
 };
 
 Object.freeze(maintainRoleType);
-
 export default maintainRoleType;

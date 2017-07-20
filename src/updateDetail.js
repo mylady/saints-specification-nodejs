@@ -3,7 +3,6 @@
  */
 'use strict';
 
-
 export default class UpdateDetail {
     constructor() {
         this.ProductId = '';

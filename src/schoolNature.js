@@ -13,6 +13,7 @@ let schoolNature = {
         value: 1
     }
 };
+
 Object.freeze(schoolNature);
 export default schoolNature;
 

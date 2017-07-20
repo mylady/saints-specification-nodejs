@@ -3,7 +3,7 @@
  */
 'use strict';
 
-const ProductInfo = require('./productInfo');
+import ProductInfo from './productInfo';
 
 export default class TransmitMessageClient {
     constructor() {

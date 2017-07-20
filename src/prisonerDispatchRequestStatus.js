@@ -2,6 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 'use strict';
+
 let prisonerDispatchRequestStatus = {
   request: {
     name: '申请调监',

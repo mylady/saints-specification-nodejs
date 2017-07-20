@@ -3,7 +3,7 @@
  */
 'use strict';
 
-export class InitParam {
+export default class InitParam {
     constructor() {
         this.RemoteIPAddress = '';
         this.RemotePort = 0;

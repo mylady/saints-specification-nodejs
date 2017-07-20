@@ -1,6 +1,8 @@
 /**
  * Created by MyLady on 16/2/19.
  */
+'use strict';
+
 let discoveryHttpPort = 23001;
 let discoveryApiPrefix = '/api/v1';
 let proxyHttpPort = 23003;
@@ -17,6 +19,4 @@ let specificationSettings = {
     proxyApiService: 'http://ip:' + proxyHttpPort + discoveryApiPrefix + '/services'
 };
 
-
-Object.freeze(specificationSettings);
 export default specificationSettings;

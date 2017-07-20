@@ -1,10 +1,10 @@
 /**
  * Created by MyLady on 05/05/2017.
  */
-const ProductInfo = require('./productInfo')
-    , ProtocolService = require('./protocolService')
-    , Settings = require('./specificationSettings')
-    , Utils = require('./utils');
+import ProductInfo from './productInfo';
+import ProtocolService from './protocolService';
+import Settings from './specificationSettings';
+import { post, get } from './utils';
 
 export class ProductRegister {
     constructor(prod) {
@@ -17,7 +17,7 @@ export class ProductRegister {
 
     startRegister() {
         this._timerId = setInterval(() => {
-            Utils.post(Settings.discoveryApiProduct, this._product)
+            post(Settings.discoveryApiProduct, this._product)
                 .catch((err) => {
                     console.log(err);
                 });
@@ -54,7 +54,7 @@ export class ServiceRegister {
         }
         this._timerId = setInterval(() => {
             for (let i = 0; i < this._services.length; i++) {
-                Utils.post(address, this._services[i])
+                post(address, this._services[i])
                     .catch((err) => {
                         console.log(err);
                     });
@@ -79,7 +79,7 @@ export class ServiceDiscovery {
         }
 
         return new Promise((resolve, reject) => {
-            Utils.get(address)
+            get(address)
                 .then((resp) => {
                     resolve(resp);
                 })
@@ -97,7 +97,7 @@ export class ServiceDiscovery {
 
         return new Promise((resolve, reject) => {
             let target = null;
-            Utils.get(address)
+            get(address)
                 .then((services) => {
                     for (let i = 0; i < services.length; i++) {
                         if (services[i].ServiceType === serviceType) {

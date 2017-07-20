@@ -2,9 +2,8 @@
  * Created by MyLady on 05/05/2017.
  */
 
-const http = require('http')
-    , url = require('url');
-
+import http from 'http';
+import url from 'url';
 
 export function post(path, data) {
     return doRequest(path, data, {

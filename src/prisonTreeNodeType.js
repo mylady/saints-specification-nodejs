@@ -24,7 +24,7 @@ let prisonTreeNodeType = {
     name: '在押人员',
     value: 4
   }
-}
+};
 
 Object.freeze(prisonTreeNodeType);
 export default prisonTreeNodeType;

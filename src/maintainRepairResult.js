@@ -2,6 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 'use strict';
+
 let maintainRepairResult = {
   nonPicked: {
     name: '未分配',
@@ -34,5 +35,4 @@ let maintainRepairResult = {
 };
 
 Object.freeze(maintainRepairResult);
-
 export default maintainRepairResult;

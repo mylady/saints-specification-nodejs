@@ -2,6 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 'use strict';
+
 let maintainReportType = {
   manuReport: {
     name: '人工报修',
@@ -14,5 +15,4 @@ let maintainReportType = {
 };
 
 Object.freeze(maintainReportType);
-
 export default maintainReportType;

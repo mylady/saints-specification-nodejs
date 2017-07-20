@@ -2,6 +2,7 @@
  * Created by MyLady on 16/2/19.
  */
 'use strict';
+
 let productOS = {
     windows: 0,
     linux_debian: 1,

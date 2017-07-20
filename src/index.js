@@ -25,7 +25,7 @@ import DigitalLayout from './digitalLayout';
 import DigitalLayoutArea from './digitalLayoutArea';
 import DigitalMarquee from './digitalMarquee';
 import DigitalTerminalType from './digitalTerminalType';
-import Discovery from './discovery';
+import { ProductRegister, ServiceRegister, ServiceDiscovery } from './discovery';
 import DiskInfo from './diskInfo';
 import HospitalCall from './hospitalCall';
 import HospitalCallType from './hospitalCallType';
@@ -100,7 +100,9 @@ export default {
     DigitalLayoutArea: DigitalLayoutArea,
     DigitalMarquee: DigitalMarquee,
     DigitalTerminalType: DigitalTerminalType,
-    Discovery: Discovery,
+    ProductRegister: ProductRegister,
+    ServiceRegister: ServiceRegister,
+    ServiceDiscovery: ServiceDiscovery,
     DiskInfo: DiskInfo,
     HospitalCall: HospitalCall,
     HospitalCallType: HospitalCallType,

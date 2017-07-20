@@ -1,8 +1,9 @@
 /**
  * Created by MyLady on 05/05/2017.
  */
+'use strict';
 
-export class NicConfig {
+export default class NicConfig {
     constructor(){
         this.MacAddress = '';
         this.IPAddress = '';

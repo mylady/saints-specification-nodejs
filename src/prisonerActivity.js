@@ -4,7 +4,6 @@
 'use strict';
 
 let prisonerActivity = {
-
   stay: {
     name: '在监',
     value: 0

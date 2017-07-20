@@ -3,7 +3,6 @@
  */
 'use strict';
 
-
 export default class TransmitMessage {
     constructor() {
         this.MessageId = '';

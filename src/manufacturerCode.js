@@ -2,6 +2,7 @@
  * Created by MyLady on 05/05/2017.
  */
 'use strict';
+
 let manufacturerCode = {
   none: {
     name: '无厂商',

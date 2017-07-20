@@ -9,5 +9,6 @@ let videoRecordSource = {
         value: 0
     }
 };
+
 Object.freeze(videoRecordSource);
 export default videoRecordSource;
