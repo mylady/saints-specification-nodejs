@@ -14,7 +14,7 @@ let protocolServiceType = {
     centralUpdateService: 7,
     transmitMessageService: 8,
     serialGatewayService: 9,
-    sendMessageServicemodule: 10,
+    sendMessageService: 10,
     videoService: 11,
     schoolService: 12,
     prisonService: 13,
