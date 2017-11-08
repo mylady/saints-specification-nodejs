@@ -34,7 +34,7 @@ let deviceAlarmCode = {
         value: 6
     },
     soundLost : {
-        name: '音频丢失',
+        name: '声音丢失',
         value: 7
     },
     deviceAbnormal : {
@@ -94,7 +94,7 @@ let deviceAlarmCode = {
         value: 21
     },
     powerUnstable : {
-        name: '电源异常',
+        name: '电源不稳定',
         value: 22
     },
     disturb : {
@@ -134,7 +134,7 @@ let deviceAlarmCode = {
         value: 31
     },
     deviceFault : {
-        name: '设备损坏',
+        name: '设备故障',
         value: 32
     },
     audioLost : {
