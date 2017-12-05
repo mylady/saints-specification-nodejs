@@ -39,9 +39,12 @@ let transmitMessageType = {
     prison: {
         name: '监管业务通知',
         value: 8
+    },
+    bioIdentify: {
+        name: '生物识别通知',
+        value: 9
     }
 };
 
 Object.freeze(transmitMessageType);
 export default transmitMessageType;
-
