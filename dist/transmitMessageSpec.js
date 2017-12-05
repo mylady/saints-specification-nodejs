@@ -19,6 +19,7 @@ var transmitMessageSpec = {
     maintainRoom: 'maintain',
     hospitalRoom: 'hospital',
     prisonRoom: 'prison',
+    bioIdentifyRoom: 'bioidentify',
     saintsNameSpace: "saints",
     thirdpartyNameSpace: 'thirdparty'
 };
