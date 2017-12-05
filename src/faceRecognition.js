@@ -11,5 +11,6 @@ export default class FaceRecognition {
         this.FaceHeight = 0;
         this.IsHit = false;
         this.HitImagePath = '';
+        this.Similarity = 0;
     }
 }
