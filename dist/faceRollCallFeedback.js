@@ -12,6 +12,7 @@ var FaceRollCallFeedback = function FaceRollCallFeedback() {
     this.PrisonerJsh = '';
     this.PrisonerSnbh = '';
     this.PrisonerName = '';
+    this.PrisonerFacePath = '';
     this.RollCallResult = false;
 };
 
