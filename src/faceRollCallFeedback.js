@@ -6,6 +6,6 @@ export default class FaceRollCallFeedback {
         this.PrisonerSnbh = '';
         this.PrisonerName = '';
         this.PrisonerFacePath = '';
-        this.RollCallResult = false;
+        this.RollCallResult = 0;
     }
 }

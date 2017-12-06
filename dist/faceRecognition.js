@@ -19,6 +19,8 @@ var FaceRecognition = function FaceRecognition() {
     this.IsHit = false;
     this.HitImagePath = '';
     this.Similarity = 0;
+    this.PersonId = '';
+    this.PersonName = '';
 };
 
 exports.default = FaceRecognition;

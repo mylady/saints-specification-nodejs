@@ -175,6 +175,10 @@ var deviceAlarmCode = {
     videoAnalyseAlarm: {
         name: '视频分析报警',
         value: 41
+    },
+    faceDefenceAlarm: {
+        name: '人脸布防报警',
+        value: 42
     }
 };
 
