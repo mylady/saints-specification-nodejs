@@ -40,6 +40,10 @@ let deviceEventCode = {
     dataUpdate: {
         name: '数据更新',
         value: 7
+    },
+    faceCapture: {
+        name: '人脸捕获',
+        value: 8
     }
 };
 
