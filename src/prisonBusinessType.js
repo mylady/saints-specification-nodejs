@@ -12,6 +12,14 @@ let prisonBusinessType = {
   meetingArraignFeedback: {
     name: '提审会见反馈',
     value: 2
+  },
+  faceRollCallStart: {
+    name: '人脸点名开始',
+    value: 3
+  },
+  faceRollCallFeedback: {
+    name: '人脸点名结果反馈',
+    value: 4
   }
 };
 
