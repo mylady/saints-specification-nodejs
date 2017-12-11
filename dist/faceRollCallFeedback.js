@@ -13,6 +13,7 @@ var FaceRollCallFeedback = function FaceRollCallFeedback() {
     this.PrisonerSnbh = '';
     this.PrisonerName = '';
     this.PrisonerFacePath = '';
+    this.RollCallStatus = 0;
     this.RollCallResult = 0;
 };
 
