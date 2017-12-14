@@ -16,13 +16,21 @@ var prisonBusinessType = {
     name: '提审会见反馈',
     value: 2
   },
-  faceRollCallStart: {
-    name: '人脸点名开始',
+  startFaceRollCall: {
+    name: '开始人脸点名',
     value: 3
   },
   faceRollCallFeedback: {
     name: '人脸点名结果反馈',
     value: 4
+  },
+  faceRollCallCellEnd: {
+    name: '监房点名结束',
+    value: 5
+  },
+  stopFaceRollCall: {
+    name: '停止人脸点名',
+    value: 6
   }
 };
 
