@@ -255,16 +255,16 @@ let deviceInterfaceCode = {
     huiguUpsStatusUDP: {
         name: '慧谷不间断电源主机状态接口',
         value: 61
-    }
-    , yishiteUpsModebusSERIAL: {
+    },
+    yishiteUpsModebusSERIAL: {
         name: '易事特不间断电源主机Modbus接口',
         value: 62
-    }
-    , kuaiyuDigitalCallSDK: {
+    },
+    kuaiyuDigitalCallSDK: {
         name: '快鱼数字对讲接口',
         value: 63
-    }
-    , aosongEnvMonitorTcpModbus: {
+    },
+    aosongEnvMonitorTcpModbus: {
         name: '奥松温湿度监测接口',
         value: 64
     },
@@ -283,9 +283,16 @@ let deviceInterfaceCode = {
     boshiAlarmSERIAL: {
         name: '博世报警主机接口',
         value: 68
+    },
+    yituFaceRecognitionREST: {
+        name: '依图人脸识别接口',
+        value: 69
+    },
+    xilingVideoAnalyseREST: {
+        name: '熙凌行为分析接口',
+        value: 70
     }
 };
 
 Object.freeze(deviceInterfaceCode);
 export default deviceInterfaceCode;
-

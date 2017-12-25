@@ -286,6 +286,14 @@ var deviceInterfaceCode = {
     boshiAlarmSERIAL: {
         name: '博世报警主机接口',
         value: 68
+    },
+    yituFaceRecognitionREST: {
+        name: '依图人脸识别接口',
+        value: 69
+    },
+    xilingVideoAnalyseREST: {
+        name: '熙凌行为分析接口',
+        value: 70
     }
 };
 

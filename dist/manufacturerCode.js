@@ -170,6 +170,18 @@ var manufacturerCode = {
   miaoguan: {
     name: '秒观',
     value: 39
+  },
+  dashi: {
+    name: '达实',
+    value: 40
+  },
+  xiling: {
+    name: '熙凌',
+    value: 41
+  },
+  yitu: {
+    name: '依图',
+    value: 42
   }
 };
 
