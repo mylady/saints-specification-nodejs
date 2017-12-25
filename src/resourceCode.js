@@ -36,7 +36,7 @@ let resourceCode = {
         name: '电网网段',
         value: 6
     },
-    temperatureMonitor: {
+    envMonitor: {
         name: '温湿度监测',
         value: 7
     },
@@ -122,7 +122,6 @@ let resourceCode = {
         name: '探针',
         value: 525
     },
-
     pc: {
         name: '个人电脑',
         value: 1024
