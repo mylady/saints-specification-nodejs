@@ -191,6 +191,14 @@ var deviceAlarmCode = {
     rfidButtonAlarm: {
         name: '标签按钮报警',
         value: 45
+    },
+    smokeAlarm: {
+        name: '烟雾报警',
+        value: 46
+    },
+    fireAlarm: {
+        name: '火警',
+        value: 47
     }
 };
 
