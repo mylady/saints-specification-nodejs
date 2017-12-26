@@ -291,6 +291,14 @@ let deviceInterfaceCode = {
     xilingVideoAnalyseREST: {
         name: '熙凌行为分析接口',
         value: 70
+    },
+    sihuaRFIDWEBSOCKET :{
+        name:'思华人员定位接口',
+        value:71
+    },
+    unicomIOTREST:{
+        name:'联通物联网接口',
+        value:72
     }
 };
 

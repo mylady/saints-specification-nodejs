@@ -179,6 +179,18 @@ var deviceAlarmCode = {
     faceDefenceAlarm: {
         name: '人脸布防报警',
         value: 42
+    },
+    rfidBrokenAlarm: {
+        name: '腕带断开报警',
+        value: 43
+    },
+    heartRateAlarm: {
+        name: '心率异常报警',
+        value: 44
+    },
+    rfidButtonAlarm: {
+        name: '标签按钮报警',
+        value: 45
     }
 };
 

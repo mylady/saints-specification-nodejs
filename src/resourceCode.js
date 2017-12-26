@@ -48,6 +48,10 @@ let resourceCode = {
         name: '空气质量监测',
         value: 9
     },
+    rfidTag:{
+        name:'RFID标签',
+        value:10
+    },
 
     decoderChannel: {
         name: '解码通道',

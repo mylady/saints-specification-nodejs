@@ -182,6 +182,14 @@ var manufacturerCode = {
   yitu: {
     name: '依图',
     value: 42
+  },
+  sihua: {
+    name: '思华',
+    value: 43
+  },
+  unicom: {
+    name: '联通',
+    value: 44
   }
 };
 
