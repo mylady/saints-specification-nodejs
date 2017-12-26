@@ -196,6 +196,10 @@ let deviceAlarmCode = {
     fireAlarm: {
         name: '火警',
         value: 47
+    },
+    gathering:{
+        name:'人员聚集报警',
+        value:48
     }
 };
 
