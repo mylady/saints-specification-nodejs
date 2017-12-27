@@ -31,6 +31,18 @@ var prisonBusinessType = {
   stopFaceRollCall: {
     name: '停止人脸点名',
     value: 6
+  },
+  answerAlarm: {
+    name: '应答报警',
+    value: 7
+  },
+  dealingAlarm: {
+    name: '处置报警',
+    value: 8
+  },
+  dealedAlarm: {
+    name: '报警处置结束',
+    value: 9
   }
 };
 
