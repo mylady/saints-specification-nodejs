@@ -169,6 +169,58 @@ var resourceCode = {
         name: '数字电视终端',
         value: 1033
     },
+    fireHydrant: {
+        name: '消防栓',
+        value: 1034
+    },
+    fireHydrantBox: {
+        name: '消防栓箱',
+        value: 1035
+    },
+    heater: {
+        name: '热水器',
+        value: 1036
+    },
+    acBox: {
+        name: '空调外机',
+        value: 1037
+    },
+    trashBin: {
+        name: '垃圾桶',
+        value: 1038
+    },
+    emergencyLight: {
+        name: '紧急备用灯',
+        value: 1039
+    },
+    jackBox: {
+        name: '配电箱',
+        value: 1040
+    },
+    centerAC: {
+        name: '中央空调',
+        value: 1041
+    },
+    lamp: {
+        name: '路灯',
+        value: 1042
+    },
+    ledLight: {
+        name: 'led灯',
+        value: 1043
+    },
+    roadSign: {
+        name: '路标',
+        value: 1044
+    },
+    cellOutTerminal: {
+        name: '监外机',
+        value: 1045
+    },
+    cellInTerminal: {
+        name: '监内机',
+        value: 1046
+    },
 
     realSource: {
         name: '直播源',
