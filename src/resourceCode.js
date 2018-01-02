@@ -48,9 +48,9 @@ let resourceCode = {
         name: '空气质量监测',
         value: 9
     },
-    rfidTag:{
-        name:'RFID标签',
-        value:10
+    rfidTag: {
+        name: 'RFID标签',
+        value: 10
     },
 
     decoderChannel: {
@@ -166,57 +166,69 @@ let resourceCode = {
         name: '数字电视终端',
         value: 1033
     },
-    fireHydrant:{
-        name:'消防栓',
-        value:1034
+    fireHydrant: {
+        name: '消防栓',
+        value: 1034
     },
-    fireHydrantBox:{
-        name:'消防栓箱',
-        value:1035
+    fireHydrantBox: {
+        name: '消防栓箱',
+        value: 1035
     },
-    heater:{
-        name:'热水器',
-        value:1036
+    heater: {
+        name: '热水器',
+        value: 1036
     },
-    acBox:{
-        name:'空调外机',
-        value:1037
+    acBox: {
+        name: '空调外机',
+        value: 1037
     },
-    trashBin:{
-        name:'垃圾桶',
-        value:1038
+    trashBin: {
+        name: '垃圾桶',
+        value: 1038
     },
-    emergencyLight:{
-        name:'紧急备用灯',
-        value:1039
+    emergencyLight: {
+        name: '紧急备用灯',
+        value: 1039
     },
-    jackBox:{
-        name:'配电箱',
-        value:1040
+    jackBox: {
+        name: '配电箱',
+        value: 1040
     },
-    centerAC:{
-        name:'中央空调',
-        value:1041
+    centerAC: {
+        name: '中央空调',
+        value: 1041
     },
-    lamp:{
-        name:'路灯',
-        value:1042
+    lamp: {
+        name: '路灯',
+        value: 1042
     },
-    ledLight:{
-        name:'led灯',
-        value:1043
+    ledLight: {
+        name: 'led灯',
+        value: 1043
     },
-    roadSign:{
-        name:'路标',
-        value:1044
+    roadSign: {
+        name: '路标',
+        value: 1044
     },
-    cellOutTerminal:{
-        name:'监外机',
-        value:1045
+    cellOutTerminal: {
+        name: '监外机',
+        value: 1045
     },
-    cellInTerminal:{
-        name:'监内机',
-        value:1046
+    cellInTerminal: {
+        name: '监内机',
+        value: 1046
+    },
+    electricityCover: {
+        name: '弱电井盖',
+        value: 1047
+    },
+    wasteCover: {
+        name: '污水井盖',
+        value: 1048
+    },
+    rainCover: {
+        name: '雨水井盖',
+        vaue: 1049
     },
 
     realSource: {
