@@ -44,6 +44,10 @@ let deviceEventCode = {
     faceCapture: {
         name: '人脸捕获',
         value: 8
+    },
+    carPlateIdentify: {
+        name: '车牌识别',
+        value: 9
     }
 };
 

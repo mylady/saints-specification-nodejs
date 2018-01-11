@@ -221,6 +221,18 @@ var resourceCode = {
         name: '监内机',
         value: 1046
     },
+    electricityCover: {
+        name: '弱电井盖',
+        value: 1047
+    },
+    wasteCover: {
+        name: '污水井盖',
+        value: 1048
+    },
+    rainCover: {
+        name: '雨水井盖',
+        vaue: 1049
+    },
 
     realSource: {
         name: '直播源',
