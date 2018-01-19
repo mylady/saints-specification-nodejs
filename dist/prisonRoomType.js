@@ -13,11 +13,11 @@ var prisonRoomType = {
   },
   arraignment: {
     name: '提审',
-    value: 0
+    value: 1
   },
   meeting: {
     name: '会见',
-    value: 0
+    value: 2
   }
 };
 
