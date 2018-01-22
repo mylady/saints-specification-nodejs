@@ -299,6 +299,10 @@ let deviceInterfaceCode = {
     unicomIOTREST:{
         name:'联通物联网接口',
         value:72
+    },
+    dahuaVideoAnalyseSDK:{
+        name:'大华视频分析设备接口',
+        value:73
     }
 };
 
