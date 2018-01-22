@@ -4,9 +4,16 @@
 
 'use strict';
 
+import AirMonitorExtra from './airMonitorExtra';
+
+import BioIdentifyMessage from './bioIdentifyMessage';
+import BioIdentifyType from './bioIdentifyType';
+
+import CallExtra from './callExtra';
 import CameraType from './cameraType';
 import ConnectionMode from './connectionMode';
 import CpuInfo from './cpuInfo';
+
 import Descripter from './descripter';
 import DeviceAlarmCode from './deviceAlarmCode';
 import DeviceControlCode from './deviceControlCode';
@@ -25,20 +32,36 @@ import DigitalLayout from './digitalLayout';
 import DigitalLayoutArea from './digitalLayoutArea';
 import DigitalMarquee from './digitalMarquee';
 import DigitalTerminalType from './digitalTerminalType';
-import { ProductRegister, ServiceRegister, ServiceDiscovery } from './discovery';
+import {
+    ProductRegister,
+    ServiceRegister,
+    ServiceDiscovery
+} from './discovery';
 import DiskInfo from './diskInfo';
+import DoorExtra from './doorExtra';
+
+import EnvMonitorExtra from './envMonitorExtra';
+
+import FaceRecognition from './faceRecognition';
+import FaceRollCallFeedback from './faceRollCallFeedback';
+import FaceRollCallStatus from './faceRollCallStatus';
+import FingerPrint from './fingerPrint';
+
 import HospitalCall from './hospitalCall';
 import HospitalCallType from './hospitalCallType';
 
 import InitParam from './initParam';
+
 import MaintainRepairResult from './maintainRepairResult';
 import MaintainReportType from './maintainReportType';
 import MaintainRoleType from './maintainRoleType';
 import ManufacturerCode from './manufacturerCode';
-import MeetingStatus from './meetingStatus';
 import MemoryInfo from './memoryInfo';
+
 import NicConfig from './nicConfig';
+
 import PrescriptionType from './prescriptionType';
+import PrisonBusinessType from './prisonBusinessType';
 import PrisonerActivity from './prisonerActivity';
 import PrisonerDiagnosticMethod from './prisonerDiagnosticMethod';
 import PrisonerDispatchRequestStatus from './prisonerDispatchRequestStatus';
@@ -47,41 +70,58 @@ import PrisonerDutySubType from './prisonerDutySubType';
 import PrisonerDutyType from './prisonerDutyType';
 import PrisonerHealthStatus from './prisonerHealthStatus';
 import PrisonerRollCallResult from './prisonerRollCallResult';
+import PrisonerRollCallType from './prisonerRollCallType';
+import PrisonMeetingRegisterType from './prisonMeetingRegisterType';
+import PrisonMeetingStatus from './prisonMeetingStatus';
+import PrisonMeetingType from './prisonMeetingType';
 import PrisonRoomStatus from './prisonRoomStatus';
 import PrisonRoomType from './prisonRoomType';
-import PrisonTicketType from './prisonTicketType';
+import PrisonTerminalType from './prisonTerminalType';
 import PrisonTreeNodeType from './prisonTreeNodeType';
 import PrisonUserType from './prisonUserType';
-
 import ProductIds from './productIds';
 import ProductInfo from './productInfo';
 import ProductOS from './productOS';
 import ProductType from './productType';
+import ProjectStatus from './projectStatus';
 import ProtocolService from './protocolService';
 import ProtocolServiceType from './protocolServiceType';
+
 import ResourceCode from './resourceCode';
-import ProjectStatus from './projectStatus';
+import RestQuery from './restQuery';
+import RestResponse from './restReponse';
 
 import SchoolCategory from './schoolCategory';
 import SchoolEmergencyType from './schoolEmergencyType';
 import SchoolNature from './schoolNature';
-
 import SpecificationSettings from './specificationSettings';
+
 import TransmitMessage from './transmitMessage';
 import TransmitMessageClient from './transmitMessageClient';
 import TransmitMessageSpec from './transmitMessageSpec';
 import TransmitMessageType from './transmitMessageType';
 
 import UpdateDetail from './updateDetail';
+import UpsExtra from './upsExtra';
+
+import VideoAnalyseExtra from './videoAnalyseExtra';
 import VideoDiagnosticResult from './videoDiagnosticResult';
 import VideoRecordSource from './videoRecordSource';
 import VideoRecordStatus from './videoRecordStatus';
 import VideoStorageType from './videoStorageType';
+import VoicePrint from './voicePrint';
 
 export default {
+    AirMonitorExtra: AirMonitorExtra,
+
+    BioIdentifyMessage: BioIdentifyMessage,
+    bioIdentifyType: BioIdentifyType,
+
+    CallExtra: CallExtra,
     CameraType: CameraType,
     ConnectionMode: ConnectionMode,
     CpuInfo: CpuInfo,
+
     Descripter: Descripter,
     DeviceAlarmCode: DeviceAlarmCode,
     DeviceControlCode: DeviceControlCode,
@@ -104,17 +144,30 @@ export default {
     ServiceRegister: ServiceRegister,
     ServiceDiscovery: ServiceDiscovery,
     DiskInfo: DiskInfo,
+    DoorExtra: DoorExtra,
+
+    EnvMonitorExtra: EnvMonitorExtra,
+
+    FaceRecognition: FaceRecognition,
+    FaceRollCallFeedback: FaceRollCallFeedback,
+    FaceRollCallStatus: FaceRollCallStatus,
+    FingerPrint: FingerPrint,
+
     HospitalCall: HospitalCall,
     HospitalCallType: HospitalCallType,
+
     InitParam: InitParam,
+
     MaintainRepairResult: MaintainRepairResult,
     MaintainReportType: MaintainReportType,
     MaintainRoleType: MaintainRoleType,
     ManufacturerCode: ManufacturerCode,
-    MeetingStatus: MeetingStatus,
     MemoryInfo: MemoryInfo,
+
     NicConfig: NicConfig,
+
     PrescriptionType: PrescriptionType,
+    PrisonBusinessType: PrisonBusinessType,
     PrisonerActivity: PrisonerActivity,
     PrisonerDiagnosticMethod: PrisonerDiagnosticMethod,
     PrisonerDispatchRequestStatus: PrisonerDispatchRequestStatus,
@@ -123,9 +176,14 @@ export default {
     PrisonerDutyType: PrisonerDutyType,
     PrisonerHealthStatus: PrisonerHealthStatus,
     PrisonerRollCallResult: PrisonerRollCallResult,
+    PrisonerRollCallType: PrisonerRollCallType,
+    PrisonMeetingRegisterType: PrisonMeetingRegisterType,
+    PrisonMeetingStatus: PrisonMeetingStatus,
+    PrisonMeetingType: PrisonMeetingType,
+    PrisonMessage: PrisonMessage,
     PrisonRoomStatus: PrisonRoomStatus,
     PrisonRoomType: PrisonRoomType,
-    PrisonTicketType: PrisonTicketType,
+    PrisonTerminalType: PrisonTerminalType,
     PrisonTreeNodeType: PrisonTreeNodeType,
     PrisonUserType: PrisonUserType,
     ProductIds: ProductIds,
@@ -135,21 +193,28 @@ export default {
     ProjectStatus: ProjectStatus,
     ProtocolService: ProtocolService,
     ProtocolServiceType: ProtocolServiceType,
+
     ResourceCode: ResourceCode,
+    RestQuery: RestQuery,
+    RestResponse: RestResponse,
+
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
     SpecificationSettings: SpecificationSettings,
+
     TransmitMessage: TransmitMessage,
     TransmitMessageClient: TransmitMessageClient,
     TransmitMessageSpec: TransmitMessageSpec,
     TransmitMessageType: TransmitMessageType,
+
     UpdateDetail: UpdateDetail,
+    UpsExtra: UpsExtra,
+
+    VideoAnalyseExtra: VideoAnalyseExtra,
     VideoDiagnosticResult: VideoDiagnosticResult,
     VideoRecordSource: VideoRecordSource,
     VideoRecordStatus: VideoRecordStatus,
-    VideoStorageType: VideoStorageType
+    VideoStorageType: VideoStorageType,
+    VoicePrint: VoicePrint
 }
-
-
-

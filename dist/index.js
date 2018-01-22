@@ -8,6 +8,22 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _airMonitorExtra = require('./airMonitorExtra');
+
+var _airMonitorExtra2 = _interopRequireDefault(_airMonitorExtra);
+
+var _bioIdentifyMessage = require('./bioIdentifyMessage');
+
+var _bioIdentifyMessage2 = _interopRequireDefault(_bioIdentifyMessage);
+
+var _bioIdentifyType = require('./bioIdentifyType');
+
+var _bioIdentifyType2 = _interopRequireDefault(_bioIdentifyType);
+
+var _callExtra = require('./callExtra');
+
+var _callExtra2 = _interopRequireDefault(_callExtra);
+
 var _cameraType = require('./cameraType');
 
 var _cameraType2 = _interopRequireDefault(_cameraType);
@@ -98,6 +114,30 @@ var _diskInfo = require('./diskInfo');
 
 var _diskInfo2 = _interopRequireDefault(_diskInfo);
 
+var _doorExtra = require('./doorExtra');
+
+var _doorExtra2 = _interopRequireDefault(_doorExtra);
+
+var _envMonitorExtra = require('./envMonitorExtra');
+
+var _envMonitorExtra2 = _interopRequireDefault(_envMonitorExtra);
+
+var _faceRecognition = require('./faceRecognition');
+
+var _faceRecognition2 = _interopRequireDefault(_faceRecognition);
+
+var _faceRollCallFeedback = require('./faceRollCallFeedback');
+
+var _faceRollCallFeedback2 = _interopRequireDefault(_faceRollCallFeedback);
+
+var _faceRollCallStatus = require('./faceRollCallStatus');
+
+var _faceRollCallStatus2 = _interopRequireDefault(_faceRollCallStatus);
+
+var _fingerPrint = require('./fingerPrint');
+
+var _fingerPrint2 = _interopRequireDefault(_fingerPrint);
+
 var _hospitalCall = require('./hospitalCall');
 
 var _hospitalCall2 = _interopRequireDefault(_hospitalCall);
@@ -126,10 +166,6 @@ var _manufacturerCode = require('./manufacturerCode');
 
 var _manufacturerCode2 = _interopRequireDefault(_manufacturerCode);
 
-var _meetingStatus = require('./meetingStatus');
-
-var _meetingStatus2 = _interopRequireDefault(_meetingStatus);
-
 var _memoryInfo = require('./memoryInfo');
 
 var _memoryInfo2 = _interopRequireDefault(_memoryInfo);
@@ -141,6 +177,10 @@ var _nicConfig2 = _interopRequireDefault(_nicConfig);
 var _prescriptionType = require('./prescriptionType');
 
 var _prescriptionType2 = _interopRequireDefault(_prescriptionType);
+
+var _prisonBusinessType = require('./prisonBusinessType');
+
+var _prisonBusinessType2 = _interopRequireDefault(_prisonBusinessType);
 
 var _prisonerActivity = require('./prisonerActivity');
 
@@ -174,6 +214,22 @@ var _prisonerRollCallResult = require('./prisonerRollCallResult');
 
 var _prisonerRollCallResult2 = _interopRequireDefault(_prisonerRollCallResult);
 
+var _prisonerRollCallType = require('./prisonerRollCallType');
+
+var _prisonerRollCallType2 = _interopRequireDefault(_prisonerRollCallType);
+
+var _prisonMeetingRegisterType = require('./prisonMeetingRegisterType');
+
+var _prisonMeetingRegisterType2 = _interopRequireDefault(_prisonMeetingRegisterType);
+
+var _prisonMeetingStatus = require('./prisonMeetingStatus');
+
+var _prisonMeetingStatus2 = _interopRequireDefault(_prisonMeetingStatus);
+
+var _prisonMeetingType = require('./prisonMeetingType');
+
+var _prisonMeetingType2 = _interopRequireDefault(_prisonMeetingType);
+
 var _prisonRoomStatus = require('./prisonRoomStatus');
 
 var _prisonRoomStatus2 = _interopRequireDefault(_prisonRoomStatus);
@@ -182,9 +238,9 @@ var _prisonRoomType = require('./prisonRoomType');
 
 var _prisonRoomType2 = _interopRequireDefault(_prisonRoomType);
 
-var _prisonTicketType = require('./prisonTicketType');
+var _prisonTerminalType = require('./prisonTerminalType');
 
-var _prisonTicketType2 = _interopRequireDefault(_prisonTicketType);
+var _prisonTerminalType2 = _interopRequireDefault(_prisonTerminalType);
 
 var _prisonTreeNodeType = require('./prisonTreeNodeType');
 
@@ -210,6 +266,10 @@ var _productType = require('./productType');
 
 var _productType2 = _interopRequireDefault(_productType);
 
+var _projectStatus = require('./projectStatus');
+
+var _projectStatus2 = _interopRequireDefault(_projectStatus);
+
 var _protocolService = require('./protocolService');
 
 var _protocolService2 = _interopRequireDefault(_protocolService);
@@ -222,9 +282,13 @@ var _resourceCode = require('./resourceCode');
 
 var _resourceCode2 = _interopRequireDefault(_resourceCode);
 
-var _projectStatus = require('./projectStatus');
+var _restQuery = require('./restQuery');
 
-var _projectStatus2 = _interopRequireDefault(_projectStatus);
+var _restQuery2 = _interopRequireDefault(_restQuery);
+
+var _restReponse = require('./restReponse');
+
+var _restReponse2 = _interopRequireDefault(_restReponse);
 
 var _schoolCategory = require('./schoolCategory');
 
@@ -262,6 +326,14 @@ var _updateDetail = require('./updateDetail');
 
 var _updateDetail2 = _interopRequireDefault(_updateDetail);
 
+var _upsExtra = require('./upsExtra');
+
+var _upsExtra2 = _interopRequireDefault(_upsExtra);
+
+var _videoAnalyseExtra = require('./videoAnalyseExtra');
+
+var _videoAnalyseExtra2 = _interopRequireDefault(_videoAnalyseExtra);
+
 var _videoDiagnosticResult = require('./videoDiagnosticResult');
 
 var _videoDiagnosticResult2 = _interopRequireDefault(_videoDiagnosticResult);
@@ -278,12 +350,23 @@ var _videoStorageType = require('./videoStorageType');
 
 var _videoStorageType2 = _interopRequireDefault(_videoStorageType);
 
+var _voicePrint = require('./voicePrint');
+
+var _voicePrint2 = _interopRequireDefault(_voicePrint);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
+    AirMonitorExtra: _airMonitorExtra2.default,
+
+    BioIdentifyMessage: _bioIdentifyMessage2.default,
+    bioIdentifyType: _bioIdentifyType2.default,
+
+    CallExtra: _callExtra2.default,
     CameraType: _cameraType2.default,
     ConnectionMode: _connectionMode2.default,
     CpuInfo: _cpuInfo2.default,
+
     Descripter: _descripter2.default,
     DeviceAlarmCode: _deviceAlarmCode2.default,
     DeviceControlCode: _deviceControlCode2.default,
@@ -306,17 +389,30 @@ exports.default = {
     ServiceRegister: _discovery.ServiceRegister,
     ServiceDiscovery: _discovery.ServiceDiscovery,
     DiskInfo: _diskInfo2.default,
+    DoorExtra: _doorExtra2.default,
+
+    EnvMonitorExtra: _envMonitorExtra2.default,
+
+    FaceRecognition: _faceRecognition2.default,
+    FaceRollCallFeedback: _faceRollCallFeedback2.default,
+    FaceRollCallStatus: _faceRollCallStatus2.default,
+    FingerPrint: _fingerPrint2.default,
+
     HospitalCall: _hospitalCall2.default,
     HospitalCallType: _hospitalCallType2.default,
+
     InitParam: _initParam2.default,
+
     MaintainRepairResult: _maintainRepairResult2.default,
     MaintainReportType: _maintainReportType2.default,
     MaintainRoleType: _maintainRoleType2.default,
     ManufacturerCode: _manufacturerCode2.default,
-    MeetingStatus: _meetingStatus2.default,
     MemoryInfo: _memoryInfo2.default,
+
     NicConfig: _nicConfig2.default,
+
     PrescriptionType: _prescriptionType2.default,
+    PrisonBusinessType: _prisonBusinessType2.default,
     PrisonerActivity: _prisonerActivity2.default,
     PrisonerDiagnosticMethod: _prisonerDiagnosticMethod2.default,
     PrisonerDispatchRequestStatus: _prisonerDispatchRequestStatus2.default,
@@ -325,9 +421,14 @@ exports.default = {
     PrisonerDutyType: _prisonerDutyType2.default,
     PrisonerHealthStatus: _prisonerHealthStatus2.default,
     PrisonerRollCallResult: _prisonerRollCallResult2.default,
+    PrisonerRollCallType: _prisonerRollCallType2.default,
+    PrisonMeetingRegisterType: _prisonMeetingRegisterType2.default,
+    PrisonMeetingStatus: _prisonMeetingStatus2.default,
+    PrisonMeetingType: _prisonMeetingType2.default,
+    PrisonMessage: PrisonMessage,
     PrisonRoomStatus: _prisonRoomStatus2.default,
     PrisonRoomType: _prisonRoomType2.default,
-    PrisonTicketType: _prisonTicketType2.default,
+    PrisonTerminalType: _prisonTerminalType2.default,
     PrisonTreeNodeType: _prisonTreeNodeType2.default,
     PrisonUserType: _prisonUserType2.default,
     ProductIds: _productIds2.default,
@@ -337,18 +438,28 @@ exports.default = {
     ProjectStatus: _projectStatus2.default,
     ProtocolService: _protocolService2.default,
     ProtocolServiceType: _protocolServiceType2.default,
+
     ResourceCode: _resourceCode2.default,
+    RestQuery: _restQuery2.default,
+    RestResponse: _restReponse2.default,
+
     SchoolCategory: _schoolCategory2.default,
     SchoolEmergencyType: _schoolEmergencyType2.default,
     SchoolNature: _schoolNature2.default,
     SpecificationSettings: _specificationSettings2.default,
+
     TransmitMessage: _transmitMessage2.default,
     TransmitMessageClient: _transmitMessageClient2.default,
     TransmitMessageSpec: _transmitMessageSpec2.default,
     TransmitMessageType: _transmitMessageType2.default,
+
     UpdateDetail: _updateDetail2.default,
+    UpsExtra: _upsExtra2.default,
+
+    VideoAnalyseExtra: _videoAnalyseExtra2.default,
     VideoDiagnosticResult: _videoDiagnosticResult2.default,
     VideoRecordSource: _videoRecordSource2.default,
     VideoRecordStatus: _videoRecordStatus2.default,
-    VideoStorageType: _videoStorageType2.default
+    VideoStorageType: _videoStorageType2.default,
+    VoicePrint: _voicePrint2.default
 };
