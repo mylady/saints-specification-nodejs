@@ -74,6 +74,7 @@ import PrisonerRollCallType from './prisonerRollCallType';
 import PrisonMeetingRegisterType from './prisonMeetingRegisterType';
 import PrisonMeetingStatus from './prisonMeetingStatus';
 import PrisonMeetingType from './prisonMeetingType';
+import PrisonMessage from './prisonMessage';
 import PrisonRoomStatus from './prisonRoomStatus';
 import PrisonRoomType from './prisonRoomType';
 import PrisonTerminalType from './prisonTerminalType';

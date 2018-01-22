@@ -230,6 +230,10 @@ var _prisonMeetingType = require('./prisonMeetingType');
 
 var _prisonMeetingType2 = _interopRequireDefault(_prisonMeetingType);
 
+var _prisonMessage = require('./prisonMessage');
+
+var _prisonMessage2 = _interopRequireDefault(_prisonMessage);
+
 var _prisonRoomStatus = require('./prisonRoomStatus');
 
 var _prisonRoomStatus2 = _interopRequireDefault(_prisonRoomStatus);
@@ -425,7 +429,7 @@ exports.default = {
     PrisonMeetingRegisterType: _prisonMeetingRegisterType2.default,
     PrisonMeetingStatus: _prisonMeetingStatus2.default,
     PrisonMeetingType: _prisonMeetingType2.default,
-    PrisonMessage: PrisonMessage,
+    PrisonMessage: _prisonMessage2.default,
     PrisonRoomStatus: _prisonRoomStatus2.default,
     PrisonRoomType: _prisonRoomType2.default,
     PrisonTerminalType: _prisonTerminalType2.default,
