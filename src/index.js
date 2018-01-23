@@ -91,6 +91,7 @@ import ProtocolServiceType from './protocolServiceType';
 import ResourceCode from './resourceCode';
 import RestQuery from './restQuery';
 import RestResponse from './restReponse';
+import RFIDTagExtra from './rfidTagExtra';
 
 import SchoolCategory from './schoolCategory';
 import SchoolEmergencyType from './schoolEmergencyType';
@@ -198,6 +199,7 @@ export default {
     ResourceCode: ResourceCode,
     RestQuery: RestQuery,
     RestResponse: RestResponse,
+    RFIDTagExtra:RFIDTagExtra,
 
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,

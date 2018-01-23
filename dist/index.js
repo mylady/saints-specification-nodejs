@@ -294,6 +294,10 @@ var _restReponse = require('./restReponse');
 
 var _restReponse2 = _interopRequireDefault(_restReponse);
 
+var _rfidTagExtra = require('./rfidTagExtra');
+
+var _rfidTagExtra2 = _interopRequireDefault(_rfidTagExtra);
+
 var _schoolCategory = require('./schoolCategory');
 
 var _schoolCategory2 = _interopRequireDefault(_schoolCategory);
@@ -446,6 +450,7 @@ exports.default = {
     ResourceCode: _resourceCode2.default,
     RestQuery: _restQuery2.default,
     RestResponse: _restReponse2.default,
+    RFIDTagExtra: _rfidTagExtra2.default,
 
     SchoolCategory: _schoolCategory2.default,
     SchoolEmergencyType: _schoolEmergencyType2.default,

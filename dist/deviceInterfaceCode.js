@@ -296,7 +296,7 @@ var deviceInterfaceCode = {
         value: 70
     },
     sihuaRFIDWEBSOCKET: {
-        name: '思华人员定位接口',
+        name: '思华人员定位报警接口',
         value: 71
     },
     unicomIOTREST: {
@@ -306,6 +306,10 @@ var deviceInterfaceCode = {
     dahuaVideoAnalyseSDK: {
         name: '大华视频分析设备接口',
         value: 73
+    },
+    sihuaRFIDLocatingREST: {
+        name: '思华人员定位接口',
+        value: 74
     }
 };
 
