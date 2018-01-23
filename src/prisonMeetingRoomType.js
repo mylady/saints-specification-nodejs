@@ -3,7 +3,7 @@
  */
 'use strict';
 
-let prisonRoomType = {
+let prisonMeetingRoomType = {
   general: {
     name: '通用',
     value: 0
@@ -18,5 +18,5 @@ let prisonRoomType = {
   }
 };
 
-Object.freeze(prisonRoomType);
-export default prisonRoomType;
+Object.freeze(prisonMeetingRoomType);
+export default prisonMeetingRoomType;

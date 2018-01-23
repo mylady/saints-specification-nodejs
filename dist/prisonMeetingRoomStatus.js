@@ -3,7 +3,10 @@
  */
 'use strict';
 
-let prisonRoomStatus = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var prisonMeetingRoomStatus = {
   unavailable: {
     name: '不可用',
     value: 0
@@ -18,5 +21,5 @@ let prisonRoomStatus = {
   }
 };
 
-Object.freeze(prisonRoomStatus);
-export default prisonRoomStatus;
+Object.freeze(prisonMeetingRoomStatus);
+exports.default = prisonMeetingRoomStatus;
