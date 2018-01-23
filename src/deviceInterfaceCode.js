@@ -307,6 +307,10 @@ let deviceInterfaceCode = {
     sihuaRFIDLocatingREST:{
         name:'思华人员定位接口',
         value:74
+    },
+    juyingRelayTCP:{
+        name:'聚英继电器接口',
+        value:75
     }
 };
 

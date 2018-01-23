@@ -52,6 +52,10 @@ let resourceCode = {
         name: 'RFID标签',
         value: 10
     },
+    relay:{
+        name:'继电器模块',
+        value:11
+    },
 
     decoderChannel: {
         name: '解码通道',
@@ -126,6 +130,11 @@ let resourceCode = {
         name: '探针',
         value: 525
     },
+    relayHost:{
+        name:'继电器主机',
+        value:526
+    },
+
     pc: {
         name: '个人电脑',
         value: 1024

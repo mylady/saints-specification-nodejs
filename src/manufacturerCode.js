@@ -187,6 +187,10 @@ let manufacturerCode = {
   unicom:{
     name:'联通',
     value:44
+  },
+  juying:{
+    name:'聚英',
+    value:45
   }
 };
 
