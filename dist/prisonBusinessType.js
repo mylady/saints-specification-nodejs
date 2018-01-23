@@ -4,10 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var prisonBusinessType = {
-  meetingArraignRecord: {
-    name: '提审会见记录',
-    value: 0
-  },
   cellTerminalNotify: {
     name: '监外屏通知',
     value: 1
@@ -43,6 +39,22 @@ var prisonBusinessType = {
   dealedAlarm: {
     name: '报警处置结束',
     value: 9
+  },
+  meetingBatchBegin: {
+    name: '提审会见批次开始',
+    value: 10
+  },
+  meetingBatchEnd: {
+    name: '提审会见批次结束',
+    value: 11
+  },
+  meetingBringOut: {
+    name: '提审会见带出',
+    value: 12
+  },
+  meetingBringIn: {
+    name: '提审会见带入',
+    value: 13
   }
 };
 

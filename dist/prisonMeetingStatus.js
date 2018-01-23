@@ -19,6 +19,14 @@ var prisonMeetingStatus = {
   canceled: {
     name: '已取消',
     value: 3
+  },
+  bringOut: {
+    name: '需带出',
+    value: 4
+  },
+  bringIn: {
+    name: '需带入',
+    value: 5
   }
 };
 
