@@ -1,6 +1,10 @@
 'use strict';
 
 let prisonBusinessType = {
+  refresh:{
+    name:'刷新数据',
+    value:0
+  },
   cellTerminalNotify: {
     name: '监外屏通知',
     value: 1

@@ -4,6 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var prisonBusinessType = {
+  refresh: {
+    name: '刷新数据',
+    value: 0
+  },
   cellTerminalNotify: {
     name: '监外屏通知',
     value: 1
