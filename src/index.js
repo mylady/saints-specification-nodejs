@@ -116,15 +116,18 @@ import VideoRecordSource from './videoRecordSource';
 import VideoRecordStatus from './videoRecordStatus';
 import VideoStorageType from './videoStorageType';
 import VoicePrint from './voicePrint';
+import BehaviorAnalyseExtra from './behaviorAnalyseExtra';
 
 export default {
     AirMonitorExtra: AirMonitorExtra,
 
+    BehaviorAnaylyseExtra: BehaviorAnalyseExtra,
     BioIdentifyMessage: BioIdentifyMessage,
-    bioIdentifyType: BioIdentifyType,
+    BioIdentifyType: BioIdentifyType,
 
     CallExtra: CallExtra,
     CameraType: CameraType,
+    CarPlateRecognitionExtra: CarPlateRecognitionExtra,
     ConnectionMode: ConnectionMode,
     CpuInfo: CpuInfo,
 
@@ -155,6 +158,7 @@ export default {
     EnvMonitorExtra: EnvMonitorExtra,
 
     FaceRecognition: FaceRecognition,
+    FaceRecognitionExtra:FaceRecognitionExtra,
     FaceRollCallFeedback: FaceRollCallFeedback,
     FaceRollCallStatus: FaceRollCallStatus,
     FingerPrint: FingerPrint,
@@ -203,7 +207,7 @@ export default {
     ResourceCode: ResourceCode,
     RestQuery: RestQuery,
     RestResponse: RestResponse,
-    RFIDTagExtra:RFIDTagExtra,
+    RFIDTagExtra: RFIDTagExtra,
 
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
@@ -219,6 +223,7 @@ export default {
     UpsExtra: UpsExtra,
 
     VideoAnalyseExtra: VideoAnalyseExtra,
+    VideoAnalyseType: VideoAnalyseType,
     VideoDiagnosticResult: VideoDiagnosticResult,
     VideoRecordSource: VideoRecordSource,
     VideoRecordStatus: VideoRecordStatus,

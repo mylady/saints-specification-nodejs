@@ -383,11 +383,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
     AirMonitorExtra: _airMonitorExtra2.default,
 
+    BehaviorAnaylyseExtra: _behaviorAnalyseExtra2.default,
     BioIdentifyMessage: _bioIdentifyMessage2.default,
-    bioIdentifyType: _bioIdentifyType2.default,
+    BioIdentifyType: _bioIdentifyType2.default,
 
     CallExtra: _callExtra2.default,
     CameraType: _cameraType2.default,
+    CarPlateRecognitionExtra: _carPlateRecognitionExtra2.default,
     ConnectionMode: _connectionMode2.default,
     CpuInfo: _cpuInfo2.default,
 
@@ -418,6 +420,7 @@ exports.default = {
     EnvMonitorExtra: _envMonitorExtra2.default,
 
     FaceRecognition: _faceRecognition2.default,
+    FaceRecognitionExtra: _faceRecognitionExtra2.default,
     FaceRollCallFeedback: _faceRollCallFeedback2.default,
     FaceRollCallStatus: _faceRollCallStatus2.default,
     FingerPrint: _fingerPrint2.default,
@@ -482,6 +485,7 @@ exports.default = {
     UpsExtra: _upsExtra2.default,
 
     VideoAnalyseExtra: _videoAnalyseExtra2.default,
+    VideoAnalyseType: _videoAnalyseType2.default,
     VideoDiagnosticResult: _videoDiagnosticResult2.default,
     VideoRecordSource: _videoRecordSource2.default,
     VideoRecordStatus: _videoRecordStatus2.default,
