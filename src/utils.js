@@ -72,7 +72,8 @@ export function doRequest(path, data, option) {
 
         let req = http.request(opts, (res) => {
             if (res.statusCode !== 200) {
-                reject(new Error('status code ' + res));
+                console.error(res);
+                reject(new Error('status code ' + res.statusCode));
                 return;
             }
 

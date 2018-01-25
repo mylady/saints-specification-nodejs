@@ -93,7 +93,8 @@ function doRequest(path, data, option) {
 
         var req = _http2.default.request(opts, function (res) {
             if (res.statusCode !== 200) {
-                reject(new Error('status code ' + res));
+                console.error(res);
+                reject(new Error('status code ' + res.statusCode));
                 return;
             }
 
