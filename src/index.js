@@ -6,11 +6,13 @@
 
 import AirMonitorExtra from './airMonitorExtra';
 
+import BehaviorAnaylyseExtra from './behaviorAnalyseExtra';
 import BioIdentifyMessage from './bioIdentifyMessage';
 import BioIdentifyType from './bioIdentifyType';
 
 import CallExtra from './callExtra';
 import CameraType from './cameraType';
+import CarPlateRecognitionExtra from './carPlateRecognitionExtra';
 import ConnectionMode from './connectionMode';
 import CpuInfo from './cpuInfo';
 
@@ -43,6 +45,7 @@ import DoorExtra from './doorExtra';
 import EnvMonitorExtra from './envMonitorExtra';
 
 import FaceRecognition from './faceRecognition';
+import FaceRecognitionExtra from './faceRecognitionExtra';
 import FaceRollCallFeedback from './faceRollCallFeedback';
 import FaceRollCallStatus from './faceRollCallStatus';
 import FingerPrint from './fingerPrint';
@@ -107,6 +110,7 @@ import UpdateDetail from './updateDetail';
 import UpsExtra from './upsExtra';
 
 import VideoAnalyseExtra from './videoAnalyseExtra';
+import VideoAnalyseType from './videoAnalyseType';
 import VideoDiagnosticResult from './videoDiagnosticResult';
 import VideoRecordSource from './videoRecordSource';
 import VideoRecordStatus from './videoRecordStatus';

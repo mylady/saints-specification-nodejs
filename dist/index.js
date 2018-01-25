@@ -12,6 +12,10 @@ var _airMonitorExtra = require('./airMonitorExtra');
 
 var _airMonitorExtra2 = _interopRequireDefault(_airMonitorExtra);
 
+var _behaviorAnalyseExtra = require('./behaviorAnalyseExtra');
+
+var _behaviorAnalyseExtra2 = _interopRequireDefault(_behaviorAnalyseExtra);
+
 var _bioIdentifyMessage = require('./bioIdentifyMessage');
 
 var _bioIdentifyMessage2 = _interopRequireDefault(_bioIdentifyMessage);
@@ -27,6 +31,10 @@ var _callExtra2 = _interopRequireDefault(_callExtra);
 var _cameraType = require('./cameraType');
 
 var _cameraType2 = _interopRequireDefault(_cameraType);
+
+var _carPlateRecognitionExtra = require('./carPlateRecognitionExtra');
+
+var _carPlateRecognitionExtra2 = _interopRequireDefault(_carPlateRecognitionExtra);
 
 var _connectionMode = require('./connectionMode');
 
@@ -125,6 +133,10 @@ var _envMonitorExtra2 = _interopRequireDefault(_envMonitorExtra);
 var _faceRecognition = require('./faceRecognition');
 
 var _faceRecognition2 = _interopRequireDefault(_faceRecognition);
+
+var _faceRecognitionExtra = require('./faceRecognitionExtra');
+
+var _faceRecognitionExtra2 = _interopRequireDefault(_faceRecognitionExtra);
 
 var _faceRollCallFeedback = require('./faceRollCallFeedback');
 
@@ -341,6 +353,10 @@ var _upsExtra2 = _interopRequireDefault(_upsExtra);
 var _videoAnalyseExtra = require('./videoAnalyseExtra');
 
 var _videoAnalyseExtra2 = _interopRequireDefault(_videoAnalyseExtra);
+
+var _videoAnalyseType = require('./videoAnalyseType');
+
+var _videoAnalyseType2 = _interopRequireDefault(_videoAnalyseType);
 
 var _videoDiagnosticResult = require('./videoDiagnosticResult');
 
