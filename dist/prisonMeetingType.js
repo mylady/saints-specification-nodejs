@@ -22,6 +22,10 @@ var prisonMeetingType = {
   familyMeeting: {
     name: '家属会见',
     value: 3
+  },
+  signArraignment: {
+    name: '签字提审',
+    value: 4
   }
 };
 
