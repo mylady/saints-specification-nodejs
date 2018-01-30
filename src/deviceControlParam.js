@@ -7,7 +7,7 @@ export default class DeviceControlParam{
     constructor(){
         this.ControlCode = -1;
         this.InterfaceCode = 0;
-        this.Address = '';
+        this.Receivers = [];
         this.Sender = '';
         this.Parameter = [];
     }
