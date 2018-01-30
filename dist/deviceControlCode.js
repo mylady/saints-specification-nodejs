@@ -19,7 +19,7 @@ var deviceControlCode = {
         name: '解除布防',
         value: 2
     },
-    donnectRelay: {
+    connectRelay: {
         name: '接通继电器',
         value: 3
     },
