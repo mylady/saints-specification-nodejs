@@ -15,6 +15,8 @@ var AirMonitorExtra = function AirMonitorExtra() {
     this.CO2 = 0.0;
     this.PM25 = 0.0;
     this.TVOC = 0.0;
+    this.N3H = 0.0;
+    this.H2S = 0.0;
 };
 
 exports.default = AirMonitorExtra;
