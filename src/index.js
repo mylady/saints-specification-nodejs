@@ -93,6 +93,7 @@ import ProtocolServiceType from './protocolServiceType';
 
 import ResourceCode from './resourceCode';
 import RestQuery from './restQuery';
+import RestQueryConst from './restQueryConst';
 import RestResponse from './restReponse';
 import RFIDTagExtra from './rfidTagExtra';
 
@@ -206,6 +207,7 @@ export default {
 
     ResourceCode: ResourceCode,
     RestQuery: RestQuery,
+    RestQueryConst : RestQueryConst,
     RestResponse: RestResponse,
     RFIDTagExtra: RFIDTagExtra,
 
