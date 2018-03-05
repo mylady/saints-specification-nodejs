@@ -302,6 +302,10 @@ var _restQuery = require('./restQuery');
 
 var _restQuery2 = _interopRequireDefault(_restQuery);
 
+var _restQueryConst = require('./restQueryConst');
+
+var _restQueryConst2 = _interopRequireDefault(_restQueryConst);
+
 var _restReponse = require('./restReponse');
 
 var _restReponse2 = _interopRequireDefault(_restReponse);
@@ -468,6 +472,7 @@ exports.default = {
 
     ResourceCode: _resourceCode2.default,
     RestQuery: _restQuery2.default,
+    RestQueryConst: _restQueryConst2.default,
     RestResponse: _restReponse2.default,
     RFIDTagExtra: _rfidTagExtra2.default,
 
