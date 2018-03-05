@@ -7,11 +7,5 @@ export default class RestQuery {
         this.Sort = '';
         this.Direction = 'ASC';
         this.Search = '';
-
-        const start = 'start';
-        const limit = 'limit';
-        const sort = 'sort';
-        const direction = 'dir';
-        const search = 'keyword';
     }
 }

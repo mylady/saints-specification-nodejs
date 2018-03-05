@@ -14,12 +14,6 @@ var RestQuery = function RestQuery() {
     this.Sort = '';
     this.Direction = 'ASC';
     this.Search = '';
-
-    var start = 'start';
-    var limit = 'limit';
-    var sort = 'sort';
-    var direction = 'dir';
-    var search = 'keyword';
 };
 
 exports.default = RestQuery;
