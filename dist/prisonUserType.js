@@ -12,12 +12,20 @@ var prisonUserType = {
     value: 0
   },
   police: {
-    name: '干警',
+    name: '分控干警',
     value: 1
   },
   doctor: {
     name: '医生',
     value: 2
+  },
+  arraignPolice: {
+    name: '提押干警',
+    value: 3
+  },
+  receptionPolice: {
+    name: '收押干警',
+    value: 4
   }
 };
 
