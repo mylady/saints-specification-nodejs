@@ -314,6 +314,12 @@ var deviceInterfaceCode = {
     juyingRelayTCP: {
         name: '聚英继电器接口',
         value: 75
+    },
+
+    //saints define
+    shengxiDoorUDP: {
+        name: '圣熙门禁接口',
+        value: 10001
     }
 };
 
