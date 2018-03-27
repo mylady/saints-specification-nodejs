@@ -237,7 +237,7 @@ let resourceCode = {
     },
     rainCover: {
         name: '雨水井盖',
-        vaue: 1049
+        value: 1049
     },
 
     realSource: {
