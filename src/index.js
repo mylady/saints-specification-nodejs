@@ -100,6 +100,14 @@ import RFIDTagExtra from './rfidTagExtra';
 import SchoolCategory from './schoolCategory';
 import SchoolEmergencyType from './schoolEmergencyType';
 import SchoolNature from './schoolNature';
+import SchoolCheckPaperType from './schoolCheckPaperType';
+import SchoolCheckPlanStatus from './schoolCheckPlanStatus';
+import SchoolCheckQuestionSource from './schoolCheckQuestionSource';
+import SchoolCheckRedressStatus from './schoolCheckRedressStatus';
+import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
+import SchoolCheckType from './schoolCheckType';
+import SchoolUserType from './schoolUserType';
+
 import SpecificationSettings from './specificationSettings';
 
 import TransmitMessage from './transmitMessage';
@@ -214,6 +222,14 @@ export default {
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
+    SchoolCheckPaperType:SchoolCheckPaperType,
+    SchoolCheckPlanStatus:SchoolCheckPlanStatus,
+    SchoolCheckQuestionSource:SchoolCheckQuestionSource,
+    SchoolCheckRedressStatus:SchoolCheckRedressStatus,
+    SchoolCheckTaskStatus:SchoolCheckTaskStatus,
+    SchoolCheckType:SchoolCheckType,
+    SchoolUserType:SchoolUserType,
+
     SpecificationSettings: SpecificationSettings,
 
     TransmitMessage: TransmitMessage,

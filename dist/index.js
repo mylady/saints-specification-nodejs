@@ -326,6 +326,34 @@ var _schoolNature = require('./schoolNature');
 
 var _schoolNature2 = _interopRequireDefault(_schoolNature);
 
+var _schoolCheckPaperType = require('./schoolCheckPaperType');
+
+var _schoolCheckPaperType2 = _interopRequireDefault(_schoolCheckPaperType);
+
+var _schoolCheckPlanStatus = require('./schoolCheckPlanStatus');
+
+var _schoolCheckPlanStatus2 = _interopRequireDefault(_schoolCheckPlanStatus);
+
+var _schoolCheckQuestionSource = require('./schoolCheckQuestionSource');
+
+var _schoolCheckQuestionSource2 = _interopRequireDefault(_schoolCheckQuestionSource);
+
+var _schoolCheckRedressStatus = require('./schoolCheckRedressStatus');
+
+var _schoolCheckRedressStatus2 = _interopRequireDefault(_schoolCheckRedressStatus);
+
+var _schoolCheckTaskStatus = require('./schoolCheckTaskStatus');
+
+var _schoolCheckTaskStatus2 = _interopRequireDefault(_schoolCheckTaskStatus);
+
+var _schoolCheckType = require('./schoolCheckType');
+
+var _schoolCheckType2 = _interopRequireDefault(_schoolCheckType);
+
+var _schoolUserType = require('./schoolUserType');
+
+var _schoolUserType2 = _interopRequireDefault(_schoolUserType);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -479,6 +507,14 @@ exports.default = {
     SchoolCategory: _schoolCategory2.default,
     SchoolEmergencyType: _schoolEmergencyType2.default,
     SchoolNature: _schoolNature2.default,
+    SchoolCheckPaperType: _schoolCheckPaperType2.default,
+    SchoolCheckPlanStatus: _schoolCheckPlanStatus2.default,
+    SchoolCheckQuestionSource: _schoolCheckQuestionSource2.default,
+    SchoolCheckRedressStatus: _schoolCheckRedressStatus2.default,
+    SchoolCheckTaskStatus: _schoolCheckTaskStatus2.default,
+    SchoolCheckType: _schoolCheckType2.default,
+    SchoolUserType: _schoolUserType2.default,
+
     SpecificationSettings: _specificationSettings2.default,
 
     TransmitMessage: _transmitMessage2.default,
