@@ -2,11 +2,11 @@
 
 let schoolCheckPlanStatus = {
     planning: {
-        name: '学校用户',
+        name: '计划中',
         value: 0
     },
     published: {
-        name: '教育局用户',
+        name: '已发布',
         value: 1
     }
 };
