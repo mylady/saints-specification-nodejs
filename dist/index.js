@@ -354,6 +354,10 @@ var _schoolUserType = require('./schoolUserType');
 
 var _schoolUserType2 = _interopRequireDefault(_schoolUserType);
 
+var _schoolCheckResult = require('./schoolCheckResult');
+
+var _schoolCheckResult2 = _interopRequireDefault(_schoolCheckResult);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -513,6 +517,7 @@ exports.default = {
     SchoolCheckRedressStatus: _schoolCheckRedressStatus2.default,
     SchoolCheckTaskStatus: _schoolCheckTaskStatus2.default,
     SchoolCheckType: _schoolCheckType2.default,
+    SchoolCheckResult: _schoolCheckResult2.default,
     SchoolUserType: _schoolUserType2.default,
 
     SpecificationSettings: _specificationSettings2.default,

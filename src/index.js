@@ -107,6 +107,7 @@ import SchoolCheckRedressStatus from './schoolCheckRedressStatus';
 import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
 import SchoolUserType from './schoolUserType';
+import SchoolCheckResult from './schoolCheckResult'
 
 import SpecificationSettings from './specificationSettings';
 
@@ -228,6 +229,7 @@ export default {
     SchoolCheckRedressStatus:SchoolCheckRedressStatus,
     SchoolCheckTaskStatus:SchoolCheckTaskStatus,
     SchoolCheckType:SchoolCheckType,
+    SchoolCheckResult:SchoolCheckResult,
     SchoolUserType:SchoolUserType,
 
     SpecificationSettings: SpecificationSettings,
