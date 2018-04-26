@@ -5,13 +5,17 @@ let schoolCheckRedressStatus = {
         name: '未整改',
         value: 0
     },
-    reviewings: {
-        name: '审核中',
+    wait: {
+        name: '待整改',
         value: 1
+    },
+    review: {
+        name: '审核中',
+        value: 2
     },
     done:{
         name:'已整改',
-        value:2
+        value:3
     }
 };
 
