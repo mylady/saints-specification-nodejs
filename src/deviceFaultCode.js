@@ -1,9 +1,9 @@
 'use strict';
 
-const deviceAlarmCode = require('./deviceAlarmCode');
+import deviceAlarmCode from './deviceAlarmCode';
 
 let deviceFaultCode = {
-    videoLost: deviceAlarmCode.videolost,
+    videoLost: deviceAlarmCode.videoLost,
     audioLost: deviceAlarmCode.audioLost,
     diskFull: deviceAlarmCode.diskFull,
     diskFault: deviceAlarmCode.diskFault,

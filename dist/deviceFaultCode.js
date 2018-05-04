@@ -3,17 +3,22 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var deviceAlarmCode = require('./deviceAlarmCode');
+
+var _deviceAlarmCode = require('./deviceAlarmCode');
+
+var _deviceAlarmCode2 = _interopRequireDefault(_deviceAlarmCode);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var deviceFaultCode = {
-    videoLost: deviceAlarmCode.videolost,
-    audioLost: deviceAlarmCode.audioLost,
-    diskFull: deviceAlarmCode.diskFull,
-    diskFault: deviceAlarmCode.diskFault,
-    offline: deviceAlarmCode.offline,
-    disturb: deviceAlarmCode.disturb,
-    powerAbnormal: deviceAlarmCode.powerAbnormal,
-    videoQuality: deviceAlarmCode.videoQuality
+    videoLost: _deviceAlarmCode2.default.videoLost,
+    audioLost: _deviceAlarmCode2.default.audioLost,
+    diskFull: _deviceAlarmCode2.default.diskFull,
+    diskFault: _deviceAlarmCode2.default.diskFault,
+    offline: _deviceAlarmCode2.default.offline,
+    disturb: _deviceAlarmCode2.default.disturb,
+    powerAbnormal: _deviceAlarmCode2.default.powerAbnormal,
+    videoQuality: _deviceAlarmCode2.default.videoQuality
 };
 
 Object.freeze(deviceFaultCode);
