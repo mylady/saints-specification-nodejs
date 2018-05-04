@@ -52,6 +52,10 @@ var _deviceAlarmCode = require('./deviceAlarmCode');
 
 var _deviceAlarmCode2 = _interopRequireDefault(_deviceAlarmCode);
 
+var _deviceFaultCode = require('./deviceFaultCode');
+
+var _deviceFaultCode2 = _interopRequireDefault(_deviceFaultCode);
+
 var _deviceControlCode = require('./deviceControlCode');
 
 var _deviceControlCode2 = _interopRequireDefault(_deviceControlCode);
@@ -431,6 +435,7 @@ exports.default = {
 
     Descripter: _descripter2.default,
     DeviceAlarmCode: _deviceAlarmCode2.default,
+    DeviceFaultCode: _deviceFaultCode2.default,
     DeviceControlCode: _deviceControlCode2.default,
     DeviceControlParam: _deviceControlParam2.default,
     DeviceDataType: _deviceDataType2.default,

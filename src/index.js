@@ -18,6 +18,7 @@ import CpuInfo from './cpuInfo';
 
 import Descripter from './descripter';
 import DeviceAlarmCode from './deviceAlarmCode';
+import DeviceFaultCode from './deviceFaultCode';
 import DeviceControlCode from './deviceControlCode';
 import DeviceControlParam from './deviceControlParam';
 import DeviceDataType from './deviceDataType';
@@ -143,6 +144,7 @@ export default {
 
     Descripter: Descripter,
     DeviceAlarmCode: DeviceAlarmCode,
+    DeviceFaultCode: DeviceFaultCode,
     DeviceControlCode: DeviceControlCode,
     DeviceControlParam: DeviceControlParam,
     DeviceDataType: DeviceDataType,
@@ -168,7 +170,7 @@ export default {
     EnvMonitorExtra: EnvMonitorExtra,
 
     FaceRecognition: FaceRecognition,
-    FaceRecognitionExtra:FaceRecognitionExtra,
+    FaceRecognitionExtra: FaceRecognitionExtra,
     FaceRollCallFeedback: FaceRollCallFeedback,
     FaceRollCallStatus: FaceRollCallStatus,
     FingerPrint: FingerPrint,
@@ -216,21 +218,21 @@ export default {
 
     ResourceCode: ResourceCode,
     RestQuery: RestQuery,
-    RestQueryConst : RestQueryConst,
+    RestQueryConst: RestQueryConst,
     RestResponse: RestResponse,
     RFIDTagExtra: RFIDTagExtra,
 
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
-    SchoolCheckPaperType:SchoolCheckPaperType,
-    SchoolCheckPlanStatus:SchoolCheckPlanStatus,
-    SchoolCheckQuestionSource:SchoolCheckQuestionSource,
-    SchoolCheckRedressStatus:SchoolCheckRedressStatus,
-    SchoolCheckTaskStatus:SchoolCheckTaskStatus,
-    SchoolCheckType:SchoolCheckType,
-    SchoolCheckResult:SchoolCheckResult,
-    SchoolUserType:SchoolUserType,
+    SchoolCheckPaperType: SchoolCheckPaperType,
+    SchoolCheckPlanStatus: SchoolCheckPlanStatus,
+    SchoolCheckQuestionSource: SchoolCheckQuestionSource,
+    SchoolCheckRedressStatus: SchoolCheckRedressStatus,
+    SchoolCheckTaskStatus: SchoolCheckTaskStatus,
+    SchoolCheckType: SchoolCheckType,
+    SchoolCheckResult: SchoolCheckResult,
+    SchoolUserType: SchoolUserType,
 
     SpecificationSettings: SpecificationSettings,
 

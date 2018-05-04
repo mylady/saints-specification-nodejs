@@ -203,6 +203,22 @@ var deviceAlarmCode = {
     gathering: {
         name: '人员聚集报警',
         value: 48
+    },
+    dutySleep: {
+        name: '值班睡觉',
+        value: 49
+    },
+    fight: {
+        name: '打架',
+        value: 50
+    },
+    leftDuty: {
+        name: '无人值守',
+        value: 51
+    },
+    crossLine: {
+        name: '警戒线报警',
+        value: 52
     }
 };
 
