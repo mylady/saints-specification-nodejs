@@ -16,5 +16,5 @@ var deviceFaultCode = {
     videoQuality: deviceAlarmCode.videoQuality
 };
 
-Object.freeze(deviceDataType);
-exports.default = deviceDataType;
+Object.freeze(deviceFaultCode);
+exports.default = deviceFaultCode;
