@@ -191,6 +191,14 @@ let manufacturerCode = {
   juying:{
     name:'聚英',
     value:45
+  },
+  shengke:{
+    name:'盛科',
+    value:46
+  },
+  wangu:{
+    name:'万谷',
+    value:47
   }
 };
 

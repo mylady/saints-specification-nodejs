@@ -312,6 +312,18 @@ let deviceInterfaceCode = {
         name:'聚英继电器接口',
         value:75
     },
+    wanguDoorUDP:{
+        name:'万谷门禁状态监测接口',
+        value:76
+    },
+    shengkeAlarmPlatform:{
+        name:'盛科报警平台接口',
+        value:77
+    },
+    lingxinLedControllerV6:{
+        name:'灵信电子屏控制器接口v6',
+        value:78
+    },
 
 
     //saints define
