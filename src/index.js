@@ -104,6 +104,7 @@ import SchoolNature from './schoolNature';
 import SchoolCheckPaperType from './schoolCheckPaperType';
 import SchoolCheckPlanStatus from './schoolCheckPlanStatus';
 import SchoolCheckQuestionSource from './schoolCheckQuestionSource';
+import SchoolCheckQuestionType from './schoolCheckQuestionType';
 import SchoolCheckRedressStatus from './schoolCheckRedressStatus';
 import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
@@ -228,6 +229,7 @@ export default {
     SchoolCheckPaperType: SchoolCheckPaperType,
     SchoolCheckPlanStatus: SchoolCheckPlanStatus,
     SchoolCheckQuestionSource: SchoolCheckQuestionSource,
+    SchoolCheckQuestionType: SchoolCheckQuestionType,
     SchoolCheckRedressStatus: SchoolCheckRedressStatus,
     SchoolCheckTaskStatus: SchoolCheckTaskStatus,
     SchoolCheckType: SchoolCheckType,
