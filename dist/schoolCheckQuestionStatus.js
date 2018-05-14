@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var schoolCheckPlanStatus = {
-    planning: {
-        name: '计划中',
+var schoolCheckQuestionStatus = {
+    editable: {
+        name: '可编辑',
         value: 0
     },
     published: {
@@ -18,5 +18,5 @@ var schoolCheckPlanStatus = {
     }
 };
 
-Object.freeze(schoolCheckPlanStatus);
-exports.default = schoolCheckPlanStatus;
+Object.freeze(schoolCheckQuestionStatus);
+exports.default = schoolCheckQuestionStatus;

@@ -1,8 +1,8 @@
 'use strict';
 
-let schoolCheckPlanStatus = {
-    planning: {
-        name: '计划中',
+let schoolCheckQuestionStatus = {
+    editable: {
+        name: '可编辑',
         value: 0
     },
     published: {
@@ -15,7 +15,7 @@ let schoolCheckPlanStatus = {
     }
 };
 
-Object.freeze(schoolCheckPlanStatus);
-export default schoolCheckPlanStatus;
+Object.freeze(schoolCheckQuestionStatus);
+export default schoolCheckQuestionStatus;
 
 
