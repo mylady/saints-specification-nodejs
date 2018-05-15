@@ -346,6 +346,10 @@ var _schoolCheckQuestionType = require('./schoolCheckQuestionType');
 
 var _schoolCheckQuestionType2 = _interopRequireDefault(_schoolCheckQuestionType);
 
+var _schoolCheckQuestionStatus = require('./schoolCheckQuestionStatus');
+
+var _schoolCheckQuestionStatus2 = _interopRequireDefault(_schoolCheckQuestionStatus);
+
 var _schoolCheckRedressStatus = require('./schoolCheckRedressStatus');
 
 var _schoolCheckRedressStatus2 = _interopRequireDefault(_schoolCheckRedressStatus);
@@ -524,6 +528,7 @@ exports.default = {
     SchoolCheckPlanStatus: _schoolCheckPlanStatus2.default,
     SchoolCheckQuestionSource: _schoolCheckQuestionSource2.default,
     SchoolCheckQuestionType: _schoolCheckQuestionType2.default,
+    SchoolCheckQuestionStatus: _schoolCheckQuestionStatus2.default,
     SchoolCheckRedressStatus: _schoolCheckRedressStatus2.default,
     SchoolCheckTaskStatus: _schoolCheckTaskStatus2.default,
     SchoolCheckType: _schoolCheckType2.default,

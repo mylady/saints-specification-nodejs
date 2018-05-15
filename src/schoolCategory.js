@@ -39,6 +39,10 @@ let schoolCategory = {
     teShuXueXiao: {
         name: '特殊学校',
         value: 8
+    },
+    tuoErSuo:{
+        name:'托儿所',
+        value:9
     }
 };
 
