@@ -110,7 +110,10 @@ import SchoolCheckRedressStatus from './schoolCheckRedressStatus';
 import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
 import SchoolUserType from './schoolUserType';
-import SchoolCheckResult from './schoolCheckResult'
+import SchoolCheckResult from './schoolCheckResult';
+import SchoolReportActivityType from './schoolReportActitivtyType';
+import SchoolReportActivityCategory from './schoolReportActivityCategory';
+import SchoolReportEventResultType from './schoolReportEventResultType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -237,6 +240,9 @@ export default {
     SchoolCheckType: SchoolCheckType,
     SchoolCheckResult: SchoolCheckResult,
     SchoolUserType: SchoolUserType,
+    SchoolReportActivityType:SchoolReportActivityType,
+    SchoolReportActivityCategory:SchoolReportActivityCategory,
+    SchoolReportEventResultType:SchoolReportEventResultType,
 
     SpecificationSettings: SpecificationSettings,
 
