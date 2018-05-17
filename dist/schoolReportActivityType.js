@@ -9,7 +9,7 @@ var schoolReportActivityType = {
         value: 0
     },
     freeWill: {
-        name: '资源参加',
+        name: '自愿参加',
         value: 1
     }
 };
