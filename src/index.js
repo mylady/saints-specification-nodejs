@@ -114,6 +114,7 @@ import SchoolCheckResult from './schoolCheckResult';
 import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
 import SchoolReportEventResultType from './schoolReportEventResultType';
+import SchoolMessageType from './schoolMessageType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -243,6 +244,7 @@ export default {
     SchoolReportActivityType:SchoolReportActivityType,
     SchoolReportActivityCategory:SchoolReportActivityCategory,
     SchoolReportEventResultType:SchoolReportEventResultType,
+    SchoolMessageType:SchoolMessageType,
 
     SpecificationSettings: SpecificationSettings,
 
