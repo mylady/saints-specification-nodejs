@@ -111,7 +111,7 @@ import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
 import SchoolUserType from './schoolUserType';
 import SchoolCheckResult from './schoolCheckResult';
-import SchoolReportActivityType from './schoolReportActitivtyType';
+import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
 import SchoolReportEventResultType from './schoolReportEventResultType';
 
