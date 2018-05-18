@@ -114,6 +114,9 @@ import SchoolCheckResult from './schoolCheckResult';
 import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
 import SchoolMessageType from './schoolMessageType';
+import SchoolMapType from './schoolMapType';
+import SchoolNoticeType from './schoolNoticeType';
+import SchoolWaterSource from './schoolWaterSource';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -243,6 +246,9 @@ export default {
     SchoolReportActivityType:SchoolReportActivityType,
     SchoolReportActivityCategory:SchoolReportActivityCategory,
     SchoolMessageType:SchoolMessageType,
+    SchoolMapType:SchoolMapType,
+    SchoolNoticeType:SchoolNoticeType,
+    SchoolWaterSource:SchoolWaterSource,
 
     SpecificationSettings: SpecificationSettings,
 
