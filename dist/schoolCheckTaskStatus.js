@@ -15,6 +15,10 @@ var schoolCheckTaskStatus = {
     finish: {
         name: '已完成',
         value: 2
+    },
+    review: {
+        name: '待复查',
+        value: 3
     }
 };
 

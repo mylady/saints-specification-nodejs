@@ -378,10 +378,6 @@ var _schoolReportActivityCategory = require('./schoolReportActivityCategory');
 
 var _schoolReportActivityCategory2 = _interopRequireDefault(_schoolReportActivityCategory);
 
-var _schoolReportEventResultType = require('./schoolReportEventResultType');
-
-var _schoolReportEventResultType2 = _interopRequireDefault(_schoolReportEventResultType);
-
 var _schoolMessageType = require('./schoolMessageType');
 
 var _schoolMessageType2 = _interopRequireDefault(_schoolMessageType);
@@ -552,7 +548,6 @@ exports.default = {
     SchoolUserType: _schoolUserType2.default,
     SchoolReportActivityType: _schoolReportActivityType2.default,
     SchoolReportActivityCategory: _schoolReportActivityCategory2.default,
-    SchoolReportEventResultType: _schoolReportEventResultType2.default,
     SchoolMessageType: _schoolMessageType2.default,
 
     SpecificationSettings: _specificationSettings2.default,
