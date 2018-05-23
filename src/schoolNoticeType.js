@@ -1,16 +1,16 @@
 'use strict';
 
 let schoolNoticeType = {
-    noticeAll: {
-        name: '所有人可见',
+    centerNotification: {
+        name: '教育局公告',
         value: 0
     },
-    noticeSchool: {
-        name: '学校可见',
+    conferenceNotice: {
+        name: '会议通知',
         value: 1
     },
-    noticeCenter:{
-        name:'教育局可见',
+    safetyActivityNotice:{
+        name:'安全活动通知',
         value:2
     }
 };
