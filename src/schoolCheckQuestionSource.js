@@ -6,7 +6,7 @@ let schoolCheckQuestionSource = {
         value: 0
     },
     districtCouncil: {
-        name: '区教委',
+        name: '区教育局',
         value: 1
     }
 };
