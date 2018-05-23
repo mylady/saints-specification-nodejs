@@ -12,6 +12,22 @@ let schoolNoticeType = {
     safetyActivityNotice:{
         name:'安全活动通知',
         value:2
+    },
+    urgeReportTable:{
+        name:'催促报表提交',
+        value:3
+    },
+    urgeActivityReport:{
+        name:'催促活动上报',
+        value:4
+    },
+    urgeDutyTable:{
+        name:'催促值班表提交',
+        value:5
+    },
+    urgeSafetyReport:{
+        name:'催促平安上报',
+        value:6
     }
 };
 
