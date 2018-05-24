@@ -111,6 +111,7 @@ import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
 import SchoolUserType from './schoolUserType';
 import SchoolCheckResult from './schoolCheckResult';
+import SchoolChemicalType from './schoolChemicalType';
 import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
 import SchoolMessageType from './schoolMessageType';
@@ -241,6 +242,7 @@ export default {
     SchoolCheckRedressStatus: SchoolCheckRedressStatus,
     SchoolCheckTaskStatus: SchoolCheckTaskStatus,
     SchoolCheckType: SchoolCheckType,
+    SchoolChemicalType:SchoolChemicalType,
     SchoolCheckResult: SchoolCheckResult,
     SchoolUserType: SchoolUserType,
     SchoolReportActivityType:SchoolReportActivityType,

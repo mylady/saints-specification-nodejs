@@ -370,6 +370,10 @@ var _schoolCheckResult = require('./schoolCheckResult');
 
 var _schoolCheckResult2 = _interopRequireDefault(_schoolCheckResult);
 
+var _schoolChemicalType = require('./schoolChemicalType');
+
+var _schoolChemicalType2 = _interopRequireDefault(_schoolChemicalType);
+
 var _schoolReportActivityType = require('./schoolReportActivityType');
 
 var _schoolReportActivityType2 = _interopRequireDefault(_schoolReportActivityType);
@@ -556,6 +560,7 @@ exports.default = {
     SchoolCheckRedressStatus: _schoolCheckRedressStatus2.default,
     SchoolCheckTaskStatus: _schoolCheckTaskStatus2.default,
     SchoolCheckType: _schoolCheckType2.default,
+    SchoolChemicalType: _schoolChemicalType2.default,
     SchoolCheckResult: _schoolCheckResult2.default,
     SchoolUserType: _schoolUserType2.default,
     SchoolReportActivityType: _schoolReportActivityType2.default,
