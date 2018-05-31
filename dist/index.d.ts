@@ -76,54 +76,53 @@ declare namespace spec {
     }
 
 
-    // type SortDir = 'ASC' | 'DESC';
+    type SortDir = 'ASC' | 'DESC';
 
-    // interface RestQuery {
-    //     Start?: number;
-    //     Limit?: number;
-    //     Sort?: string;
-    //     Direction?: SortDir;
-    //     Search?: string;
-    //     Extra?: Map<string, string>;
-    // }
+    interface RestQuery {
+        Start?: number;
+        Limit?: number;
+        Sort?: string;
+        Direction?: SortDir;
+        Search?: string;
+    }
 
-    // interface RestQueryConstStatic {
-    //     start: string;
-    //     limit: string;
-    //     sort: string;
-    //     direction: string;
-    //     search: string;
-    // }
+    interface RestQueryConstStatic {
+        start: string;
+        limit: string;
+        sort: string;
+        direction: string;
+        search: string;
+    }
 
-    // const RestQueryConst: RestQueryConstStatic;
+    const RestQueryConst: RestQueryConstStatic;
 
-    // interface RestResponse {
-    //     result?: boolean;
-    //     error_msg?: string;
-    //     data?: any;
-    //     total_count?: number;
-    // }
+    interface RestResponse {
+        result?: boolean;
+        error_msg?: string;
+        data?: any;
+        total_count?: number;
+    }
 
-    // interface RestResponseSingle<T> {
-    //     result?: boolean;
-    //     error_msg?: string;
-    //     data?: T;
-    //     total_count?: number;
-    // }
+    interface RestResponseSingle<T> {
+        result?: boolean;
+        error_msg?: string;
+        data?: T;
+        total_count?: number;
+    }
 
-    // interface RestResponseMulti<T> {
-    //     result?: boolean;
-    //     error_msg?: string;
-    //     data?: T[];
-    //     total_count?: number;
-    // }
+    interface RestResponseMulti<T> {
+        result?: boolean;
+        error_msg?: string;
+        data?: T[];
+        total_count?: number;
+    }
 
-    // function NewBoolResponse<T>(b: boolean, errmsg: string): RestResponse;
-    // function NewDataResponse<T>(d: any, cnt: number): RestResponse;
-    // function NewBoolResponse<T>(b: boolean, errmsg: string): RestResponseSingle<T>;
-    // function NewDataResponse<T>(d: T, cnt: number): RestResponseSingle<T>;
-    // function NewBoolResponse<T>(b: boolean, errmsg: string): RestRespRestResponseMultionse<T>;
-    // function NewDataResponse<T>(d: T[], cnt: number): RestResponseMulti<T>;
+    function NewBoolResponse<T>(b: boolean, errmsg: string): RestResponse;
+    function NewDataResponse<T>(d: any, cnt: number): RestResponse;
+    function NewBoolResponse<T>(b: boolean, errmsg: string): RestResponseSingle<T>;
+    function NewDataResponse<T>(d: T, cnt: number): RestResponseSingle<T>;
+    function NewBoolResponse<T>(b: boolean, errmsg: string): RestResponseMulti<T>;
+    function NewDataResponse<T>(d: T[], cnt: number): RestResponseMulti<T>;
 
     interface SchoolCategoryStatic {
         youErYuan: SpecValue;
