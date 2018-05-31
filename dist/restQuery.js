@@ -1,4 +1,5 @@
 'use strict';
+//this is for server process not for client
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -14,7 +15,6 @@ var RestQuery = function RestQuery() {
     this.Sort = '';
     this.Direction = 'ASC';
     this.Search = '';
-    this.Extra = {};
 };
 
 exports.default = RestQuery;

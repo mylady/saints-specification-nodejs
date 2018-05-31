@@ -1,5 +1,5 @@
 'use strict';
-
+//this is for server process not for client
 export default class RestQuery {
     constructor() {
         this.Start = 0;
@@ -7,6 +7,5 @@ export default class RestQuery {
         this.Sort = '';
         this.Direction = 'ASC';
         this.Search = '';
-        this.Extra = {};
     }
 }
