@@ -7,5 +7,6 @@ export default class RestQuery {
         this.Sort = '';
         this.Direction = 'ASC';
         this.Search = '';
+        this.Extra = {};
     }
 }
