@@ -54,7 +54,7 @@ declare namespace spec {
         PlateNumber?: string;
         PlateType?: string;
         CarColor?: string;
-        PlateColor?: sring;
+        PlateColor?: string;
     }
 
     interface ConnectionModeStatic {
