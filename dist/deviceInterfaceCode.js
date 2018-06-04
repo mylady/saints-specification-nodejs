@@ -287,8 +287,8 @@ var deviceInterfaceCode = {
         name: '博世报警主机接口',
         value: 68
     },
-    yituFaceRecognitionREST: {
-        name: '依图人脸识别接口',
+    yituFaceRecognitionMTXREST: {
+        name: '依图人脸识别接口MTX版',
         value: 69
     },
     xilingVideoAnalyseREST: {
@@ -326,6 +326,10 @@ var deviceInterfaceCode = {
     lingxinLedControllerV6: {
         name: '灵信电子屏控制器接口v6',
         value: 78
+    },
+    yituFaceRecognitionV18REST: {
+        name: '依图人脸识别接口1.8版',
+        value: 79
     },
 
     //saints define
