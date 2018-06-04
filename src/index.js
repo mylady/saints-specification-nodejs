@@ -115,6 +115,7 @@ import SchoolChemicalType from './schoolChemicalType';
 import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
 import SchoolMessageType from './schoolMessageType';
+import SchoolMessageWrapperType from './schoolMessageWrapperType';
 import SchoolMapType from './schoolMapType';
 import SchoolNoticeType from './schoolNoticeType';
 import SchoolWaterSource from './schoolWaterSource';
@@ -248,6 +249,7 @@ export default {
     SchoolReportActivityType:SchoolReportActivityType,
     SchoolReportActivityCategory:SchoolReportActivityCategory,
     SchoolMessageType:SchoolMessageType,
+    SchoolMessageWrapperType:SchoolMessageWrapperType,
     SchoolMapType:SchoolMapType,
     SchoolNoticeType:SchoolNoticeType,
     SchoolWaterSource:SchoolWaterSource,

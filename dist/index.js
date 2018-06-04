@@ -386,6 +386,10 @@ var _schoolMessageType = require('./schoolMessageType');
 
 var _schoolMessageType2 = _interopRequireDefault(_schoolMessageType);
 
+var _schoolMessageWrapperType = require('./schoolMessageWrapperType');
+
+var _schoolMessageWrapperType2 = _interopRequireDefault(_schoolMessageWrapperType);
+
 var _schoolMapType = require('./schoolMapType');
 
 var _schoolMapType2 = _interopRequireDefault(_schoolMapType);
@@ -566,6 +570,7 @@ exports.default = {
     SchoolReportActivityType: _schoolReportActivityType2.default,
     SchoolReportActivityCategory: _schoolReportActivityCategory2.default,
     SchoolMessageType: _schoolMessageType2.default,
+    SchoolMessageWrapperType: _schoolMessageWrapperType2.default,
     SchoolMapType: _schoolMapType2.default,
     SchoolNoticeType: _schoolNoticeType2.default,
     SchoolWaterSource: _schoolWaterSource2.default,
