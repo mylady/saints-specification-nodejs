@@ -253,6 +253,16 @@ declare namespace spec {
 
     const SchoolMessageType: SchoolMessageTypeStatic;
 
+    interface SchoolMessageWrapperTypeStatic {
+        checkTask: SpecValue;
+        publishRedressTask: SpecValue;
+        submitRedressTask: SpecValue;
+        reviewRedressTask: SpecValue;
+        rejectRedressTask: SpecValue;
+    }
+
+    const SchoolMessageWrapperType: SchoolMessageWrapperTypeStatic;
+
     interface SchoolNatureStatic {
         publicSchool: SpecValue;
         privateSchool: SpecValue;
