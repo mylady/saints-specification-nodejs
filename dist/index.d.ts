@@ -1,5 +1,3 @@
-import videoRecordSource from "../src/videoRecordSource";
-
 declare namespace spec {
 
     interface SpecValue {
@@ -173,9 +171,9 @@ declare namespace spec {
     interface DeviceControlParam {
         ControlCode: number;
         InterfaceCode: number;
-        Receivers?: Array;
+        Receivers?: Array<string>;
         Sender?: string;
-        Parameter?: Array;
+        Parameter?: Array<string>;
     }
 
     interface DeviceDataTypeStatic {
@@ -413,15 +411,15 @@ declare namespace spec {
 
 
     interface ProductRegister {
-        startRegister(): Promise;
-        stopRegister(): Promise;
+        startRegister();
+        stopRegister();
     }
 
     interface ServiceRegister {
         addService(service: ProtocolService);
         getServices(): Array<ProtocolService>;
-        startRegister(): Promise;
-        stopRegister(): Promise;
+        startRegister();
+        stopRegister();
     }
 
     interface ServiceDiscovery {
@@ -719,8 +717,7 @@ declare namespace spec {
         importantCare: SpecValue;
     }
 
-    const PrisonerHealthStatus: PrisonerHealthe
-        ;
+    const PrisonerHealthStatus: PirsonerHealthStatusStatic;
 
     interface PrisonerRollCallResultStatic {
         normal: SpecValue;
@@ -1235,146 +1232,146 @@ declare namespace spec {
 
     const SchoolWaterSource: SchoolWaterSourceStatic;
 
-    interface SpecificationSettingsStatic{
-        discoveryHttpPort:number;
-        discoveryApiPrefix:string;
-        discveryLocalHttpAddress:string;
-        discoveryApiService:string;
-        discoveryApiProduct:string;
-        registerInterval:number;
-        proxyHttpPort:number;
-        proxyHttpAddress:string;
-        proxyApiService:string
+    interface SpecificationSettingsStatic {
+        discoveryHttpPort: number;
+        discoveryApiPrefix: string;
+        discveryLocalHttpAddress: string;
+        discoveryApiService: string;
+        discoveryApiProduct: string;
+        registerInterval: number;
+        proxyHttpPort: number;
+        proxyHttpAddress: string;
+        proxyApiService: string
     }
 
-    const SpecificationSettings:SpecificationSettingsStatic;
+    const SpecificationSettings: SpecificationSettingsStatic;
 
-    interface TransmitMesage{
-        MessageId:string;
-        MessageType:number;
-        MessageContent:string;
-        MessageTime:Date;
-        MessageReceiver:Array<string>
+    interface TransmitMesage {
+        MessageId?: string;
+        MessageType?: number;
+        MessageContent?: string;
+        MessageTime?: Date;
+        MessageReceiver?: Array<string>
     }
 
-    interface TranmitMessageClient{
-        Product:ProductInfo;
-        IPAddress:Array<string>;
-        MacAddress:Array<string>;
+    interface TranmitMessageClient {
+        Product?: ProductInfo;
+        IPAddress?: Array<string>;
+        MacAddress?: Array<string>;
     }
 
-    interface TransmitMessageSpcStatic{
-        helloEvent:string;
-        joinEvent:string;
-        leaveEvent:string;
-        messageUpEvent:string;
-        messageDownEvent:string;
-        deviceEventRoom:string;
-        deviceStatusRoom:string;
-        deviceControlRoom:string;
-        digitalControlRoom:string;
-        maintainRoom:string;
-        hospitalRoom:string;
-        prisonRoom:string;
-        bioIdentifyRoom:string;
-        saintsNameSpace:string;
-        thirdpartyNameSpace:string;
+    interface TransmitMessageSpcStatic {
+        helloEvent: string;
+        joinEvent: string;
+        leaveEvent: string;
+        messageUpEvent: string;
+        messageDownEvent: string;
+        deviceEventRoom: string;
+        deviceStatusRoom: string;
+        deviceControlRoom: string;
+        digitalControlRoom: string;
+        maintainRoom: string;
+        hospitalRoom: string;
+        prisonRoom: string;
+        bioIdentifyRoom: string;
+        saintsNameSpace: string;
+        thirdpartyNameSpace: string;
     }
 
-    const TransmitMessageSpec:TransmitMessageSpcStatic;
+    const TransmitMessageSpec: TransmitMessageSpcStatic;
 
-    interface TransmitMessgeTypeStatic{
-        systemMessage:SpecValue;
-        update:SpecValue;
-        deviceEvent:SpecValue;
-        deviceStatus:SpecValue;
-        deviceControl:SpecValue;
-        digitalControl:SpecValue;
-        maintain:SpecValue;
-        hospital:SpecValue;
-        prison:SpecValue;
-        bioIdentify:SpecValue;
+    interface TransmitMessgeTypeStatic {
+        systemMessage: SpecValue;
+        update: SpecValue;
+        deviceEvent: SpecValue;
+        deviceStatus: SpecValue;
+        deviceControl: SpecValue;
+        digitalControl: SpecValue;
+        maintain: SpecValue;
+        hospital: SpecValue;
+        prison: SpecValue;
+        bioIdentify: SpecValue;
     }
 
-    const TransmitMessgeType:TransmitMessgeTypeStatic;
+    const TransmitMessgeType: TransmitMessgeTypeStatic;
 
-    interface UpdateDetail{
-        ProductId?:string;
-        OS?:number;
-        OldVersion?:number;
-        NewVersion?:number;
-        ShouldUpdate?:boolean;
-        UpdateAddress?:string;
+    interface UpdateDetail {
+        ProductId?: string;
+        OS?: number;
+        OldVersion?: number;
+        NewVersion?: number;
+        ShouldUpdate?: boolean;
+        UpdateAddress?: string;
     }
 
-    interface UpsExtra{
-        Volter?:number;
-        Electricity?:number;
-        Battery?:number;
-        BackupTime?:number;
-        Temperature?:number;
+    interface UpsExtra {
+        Volter?: number;
+        Electricity?: number;
+        Battery?: number;
+        BackupTime?: number;
+        Temperature?: number;
     }
 
-    function post(path:string,data:any):Promise<any>;
-    function postBasicAuth(path:string,data:any,username:string,userpwd:string):Promise<any>;
-    function put(path:string,data:any):Promise<any>;
-    function putBasicAuth(path:string,data:any,username:string,userpwd:string);
-    function get(path:string,data:any):Promise<any>;
-    function getBasicAuth(path:string,data:any,username:string,userpwd:string);
-    
-    interface VideoAnalyseExtra{
-        AnalyseType:number;
-        AnalyseContent:string;
+    function post(path: string, data: any): Promise<any>;
+    function postBasicAuth(path: string, data: any, username: string, userpwd: string): Promise<any>;
+    function put(path: string, data: any): Promise<any>;
+    function putBasicAuth(path: string, data: any, username: string, userpwd: string);
+    function get(path: string, data: any): Promise<any>;
+    function getBasicAuth(path: string, data: any, username: string, userpwd: string);
+
+    interface VideoAnalyseExtra {
+        AnalyseType?: number;
+        AnalyseContent?: string;
     }
 
-    interface VideoAnalyseTypeStatic{
-        behavior:SpecValue;
-        faceRecognition:SpecValue;
-        carPlateRecognition:SpecValue;
+    interface VideoAnalyseTypeStatic {
+        behavior: SpecValue;
+        faceRecognition: SpecValue;
+        carPlateRecognition: SpecValue;
     }
 
-    const VideoAnalyseType:VideoAnalyseTypeStatic;
+    const VideoAnalyseType: VideoAnalyseTypeStatic;
 
-    interface VideoDiagnosticResultStatic{
-        unknow:SpecValue;
-        normal:SpecValue;
-        offline:SpecValue;
-        videolost:SpecValue;
-        bright:SpecValue;
-        color:SpecValue;
-        contract:SpecValue;
-        frozen:SpecValue;
-        blur:SpecValue;
-        noise:SpecValue;
-        wave:SpecValue;
-        roll:SpecValue;
+    interface VideoDiagnosticResultStatic {
+        unknow: SpecValue;
+        normal: SpecValue;
+        offline: SpecValue;
+        videolost: SpecValue;
+        bright: SpecValue;
+        color: SpecValue;
+        contract: SpecValue;
+        frozen: SpecValue;
+        blur: SpecValue;
+        noise: SpecValue;
+        wave: SpecValue;
+        roll: SpecValue;
     }
 
-    const VideoDiagnosticResult:VideoDiagnosticResultStatic;
+    const VideoDiagnosticResult: VideoDiagnosticResultStatic;
 
-    interface VideoRecordSourceStatic{
-        schoolPlatform:SpecValue;
+    interface VideoRecordSourceStatic {
+        schoolPlatform: SpecValue;
     }
 
-    const VideoRecordSource:VideoRecordSourceStatic;
+    const VideoRecordSource: VideoRecordSourceStatic;
 
-    interface VideoRecordStatusStatic{
-        idle:SpecValue;
-        waiting:SpecValue;
-        running:SpecValue;
-        failure:SpecValue;
-        finish:SpecValue;
+    interface VideoRecordStatusStatic {
+        idle: SpecValue;
+        waiting: SpecValue;
+        running: SpecValue;
+        failure: SpecValue;
+        finish: SpecValue;
     }
 
-    const VideoRecordStatus:VideoRecordStatusStatic;
+    const VideoRecordStatus: VideoRecordStatusStatic;
 
-    interface VideoStorageTypeStatic{
-        plan:SpecValue;
-        event:SpecValue;
-        custom:SpecValue;
+    interface VideoStorageTypeStatic {
+        plan: SpecValue;
+        event: SpecValue;
+        custom: SpecValue;
     }
 
-    const VideoStorageType:VideoStorageTypeStatic;
+    const VideoStorageType: VideoStorageTypeStatic;
 }
 
 export = spec;
