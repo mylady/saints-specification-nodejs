@@ -20,7 +20,7 @@ var prisonTerminalType = {
     name: '提审会见展示终端',
     value: 3
   },
-  backSideMeetingTemrinal: {
+  backSideMeetingTerminal: {
     name: '提押展示终端',
     value: 4
   }

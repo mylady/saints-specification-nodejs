@@ -39,7 +39,7 @@ var videoDiagnosticResult = {
         name: '画面冻结',
         value: 6
     },
-    blue: {
+    blur: {
         name: '图像模糊',
         value: 7
     },

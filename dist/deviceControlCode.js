@@ -75,7 +75,7 @@ var deviceControlCode = {
         name: '设置矩阵通道',
         value: 16
     },
-    matrixPTZl: {
+    matrixPTZ: {
         name: '矩阵云台控制',
         value: 17
     },

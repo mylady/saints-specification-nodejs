@@ -17,6 +17,6 @@ export default class InitParam {
         this.StopBits = 0;
         this.Parity = 0;
         this.ConnectionString = '';
-        this.Extra = {};
+        this.Extra = '';
     }
 }

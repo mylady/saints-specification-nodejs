@@ -12,7 +12,7 @@ var deviceAlarmCode = {
         name: '防区报警',
         value: 0
     },
-    motionDetec: {
+    motionDetect: {
         name: '移动侦测',
         value: 1
     },

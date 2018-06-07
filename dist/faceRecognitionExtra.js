@@ -11,6 +11,8 @@ var FaceRecognitionExtra = function FaceRecognitionExtra() {
 
     this.SceneImagePath = '';
     this.SceneImage = '';
+    this.FaceImagePath = '';
+    this.FaceImage = '';
     this.PersonId = '';
     this.PersonName = '';
     this.Similarity = 0.0;

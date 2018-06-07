@@ -248,7 +248,7 @@ let deviceInterfaceCode = {
         name: '快鱼分贝报警主机接口v2',
         value: 59
     },
-    tclTvWallSERIAL: {
+    tclTvwallSERIAL: {
         name: 'TCL电视墙控制器串行接口',
         value: 60
     },
@@ -256,7 +256,7 @@ let deviceInterfaceCode = {
         name: '慧谷不间断电源主机状态接口',
         value: 61
     },
-    yishiteUpsModebusSERIAL: {
+    yishiteUpsModbusSERIAL: {
         name: '易事特不间断电源主机Modbus接口',
         value: 62
     },

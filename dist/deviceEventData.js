@@ -20,7 +20,7 @@ var DeviceEventData = function DeviceEventData() {
     this.AlarmCode = 0;
     this.EventTime = new Date();
     this.EventDescription = '';
-    this.EventExtra = {};
+    this.EventExtra = '';
 };
 
 exports.default = DeviceEventData;
