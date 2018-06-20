@@ -202,6 +202,10 @@ var manufacturerCode = {
   wangu: {
     name: '万谷',
     value: 47
+  },
+  renwei: {
+    name: '仁微',
+    value: 48
   }
 };
 

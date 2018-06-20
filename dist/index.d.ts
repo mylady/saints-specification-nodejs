@@ -328,6 +328,7 @@ declare namespace spec {
         shengkeAlarmPlatform: SpecValue;
         lingxinLedControllerV6: SpecValue;
         yituFaceRecognitionV18REST: SpecValue;
+        renweiRFIDUDP:SpecValue;
     }
 
     const DeviceInterfaceCode: DeviceInterfaceCodeStatic;
@@ -603,6 +604,7 @@ declare namespace spec {
         juying: SpecValue;
         shengke: SpecValue;
         wangu: SpecValue;
+        renwei:SpecValue;
     }
 
     const ManufacturerCode: ManufacturerCodeStatic;

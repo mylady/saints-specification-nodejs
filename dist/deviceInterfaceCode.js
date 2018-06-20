@@ -331,6 +331,10 @@ var deviceInterfaceCode = {
         name: '依图人脸识别接口1.8版',
         value: 79
     },
+    renweiRFIDUDP: {
+        name: '仁微人员定位接口',
+        value: 80
+    },
 
     //saints define
     shengxiDoorUDP: {
