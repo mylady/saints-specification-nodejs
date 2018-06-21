@@ -1223,16 +1223,14 @@ declare namespace spec {
 
     const SchoolUserType: SchoolUserTypeStatic;
 
-    interface SchoolWaterSourceStatic {
-        directWater: SpecValue;
-        directWaterMachine: SpecValue;
-        cistern: SpecValue;
-        waterBox: SpecValue;
-        heatPreserved: SpecValue;
-        barrel: SpecValue;
+    interface SchoolWaterUsageStatic {
+        canteen: SpecValue;
+        life: SpecValue;
+        teacher: SpecValue;
+        student: SpecValue;
     }
 
-    const SchoolWaterSource: SchoolWaterSourceStatic;
+    const SchoolWaterUsage: SchoolWaterUsageStatic;
 
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;

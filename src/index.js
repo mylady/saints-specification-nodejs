@@ -118,7 +118,7 @@ import SchoolMessageType from './schoolMessageType';
 import SchoolMessageWrapperType from './schoolMessageWrapperType';
 import SchoolMapType from './schoolMapType';
 import SchoolNoticeType from './schoolNoticeType';
-import SchoolWaterSource from './schoolWaterSource';
+import SchoolWaterUsage from './schoolWaterUsage';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -252,7 +252,7 @@ export default {
     SchoolMessageWrapperType:SchoolMessageWrapperType,
     SchoolMapType:SchoolMapType,
     SchoolNoticeType:SchoolNoticeType,
-    SchoolWaterSource:SchoolWaterSource,
+    SchoolWaterUsage:SchoolWaterUsage,
 
     SpecificationSettings: SpecificationSettings,
 

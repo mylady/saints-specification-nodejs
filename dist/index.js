@@ -398,9 +398,9 @@ var _schoolNoticeType = require('./schoolNoticeType');
 
 var _schoolNoticeType2 = _interopRequireDefault(_schoolNoticeType);
 
-var _schoolWaterSource = require('./schoolWaterSource');
+var _schoolWaterUsage = require('./schoolWaterUsage');
 
-var _schoolWaterSource2 = _interopRequireDefault(_schoolWaterSource);
+var _schoolWaterUsage2 = _interopRequireDefault(_schoolWaterUsage);
 
 var _specificationSettings = require('./specificationSettings');
 
@@ -573,7 +573,7 @@ exports.default = {
     SchoolMessageWrapperType: _schoolMessageWrapperType2.default,
     SchoolMapType: _schoolMapType2.default,
     SchoolNoticeType: _schoolNoticeType2.default,
-    SchoolWaterSource: _schoolWaterSource2.default,
+    SchoolWaterUsage: _schoolWaterUsage2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 
