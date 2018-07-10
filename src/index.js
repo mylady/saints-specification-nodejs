@@ -6,7 +6,7 @@
 
 import AirMonitorExtra from './airMonitorExtra';
 
-import BehaviorAnaylyseExtra from './behaviorAnalyseExtra';
+import BehaviorAnalyseExtra from './behaviorAnalyseExtra';
 import BioIdentifyMessage from './bioIdentifyMessage';
 import BioIdentifyType from './bioIdentifyType';
 
@@ -119,6 +119,7 @@ import SchoolMessageWrapperType from './schoolMessageWrapperType';
 import SchoolMapType from './schoolMapType';
 import SchoolNoticeType from './schoolNoticeType';
 import SchoolWaterUsage from './schoolWaterUsage';
+import SchoolLicenseType from './schoolLicenseType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -137,12 +138,11 @@ import VideoRecordSource from './videoRecordSource';
 import VideoRecordStatus from './videoRecordStatus';
 import VideoStorageType from './videoStorageType';
 import VoicePrint from './voicePrint';
-import BehaviorAnalyseExtra from './behaviorAnalyseExtra';
 
 export default {
     AirMonitorExtra: AirMonitorExtra,
 
-    BehaviorAnaylyseExtra: BehaviorAnalyseExtra,
+    BehaviorAnalyseExtra: BehaviorAnalyseExtra,
     BioIdentifyMessage: BioIdentifyMessage,
     BioIdentifyType: BioIdentifyType,
 
@@ -253,6 +253,7 @@ export default {
     SchoolMapType:SchoolMapType,
     SchoolNoticeType:SchoolNoticeType,
     SchoolWaterUsage:SchoolWaterUsage,
+    SchoolLicenseType:SchoolLicenseType,
 
     SpecificationSettings: SpecificationSettings,
 

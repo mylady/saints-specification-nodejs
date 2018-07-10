@@ -1232,6 +1232,23 @@ declare namespace spec {
 
     const SchoolWaterUsage: SchoolWaterUsageStatic;
 
+    interface SchoolLicenseTypeStatic {
+        cateringService:SpecValue,
+        canteenContract:SpecValue,
+        canteenDeliveryContract:SpecValue,
+        boxMealProduct:SpecValue,
+        canteenBusiness:SpecValue,
+        deliveryBusiness:SpecValue,
+        launchBusiness:SpecValue,
+        cateringSecurityTrainA:SpecValue,
+        cateringSecurityTrainB:SpecValue,
+        cateringSecurityTrainC:SpecValue,
+        canteenEmployeeHealth:SpecValue,
+        specialDeviceOperation:SpecValue
+    }
+
+    const SchoolLicenseType:SchoolLicenseTypeStatic;
+
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;
         discoveryApiPrefix: string;

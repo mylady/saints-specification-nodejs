@@ -402,6 +402,10 @@ var _schoolWaterUsage = require('./schoolWaterUsage');
 
 var _schoolWaterUsage2 = _interopRequireDefault(_schoolWaterUsage);
 
+var _schoolLicenseType = require('./schoolLicenseType');
+
+var _schoolLicenseType2 = _interopRequireDefault(_schoolLicenseType);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -463,7 +467,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
     AirMonitorExtra: _airMonitorExtra2.default,
 
-    BehaviorAnaylyseExtra: _behaviorAnalyseExtra2.default,
+    BehaviorAnalyseExtra: _behaviorAnalyseExtra2.default,
     BioIdentifyMessage: _bioIdentifyMessage2.default,
     BioIdentifyType: _bioIdentifyType2.default,
 
@@ -574,6 +578,7 @@ exports.default = {
     SchoolMapType: _schoolMapType2.default,
     SchoolNoticeType: _schoolNoticeType2.default,
     SchoolWaterUsage: _schoolWaterUsage2.default,
+    SchoolLicenseType: _schoolLicenseType2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 
