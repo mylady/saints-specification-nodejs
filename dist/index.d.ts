@@ -1197,6 +1197,7 @@ declare namespace spec {
         urgeActivityReport: SpecValue;
         urgeDutyTable: SpecValue;
         urgeSafetyReport: SpecValue;
+        urgeLicenseExpire:SpecValue;
     }
 
     const SchoolNoticeType: SchoolNoticeTypeStatic;

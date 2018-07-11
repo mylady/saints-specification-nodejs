@@ -28,6 +28,10 @@ let schoolNoticeType = {
     urgeSafetyReport:{
         name:'催促平安上报',
         value:6
+    },
+    urgeLicenseExpire:{
+        name:'催促证照过期',
+        value:7
     }
 };
 
