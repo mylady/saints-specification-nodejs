@@ -406,6 +406,10 @@ var _schoolLicenseType = require('./schoolLicenseType');
 
 var _schoolLicenseType2 = _interopRequireDefault(_schoolLicenseType);
 
+var _schoolDocumentType = require('./schoolDocumentType');
+
+var _schoolDocumentType2 = _interopRequireDefault(_schoolDocumentType);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -579,6 +583,7 @@ exports.default = {
     SchoolNoticeType: _schoolNoticeType2.default,
     SchoolWaterUsage: _schoolWaterUsage2.default,
     SchoolLicenseType: _schoolLicenseType2.default,
+    SchoolDocumentType: _schoolDocumentType2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 

@@ -120,6 +120,7 @@ import SchoolMapType from './schoolMapType';
 import SchoolNoticeType from './schoolNoticeType';
 import SchoolWaterUsage from './schoolWaterUsage';
 import SchoolLicenseType from './schoolLicenseType';
+import SchoolDocumentType from './schoolDocumentType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -254,6 +255,7 @@ export default {
     SchoolNoticeType:SchoolNoticeType,
     SchoolWaterUsage:SchoolWaterUsage,
     SchoolLicenseType:SchoolLicenseType,
+    SchoolDocumentType:SchoolDocumentType,
 
     SpecificationSettings: SpecificationSettings,
 

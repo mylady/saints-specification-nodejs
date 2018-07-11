@@ -1250,6 +1250,14 @@ declare namespace spec {
 
     const SchoolLicenseType:SchoolLicenseTypeStatic;
 
+    interface SchoolDocumentTypeStatic{
+        law:SpecValue,
+        regulation:SpecValue,
+        presolution:SpecValue
+    }
+
+    const SchoolDocumentType:SchoolDocumentTypeStatic;
+
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;
         discoveryApiPrefix: string;
