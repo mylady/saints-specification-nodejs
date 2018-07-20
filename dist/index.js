@@ -410,6 +410,26 @@ var _schoolDocumentType = require('./schoolDocumentType');
 
 var _schoolDocumentType2 = _interopRequireDefault(_schoolDocumentType);
 
+var _schoolCitizenReportBizType = require('./schoolCitizenReportBizType');
+
+var _schoolCitizenReportBizType2 = _interopRequireDefault(_schoolCitizenReportBizType);
+
+var _schoolCitizenReportDealResult = require('./schoolCitizenReportDealResult');
+
+var _schoolCitizenReportDealResult2 = _interopRequireDefault(_schoolCitizenReportDealResult);
+
+var _schoolCitizenReportSource = require('./schoolCitizenReportSource');
+
+var _schoolCitizenReportSource2 = _interopRequireDefault(_schoolCitizenReportSource);
+
+var _SchoolCitizenReportTransferType = require('./SchoolCitizenReportTransferType');
+
+var _SchoolCitizenReportTransferType2 = _interopRequireDefault(_SchoolCitizenReportTransferType);
+
+var _SchoolCitizenReportUrgentLevel = require('./SchoolCitizenReportUrgentLevel');
+
+var _SchoolCitizenReportUrgentLevel2 = _interopRequireDefault(_SchoolCitizenReportUrgentLevel);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -584,6 +604,11 @@ exports.default = {
     SchoolWaterUsage: _schoolWaterUsage2.default,
     SchoolLicenseType: _schoolLicenseType2.default,
     SchoolDocumentType: _schoolDocumentType2.default,
+    SchoolCitizenReportBizType: _schoolCitizenReportBizType2.default,
+    SchoolCitizenReportDealResult: _schoolCitizenReportDealResult2.default,
+    SchoolCitizenReportSource: _schoolCitizenReportSource2.default,
+    SchoolCitizenReportTransferType: _SchoolCitizenReportTransferType2.default,
+    SchoolCitizenReportUrgentLevel: _SchoolCitizenReportUrgentLevel2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 

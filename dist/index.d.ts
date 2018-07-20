@@ -1258,6 +1258,48 @@ declare namespace spec {
 
     const SchoolDocumentType:SchoolDocumentTypeStatic;
 
+    interface SchoolCitizenReportBizTypeStatic{
+        consult:SpecValue,
+        complaint:SpecValue,
+        help:SpecValue,
+        advice:SpecValue
+    } 
+
+    const SchoolCitizenReportBizType:SchoolCitizenReportBizTypeStatic;
+
+    interface SchoolCitizenReportDealResultStatic{
+        processing:SpecValue,
+        reject:SpecValue,
+        onTime:SpecValue,
+        overTime:SpecValue
+    }
+
+    const SchoolCitizenReportDealResult:SchoolCitizenReportDealResultStatic;
+
+    interface SchoolCitizenReportSourceStatic{
+        source12345:SpecValue,
+        source962347:SpecValue,
+        other:SpecValue
+    }
+
+    const SchoolCitizenReportSource:SchoolCitizenReportSourceStatic;
+
+    interface SchoolCitizenReportTransferTypeStatic{
+        administrationPlatform:SpecValue,
+        wechat:SpecValue,
+        email:SpecValue,
+        fax:SpecValue
+    }
+
+    const SchoolCitizenReportTransferType:SchoolCitizenReportTransferTypeStatic
+
+    interface SchoolCitizenReportUrgentLevelStatic{
+        normal:SpecValue,
+        emergency:SpecValue
+    }
+
+    const SchoolCitizenReportUrgentLevel:SchoolCitizenReportUrgentLevelStatic;
+
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;
         discoveryApiPrefix: string;

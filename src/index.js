@@ -121,6 +121,11 @@ import SchoolNoticeType from './schoolNoticeType';
 import SchoolWaterUsage from './schoolWaterUsage';
 import SchoolLicenseType from './schoolLicenseType';
 import SchoolDocumentType from './schoolDocumentType';
+import SchoolCitizenReportBizType from './schoolCitizenReportBizType';
+import SchoolCitizenReportDealResult from './schoolCitizenReportDealResult';
+import SchoolCitizenReportSource from './schoolCitizenReportSource';
+import SchoolCitizenReportTransferType from './SchoolCitizenReportTransferType';
+import SchoolCitizenReportUrgentLevel from './SchoolCitizenReportUrgentLevel';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -244,18 +249,23 @@ export default {
     SchoolCheckRedressStatus: SchoolCheckRedressStatus,
     SchoolCheckTaskStatus: SchoolCheckTaskStatus,
     SchoolCheckType: SchoolCheckType,
-    SchoolChemicalType:SchoolChemicalType,
+    SchoolChemicalType: SchoolChemicalType,
     SchoolCheckResult: SchoolCheckResult,
     SchoolUserType: SchoolUserType,
-    SchoolReportActivityType:SchoolReportActivityType,
-    SchoolReportActivityCategory:SchoolReportActivityCategory,
-    SchoolMessageType:SchoolMessageType,
-    SchoolMessageWrapperType:SchoolMessageWrapperType,
-    SchoolMapType:SchoolMapType,
-    SchoolNoticeType:SchoolNoticeType,
-    SchoolWaterUsage:SchoolWaterUsage,
-    SchoolLicenseType:SchoolLicenseType,
-    SchoolDocumentType:SchoolDocumentType,
+    SchoolReportActivityType: SchoolReportActivityType,
+    SchoolReportActivityCategory: SchoolReportActivityCategory,
+    SchoolMessageType: SchoolMessageType,
+    SchoolMessageWrapperType: SchoolMessageWrapperType,
+    SchoolMapType: SchoolMapType,
+    SchoolNoticeType: SchoolNoticeType,
+    SchoolWaterUsage: SchoolWaterUsage,
+    SchoolLicenseType: SchoolLicenseType,
+    SchoolDocumentType: SchoolDocumentType,
+    SchoolCitizenReportBizType: SchoolCitizenReportBizType,
+    SchoolCitizenReportDealResult: SchoolCitizenReportDealResult,
+    SchoolCitizenReportSource: SchoolCitizenReportSource,
+    SchoolCitizenReportTransferType: SchoolCitizenReportTransferType,
+    SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevel,
 
     SpecificationSettings: SpecificationSettings,
 
