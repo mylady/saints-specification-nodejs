@@ -422,13 +422,13 @@ var _schoolCitizenReportSource = require('./schoolCitizenReportSource');
 
 var _schoolCitizenReportSource2 = _interopRequireDefault(_schoolCitizenReportSource);
 
-var _SchoolCitizenReportTransferType = require('./SchoolCitizenReportTransferType');
+var _schoolCitizenReportTransferType = require('./schoolCitizenReportTransferType');
 
-var _SchoolCitizenReportTransferType2 = _interopRequireDefault(_SchoolCitizenReportTransferType);
+var _schoolCitizenReportTransferType2 = _interopRequireDefault(_schoolCitizenReportTransferType);
 
-var _SchoolCitizenReportUrgentLevel = require('./SchoolCitizenReportUrgentLevel');
+var _schoolCitizenReportUrgentLevel = require('./schoolCitizenReportUrgentLevel');
 
-var _SchoolCitizenReportUrgentLevel2 = _interopRequireDefault(_SchoolCitizenReportUrgentLevel);
+var _schoolCitizenReportUrgentLevel2 = _interopRequireDefault(_schoolCitizenReportUrgentLevel);
 
 var _specificationSettings = require('./specificationSettings');
 
@@ -607,8 +607,8 @@ exports.default = {
     SchoolCitizenReportBizType: _schoolCitizenReportBizType2.default,
     SchoolCitizenReportDealResult: _schoolCitizenReportDealResult2.default,
     SchoolCitizenReportSource: _schoolCitizenReportSource2.default,
-    SchoolCitizenReportTransferType: _SchoolCitizenReportTransferType2.default,
-    SchoolCitizenReportUrgentLevel: _SchoolCitizenReportUrgentLevel2.default,
+    SchoolCitizenReportTransferType: _schoolCitizenReportTransferType2.default,
+    SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 

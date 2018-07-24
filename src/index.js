@@ -124,8 +124,8 @@ import SchoolDocumentType from './schoolDocumentType';
 import SchoolCitizenReportBizType from './schoolCitizenReportBizType';
 import SchoolCitizenReportDealResult from './schoolCitizenReportDealResult';
 import SchoolCitizenReportSource from './schoolCitizenReportSource';
-import SchoolCitizenReportTransferType from './SchoolCitizenReportTransferType';
-import SchoolCitizenReportUrgentLevel from './SchoolCitizenReportUrgentLevel';
+import SchoolCitizenReportTransferType from './schoolCitizenReportTransferType';
+import SchoolCitizenReportUrgentLevel from './schoolCitizenReportUrgentLevel';
 
 import SpecificationSettings from './specificationSettings';
 
