@@ -35,6 +35,18 @@ var schoolNoticeType = {
     urgeLicenseExpire: {
         name: '催促证照过期',
         value: 7
+    },
+    finishRedressTask: {
+        name: '整改完成',
+        value: 8
+    },
+    instantReportFeedback: {
+        name: '随手报反馈',
+        value: 9
+    },
+    instantReportFinish: {
+        name: '随手报整改完成',
+        value: 10
     }
 };
 

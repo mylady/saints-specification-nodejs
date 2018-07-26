@@ -23,6 +23,14 @@ var schoolMessageWrapperType = {
     rejectRedressTask: {
         name: '复查驳回任务',
         value: 4
+    },
+    finishRedressTask: {
+        name: '整改任务完成',
+        value: 5
+    },
+    instantReportTask: {
+        name: '随手报任务',
+        value: 6
     }
 };
 
