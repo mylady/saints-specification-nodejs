@@ -328,7 +328,7 @@ declare namespace spec {
         shengkeAlarmPlatform: SpecValue;
         lingxinLedControllerV6: SpecValue;
         yituFaceRecognitionV18REST: SpecValue;
-        renweiRFIDUDP:SpecValue;
+        renweiRFIDUDP: SpecValue;
     }
 
     const DeviceInterfaceCode: DeviceInterfaceCodeStatic;
@@ -604,7 +604,7 @@ declare namespace spec {
         juying: SpecValue;
         shengke: SpecValue;
         wangu: SpecValue;
-        renwei:SpecValue;
+        renwei: SpecValue;
     }
 
     const ManufacturerCode: ManufacturerCodeStatic;
@@ -1178,6 +1178,8 @@ declare namespace spec {
         submitRedressTask: SpecValue;
         reviewRedressTask: SpecValue;
         rejectRedressTask: SpecValue;
+        finishRedressTask: SpecValue;
+        instantReportTask: SpecValue;
     }
 
     const SchoolMessageWrapperType: SchoolMessageWrapperTypeStatic;
@@ -1197,7 +1199,10 @@ declare namespace spec {
         urgeActivityReport: SpecValue;
         urgeDutyTable: SpecValue;
         urgeSafetyReport: SpecValue;
-        urgeLicenseExpire:SpecValue;
+        urgeLicenseExpire: SpecValue;
+        finishRedressTask: SpecValue;
+        instantReportFeedback: SpecValue;
+        instantReportFinish: SpecValue;
     }
 
     const SchoolNoticeType: SchoolNoticeTypeStatic;
@@ -1234,71 +1239,71 @@ declare namespace spec {
     const SchoolWaterUsage: SchoolWaterUsageStatic;
 
     interface SchoolLicenseTypeStatic {
-        cateringService:SpecValue,
-        canteenContract:SpecValue,
-        canteenDeliveryContract:SpecValue,
-        boxMealProduct:SpecValue,
-        canteenBusiness:SpecValue,
-        deliveryBusiness:SpecValue,
-        launchBusiness:SpecValue,
-        cateringSecurityTrainA:SpecValue,
-        cateringSecurityTrainB:SpecValue,
-        cateringSecurityTrainC:SpecValue,
-        canteenEmployeeHealth:SpecValue,
-        specialDeviceOperation:SpecValue
+        cateringService: SpecValue,
+        canteenContract: SpecValue,
+        canteenDeliveryContract: SpecValue,
+        boxMealProduct: SpecValue,
+        canteenBusiness: SpecValue,
+        deliveryBusiness: SpecValue,
+        launchBusiness: SpecValue,
+        cateringSecurityTrainA: SpecValue,
+        cateringSecurityTrainB: SpecValue,
+        cateringSecurityTrainC: SpecValue,
+        canteenEmployeeHealth: SpecValue,
+        specialDeviceOperation: SpecValue
     }
 
-    const SchoolLicenseType:SchoolLicenseTypeStatic;
+    const SchoolLicenseType: SchoolLicenseTypeStatic;
 
-    interface SchoolDocumentTypeStatic{
-        law:SpecValue,
-        regulation:SpecValue,
-        presolution:SpecValue
+    interface SchoolDocumentTypeStatic {
+        law: SpecValue,
+        regulation: SpecValue,
+        presolution: SpecValue
     }
 
-    const SchoolDocumentType:SchoolDocumentTypeStatic;
+    const SchoolDocumentType: SchoolDocumentTypeStatic;
 
-    interface SchoolCitizenReportBizTypeStatic{
-        consult:SpecValue,
-        complaint:SpecValue,
-        help:SpecValue,
-        advice:SpecValue
-    } 
-
-    const SchoolCitizenReportBizType:SchoolCitizenReportBizTypeStatic;
-
-    interface SchoolCitizenReportDealResultStatic{
-        processing:SpecValue,
-        reject:SpecValue,
-        onTime:SpecValue,
-        overTime:SpecValue
+    interface SchoolCitizenReportBizTypeStatic {
+        consult: SpecValue,
+        complaint: SpecValue,
+        help: SpecValue,
+        advice: SpecValue
     }
 
-    const SchoolCitizenReportDealResult:SchoolCitizenReportDealResultStatic;
+    const SchoolCitizenReportBizType: SchoolCitizenReportBizTypeStatic;
 
-    interface SchoolCitizenReportSourceStatic{
-        source12345:SpecValue,
-        source962347:SpecValue,
-        other:SpecValue
+    interface SchoolCitizenReportDealResultStatic {
+        processing: SpecValue,
+        reject: SpecValue,
+        onTime: SpecValue,
+        overTime: SpecValue
     }
 
-    const SchoolCitizenReportSource:SchoolCitizenReportSourceStatic;
+    const SchoolCitizenReportDealResult: SchoolCitizenReportDealResultStatic;
 
-    interface SchoolCitizenReportTransferTypeStatic{
-        administrationPlatform:SpecValue,
-        wechat:SpecValue,
-        email:SpecValue,
-        fax:SpecValue
+    interface SchoolCitizenReportSourceStatic {
+        source12345: SpecValue,
+        source962347: SpecValue,
+        other: SpecValue
     }
 
-    const SchoolCitizenReportTransferType:SchoolCitizenReportTransferTypeStatic
+    const SchoolCitizenReportSource: SchoolCitizenReportSourceStatic;
 
-    interface SchoolCitizenReportUrgentLevelStatic{
-        normal:SpecValue,
-        emergency:SpecValue
+    interface SchoolCitizenReportTransferTypeStatic {
+        administrationPlatform: SpecValue,
+        wechat: SpecValue,
+        email: SpecValue,
+        fax: SpecValue
     }
 
-    const SchoolCitizenReportUrgentLevel:SchoolCitizenReportUrgentLevelStatic;
+    const SchoolCitizenReportTransferType: SchoolCitizenReportTransferTypeStatic
+
+    interface SchoolCitizenReportUrgentLevelStatic {
+        normal: SpecValue,
+        emergency: SpecValue
+    }
+
+    const SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevelStatic;
 
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;
