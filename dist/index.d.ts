@@ -766,6 +766,8 @@ declare namespace spec {
         canceled: SpecValue;
         bringOut: SpecValue;
         bringIn: SpecValue;
+        fingerBegin:SpecValue;
+        fingerEnd:SpecValue;
     }
 
     const PrisonMeetingStatus: PrisonMeetingStatusStatic;

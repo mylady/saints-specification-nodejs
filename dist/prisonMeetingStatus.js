@@ -27,6 +27,14 @@ var prisonMeetingStatus = {
   bringIn: {
     name: '需带入',
     value: 5
+  },
+  fingerBegin: {
+    name: '指纹开始',
+    value: 6
+  },
+  fingerEnd: {
+    name: '指纹结束',
+    value: 7
   }
 };
 
