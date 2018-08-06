@@ -782,6 +782,15 @@ declare namespace spec {
 
     const PrisonMeetingType: PrisonMeetingTypeStatic;
 
+    interface PrisonMeetingUserTypeStatic {
+        police: SpecValue;
+        lawyer: SpecValue;
+        relative: SpecValue;
+        other: SpecValue;
+    }
+
+    const PrisonMeetingUserType: PrisonMeetingUserTypeStatic;
+
     interface PrisonMessage {
         BusinessType: number;
         Detail?: string;

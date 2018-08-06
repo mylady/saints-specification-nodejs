@@ -78,6 +78,7 @@ import PrisonerRollCallType from './prisonerRollCallType';
 import PrisonMeetingRegisterType from './prisonMeetingRegisterType';
 import PrisonMeetingStatus from './prisonMeetingStatus';
 import PrisonMeetingType from './prisonMeetingType';
+import PrisonMeetingUserType from './prisonMeetingUserType';
 import PrisonMessage from './prisonMessage';
 import PrisonRoomStatus from './prisonRoomStatus';
 import PrisonRoomType from './prisonRoomType';
@@ -218,6 +219,7 @@ export default {
     PrisonMeetingRegisterType: PrisonMeetingRegisterType,
     PrisonMeetingStatus: PrisonMeetingStatus,
     PrisonMeetingType: PrisonMeetingType,
+    PrisonMeetingUserType : PrisonMeetingUserType,
     PrisonMessage: PrisonMessage,
     PrisonRoomStatus: PrisonRoomStatus,
     PrisonRoomType: PrisonRoomType,
