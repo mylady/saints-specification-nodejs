@@ -785,7 +785,7 @@ declare namespace spec {
     interface PrisonMeetingUserTypeStatic {
         police: SpecValue;
         lawyer: SpecValue;
-        relative: SpecValue;
+        family: SpecValue;
         other: SpecValue;
     }
 

@@ -12,7 +12,7 @@ var prisonMeetingUserType = {
     name: '律师',
     value: 1
   },
-  relative: {
+  family: {
     name: '家属',
     value: 2
   },
