@@ -20,9 +20,13 @@ let prisonUserType = {
     name:'提押干警',
     value:3
   },
-  receptionPolice:{
-    name:'收押干警',
+  meetingRegisterPolice:{
+    name:'登记干警',
     value:4
+  },
+  registerArraignPolice:{
+    name:'登记和提押干警',
+    value:5
   }
 };
 

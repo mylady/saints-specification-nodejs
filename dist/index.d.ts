@@ -766,8 +766,8 @@ declare namespace spec {
         canceled: SpecValue;
         bringOut: SpecValue;
         bringIn: SpecValue;
-        fingerBegin:SpecValue;
-        fingerEnd:SpecValue;
+        fingerBegin: SpecValue;
+        fingerEnd: SpecValue;
     }
 
     const PrisonMeetingStatus: PrisonMeetingStatusStatic;
@@ -821,7 +821,8 @@ declare namespace spec {
         police: SpecValue;
         doctor: SpecValue;
         arraignPolice: SpecValue;
-        receptionPolice: SpecValue;
+        meetingRegisterPolice: SpecValue;
+        registerArraignPolice: SpecValue;
     }
 
     const PrisonUserType: PrisonUserTypeStatic;
