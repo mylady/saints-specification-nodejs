@@ -1054,6 +1054,13 @@ declare namespace spec {
         HeartRate?: number;
     }
 
+    interface SchoolAffiliatedTypeStatic {
+        agency: SpecValue;
+        district: SpecValue;
+    }
+
+    const SchoolAffiliatedType: SchoolAffiliatedTypeStatic;
+
 
     interface SchoolCategoryStatic {
         youErYuan: SpecValue;

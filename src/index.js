@@ -99,6 +99,7 @@ import RestQueryConst from './restQueryConst';
 import RestResponse from './restReponse';
 import RFIDTagExtra from './rfidTagExtra';
 
+import SchoolAffiliatedType from './schoolAffiliatedType';
 import SchoolCategory from './schoolCategory';
 import SchoolEmergencyType from './schoolEmergencyType';
 import SchoolNature from './schoolNature';
@@ -240,6 +241,7 @@ export default {
     RestResponse: RestResponse,
     RFIDTagExtra: RFIDTagExtra,
 
+    SchoolAffiliatedType:SchoolAffiliatedType,
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
