@@ -827,6 +827,15 @@ declare namespace spec {
 
     const PrisonUserType: PrisonUserTypeStatic;
 
+    interface PrisonWorkNumberTypeStatic {
+        policeLicense: SpecValue;
+        workLicense: SpecValue;
+        lawyerLicense: SpecValue;
+        other: SpecValue;
+    }
+
+    const PrisonWorkNumberType: PrisonWorkNumberTypeStatic;
+
     interface ProductIdsStatic {
         commandcenterID: string;
         videoManageID: string;

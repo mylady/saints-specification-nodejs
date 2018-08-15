@@ -274,6 +274,10 @@ var _prisonUserType = require('./prisonUserType');
 
 var _prisonUserType2 = _interopRequireDefault(_prisonUserType);
 
+var _prisonWorkNumberType = require('./prisonWorkNumberType');
+
+var _prisonWorkNumberType2 = _interopRequireDefault(_prisonWorkNumberType);
+
 var _productIds = require('./productIds');
 
 var _productIds2 = _interopRequireDefault(_productIds);
@@ -576,6 +580,7 @@ exports.default = {
     PrisonTerminalType: _prisonTerminalType2.default,
     PrisonTreeNodeType: _prisonTreeNodeType2.default,
     PrisonUserType: _prisonUserType2.default,
+    PrisonWorkNumberType: _prisonWorkNumberType2.default,
     ProductIds: _productIds2.default,
     ProductInfo: _productInfo2.default,
     ProductOS: _productOS2.default,

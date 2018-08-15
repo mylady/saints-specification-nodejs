@@ -85,6 +85,7 @@ import PrisonRoomType from './prisonRoomType';
 import PrisonTerminalType from './prisonTerminalType';
 import PrisonTreeNodeType from './prisonTreeNodeType';
 import PrisonUserType from './prisonUserType';
+import PrisonWorkNumberType from './prisonWorkNumberType';
 import ProductIds from './productIds';
 import ProductInfo from './productInfo';
 import ProductOS from './productOS';
@@ -227,6 +228,7 @@ export default {
     PrisonTerminalType: PrisonTerminalType,
     PrisonTreeNodeType: PrisonTreeNodeType,
     PrisonUserType: PrisonUserType,
+    PrisonWorkNumberType:PrisonWorkNumberType,
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
     ProductOS: ProductOS,
