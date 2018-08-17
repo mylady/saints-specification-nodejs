@@ -31,7 +31,7 @@ let productIds = {
     generalVideoPlayerID: 'da81db8b-8d7c-46b2-b60f-6eca418206d2',
     detectorManageID: '872f8162-4e31-477d-a9e4-772653ec839c',
     d3ServiceID:'1978d933-703d-44c0-93e9-2926218f09da',
-    communityService:'cd4b1c95-a2b3-4824-baaf-dc2694773a01'
+    communityServiceID:'cd4b1c95-a2b3-4824-baaf-dc2694773a01'
 };
 
 Object.freeze(productIds);

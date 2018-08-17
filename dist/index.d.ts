@@ -864,7 +864,7 @@ declare namespace spec {
         generalVideoPlayerID: string;
         detectorManageID: string;
         d3ServiceID:string;
-        communityService:string;
+        communityServiceID:string;
     }
 
     const ProductIds: ProductIdsStatic;
