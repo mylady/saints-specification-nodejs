@@ -43,6 +43,10 @@ let schoolCategory = {
     tuoErSuo:{
         name:'托儿所',
         value:9
+    },
+    qiTa:{
+        name:'其他',
+        value:255
     }
 };
 

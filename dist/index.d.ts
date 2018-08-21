@@ -1084,6 +1084,7 @@ declare namespace spec {
         zhiXiao: SpecValue;
         teShuXueXiao: SpecValue;
         tuoErSuo: SpecValue;
+        qiTa:SpecValue;
     }
 
     const SchoolCategory: SchoolCategoryStatic;
