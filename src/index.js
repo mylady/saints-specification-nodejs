@@ -5,6 +5,7 @@
 'use strict';
 
 import AirMonitorExtra from './airMonitorExtra';
+import AppointmentStatus from './appointmentStatus';
 
 import BehaviorAnalyseExtra from './behaviorAnalyseExtra';
 import BioIdentifyMessage from './bioIdentifyMessage';
@@ -150,6 +151,7 @@ import VoicePrint from './voicePrint';
 
 export default {
     AirMonitorExtra: AirMonitorExtra,
+    AppointmentStatus:AppointmentStatus,
 
     BehaviorAnalyseExtra: BehaviorAnalyseExtra,
     BioIdentifyMessage: BioIdentifyMessage,

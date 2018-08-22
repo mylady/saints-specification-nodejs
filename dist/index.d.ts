@@ -17,6 +17,14 @@ declare namespace spec {
         H2S?: number;
     }
 
+    interface AppointmentStatusStatic {
+        wait: SpecValue;
+        auditing: SpecValue;
+        audited:SpecValue;
+    }
+
+    const AppointmentStatus: AppointmentStatusStatic;
+
     interface BehaviorAnalyseExtra {
         SceneImagePath?: string;
         SceneImage?: string;

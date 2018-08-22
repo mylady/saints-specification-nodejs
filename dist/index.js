@@ -12,6 +12,10 @@ var _airMonitorExtra = require('./airMonitorExtra');
 
 var _airMonitorExtra2 = _interopRequireDefault(_airMonitorExtra);
 
+var _appointmentStatus = require('./appointmentStatus');
+
+var _appointmentStatus2 = _interopRequireDefault(_appointmentStatus);
+
 var _behaviorAnalyseExtra = require('./behaviorAnalyseExtra');
 
 var _behaviorAnalyseExtra2 = _interopRequireDefault(_behaviorAnalyseExtra);
@@ -502,6 +506,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     AirMonitorExtra: _airMonitorExtra2.default,
+    AppointmentStatus: _appointmentStatus2.default,
 
     BehaviorAnalyseExtra: _behaviorAnalyseExtra2.default,
     BioIdentifyMessage: _bioIdentifyMessage2.default,
