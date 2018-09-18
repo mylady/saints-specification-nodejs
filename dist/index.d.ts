@@ -337,6 +337,8 @@ declare namespace spec {
         lingxinLedControllerV6: SpecValue;
         yituFaceRecognitionV18REST: SpecValue;
         renweiRFIDUDP: SpecValue;
+        yushiFaceRecognitionREST:SpecValue;
+        jinzhiVideoPlatformSDK:SpecValue;
     }
 
     const DeviceInterfaceCode: DeviceInterfaceCodeStatic;

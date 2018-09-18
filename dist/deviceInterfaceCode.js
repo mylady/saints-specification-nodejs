@@ -335,6 +335,14 @@ var deviceInterfaceCode = {
         name: '仁微人员定位接口',
         value: 80
     },
+    yushiFaceRecognitionREST: {
+        name: '宇视人脸识别接口',
+        value: 81
+    },
+    jinzhiVideoPlatformSDK: {
+        name: '金智视频平台接口',
+        value: 82
+    },
 
     //saints define
     shengxiDoorUDP: {
