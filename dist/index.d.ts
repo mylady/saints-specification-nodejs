@@ -339,6 +339,13 @@ declare namespace spec {
         renweiRFIDUDP: SpecValue;
         yushiFaceRecognitionREST:SpecValue;
         jinzhiVideoPlatformSDK:SpecValue;
+        miaoguanEnvMonitorTCPServer:SpecValue;
+        meizanmeiIPCEnvMonitorUDP:SpecValue;
+        renshuoEnvMonitorSDK:SpecValue;
+        zhongkeyunkongEnvMonitorREST:SpecValue;
+
+
+        shengxiDoorUDP:SpecValue;
     }
 
     const DeviceInterfaceCode: DeviceInterfaceCodeStatic;
@@ -615,6 +622,8 @@ declare namespace spec {
         shengke: SpecValue;
         wangu: SpecValue;
         renwei: SpecValue;
+        zhongkeyunkong:SpecValue;
+        renshuo:SpecValue;
     }
 
     const ManufacturerCode: ManufacturerCodeStatic;

@@ -343,6 +343,22 @@ var deviceInterfaceCode = {
         name: '金智视频平台接口',
         value: 82
     },
+    miaoguanEnvMonitorTCPServer: {
+        name: '妙观温湿度监测服务端接口',
+        value: 83
+    },
+    meizanmeiIPCEnvMonitorUDP: {
+        name: '美赞美温湿度接口',
+        value: 84
+    },
+    renshuoEnvMonitorSDK: {
+        name: '仁硕温湿度接口',
+        value: 85
+    },
+    zhongkeyunkongEnvMonitorREST: {
+        name: '中科云控温湿度接口',
+        value: 86
+    },
 
     //saints define
     shengxiDoorUDP: {

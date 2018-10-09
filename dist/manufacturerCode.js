@@ -206,6 +206,14 @@ var manufacturerCode = {
   renwei: {
     name: '仁微',
     value: 48
+  },
+  zhongkeyunkong: {
+    name: '中科云控',
+    value: 49
+  },
+  renshuo: {
+    name: '仁硕',
+    value: 50
   }
 };
 
