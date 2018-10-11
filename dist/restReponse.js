@@ -13,6 +13,7 @@ var RestResponse = function () {
         _classCallCheck(this, RestResponse);
 
         this.result = false;
+        this.error_code = 0;
         this.error_msg = '';
         this.data = null;
         this.total_count = 0;
@@ -20,12 +21,11 @@ var RestResponse = function () {
 
     _createClass(RestResponse, null, [{
         key: 'NewBoolResponse',
-        value: function NewBoolResponse(b, errmsg) {
+        value: function NewBoolResponse(b, errMsg, errCode) {
             var resp = new RestResponse();
             resp.result = b;
-            if (errmsg) {
-                resp.error_msg = errmsg;
-            }
+            resp.error_msg = errMsg || '';
+            resp.error_code = errCode || 0;
             return resp;
         }
     }, {
