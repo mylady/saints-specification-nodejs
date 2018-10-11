@@ -8,14 +8,16 @@ export default class RestResponse {
         this.total_count = 0;
     }
 
-    static NewBoolResponse(b,errmsg){
+    static NewBoolResponse(b, errmsg) {
         let resp = new RestResponse();
         resp.result = b;
-        resp.error_msg = errmsg;
+        if (errmsg) {
+            resp.error_msg = errmsg
+        }
         return resp;
     }
 
-    static NewDataResponse(d,cnt){
+    static NewDataResponse(d, cnt) {
         let resp = new RestResponse();
         resp.result = true;
         resp.data = d;

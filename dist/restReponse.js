@@ -23,7 +23,9 @@ var RestResponse = function () {
         value: function NewBoolResponse(b, errmsg) {
             var resp = new RestResponse();
             resp.result = b;
-            resp.error_msg = errmsg;
+            if (errmsg) {
+                resp.error_msg = errmsg;
+            }
             return resp;
         }
     }, {
