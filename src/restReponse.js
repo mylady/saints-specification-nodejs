@@ -9,11 +9,11 @@ export default class RestResponse {
         this.total_count = 0;
     }
 
-    static NewBoolResponse(b, errMsg, errCode) {
+    static NewBoolResponse(b, err) {
         let resp = new RestResponse();
         resp.result = b;
-        resp.error_msg = errMsg || '';
-        resp.error_code = errCode || 0;
+        resp.error_msg = err.message || '';
+        resp.error_code = err.code || 0;
         return resp;
     }
 

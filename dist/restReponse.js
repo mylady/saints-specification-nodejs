@@ -21,11 +21,11 @@ var RestResponse = function () {
 
     _createClass(RestResponse, null, [{
         key: 'NewBoolResponse',
-        value: function NewBoolResponse(b, errMsg, errCode) {
+        value: function NewBoolResponse(b, err) {
             var resp = new RestResponse();
             resp.result = b;
-            resp.error_msg = errMsg || '';
-            resp.error_code = errCode || 0;
+            resp.error_msg = err.message || '';
+            resp.error_code = err.code || 0;
             return resp;
         }
     }, {

@@ -1,9 +1,9 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "1.1.38",
+  "version": "1.1.39",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
-  "types":"./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "./node_modules/.bin/babel src -d dist",
     "test": "./node_modules/.bin/babel-node ./test/es6Test.js"
