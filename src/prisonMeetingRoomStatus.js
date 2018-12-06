@@ -15,6 +15,10 @@ let prisonMeetingRoomStatus = {
   using: {
     name: '使用中',
     value: 2
+  },
+  locked:{
+    name:'锁定',
+    value:3
   }
 };
 

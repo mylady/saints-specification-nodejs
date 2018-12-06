@@ -765,7 +765,8 @@ declare namespace spec {
     interface PrisonMeetingRoomStatusStatic {
         unavailable: SpecValue;
         free: SpecValue;
-        using: SpecValue
+        using: SpecValue;
+        locked:SpecValue;
     }
 
     const PrisonMeetingRoomStatus: PrisonMeetingRoomStatusStatic;
