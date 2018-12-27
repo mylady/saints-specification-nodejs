@@ -12,7 +12,9 @@ export default class RestResponse {
     static NewBoolResponse(b, err) {
         let resp = new RestResponse();
         resp.result = b;
-        resp.error_msg = err.message || '';
+        if (err) {
+            resp.error_msg = err.message;
+        }
         resp.error_code = err.code || 0;
         return resp;
     }
