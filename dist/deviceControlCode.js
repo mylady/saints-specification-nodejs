@@ -94,6 +94,10 @@ var deviceControlCode = {
     closeDoor: {
         name: '关门',
         value: 21
+    },
+    resetArm: {
+        name: '复位布防',
+        value: 22
     }
 };
 

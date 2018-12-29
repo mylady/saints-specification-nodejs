@@ -144,7 +144,10 @@ declare namespace spec {
         dutySleep: SpecValue,
         fight: SpecValue,
         leftDuty: SpecValue,
-        crossLine: SpecValue
+        crossLine: SpecValue,
+        powergridOpenAlarm:SpecValue,
+        powergridTouchAlarm:SpecValue,
+        powergridShortAlarm:SpecValue
     }
 
     const DeviceAlarmCode: DeviceAlarmCodeStatic;
@@ -171,7 +174,8 @@ declare namespace spec {
         matrixPreset: SpecValue,
         setTvwallLayout: SpecValue,
         openDoor: SpecValue,
-        closeDoor: SpecValue
+        closeDoor: SpecValue,
+        resetArmL:SpecValue
     }
 
     const DeviceControlCode: DeviceControlCodeStatic;
@@ -343,7 +347,11 @@ declare namespace spec {
         meizanmeiIPCEnvMonitorUDP:SpecValue;
         renshuoEnvMonitorSDK:SpecValue;
         zhongkeyunkongEnvMonitorREST:SpecValue;
-
+        zhongxinweiRFIDSDK:SpecValue;
+        xufeiPowerGridTCP:SpecValue;
+        xufeiIrAlarmTCP:SpecValue;
+        jieanPerimeterSDK:SpecValue;
+        siniuteEnvMonitorREST:SpecValue,
 
         shengxiDoorUDP:SpecValue;
     }
@@ -974,6 +982,7 @@ declare namespace spec {
         airMonitor: SpecValue;
         rfidTag: SpecValue;
         relay: SpecValue;
+        perimeter:SpecValue;
         decoderChannel: SpecValue;
         matrixChannel: SpecValue;
         screenOutput: SpecValue;

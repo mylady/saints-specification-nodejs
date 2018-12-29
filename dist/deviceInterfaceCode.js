@@ -359,6 +359,26 @@ var deviceInterfaceCode = {
         name: '中科云控温湿度接口',
         value: 86
     },
+    zhongxinweiRFIDSDK: {
+        name: '中芯微人员定位接口',
+        value: 87
+    },
+    xufeiPowerGridTCP: {
+        name: '旭飞高压电网接口',
+        value: 88
+    },
+    xufeiIrAlarmTCP: {
+        name: '旭飞红外幕帘接口',
+        value: 89
+    },
+    jieanPerimeterSDK: {
+        name: '界安震动光缆接口',
+        value: 90
+    },
+    siniuteEnvMonitorREST: {
+        name: '斯纽特温湿度接口',
+        value: 91
+    },
 
     //saints define
     shengxiDoorUDP: {

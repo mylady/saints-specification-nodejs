@@ -59,6 +59,10 @@ var resourceCode = {
         name: '继电器模块',
         value: 11
     },
+    perimeter: {
+        name: '震动光缆/周界',
+        value: 12
+    },
 
     decoderChannel: {
         name: '解码通道',

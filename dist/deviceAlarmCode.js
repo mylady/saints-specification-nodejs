@@ -219,6 +219,18 @@ var deviceAlarmCode = {
     crossLine: {
         name: '警戒线报警',
         value: 52
+    },
+    powergridOpenAlarm: {
+        name: '高压断网报警',
+        value: 53
+    },
+    powergridTouchAlarm: {
+        name: '高压触网报警',
+        value: 54
+    },
+    powergridShortAlarm: {
+        name: '高压短路报警',
+        value: 55
     }
 };
 
