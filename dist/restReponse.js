@@ -26,8 +26,8 @@ var RestResponse = function () {
             resp.result = b;
             if (err) {
                 resp.error_msg = err.message;
+                resp.error_code = err.code || 0;
             }
-            resp.error_code = err.code || 0;
             return resp;
         }
     }, {
