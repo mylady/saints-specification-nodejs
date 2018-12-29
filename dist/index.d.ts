@@ -350,7 +350,7 @@ declare namespace spec {
         zhongxinweiRFIDSDK:SpecValue;
         xufeiPowerGridTCP:SpecValue;
         xufeiIrAlarmTCP:SpecValue;
-        jieanPerimeterSDK:SpecValue;
+        jieanPerimeterTCP:SpecValue;
         siniuteEnvMonitorREST:SpecValue,
 
         shengxiDoorUDP:SpecValue;

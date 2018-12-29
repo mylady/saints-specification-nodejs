@@ -368,7 +368,7 @@ let deviceInterfaceCode = {
         name:'旭飞红外幕帘接口',
         value:89
     },
-    jieanPerimeterSDK:{
+    jieanPerimeterTCP:{
         name:'界安震动光缆接口',
         value:90
     },
