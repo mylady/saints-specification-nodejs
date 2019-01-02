@@ -379,6 +379,10 @@ var deviceInterfaceCode = {
         name: '斯纽特温湿度接口',
         value: 91
     },
+    kedaVideoAnalyseWebService: {
+        name: '科达视频分析接口',
+        value: 92
+    },
 
     //saints define
     shengxiDoorUDP: {

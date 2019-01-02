@@ -352,6 +352,7 @@ declare namespace spec {
         xufeiIrAlarmTCP:SpecValue;
         jieanPerimeterTCP:SpecValue;
         siniuteEnvMonitorREST:SpecValue,
+        kedaVideoAnalyseWebService:SpecValue,
 
         shengxiDoorUDP:SpecValue;
     }
