@@ -214,6 +214,26 @@ var manufacturerCode = {
   renshuo: {
     name: '仁硕',
     value: 50
+  },
+  zhongxinwei: {
+    name: '中芯微',
+    value: 51
+  },
+  xufei: {
+    name: '旭飞',
+    value: 52
+  },
+  jiean: {
+    name: '界安',
+    value: 53
+  },
+  siniute: {
+    name: '斯纽特',
+    value: 54
+  },
+  keda: {
+    name: '科达',
+    value: 55
   }
 };
 

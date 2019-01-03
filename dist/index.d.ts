@@ -20,7 +20,7 @@ declare namespace spec {
     interface AppointmentStatusStatic {
         wait: SpecValue;
         auditing: SpecValue;
-        audited:SpecValue;
+        audited: SpecValue;
     }
 
     const AppointmentStatus: AppointmentStatusStatic;
@@ -145,9 +145,9 @@ declare namespace spec {
         fight: SpecValue,
         leftDuty: SpecValue,
         crossLine: SpecValue,
-        powergridOpenAlarm:SpecValue,
-        powergridTouchAlarm:SpecValue,
-        powergridShortAlarm:SpecValue
+        powergridOpenAlarm: SpecValue,
+        powergridTouchAlarm: SpecValue,
+        powergridShortAlarm: SpecValue
     }
 
     const DeviceAlarmCode: DeviceAlarmCodeStatic;
@@ -175,7 +175,7 @@ declare namespace spec {
         setTvwallLayout: SpecValue,
         openDoor: SpecValue,
         closeDoor: SpecValue,
-        resetArmL:SpecValue
+        resetArmL: SpecValue
     }
 
     const DeviceControlCode: DeviceControlCodeStatic;
@@ -341,20 +341,20 @@ declare namespace spec {
         lingxinLedControllerV6: SpecValue;
         yituFaceRecognitionV18REST: SpecValue;
         renweiRFIDUDP: SpecValue;
-        yushiFaceRecognitionREST:SpecValue;
-        jinzhiVideoPlatformSDK:SpecValue;
-        miaoguanEnvMonitorTCPServer:SpecValue;
-        meizanmeiIPCEnvMonitorUDP:SpecValue;
-        renshuoEnvMonitorSDK:SpecValue;
-        zhongkeyunkongEnvMonitorREST:SpecValue;
-        zhongxinweiRFIDSDK:SpecValue;
-        xufeiPowerGridTCP:SpecValue;
-        xufeiIrAlarmTCP:SpecValue;
-        jieanPerimeterTCP:SpecValue;
-        siniuteEnvMonitorREST:SpecValue,
-        kedaVideoAnalyseWebService:SpecValue,
+        yushiFaceRecognitionREST: SpecValue;
+        jinzhiVideoPlatformSDK: SpecValue;
+        miaoguanEnvMonitorTCPServer: SpecValue;
+        meizanmeiIPCEnvMonitorUDP: SpecValue;
+        renshuoEnvMonitorSDK: SpecValue;
+        zhongkeyunkongEnvMonitorREST: SpecValue;
+        zhongxinweiRFIDSDK: SpecValue;
+        xufeiPowerGridTCP: SpecValue;
+        xufeiIrAlarmTCP: SpecValue;
+        jieanPerimeterTCP: SpecValue;
+        siniuteEnvMonitorREST: SpecValue,
+        kedaVideoAnalyseWebService: SpecValue,
 
-        shengxiDoorUDP:SpecValue;
+        shengxiDoorUDP: SpecValue;
     }
 
     const DeviceInterfaceCode: DeviceInterfaceCodeStatic;
@@ -631,8 +631,13 @@ declare namespace spec {
         shengke: SpecValue;
         wangu: SpecValue;
         renwei: SpecValue;
-        zhongkeyunkong:SpecValue;
-        renshuo:SpecValue;
+        zhongkeyunkong: SpecValue;
+        renshuo: SpecValue;
+        zhongxinwei: SpecValue;
+        xufei: SpecValue;
+        jiean: SpecValue;
+        siniute: SpecValue;
+        keda: SpecValue;
     }
 
     const ManufacturerCode: ManufacturerCodeStatic;
@@ -775,7 +780,7 @@ declare namespace spec {
         unavailable: SpecValue;
         free: SpecValue;
         using: SpecValue;
-        locked:SpecValue;
+        locked: SpecValue;
     }
 
     const PrisonMeetingRoomStatus: PrisonMeetingRoomStatusStatic;
@@ -892,8 +897,8 @@ declare namespace spec {
         videoDiagnosticServiceID: string;
         generalVideoPlayerID: string;
         detectorManageID: string;
-        d3ServiceID:string;
-        communityServiceID:string;
+        d3ServiceID: string;
+        communityServiceID: string;
     }
 
     const ProductIds: ProductIdsStatic;
@@ -983,7 +988,7 @@ declare namespace spec {
         airMonitor: SpecValue;
         rfidTag: SpecValue;
         relay: SpecValue;
-        perimeter:SpecValue;
+        perimeter: SpecValue;
         decoderChannel: SpecValue;
         matrixChannel: SpecValue;
         screenOutput: SpecValue;
@@ -1114,7 +1119,7 @@ declare namespace spec {
         zhiXiao: SpecValue;
         teShuXueXiao: SpecValue;
         tuoErSuo: SpecValue;
-        qiTa:SpecValue;
+        qiTa: SpecValue;
     }
 
     const SchoolCategory: SchoolCategoryStatic;
