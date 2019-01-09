@@ -282,6 +282,10 @@ var _prisonWorkNumberType = require('./prisonWorkNumberType');
 
 var _prisonWorkNumberType2 = _interopRequireDefault(_prisonWorkNumberType);
 
+var _prisonMeetingQueueStatus = require('./prisonMeetingQueueStatus');
+
+var _prisonMeetingQueueStatus2 = _interopRequireDefault(_prisonMeetingQueueStatus);
+
 var _productIds = require('./productIds');
 
 var _productIds2 = _interopRequireDefault(_productIds);
@@ -446,6 +450,10 @@ var _schoolCitizenReportUrgentLevel = require('./schoolCitizenReportUrgentLevel'
 
 var _schoolCitizenReportUrgentLevel2 = _interopRequireDefault(_schoolCitizenReportUrgentLevel);
 
+var _schoolVacateType = require('./schoolVacateType');
+
+var _schoolVacateType2 = _interopRequireDefault(_schoolVacateType);
+
 var _specificationSettings = require('./specificationSettings');
 
 var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
@@ -586,6 +594,8 @@ exports.default = {
     PrisonTreeNodeType: _prisonTreeNodeType2.default,
     PrisonUserType: _prisonUserType2.default,
     PrisonWorkNumberType: _prisonWorkNumberType2.default,
+    PrisonMeetingQueueStatus: _prisonMeetingQueueStatus2.default,
+
     ProductIds: _productIds2.default,
     ProductInfo: _productInfo2.default,
     ProductOS: _productOS2.default,
@@ -629,6 +639,7 @@ exports.default = {
     SchoolCitizenReportSource: _schoolCitizenReportSource2.default,
     SchoolCitizenReportTransferType: _schoolCitizenReportTransferType2.default,
     SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel2.default,
+    SchoolVacateType: _schoolVacateType2.default,
 
     SpecificationSettings: _specificationSettings2.default,
 

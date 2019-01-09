@@ -87,6 +87,8 @@ import PrisonTerminalType from './prisonTerminalType';
 import PrisonTreeNodeType from './prisonTreeNodeType';
 import PrisonUserType from './prisonUserType';
 import PrisonWorkNumberType from './prisonWorkNumberType';
+import PrisonMeetingQueueStatus from './prisonMeetingQueueStatus';
+
 import ProductIds from './productIds';
 import ProductInfo from './productInfo';
 import ProductOS from './productOS';
@@ -130,6 +132,7 @@ import SchoolCitizenReportDealResult from './schoolCitizenReportDealResult';
 import SchoolCitizenReportSource from './schoolCitizenReportSource';
 import SchoolCitizenReportTransferType from './schoolCitizenReportTransferType';
 import SchoolCitizenReportUrgentLevel from './schoolCitizenReportUrgentLevel';
+import SchoolVacateType from './schoolVacateType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -231,6 +234,8 @@ export default {
     PrisonTreeNodeType: PrisonTreeNodeType,
     PrisonUserType: PrisonUserType,
     PrisonWorkNumberType:PrisonWorkNumberType,
+    PrisonMeetingQueueStatus:PrisonMeetingQueueStatus,
+
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
     ProductOS: ProductOS,
@@ -274,6 +279,7 @@ export default {
     SchoolCitizenReportSource: SchoolCitizenReportSource,
     SchoolCitizenReportTransferType: SchoolCitizenReportTransferType,
     SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevel,
+    SchoolVacateType:SchoolVacateType,
 
     SpecificationSettings: SpecificationSettings,
 
