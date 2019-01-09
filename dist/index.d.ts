@@ -870,6 +870,14 @@ declare namespace spec {
 
     const PrisonWorkNumberType: PrisonWorkNumberTypeStatic;
 
+    interface PrisonMeetingQueueStatusStatic {
+        wait: SpecValue;
+        finish: SpecValue;
+        cancel: SpecValue;
+    }
+
+    const PrisonMeetingQueueStatus: PrisonMeetingQueueStatusStatic;
+
     interface ProductIdsStatic {
         commandcenterID: string;
         videoManageID: string;
@@ -1370,6 +1378,15 @@ declare namespace spec {
     }
 
     const SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevelStatic;
+
+    interface SchoolVacateTypeStatic {
+        vacation: SpecValue,
+        business: SpecValue,
+        illness: SpecValue,
+        other: SpecValue
+    }
+
+    const SchoolVacateType: SchoolVacateTypeStatic;
 
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;
