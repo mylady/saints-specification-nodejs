@@ -353,7 +353,7 @@ declare namespace spec {
         jieanPerimeterTCP: SpecValue;
         siniuteEnvMonitorREST: SpecValue,
         kedaVideoAnalyseWebService: SpecValue,
-
+        kedaVideoDiagnosticREST : SpecValue,
         shengxiDoorUDP: SpecValue;
     }
 

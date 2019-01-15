@@ -380,6 +380,10 @@ let deviceInterfaceCode = {
         name:'科达视频分析接口',
         value:92
     },
+    kedaVideoDiagnosticREST:{
+        name:'科达视频诊断接口',
+        value:93
+    },
 
     //saints define
     shengxiDoorUDP:{
