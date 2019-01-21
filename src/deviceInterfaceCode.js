@@ -109,19 +109,19 @@ let deviceInterfaceCode = {
         value: 24
     },
     yangbangLedController: {
-        name: '仰邦电子屏控制器接口v4',
+        name: '仰邦电子屏控制器接口V4',
         value: 25
     },
     yikuoLedController: {
-        name: '易阔电子屏控制器接口v2008',
+        name: '易阔电子屏控制器接口V2008',
         value: 26
     },
     linxinLedControllerV3: {
-        name: '灵信电子屏控制器接口v3.3',
+        name: '灵信电子屏控制器接口V3.3',
         value: 27
     },
     linxinLedControllerV5: {
-        name: '灵信电子屏控制器接口v5.2013',
+        name: '灵信电子屏控制器接口V5.2013',
         value: 28
     },
     shizhanLedController: {
@@ -132,8 +132,8 @@ let deviceInterfaceCode = {
         name: '祥云电子屏控制器接口',
         value: 30
     },
-    kuaiyuLedController: {
-        name: '快鱼分贝报警主机接口v1',
+    kuaiyuSoundV1SERIAL: {
+        name: '快鱼分贝报警主机接口V1',
         value: 31
     },
     bocomBVGController: {
@@ -244,8 +244,8 @@ let deviceInterfaceCode = {
         name: '网络监测接口',
         value: 58
     },
-    kuaiyuSoundv2SERIAL: {
-        name: '快鱼分贝报警主机接口v2',
+    kuaiyuSoundV2SERIAL: {
+        name: '快鱼分贝报警主机接口V2',
         value: 59
     },
     tclTvwallSERIAL: {
@@ -383,6 +383,14 @@ let deviceInterfaceCode = {
     kedaVideoDiagnosticREST:{
         name:'科达视频诊断接口',
         value:93
+    },
+    kuaiyuDigitalCallSDKV2:{
+        name: '快鱼数字对讲接口V2',
+        value: 94
+    },
+    kuaiyuDigitalCallSDKV3:{
+        name: '快鱼数字对讲接口V3',
+        value: 95
     },
 
     //saints define

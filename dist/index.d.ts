@@ -354,6 +354,8 @@ declare namespace spec {
         siniuteEnvMonitorREST: SpecValue,
         kedaVideoAnalyseWebService: SpecValue,
         kedaVideoDiagnosticREST : SpecValue,
+        kuaiyuDigitalCallSDKV2:SpecValue,
+        kuaiyuDigitalCallSDKV3:SpecValue,
         shengxiDoorUDP: SpecValue;
     }
 
