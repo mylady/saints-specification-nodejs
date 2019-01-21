@@ -356,6 +356,7 @@ declare namespace spec {
         kedaVideoDiagnosticREST : SpecValue,
         kuaiyuDigitalCallSDKV2:SpecValue,
         kuaiyuDigitalCallSDKV3:SpecValue,
+        guangtuoPerimeterSDK:SpecValue,
         shengxiDoorUDP: SpecValue;
     }
 

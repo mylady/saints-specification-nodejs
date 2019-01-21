@@ -395,6 +395,10 @@ var deviceInterfaceCode = {
         name: '快鱼数字对讲接口V3',
         value: 95
     },
+    guangtuoPerimeterSDK: {
+        name: '广拓电子围栏接口',
+        value: 96
+    },
 
     //saints define
     shengxiDoorUDP: {
