@@ -86,6 +86,7 @@ import PrisonRoomType from './prisonRoomType';
 import PrisonTerminalType from './prisonTerminalType';
 import PrisonTreeNodeType from './prisonTreeNodeType';
 import PrisonUserType from './prisonUserType';
+import PrisonVisitType from './prisonVisitType';
 import PrisonWorkNumberType from './prisonWorkNumberType';
 import PrisonMeetingQueueStatus from './prisonMeetingQueueStatus';
 
@@ -233,6 +234,7 @@ export default {
     PrisonTerminalType: PrisonTerminalType,
     PrisonTreeNodeType: PrisonTreeNodeType,
     PrisonUserType: PrisonUserType,
+    PrisonVisitType:PrisonVisitType,
     PrisonWorkNumberType:PrisonWorkNumberType,
     PrisonMeetingQueueStatus:PrisonMeetingQueueStatus,
 

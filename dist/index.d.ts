@@ -864,6 +864,17 @@ declare namespace spec {
 
     const PrisonUserType: PrisonUserTypeStatic;
 
+    interface PrisonVisitTypeStatic {
+        arraignment: SpecValue;
+        lawyerMeeting: SpecValue;
+        familyMeeting: SpecValue;
+        court: SpecValue;
+        observe: SpecValue;
+        other: SpecValue;
+    }
+
+    const PrisonVisitType: PrisonVisitTypeStatic;
+
     interface PrisonWorkNumberTypeStatic {
         policeLicense: SpecValue;
         workLicense: SpecValue;
