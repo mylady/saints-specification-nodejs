@@ -399,6 +399,10 @@ var deviceInterfaceCode = {
         name: '广拓电子围栏接口',
         value: 96
     },
+    shangtangFaceRecognitionV32REST: {
+        name: '商汤人脸识别接口',
+        value: 97
+    },
 
     //saints define
     shengxiDoorUDP: {
