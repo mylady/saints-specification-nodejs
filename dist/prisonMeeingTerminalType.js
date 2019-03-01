@@ -3,28 +3,28 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var prisonTerminalType = {
-  outsideTerminal: {
+var prisonMeetingTerminalType = {
+  displayTerminal: {
     name: '监外屏',
     value: 0
   },
-  insideTerminal: {
+  operateTerminal: {
     name: '监内机',
     value: 1
   },
-  arraignTerminal: {
+  queueCheckTerminal: {
     name: '提审终端',
     value: 2
   },
-  frontSideMeetingTerminal: {
+  prisonerCheckTerminal: {
     name: '提审会见展示终端',
     value: 3
   },
-  backSideMeetingTerminal: {
-    name: '提押展示终端',
+  displayPlate: {
+    name: '电子门牌',
     value: 4
   }
 };
 
-Object.freeze(prisonTerminalType);
-exports.default = prisonTerminalType;
+Object.freeze(prisonMeetingTerminalType);
+exports.default = prisonMeetingTerminalType;

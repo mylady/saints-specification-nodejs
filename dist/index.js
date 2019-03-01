@@ -270,6 +270,10 @@ var _prisonTerminalType = require('./prisonTerminalType');
 
 var _prisonTerminalType2 = _interopRequireDefault(_prisonTerminalType);
 
+var _prisonMeetingTerminalType = require('./prisonMeetingTerminalType');
+
+var _prisonMeetingTerminalType2 = _interopRequireDefault(_prisonMeetingTerminalType);
+
 var _prisonTreeNodeType = require('./prisonTreeNodeType');
 
 var _prisonTreeNodeType2 = _interopRequireDefault(_prisonTreeNodeType);
@@ -595,6 +599,7 @@ exports.default = {
     PrisonRoomStatus: _prisonRoomStatus2.default,
     PrisonRoomType: _prisonRoomType2.default,
     PrisonTerminalType: _prisonTerminalType2.default,
+    PrisonMeetingTerminalType: _prisonMeetingTerminalType2.default,
     PrisonTreeNodeType: _prisonTreeNodeType2.default,
     PrisonUserType: _prisonUserType2.default,
     PrisonVisitType: _prisonVisitType2.default,

@@ -843,6 +843,16 @@ declare namespace spec {
 
     const PrisonTerminalType: PrisonTerminalTypeStatic;
 
+    interface PrisonMeetingTerminalTypeStatic {
+        displayTerminal: SpecValue;
+        operateTerminal: SpecValue;
+        queueCheckTerminal: SpecValue;
+        prisonerCheckTerminal: SpecValue;
+        displayPlate: SpecValue;
+    }
+
+    const PrisonMeetingTerminalType: PrisonMeetingTerminalTypeStatic;
+
     interface PrisonTreeNodeTypeStatic {
         none: SpecValue;
         prisonDistrict: SpecValue;

@@ -84,6 +84,7 @@ import PrisonMessage from './prisonMessage';
 import PrisonRoomStatus from './prisonRoomStatus';
 import PrisonRoomType from './prisonRoomType';
 import PrisonTerminalType from './prisonTerminalType';
+import PrisonMeetingTerminalType from './prisonMeetingTerminalType';
 import PrisonTreeNodeType from './prisonTreeNodeType';
 import PrisonUserType from './prisonUserType';
 import PrisonVisitType from './prisonVisitType';
@@ -155,7 +156,7 @@ import VoicePrint from './voicePrint';
 
 export default {
     AirMonitorExtra: AirMonitorExtra,
-    AppointmentStatus:AppointmentStatus,
+    AppointmentStatus: AppointmentStatus,
 
     BehaviorAnalyseExtra: BehaviorAnalyseExtra,
     BioIdentifyMessage: BioIdentifyMessage,
@@ -227,16 +228,17 @@ export default {
     PrisonMeetingRegisterType: PrisonMeetingRegisterType,
     PrisonMeetingStatus: PrisonMeetingStatus,
     PrisonMeetingType: PrisonMeetingType,
-    PrisonMeetingUserType : PrisonMeetingUserType,
+    PrisonMeetingUserType: PrisonMeetingUserType,
     PrisonMessage: PrisonMessage,
     PrisonRoomStatus: PrisonRoomStatus,
     PrisonRoomType: PrisonRoomType,
     PrisonTerminalType: PrisonTerminalType,
+    PrisonMeetingTerminalType: PrisonMeetingTerminalType,
     PrisonTreeNodeType: PrisonTreeNodeType,
     PrisonUserType: PrisonUserType,
-    PrisonVisitType:PrisonVisitType,
-    PrisonWorkNumberType:PrisonWorkNumberType,
-    PrisonMeetingQueueStatus:PrisonMeetingQueueStatus,
+    PrisonVisitType: PrisonVisitType,
+    PrisonWorkNumberType: PrisonWorkNumberType,
+    PrisonMeetingQueueStatus: PrisonMeetingQueueStatus,
 
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
@@ -252,7 +254,7 @@ export default {
     RestResponse: RestResponse,
     RFIDTagExtra: RFIDTagExtra,
 
-    SchoolAffiliatedType:SchoolAffiliatedType,
+    SchoolAffiliatedType: SchoolAffiliatedType,
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
@@ -281,7 +283,7 @@ export default {
     SchoolCitizenReportSource: SchoolCitizenReportSource,
     SchoolCitizenReportTransferType: SchoolCitizenReportTransferType,
     SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevel,
-    SchoolVacateType:SchoolVacateType,
+    SchoolVacateType: SchoolVacateType,
 
     SpecificationSettings: SpecificationSettings,
 

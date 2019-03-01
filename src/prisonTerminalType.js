@@ -20,10 +20,6 @@ let prisonTerminalType = {
   backSideMeetingTerminal: {
     name: '提押展示终端',
     value: 4
-  },
-  displayPlate: {
-    name: '电子门牌',
-    value: 5
   }
 };
 
