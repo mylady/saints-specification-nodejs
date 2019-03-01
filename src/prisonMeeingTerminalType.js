@@ -2,19 +2,19 @@
 
 let prisonMeetingTerminalType = {
   displayTerminal: {
-    name: '监外屏',
+    name: '显示终端',
     value: 0
   },
   operateTerminal: {
-    name: '监内机',
+    name: '操作终端',
     value: 1
   },
   queueCheckTerminal: {
-    name: '提审终端',
+    name: '监区排队终端',
     value: 2
   },
   prisonerCheckTerminal: {
-    name: '提审会见展示终端',
+    name: '监区验证终端',
     value: 3
   },
   displayPlate: {
