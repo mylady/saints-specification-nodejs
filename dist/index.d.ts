@@ -353,10 +353,10 @@ declare namespace spec {
         jieanPerimeterTCP: SpecValue;
         siniuteEnvMonitorREST: SpecValue,
         kedaVideoAnalyseWebService: SpecValue,
-        kedaVideoDiagnosticREST : SpecValue,
-        kuaiyuDigitalCallSDKV2:SpecValue,
-        kuaiyuDigitalCallSDKV3:SpecValue,
-        guangtuoPerimeterSDK:SpecValue,
+        kedaVideoDiagnosticREST: SpecValue,
+        kuaiyuDigitalCallSDKV2: SpecValue,
+        kuaiyuDigitalCallSDKV3: SpecValue,
+        guangtuoPerimeterSDK: SpecValue,
         shengxiDoorUDP: SpecValue;
     }
 
@@ -1317,6 +1317,20 @@ declare namespace spec {
     }
 
     const SchoolReportActivityType: SchoolReportActivityTypeStatic;
+
+    interface SchoolReportEventTypeStatic {
+        fireProtection: SpecValue;
+        unstableFactor: SpecValue;
+        campusAround: SpecValue;
+        trafficSafety: SpecValue;
+        foodSanitation: SpecValue;
+        publicSentiment: SpecValue;
+        accident: SpecValue;
+        criminalCase: SpecValue;
+        others: SpecValue;
+    }
+
+    const SchoolReportEventType: SchoolReportEventTypeStatic;
 
     interface SchoolUserTypeStatic {
         schoolNormal: SpecValue;

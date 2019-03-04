@@ -122,6 +122,7 @@ import SchoolCheckResult from './schoolCheckResult';
 import SchoolChemicalType from './schoolChemicalType';
 import SchoolReportActivityType from './schoolReportActivityType';
 import SchoolReportActivityCategory from './schoolReportActivityCategory';
+import SchoolReportEventType from './schoolReportEventType';
 import SchoolMessageType from './schoolMessageType';
 import SchoolMessageWrapperType from './schoolMessageWrapperType';
 import SchoolMapType from './schoolMapType';
@@ -271,6 +272,7 @@ export default {
     SchoolUserType: SchoolUserType,
     SchoolReportActivityType: SchoolReportActivityType,
     SchoolReportActivityCategory: SchoolReportActivityCategory,
+    SchoolReportEventType:SchoolReportEventType,
     SchoolMessageType: SchoolMessageType,
     SchoolMessageWrapperType: SchoolMessageWrapperType,
     SchoolMapType: SchoolMapType,
