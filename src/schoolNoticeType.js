@@ -44,6 +44,10 @@ let schoolNoticeType = {
     instantReportFinish:{
         name:'随手报整改完成',
         value:10
+    },
+    urgeCenterNotification:{
+        name:'催促教育局公告',
+        value:11
     }
 };
 

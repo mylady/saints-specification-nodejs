@@ -1301,6 +1301,7 @@ declare namespace spec {
         finishRedressTask: SpecValue;
         instantReportFeedback: SpecValue;
         instantReportFinish: SpecValue;
+        urgeCenterNotification:SpecValue;
     }
 
     const SchoolNoticeType: SchoolNoticeTypeStatic;
