@@ -47,6 +47,10 @@ var schoolCheckPaperType = {
     securityManage: {
         name: '安全管理',
         value: 10
+    },
+    others: {
+        name: '其他',
+        value: 11
     }
 };
 
