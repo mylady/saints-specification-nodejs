@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _env = require('./predefined/env');
+var _config = require('./predefined/config');
 
-var _env2 = _interopRequireDefault(_env);
+var _config2 = _interopRequireDefault(_config);
 
 var _alarmType = require('./predefined/alarmType');
 
@@ -67,7 +67,7 @@ var _serviceFinder2 = _interopRequireDefault(_serviceFinder);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    Env: _env2.default,
+    Config: _config2.default,
 
     AlarmType: _alarmType2.default,
     CameraType: _cameraType2.default,

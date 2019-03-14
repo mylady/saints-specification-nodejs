@@ -1,7 +1,7 @@
 'use strict';
 
 
-import Env from './predefined/env';
+import Config from './predefined/config';
 
 import AlarmType from './predefined/alarmType';
 import CameraType from './predefined/cameraType';
@@ -22,7 +22,7 @@ import ServiceRegister from './klass/serviceRegister';
 import ServiceFinder from './klass/serviceFinder';
 
 export default {
-    Env:Env,
+    Config:Config,
 
     AlarmType:AlarmType,
     CameraType:CameraType,
