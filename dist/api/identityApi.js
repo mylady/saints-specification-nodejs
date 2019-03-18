@@ -1,19 +1,19 @@
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var rp = require('request-promise');
 
@@ -21,20 +21,19 @@ var IdentityAPI =
 /*#__PURE__*/
 function () {
   function IdentityAPI(url) {
-    _classCallCheck(this, IdentityAPI);
-
+    (0, _classCallCheck2.default)(this, IdentityAPI);
     this.url = url;
     this.accessToken = '';
   }
 
-  _createClass(IdentityAPI, [{
+  (0, _createClass2.default)(IdentityAPI, [{
     key: "getAccessToken",
     value: function () {
-      var _getAccessToken = _asyncToGenerator(
+      var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee() {
+      _regenerator.default.mark(function _callee() {
         var res;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
+        return _regenerator.default.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
@@ -77,10 +76,10 @@ function () {
   }, {
     key: "getUserList",
     value: function () {
-      var _getUserList = _asyncToGenerator(
+      var _getUserList = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee2() {
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      _regenerator.default.mark(function _callee2() {
+        return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
@@ -122,10 +121,10 @@ function () {
   }, {
     key: "login",
     value: function () {
-      var _login = _asyncToGenerator(
+      var _login = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee3(auth) {
-        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      _regenerator.default.mark(function _callee3(auth) {
+        return _regenerator.default.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
@@ -168,10 +167,10 @@ function () {
   }, {
     key: "logout",
     value: function () {
-      var _logout = _asyncToGenerator(
+      var _logout = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee4(token) {
-        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      _regenerator.default.mark(function _callee4(token) {
+        return _regenerator.default.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
@@ -216,10 +215,10 @@ function () {
   }, {
     key: "self",
     value: function () {
-      var _self = _asyncToGenerator(
+      var _self = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee5(token) {
-        return regeneratorRuntime.wrap(function _callee5$(_context5) {
+      _regenerator.default.mark(function _callee5(token) {
+        return _regenerator.default.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
@@ -262,7 +261,6 @@ function () {
       return self;
     }()
   }]);
-
   return IdentityAPI;
 }();
 

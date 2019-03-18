@@ -1,5 +1,7 @@
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -38,8 +40,6 @@ var _serviceFinder = _interopRequireDefault(require("./klass/serviceFinder"));
 var _fileHubApi = _interopRequireDefault(require("./api/fileHubApi"));
 
 var _identityApi = _interopRequireDefault(require("./api/identityApi"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 require("babel-polyfill");
 

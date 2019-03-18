@@ -1,19 +1,19 @@
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var request = require('request'),
     rp = require('request-promise');
@@ -28,20 +28,19 @@ var FileHubAPI =
 /*#__PURE__*/
 function () {
   function FileHubAPI(url) {
-    _classCallCheck(this, FileHubAPI);
-
+    (0, _classCallCheck2.default)(this, FileHubAPI);
     this.url = url;
     this.accessToken = '';
   }
 
-  _createClass(FileHubAPI, [{
+  (0, _createClass2.default)(FileHubAPI, [{
     key: "getAccessToken",
     value: function () {
-      var _getAccessToken = _asyncToGenerator(
+      var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee() {
+      _regenerator.default.mark(function _callee() {
         var res;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
+        return _regenerator.default.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
@@ -99,10 +98,10 @@ function () {
   }, {
     key: "searchDoc",
     value: function () {
-      var _searchDoc = _asyncToGenerator(
+      var _searchDoc = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee2(search) {
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      _regenerator.default.mark(function _callee2(search) {
+        return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
@@ -145,10 +144,10 @@ function () {
   }, {
     key: "getDocDetail",
     value: function () {
-      var _getDocDetail = _asyncToGenerator(
+      var _getDocDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee3(id) {
-        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      _regenerator.default.mark(function _callee3(id) {
+        return _regenerator.default.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
@@ -191,10 +190,10 @@ function () {
   }, {
     key: "getDocs",
     value: function () {
-      var _getDocs = _asyncToGenerator(
+      var _getDocs = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee4(ids) {
-        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      _regenerator.default.mark(function _callee4(ids) {
+        return _regenerator.default.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
@@ -237,10 +236,10 @@ function () {
   }, {
     key: "getDocURL",
     value: function () {
-      var _getDocURL = _asyncToGenerator(
+      var _getDocURL = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee5(id) {
-        return regeneratorRuntime.wrap(function _callee5$(_context5) {
+      _regenerator.default.mark(function _callee5(id) {
+        return _regenerator.default.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
@@ -297,10 +296,10 @@ function () {
   }, {
     key: "getImageDetail",
     value: function () {
-      var _getImageDetail = _asyncToGenerator(
+      var _getImageDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee6(id) {
-        return regeneratorRuntime.wrap(function _callee6$(_context6) {
+      _regenerator.default.mark(function _callee6(id) {
+        return _regenerator.default.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
@@ -343,10 +342,10 @@ function () {
   }, {
     key: "getImages",
     value: function () {
-      var _getImages = _asyncToGenerator(
+      var _getImages = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee7(ids) {
-        return regeneratorRuntime.wrap(function _callee7$(_context7) {
+      _regenerator.default.mark(function _callee7(ids) {
+        return _regenerator.default.wrap(function _callee7$(_context7) {
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
@@ -389,10 +388,10 @@ function () {
   }, {
     key: "getImageURL",
     value: function () {
-      var _getImageURL = _asyncToGenerator(
+      var _getImageURL = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee8(id) {
-        return regeneratorRuntime.wrap(function _callee8$(_context8) {
+      _regenerator.default.mark(function _callee8(id) {
+        return _regenerator.default.wrap(function _callee8$(_context8) {
           while (1) {
             switch (_context8.prev = _context8.next) {
               case 0:
@@ -449,10 +448,10 @@ function () {
   }, {
     key: "getAttachDetail",
     value: function () {
-      var _getAttachDetail = _asyncToGenerator(
+      var _getAttachDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee9(id) {
-        return regeneratorRuntime.wrap(function _callee9$(_context9) {
+      _regenerator.default.mark(function _callee9(id) {
+        return _regenerator.default.wrap(function _callee9$(_context9) {
           while (1) {
             switch (_context9.prev = _context9.next) {
               case 0:
@@ -495,10 +494,10 @@ function () {
   }, {
     key: "getAttaches",
     value: function () {
-      var _getAttaches = _asyncToGenerator(
+      var _getAttaches = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee10(ids) {
-        return regeneratorRuntime.wrap(function _callee10$(_context10) {
+      _regenerator.default.mark(function _callee10(ids) {
+        return _regenerator.default.wrap(function _callee10$(_context10) {
           while (1) {
             switch (_context10.prev = _context10.next) {
               case 0:
@@ -541,10 +540,10 @@ function () {
   }, {
     key: "getAttachURL",
     value: function () {
-      var _getAttachURL = _asyncToGenerator(
+      var _getAttachURL = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee11(id) {
-        return regeneratorRuntime.wrap(function _callee11$(_context11) {
+      _regenerator.default.mark(function _callee11(id) {
+        return _regenerator.default.wrap(function _callee11$(_context11) {
           while (1) {
             switch (_context11.prev = _context11.next) {
               case 0:
@@ -584,7 +583,6 @@ function () {
       return getAttachURL;
     }()
   }]);
-
   return FileHubAPI;
 }();
 
