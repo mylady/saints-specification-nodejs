@@ -10,8 +10,9 @@ export default class RestResponse {
     }
 
     static NewBoolResponse({ b, err }) {
-        let resp = new RestResponse();
-        resp.result = b;
+        let resp = new RestResponse({
+            result: b
+        });
         if (err) {
             resp.error_msg = err.message;
             resp.error_code = err.code || 0;
@@ -19,16 +20,15 @@ export default class RestResponse {
             resp.error_msg = '';
             resp.error_code = 0;
         }
-        resp.data = null;
-        resp.total_count = 0;
         return resp;
     }
 
     static NewDataResponse({ d, cnt }) {
-        let resp = new RestResponse();
-        resp.result = true;
-        resp.data = d;
-        resp.total_count = cnt;
+        let resp = new RestResponse({
+            result: true,
+            data: d,
+            total_count, cnt
+        });
         return resp;
     }
 }
