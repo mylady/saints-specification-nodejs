@@ -33,8 +33,9 @@ function () {
     value: function NewBoolResponse(_ref2) {
       var b = _ref2.b,
           err = _ref2.err;
-      var resp = new RestResponse();
-      resp.result = b;
+      var resp = new RestResponse({
+        result: b
+      });
 
       if (err) {
         resp.error_msg = err.message;
@@ -44,8 +45,6 @@ function () {
         resp.error_code = 0;
       }
 
-      resp.data = null;
-      resp.total_count = 0;
       return resp;
     }
   }, {
@@ -53,10 +52,12 @@ function () {
     value: function NewDataResponse(_ref3) {
       var d = _ref3.d,
           cnt = _ref3.cnt;
-      var resp = new RestResponse();
-      resp.result = true;
-      resp.data = d;
-      resp.total_count = cnt;
+      var resp = new RestResponse({
+        result: true,
+        data: d,
+        total_count: total_count,
+        cnt: cnt
+      });
       return resp;
     }
   }]);
