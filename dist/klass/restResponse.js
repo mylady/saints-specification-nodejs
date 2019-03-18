@@ -30,9 +30,7 @@ function () {
 
   (0, _createClass2.default)(RestResponse, null, [{
     key: "NewBoolResponse",
-    value: function NewBoolResponse(_ref2) {
-      var b = _ref2.b,
-          err = _ref2.err;
+    value: function NewBoolResponse(b, err) {
       var resp = new RestResponse({
         result: b
       });
@@ -49,9 +47,7 @@ function () {
     }
   }, {
     key: "NewDataResponse",
-    value: function NewDataResponse(_ref3) {
-      var d = _ref3.d,
-          cnt = _ref3.cnt;
+    value: function NewDataResponse(d, cnt) {
       var resp = new RestResponse({
         result: true,
         data: d,

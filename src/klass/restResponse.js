@@ -9,7 +9,7 @@ export default class RestResponse {
         this.total_count = total_count || 0;
     }
 
-    static NewBoolResponse({ b, err }) {
+    static NewBoolResponse(b, err) {
         let resp = new RestResponse({
             result: b
         });
@@ -23,7 +23,7 @@ export default class RestResponse {
         return resp;
     }
 
-    static NewDataResponse({ d, cnt }) {
+    static NewDataResponse(d, cnt) {
         let resp = new RestResponse({
             result: true,
             data: d,
