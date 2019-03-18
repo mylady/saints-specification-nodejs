@@ -4,7 +4,7 @@ const Config = {
     envDevelopment : 'development',
     envProducton : 'production',
     defaultConfigPath : 'config/web.json',
-    serviceHubPort : 23003
+    serviceHubPort : 8000
 }
 
 Object.freeze(Config);

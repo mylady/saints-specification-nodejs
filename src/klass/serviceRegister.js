@@ -1,12 +1,12 @@
 'use strict';
 
-const Config = require('./../predefined/config'),
+const config = require('./../predefined/config'),
     util = require('util'),
     rp = require('request-promise'),
     setIntervalPromise = util.promisify(setInterval),
     serviceIPHolder = "ip",
     serviceRegisterInterval = 10,
-    registerAddress = `http://ip:${Config.serviceHubPort}/rest/register`;
+    registerAddress = `http://ip:${config.serviceHubPort}/rest/register`;
 
 export default class ServiceRegister {
     constructor(ip, service) {
