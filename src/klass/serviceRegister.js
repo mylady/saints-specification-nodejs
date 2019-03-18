@@ -1,9 +1,7 @@
 'use strict';
 
 const config = require('./../predefined/config'),
-    util = require('util'),
     rp = require('request-promise'),
-    setIntervalPromise = util.promisify(setInterval),
     serviceIPHolder = "ip",
     serviceRegisterInterval = 10,
     registerAddress = `http://ip:${config.serviceHubPort}/rest/register`;
@@ -22,14 +20,9 @@ export default class ServiceRegister {
         }
 
         this.running = true;
-        this.timer = setIntervalPromise(serviceRegisterInterval)
-            .then(() => {
-                try {
-                    registerService(this.hub, this.service);
-                } catch (err) {
-                    console.error('register service failed', err);
-                }
-            });
+        this.timer = setInterval(() => {
+            registerService(this.hub, this.service);
+        }, serviceRegisterInterval * 1000);
     }
 
     stop() {
@@ -45,10 +38,17 @@ export default class ServiceRegister {
 }
 
 const registerService = async (url, service) => {
-    await rp({
-        method: 'POST',
-        uri: url,
-        body: service,
-        json: true
-    });
+    try {
+        let res = await rp({
+            method: 'POST',
+            uri: url,
+            body: service,
+            json: true
+        });
+        if (!res.result) {
+            console.error('register service failed', res.error_msg);
+        }
+    } catch (err) {
+        console.error('register service failed', err.message);
+    }
 }

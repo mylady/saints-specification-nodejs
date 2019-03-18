@@ -16,9 +16,7 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var config = require('./../predefined/config'),
-    util = require('util'),
     rp = require('request-promise'),
-    setIntervalPromise = util.promisify(setInterval),
     serviceIPHolder = "ip",
     serviceRegisterInterval = 10,
     registerAddress = "http://ip:".concat(config.serviceHubPort, "/rest/register");
@@ -44,13 +42,9 @@ function () {
       }
 
       this.running = true;
-      this.timer = setIntervalPromise(serviceRegisterInterval).then(function () {
-        try {
-          registerService(_this.hub, _this.service);
-        } catch (err) {
-          console.error('register service failed', err);
-        }
-      });
+      this.timer = setInterval(function () {
+        registerService(_this.hub, _this.service);
+      }, serviceRegisterInterval * 1000);
     }
   }, {
     key: "stop",
@@ -76,11 +70,13 @@ function () {
   var _ref = (0, _asyncToGenerator2.default)(
   /*#__PURE__*/
   _regenerator.default.mark(function _callee(url, service) {
+    var res;
     return _regenerator.default.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.next = 2;
+            _context.prev = 0;
+            _context.next = 3;
             return rp({
               method: 'POST',
               uri: url,
@@ -88,12 +84,27 @@ function () {
               json: true
             });
 
-          case 2:
+          case 3:
+            res = _context.sent;
+
+            if (!res.result) {
+              console.error('register service failed', res.error_msg);
+            }
+
+            _context.next = 10;
+            break;
+
+          case 7:
+            _context.prev = 7;
+            _context.t0 = _context["catch"](0);
+            console.error('register service failed', _context.t0.message);
+
+          case 10:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee);
+    }, _callee, null, [[0, 7]]);
   }));
 
   return function registerService(_x, _x2) {
