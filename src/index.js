@@ -1,7 +1,5 @@
 'use strict';
 
-require("babel-polyfill");
-
 import Config from './predefined/config';
 
 import AlarmType from './predefined/alarmType';

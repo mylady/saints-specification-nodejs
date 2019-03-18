@@ -41,8 +41,6 @@ var _fileHubApi = _interopRequireDefault(require("./api/fileHubApi"));
 
 var _identityApi = _interopRequireDefault(require("./api/identityApi"));
 
-require("babel-polyfill");
-
 var _default = {
   Config: _config.default,
   AlarmType: _alarmType.default,
