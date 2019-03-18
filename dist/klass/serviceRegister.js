@@ -15,13 +15,13 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var Config = require('./../predefined/config'),
+var config = require('./../predefined/config'),
     util = require('util'),
     rp = require('request-promise'),
     setIntervalPromise = util.promisify(setInterval),
     serviceIPHolder = "ip",
     serviceRegisterInterval = 10,
-    registerAddress = "http://ip:".concat(Config.serviceHubPort, "/rest/register");
+    registerAddress = "http://ip:".concat(config.serviceHubPort, "/rest/register");
 
 var ServiceRegister =
 /*#__PURE__*/
