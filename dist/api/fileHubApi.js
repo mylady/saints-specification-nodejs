@@ -24,13 +24,14 @@ var request = require('request'),
 */
 
 
+var url = '';
+var accessToken = '';
+
 var FileHubAPI =
 /*#__PURE__*/
 function () {
-  function FileHubAPI(url) {
+  function FileHubAPI() {
     (0, _classCallCheck2.default)(this, FileHubAPI);
-    this.url = url;
-    this.accessToken = '';
   }
 
   (0, _createClass2.default)(FileHubAPI, [{
@@ -47,7 +48,7 @@ function () {
                 _context.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/accesstoken',
+                  uri: url + '/accesstoken',
                   json: true
                 });
 
@@ -59,7 +60,7 @@ function () {
                   break;
                 }
 
-                this.accessToken = res.data;
+                accessToken = res.data;
                 _context.next = 8;
                 break;
 
@@ -71,7 +72,7 @@ function () {
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
       function getAccessToken() {
@@ -83,15 +84,15 @@ function () {
   }, {
     key: "uploadDocProxy",
     value: function uploadDocProxy(req, res) {
-      if (!this.accessToken) {
+      if (!accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: this.url + '/upload/doc',
+        uri: url + '/upload/doc',
         qs: {
-          access_token: this.accessToken
+          access_token: accessToken
         }
       })).pipe(res);
     }
@@ -105,7 +106,7 @@ function () {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context2.next = 2;
                   break;
                 }
@@ -116,9 +117,9 @@ function () {
                 _context2.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/search/doc',
+                  uri: url + '/search/doc',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: search,
                   json: true
@@ -132,7 +133,7 @@ function () {
                 return _context2.stop();
             }
           }
-        }, _callee2, this);
+        }, _callee2);
       }));
 
       function searchDoc(_x) {
@@ -151,7 +152,7 @@ function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context3.next = 2;
                   break;
                 }
@@ -162,9 +163,9 @@ function () {
                 _context3.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/doc/detail/".concat(id),
+                  uri: url + "/doc/detail/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: search,
                   json: true
@@ -178,7 +179,7 @@ function () {
                 return _context3.stop();
             }
           }
-        }, _callee3, this);
+        }, _callee3);
       }));
 
       function getDocDetail(_x2) {
@@ -197,7 +198,7 @@ function () {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context4.next = 2;
                   break;
                 }
@@ -208,9 +209,9 @@ function () {
                 _context4.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/query/doc',
+                  uri: url + '/query/doc',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: ids,
                   json: true
@@ -224,7 +225,7 @@ function () {
                 return _context4.stop();
             }
           }
-        }, _callee4, this);
+        }, _callee4);
       }));
 
       function getDocs(_x3) {
@@ -243,7 +244,7 @@ function () {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context5.next = 2;
                   break;
                 }
@@ -254,9 +255,9 @@ function () {
                 _context5.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/doc/download/".concat(id),
+                  uri: url + "/doc/download/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   json: true
                 });
@@ -269,7 +270,7 @@ function () {
                 return _context5.stop();
             }
           }
-        }, _callee5, this);
+        }, _callee5);
       }));
 
       function getDocURL(_x4) {
@@ -281,15 +282,15 @@ function () {
   }, {
     key: "uploadImageProxy",
     value: function uploadImageProxy(req, res) {
-      if (!this.accessToken) {
+      if (!accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: this.url + '/upload/image',
+        uri: url + '/upload/image',
         qs: {
-          access_token: this.accessToken
+          access_token: accessToken
         }
       })).pipe(res);
     }
@@ -303,7 +304,7 @@ function () {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context6.next = 2;
                   break;
                 }
@@ -314,9 +315,9 @@ function () {
                 _context6.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/image/detail/".concat(id),
+                  uri: url + "/image/detail/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: search,
                   json: true
@@ -330,7 +331,7 @@ function () {
                 return _context6.stop();
             }
           }
-        }, _callee6, this);
+        }, _callee6);
       }));
 
       function getImageDetail(_x5) {
@@ -349,7 +350,7 @@ function () {
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context7.next = 2;
                   break;
                 }
@@ -360,9 +361,9 @@ function () {
                 _context7.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/query/image',
+                  uri: url + '/query/image',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: ids,
                   json: true
@@ -376,7 +377,7 @@ function () {
                 return _context7.stop();
             }
           }
-        }, _callee7, this);
+        }, _callee7);
       }));
 
       function getImages(_x6) {
@@ -395,7 +396,7 @@ function () {
           while (1) {
             switch (_context8.prev = _context8.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context8.next = 2;
                   break;
                 }
@@ -406,9 +407,9 @@ function () {
                 _context8.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/image/download/".concat(id),
+                  uri: url + "/image/download/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   json: true
                 });
@@ -421,7 +422,7 @@ function () {
                 return _context8.stop();
             }
           }
-        }, _callee8, this);
+        }, _callee8);
       }));
 
       function getImageURL(_x7) {
@@ -433,15 +434,15 @@ function () {
   }, {
     key: "uploadAttachProxy",
     value: function uploadAttachProxy(req, res) {
-      if (!this.accessToken) {
+      if (!accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: this.url + '/upload/attach',
+        uri: url + '/upload/attach',
         qs: {
-          access_token: this.accessToken
+          access_token: accessToken
         }
       })).pipe(res);
     }
@@ -455,7 +456,7 @@ function () {
           while (1) {
             switch (_context9.prev = _context9.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context9.next = 2;
                   break;
                 }
@@ -466,9 +467,9 @@ function () {
                 _context9.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/attach/detail/".concat(id),
+                  uri: url + "/attach/detail/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: search,
                   json: true
@@ -482,7 +483,7 @@ function () {
                 return _context9.stop();
             }
           }
-        }, _callee9, this);
+        }, _callee9);
       }));
 
       function getAttachDetail(_x8) {
@@ -501,7 +502,7 @@ function () {
           while (1) {
             switch (_context10.prev = _context10.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context10.next = 2;
                   break;
                 }
@@ -512,9 +513,9 @@ function () {
                 _context10.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/query/attach',
+                  uri: url + '/query/attach',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: ids,
                   json: true
@@ -528,7 +529,7 @@ function () {
                 return _context10.stop();
             }
           }
-        }, _callee10, this);
+        }, _callee10);
       }));
 
       function getAttaches(_x9) {
@@ -547,7 +548,7 @@ function () {
           while (1) {
             switch (_context11.prev = _context11.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context11.next = 2;
                   break;
                 }
@@ -558,9 +559,9 @@ function () {
                 _context11.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + "/attach/download/".concat(id),
+                  uri: url + "/attach/download/".concat(id),
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   json: true
                 });
@@ -573,7 +574,7 @@ function () {
                 return _context11.stop();
             }
           }
-        }, _callee11, this);
+        }, _callee11);
       }));
 
       function getAttachURL(_x10) {
@@ -581,6 +582,34 @@ function () {
       }
 
       return getAttachURL;
+    }()
+  }], [{
+    key: "initialize",
+    value: function () {
+      var _initialize = (0, _asyncToGenerator2.default)(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee12(url) {
+        return _regenerator.default.wrap(function _callee12$(_context12) {
+          while (1) {
+            switch (_context12.prev = _context12.next) {
+              case 0:
+                url = url;
+                _context12.next = 3;
+                return getAccessToken();
+
+              case 3:
+              case "end":
+                return _context12.stop();
+            }
+          }
+        }, _callee12);
+      }));
+
+      function initialize(_x11) {
+        return _initialize.apply(this, arguments);
+      }
+
+      return initialize;
     }()
   }]);
   return FileHubAPI;

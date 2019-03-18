@@ -17,13 +17,14 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var rp = require('request-promise');
 
+var url = '';
+var accessToken = '';
+
 var IdentityAPI =
 /*#__PURE__*/
 function () {
-  function IdentityAPI(url) {
+  function IdentityAPI() {
     (0, _classCallCheck2.default)(this, IdentityAPI);
-    this.url = url;
-    this.accessToken = '';
   }
 
   (0, _createClass2.default)(IdentityAPI, [{
@@ -40,7 +41,7 @@ function () {
                 _context.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/accesstoken',
+                  uri: url + '/accesstoken',
                   json: true
                 });
 
@@ -52,7 +53,7 @@ function () {
                   break;
                 }
 
-                this.accessToken = res.data;
+                accessToken = res.data;
                 _context.next = 8;
                 break;
 
@@ -64,7 +65,7 @@ function () {
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
       function getAccessToken() {
@@ -83,7 +84,7 @@ function () {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context2.next = 2;
                   break;
                 }
@@ -94,9 +95,9 @@ function () {
                 _context2.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + '/view/user',
+                  uri: url + '/view/user',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   json: true
                 });
@@ -109,7 +110,7 @@ function () {
                 return _context2.stop();
             }
           }
-        }, _callee2, this);
+        }, _callee2);
       }));
 
       function getUserList() {
@@ -128,7 +129,7 @@ function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context3.next = 2;
                   break;
                 }
@@ -139,9 +140,9 @@ function () {
                 _context3.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/auth/login',
+                  uri: url + '/auth/login',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: auth,
                   json: true
@@ -155,7 +156,7 @@ function () {
                 return _context3.stop();
             }
           }
-        }, _callee3, this);
+        }, _callee3);
       }));
 
       function login(_x) {
@@ -174,7 +175,7 @@ function () {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context4.next = 2;
                   break;
                 }
@@ -185,9 +186,9 @@ function () {
                 _context4.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: this.url + '/auth/logout',
+                  uri: url + '/auth/logout',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   body: {
                     token: token
@@ -203,7 +204,7 @@ function () {
                 return _context4.stop();
             }
           }
-        }, _callee4, this);
+        }, _callee4);
       }));
 
       function logout(_x2) {
@@ -222,7 +223,7 @@ function () {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                if (this.accessToken) {
+                if (accessToken) {
                   _context5.next = 2;
                   break;
                 }
@@ -233,9 +234,9 @@ function () {
                 _context5.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: this.url + '/self',
+                  uri: url + '/self',
                   qs: {
-                    access_token: this.accessToken
+                    access_token: accessToken
                   },
                   auth: {
                     bearer: token
@@ -251,7 +252,7 @@ function () {
                 return _context5.stop();
             }
           }
-        }, _callee5, this);
+        }, _callee5);
       }));
 
       function self(_x3) {
@@ -259,6 +260,34 @@ function () {
       }
 
       return self;
+    }()
+  }], [{
+    key: "initialize",
+    value: function () {
+      var _initialize = (0, _asyncToGenerator2.default)(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee6(url) {
+        return _regenerator.default.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                url = url;
+                _context6.next = 3;
+                return getAccessToken();
+
+              case 3:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6);
+      }));
+
+      function initialize(_x4) {
+        return _initialize.apply(this, arguments);
+      }
+
+      return initialize;
     }()
   }]);
   return IdentityAPI;
