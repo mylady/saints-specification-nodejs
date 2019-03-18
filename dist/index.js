@@ -35,6 +35,10 @@ var _serviceRegister = _interopRequireDefault(require("./klass/serviceRegister")
 
 var _serviceFinder = _interopRequireDefault(require("./klass/serviceFinder"));
 
+var _fileHubApi = _interopRequireDefault(require("./api/fileHubApi"));
+
+var _identityApi = _interopRequireDefault(require("./api/identityApi"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
@@ -52,6 +56,8 @@ var _default = {
   RestResponse: _restResponse.default,
   Service: _service.default,
   ServiceRegister: _serviceRegister.default,
-  ServiceFinder: _serviceFinder.default
+  ServiceFinder: _serviceFinder.default,
+  FileHubAPI: _fileHubApi.default,
+  IdentityAPI: _identityApi.default
 };
 exports.default = _default;

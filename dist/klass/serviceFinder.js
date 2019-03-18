@@ -26,7 +26,7 @@ function () {
   function ServiceFinder(ip) {
     _classCallCheck(this, ServiceFinder);
 
-    this.hub = listAddress.replace(serviceIPHolder, ip);
+    this.hub = hubAddress.replace(serviceIPHolder, ip);
   }
 
   _createClass(ServiceFinder, [{

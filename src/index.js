@@ -21,6 +21,9 @@ import Service from './klass/service';
 import ServiceRegister from './klass/serviceRegister';
 import ServiceFinder from './klass/serviceFinder';
 
+import FileHubAPI from './api/fileHubApi';
+import IdentityAPI from './api/identityApi';
+
 export default {
     Config:Config,
 
@@ -40,5 +43,8 @@ export default {
 
     Service:Service,
     ServiceRegister:ServiceRegister,
-    ServiceFinder:ServiceFinder
+    ServiceFinder:ServiceFinder,
+
+    FileHubAPI:FileHubAPI,
+    IdentityAPI:IdentityAPI
 }

@@ -199,24 +199,6 @@ declare namespace spec {
         battery: number;
         heart_rate: number;
     }
-
-    interface Service {
-        address: string;
-        type: number;
-        priority: number;
-    }
-
-    interface ServiceFinder {
-        constructor(ip: string): ServiceFinder;
-        listService(): List<Service>;
-        searchService(): Service;
-    }
-
-    interface ServiceRegister {
-        constructor(ip: string, service: Service): ServiceRegister;
-        start(): void;
-        stop(): void;
-    }
 }
 
 export = spec;

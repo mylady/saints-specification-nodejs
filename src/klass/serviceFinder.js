@@ -7,7 +7,7 @@ const Config = require('./../predefined/config'),
 
 export default class ServiceFinder {
     constructor(ip) {
-        this.hub = listAddress.replace(serviceIPHolder, ip);
+        this.hub = hubAddress.replace(serviceIPHolder, ip);
     }
 
     async listService() {
