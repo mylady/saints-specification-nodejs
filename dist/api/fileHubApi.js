@@ -608,6 +608,11 @@ function () {
 
       return getAccessToken;
     }()
+  }, {
+    key: "isAvailable",
+    value: function isAvailable() {
+      return FileHubAPI.url && FileHubAPI.accessToken;
+    }
   }]);
   return FileHubAPI;
 }();

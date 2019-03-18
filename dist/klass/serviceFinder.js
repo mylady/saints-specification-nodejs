@@ -23,8 +23,7 @@ var Config = require('./../predefined/config'),
 var ServiceFinder =
 /*#__PURE__*/
 function () {
-  function ServiceFinder(_ref) {
-    var ip = _ref.ip;
+  function ServiceFinder(ip) {
     (0, _classCallCheck2.default)(this, ServiceFinder);
     this.hub = hubAddress.replace(serviceIPHolder, ip);
   }

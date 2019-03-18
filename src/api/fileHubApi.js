@@ -29,6 +29,10 @@ export default class FileHubAPI {
         }
     }
 
+    static isAvailable(){
+        return FileHubAPI.url && FileHubAPI.accessToken;
+    }
+
     uploadDocProxy(req, res) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');

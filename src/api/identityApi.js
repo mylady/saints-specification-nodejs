@@ -22,6 +22,10 @@ export default class IdentityAPI {
         }
     }
 
+    static isAvailable(){
+        return IdentityAPI.url && IdentityAPI.accessToken;
+    }
+
     async getUserList() {
         if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');

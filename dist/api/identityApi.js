@@ -286,6 +286,11 @@ function () {
 
       return getAccessToken;
     }()
+  }, {
+    key: "isAvailable",
+    value: function isAvailable() {
+      return IdentityAPI.url && IdentityAPI.accessToken;
+    }
   }]);
   return IdentityAPI;
 }();
