@@ -27,7 +27,7 @@ export default class RestResponse {
         let resp = new RestResponse({
             result: true,
             data: d,
-            total_count, cnt
+            total_count: cnt
         });
         return resp;
     }

@@ -51,8 +51,7 @@ function () {
       var resp = new RestResponse({
         result: true,
         data: d,
-        total_count: total_count,
-        cnt: cnt
+        total_count: cnt
       });
       return resp;
     }
