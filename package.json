@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.3.4"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }
