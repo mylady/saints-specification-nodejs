@@ -8,7 +8,7 @@ let accessToken = '';
 export default class IdentityAPI {
     static async initialize(url) {
         url = url;
-        await getAccessToken();
+        await IdentityAPI.getAccessToken();
     }
 
     static async getAccessToken() {

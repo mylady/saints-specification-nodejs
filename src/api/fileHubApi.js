@@ -14,7 +14,7 @@ let accessToken = '';
 export default class FileHubAPI {
     static async initialize(url){
         url = url;
-        await getAccessToken();
+        await FileHubAPI.getAccessToken();
     }
 
     static async getAccessToken() {

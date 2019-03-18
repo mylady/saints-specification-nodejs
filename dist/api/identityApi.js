@@ -226,7 +226,7 @@ function () {
               case 0:
                 url = url;
                 _context5.next = 3;
-                return getAccessToken();
+                return IdentityAPI.getAccessToken();
 
               case 3:
               case "end":

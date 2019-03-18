@@ -548,7 +548,7 @@ function () {
               case 0:
                 url = url;
                 _context11.next = 3;
-                return getAccessToken();
+                return FileHubAPI.getAccessToken();
 
               case 3:
               case "end":
