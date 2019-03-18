@@ -1,11 +1,11 @@
 'use strict';
 //this is for server process not for client
 export default class RestQuery {
-    constructor() {
-        this.start = 0;
-        this.limit = 0;
-        this.sort = '';
-        this.dir = 'ASC';
-        this.keyword = '';
+    constructor({ start, limit, sort, dir, keyword }) {
+        this.start = start || 0;
+        this.limit = limit || 0;
+        this.sort = sort || '';
+        this.dir = dir || 'ASC';
+        this.keyword = keyword || '';
     }
 }

@@ -1,9 +1,9 @@
 'use strict';
 
 export default class Service {
-    constructor() {
-        this.address = "";
-        this.type = 0;
-        this.priority = 0;
+    constructor({ address, type, priority }) {
+        this.address = address || "";
+        this.type = type || 0;
+        this.priority = priority || 0;
     }
 }

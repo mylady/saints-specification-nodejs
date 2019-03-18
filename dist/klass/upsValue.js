@@ -9,11 +9,14 @@ exports.default = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var UPSValue = function UPSValue() {
+var UPSValue = function UPSValue(_ref) {
+  var volter = _ref.volter,
+      elec = _ref.elec,
+      backup_time = _ref.backup_time;
   (0, _classCallCheck2.default)(this, UPSValue);
-  this.volter = 0.0;
-  this.elec = 0.0;
-  this.backup_time = 0.0;
+  this.volter = volter || 0.0;
+  this.elec = elec || 0.0;
+  this.backup_time = backup_time || 0.0;
 };
 
 exports.default = UPSValue;

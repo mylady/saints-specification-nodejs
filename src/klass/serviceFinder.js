@@ -6,7 +6,7 @@ const Config = require('./../predefined/config'),
     hubAddress = `http://ip:${Config.serviceHubPort}/rest`;
 
 export default class ServiceFinder {
-    constructor(ip) {
+    constructor({ ip }) {
         this.hub = hubAddress.replace(serviceIPHolder, ip);
     }
 

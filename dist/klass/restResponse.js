@@ -14,18 +14,25 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 var RestResponse =
 /*#__PURE__*/
 function () {
-  function RestResponse() {
+  function RestResponse(_ref) {
+    var result = _ref.result,
+        error_code = _ref.error_code,
+        error_msg = _ref.error_msg,
+        data = _ref.data,
+        total_count = _ref.total_count;
     (0, _classCallCheck2.default)(this, RestResponse);
-    this.result = false;
-    this.error_code = 0;
-    this.error_msg = '';
-    this.data = null;
-    this.total_count = 0;
+    this.result = result || false;
+    this.error_code = error_code || 0;
+    this.error_msg = error_msg || '';
+    this.data = data || null;
+    this.total_count = total_count || 0;
   }
 
   (0, _createClass2.default)(RestResponse, null, [{
     key: "NewBoolResponse",
-    value: function NewBoolResponse(b, err) {
+    value: function NewBoolResponse(_ref2) {
+      var b = _ref2.b,
+          err = _ref2.err;
       var resp = new RestResponse();
       resp.result = b;
 
@@ -43,7 +50,9 @@ function () {
     }
   }, {
     key: "NewDataResponse",
-    value: function NewDataResponse(d, cnt) {
+    value: function NewDataResponse(_ref3) {
+      var d = _ref3.d,
+          cnt = _ref3.cnt;
       var resp = new RestResponse();
       resp.result = true;
       resp.data = d;

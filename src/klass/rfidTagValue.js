@@ -1,7 +1,7 @@
 'use strict';
 
 export default class RFIDTagValue {
-    constructor() {
+    constructor({ x, y, battery, heart_rate }) {
         this.x = 0.0;
         this.y = 0.0;
         this.battery = 0.0;

@@ -1,15 +1,15 @@
 'use strict';
 
 export default class RestResponse {
-    constructor() {
-        this.result = false;
-        this.error_code = 0;
-        this.error_msg = '';
-        this.data = null;
-        this.total_count = 0;
+    constructor({ result, error_code, error_msg, data, total_count }) {
+        this.result = result || false;
+        this.error_code = error_code || 0;
+        this.error_msg = error_msg || '';
+        this.data = data || null;
+        this.total_count = total_count || 0;
     }
 
-    static NewBoolResponse(b, err) {
+    static NewBoolResponse({ b, err }) {
         let resp = new RestResponse();
         resp.result = b;
         if (err) {
@@ -24,7 +24,7 @@ export default class RestResponse {
         return resp;
     }
 
-    static NewDataResponse(d, cnt) {
+    static NewDataResponse({ d, cnt }) {
         let resp = new RestResponse();
         resp.result = true;
         resp.data = d;
