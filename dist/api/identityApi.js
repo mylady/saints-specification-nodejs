@@ -17,9 +17,6 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var rp = require('request-promise');
 
-var url = '';
-var accessToken = '';
-
 var IdentityAPI =
 /*#__PURE__*/
 function () {
@@ -37,7 +34,7 @@ function () {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (accessToken) {
+                if (IdentityAPI.accessToken) {
                   _context.next = 2;
                   break;
                 }
@@ -48,9 +45,9 @@ function () {
                 _context.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + '/view/user',
+                  uri: IdentityAPI.url + '/view/user',
                   qs: {
-                    access_token: accessToken
+                    access_token: IdentityAPI.accessToken
                   },
                   json: true
                 });
@@ -82,7 +79,7 @@ function () {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (accessToken) {
+                if (IdentityAPI.accessToken) {
                   _context2.next = 2;
                   break;
                 }
@@ -93,9 +90,9 @@ function () {
                 _context2.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/auth/login',
+                  uri: IdentityAPI.url + '/auth/login',
                   qs: {
-                    access_token: accessToken
+                    access_token: IdentityAPI.accessToken
                   },
                   body: auth,
                   json: true
@@ -128,7 +125,7 @@ function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (accessToken) {
+                if (IdentityAPI.accessToken) {
                   _context3.next = 2;
                   break;
                 }
@@ -139,9 +136,9 @@ function () {
                 _context3.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/auth/logout',
+                  uri: IdentityAPI.url + '/auth/logout',
                   qs: {
-                    access_token: accessToken
+                    access_token: IdentityAPI.accessToken
                   },
                   body: {
                     token: token
@@ -176,7 +173,7 @@ function () {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                if (accessToken) {
+                if (IdentityAPI.accessToken) {
                   _context4.next = 2;
                   break;
                 }
@@ -187,9 +184,9 @@ function () {
                 _context4.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + '/self',
+                  uri: IdentityAPI.url + '/self',
                   qs: {
-                    access_token: accessToken
+                    access_token: IdentityAPI.accessToken
                   },
                   auth: {
                     bearer: token
@@ -224,7 +221,7 @@ function () {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                url = url;
+                IdentityAPI.url = url;
                 _context5.next = 3;
                 return IdentityAPI.getAccessToken();
 
@@ -256,7 +253,7 @@ function () {
                 _context6.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: url + '/accesstoken',
+                  uri: IdentityAPI.url + '/accesstoken',
                   json: true
                 });
 
@@ -268,7 +265,7 @@ function () {
                   break;
                 }
 
-                accessToken = res.data;
+                IdentityAPI.accessToken = res.data;
                 _context6.next = 8;
                 break;
 

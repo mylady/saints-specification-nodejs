@@ -2,54 +2,51 @@
 
 const rp = require('request-promise');
 
-let url = '';
-let accessToken = '';
-
 export default class IdentityAPI {
     static async initialize(url) {
-        url = url;
+        IdentityAPI.url = url;
         await IdentityAPI.getAccessToken();
     }
 
     static async getAccessToken() {
         let res = await rp({
             method: 'POST',
-            uri: url + '/accesstoken',
+            uri: IdentityAPI.url + '/accesstoken',
             json: true
         });
 
         if (res.result) {
-            accessToken = res.data;
+            IdentityAPI.accessToken = res.data;
         } else {
             throw new Error(res.error_msg);
         }
     }
 
     async getUserList() {
-        if (!accessToken) {
+        if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + '/view/user',
+            uri: IdentityAPI.url + '/view/user',
             qs: {
-                access_token: accessToken
+                access_token: IdentityAPI.accessToken
             },
             json: true
         });
     }
 
     async login(auth) {
-        if (!accessToken) {
+        if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/auth/login',
+            uri: IdentityAPI.url + '/auth/login',
             qs: {
-                access_token: accessToken
+                access_token: IdentityAPI.accessToken
             },
             body: auth,
             json: true
@@ -57,15 +54,15 @@ export default class IdentityAPI {
     }
 
     async logout(token) {
-        if (!accessToken) {
+        if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/auth/logout',
+            uri: IdentityAPI.url + '/auth/logout',
             qs: {
-                access_token: accessToken
+                access_token: IdentityAPI.accessToken
             },
             body: {
                 token: token
@@ -75,15 +72,15 @@ export default class IdentityAPI {
     }
 
     async self(token) {
-        if (!accessToken) {
+        if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + '/self',
+            uri: IdentityAPI.url + '/self',
             qs: {
-                access_token: accessToken
+                access_token: IdentityAPI.accessToken
             },
             auth: {
                 bearer: token

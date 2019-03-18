@@ -24,9 +24,6 @@ var request = require('request'),
 */
 
 
-var url = '';
-var accessToken = '';
-
 var FileHubAPI =
 /*#__PURE__*/
 function () {
@@ -37,13 +34,13 @@ function () {
   (0, _createClass2.default)(FileHubAPI, [{
     key: "uploadDocProxy",
     value: function uploadDocProxy(req, res) {
-      if (!accessToken) {
+      if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: url + '/upload/doc',
+        uri: FileHubAPI.url + '/upload/doc',
         qs: {
           access_token: accessToken
         }
@@ -59,7 +56,7 @@ function () {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context.next = 2;
                   break;
                 }
@@ -70,9 +67,9 @@ function () {
                 _context.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/search/doc',
+                  uri: FileHubAPI.url + '/search/doc',
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: search,
                   json: true
@@ -105,7 +102,7 @@ function () {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context2.next = 2;
                   break;
                 }
@@ -116,9 +113,9 @@ function () {
                 _context2.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/doc/detail/".concat(id),
+                  uri: FileHubAPI.url + "/doc/detail/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: search,
                   json: true
@@ -151,7 +148,7 @@ function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context3.next = 2;
                   break;
                 }
@@ -162,9 +159,9 @@ function () {
                 _context3.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/query/doc',
+                  uri: FileHubAPI.url + '/query/doc',
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: ids,
                   json: true
@@ -197,7 +194,7 @@ function () {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context4.next = 2;
                   break;
                 }
@@ -208,9 +205,9 @@ function () {
                 _context4.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/doc/download/".concat(id),
+                  uri: FileHubAPI.url + "/doc/download/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   json: true
                 });
@@ -235,15 +232,15 @@ function () {
   }, {
     key: "uploadImageProxy",
     value: function uploadImageProxy(req, res) {
-      if (!accessToken) {
+      if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: url + '/upload/image',
+        uri: FileHubAPI.url + '/upload/image',
         qs: {
-          access_token: accessToken
+          access_token: FileHubAPI.accessToken
         }
       })).pipe(res);
     }
@@ -257,7 +254,7 @@ function () {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context5.next = 2;
                   break;
                 }
@@ -268,9 +265,9 @@ function () {
                 _context5.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/image/detail/".concat(id),
+                  uri: FileHubAPI.url + "/image/detail/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: search,
                   json: true
@@ -303,7 +300,7 @@ function () {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context6.next = 2;
                   break;
                 }
@@ -314,9 +311,9 @@ function () {
                 _context6.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/query/image',
+                  uri: FileHubAPI.url + '/query/image',
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: ids,
                   json: true
@@ -360,9 +357,9 @@ function () {
                 _context7.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/image/download/".concat(id),
+                  uri: FileHubAPI.url + "/image/download/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   json: true
                 });
@@ -387,15 +384,15 @@ function () {
   }, {
     key: "uploadAttachProxy",
     value: function uploadAttachProxy(req, res) {
-      if (!accessToken) {
+      if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
 
       req.pipe(request({
         method: 'POST',
-        uri: url + '/upload/attach',
+        uri: FileHubAPI.url + '/upload/attach',
         qs: {
-          access_token: accessToken
+          access_token: FileHubAPI.accessToken
         }
       })).pipe(res);
     }
@@ -409,7 +406,7 @@ function () {
           while (1) {
             switch (_context8.prev = _context8.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context8.next = 2;
                   break;
                 }
@@ -420,9 +417,9 @@ function () {
                 _context8.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/attach/detail/".concat(id),
+                  uri: FileHubAPI.url + "/attach/detail/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: search,
                   json: true
@@ -455,7 +452,7 @@ function () {
           while (1) {
             switch (_context9.prev = _context9.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context9.next = 2;
                   break;
                 }
@@ -466,9 +463,9 @@ function () {
                 _context9.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: url + '/query/attach',
+                  uri: FileHubAPI.url + '/query/attach',
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   body: ids,
                   json: true
@@ -501,7 +498,7 @@ function () {
           while (1) {
             switch (_context10.prev = _context10.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context10.next = 2;
                   break;
                 }
@@ -512,9 +509,9 @@ function () {
                 _context10.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: url + "/attach/download/".concat(id),
+                  uri: FileHubAPI.url + "/attach/download/".concat(id),
                   qs: {
-                    access_token: accessToken
+                    access_token: FileHubAPI.accessToken
                   },
                   json: true
                 });
@@ -546,7 +543,7 @@ function () {
           while (1) {
             switch (_context11.prev = _context11.next) {
               case 0:
-                url = url;
+                FileHubAPI.url = url;
                 _context11.next = 3;
                 return FileHubAPI.getAccessToken();
 
@@ -578,7 +575,7 @@ function () {
                 _context12.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: url + '/accesstoken',
+                  uri: FileHubAPI.url + '/accesstoken',
                   json: true
                 });
 
@@ -590,7 +587,7 @@ function () {
                   break;
                 }
 
-                accessToken = res.data;
+                FileHubAPI.accessToken = res.data;
                 _context12.next = 8;
                 break;
 

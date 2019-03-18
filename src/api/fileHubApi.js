@@ -1,6 +1,6 @@
 'use strict';
 
-const  request = require('request'),
+const request = require('request'),
     rp = require('request-promise');
 
 /*
@@ -8,223 +8,221 @@ const  request = require('request'),
     if you use koa like framework,which wrapper req and res in context object
     you need set like koa, ctx.respond = false to interupt koa response
 */
-let url = '';
-let accessToken = '';
 
 export default class FileHubAPI {
-    static async initialize(url){
-        url = url;
+    static async initialize(url) {
+        FileHubAPI.url = url;
         await FileHubAPI.getAccessToken();
     }
 
     static async getAccessToken() {
         let res = await rp({
             method: 'POST',
-            uri: url + '/accesstoken',
+            uri: FileHubAPI.url + '/accesstoken',
             json: true
         });
 
         if (res.result) {
-            accessToken = res.data;
+            FileHubAPI.accessToken = res.data;
         } else {
             throw new Error(res.error_msg);
         }
     }
 
     uploadDocProxy(req, res) {
-        if (!accessToken) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         req.pipe(request({
             method: 'POST',
-            uri: url + '/upload/doc',
+            uri: FileHubAPI.url + '/upload/doc',
             qs: {
                 access_token: accessToken
             }
         })).pipe(res);
     }
 
-    async searchDoc(search){
-        if (!accessToken) {
+    async searchDoc(search) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/search/doc',
+            uri: FileHubAPI.url + '/search/doc',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:search,
+            body: search,
             json: true
         });
     }
 
-    async getDocDetail(id){
-        if (!accessToken) {
+    async getDocDetail(id) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/doc/detail/${id}`,
+            uri: FileHubAPI.url + `/doc/detail/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:search,
+            body: search,
             json: true
         });
     }
 
-    async getDocs(ids){
-        if (!accessToken) {
+    async getDocs(ids) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/query/doc',
+            uri: FileHubAPI.url + '/query/doc',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:ids,
+            body: ids,
             json: true
         });
     }
 
-    async getDocURL(id){
-        if (!accessToken) {
+    async getDocURL(id) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/doc/download/${id}`,
+            uri: FileHubAPI.url + `/doc/download/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
             json: true
         });
     }
 
     uploadImageProxy(req, res) {
-        if (!accessToken) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         req.pipe(request({
             method: 'POST',
-            uri: url + '/upload/image',
+            uri: FileHubAPI.url + '/upload/image',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             }
         })).pipe(res);
     }
 
-    async getImageDetail(id){
-        if (!accessToken) {
+    async getImageDetail(id) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/image/detail/${id}`,
+            uri: FileHubAPI.url + `/image/detail/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:search,
+            body: search,
             json: true
         });
     }
 
-    async getImages(ids){
-        if (!accessToken) {
+    async getImages(ids) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/query/image',
+            uri: FileHubAPI.url + '/query/image',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:ids,
+            body: ids,
             json: true
         });
     }
 
-    async getImageURL(id){
+    async getImageURL(id) {
         if (!accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/image/download/${id}`,
+            uri: FileHubAPI.url + `/image/download/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
             json: true
         });
     }
 
     uploadAttachProxy(req, res) {
-        if (!accessToken) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         req.pipe(request({
             method: 'POST',
-            uri: url + '/upload/attach',
+            uri: FileHubAPI.url + '/upload/attach',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             }
         })).pipe(res);
     }
 
-    async getAttachDetail(id){
-        if (!accessToken) {
+    async getAttachDetail(id) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/attach/detail/${id}`,
+            uri: FileHubAPI.url + `/attach/detail/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:search,
+            body: search,
             json: true
         });
     }
 
-    async getAttaches(ids){
-        if (!accessToken) {
+    async getAttaches(ids) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'POST',
-            uri: url + '/query/attach',
+            uri: FileHubAPI.url + '/query/attach',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
-            body:ids,
+            body: ids,
             json: true
         });
     }
 
-    async getAttachURL(id){
-        if (!accessToken) {
+    async getAttachURL(id) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
         return await rp({
             method: 'GET',
-            uri: url + `/attach/download/${id}`,
+            uri: FileHubAPI.url + `/attach/download/${id}`,
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             },
             json: true
         });
