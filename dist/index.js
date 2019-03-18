@@ -41,6 +41,8 @@ var _identityApi = _interopRequireDefault(require("./api/identityApi"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+require("babel-polyfill");
+
 var _default = {
   Config: _config.default,
   AlarmType: _alarmType.default,

@@ -1,5 +1,6 @@
 'use strict';
 
+require("babel-polyfill");
 
 import Config from './predefined/config';
 
