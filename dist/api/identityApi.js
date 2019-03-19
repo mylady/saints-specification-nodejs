@@ -70,11 +70,11 @@ function () {
       return getUserList;
     }()
   }, {
-    key: "login",
+    key: "getUser",
     value: function () {
-      var _login = (0, _asyncToGenerator2.default)(
+      var _getUser = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee2(auth) {
+      _regenerator.default.mark(function _callee2(uid) {
         return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -89,12 +89,11 @@ function () {
               case 2:
                 _context2.next = 4;
                 return rp({
-                  method: 'POST',
-                  uri: IdentityAPI.url + '/auth/login',
+                  method: 'GET',
+                  uri: IdentityAPI.url + "/view/user/".concat(uid),
                   qs: {
                     access_token: IdentityAPI.accessToken
                   },
-                  body: auth,
                   json: true
                 });
 
@@ -109,18 +108,18 @@ function () {
         }, _callee2);
       }));
 
-      function login(_x) {
-        return _login.apply(this, arguments);
+      function getUser(_x) {
+        return _getUser.apply(this, arguments);
       }
 
-      return login;
+      return getUser;
     }()
   }, {
-    key: "logout",
+    key: "login",
     value: function () {
-      var _logout = (0, _asyncToGenerator2.default)(
+      var _login = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee3(token) {
+      _regenerator.default.mark(function _callee3(auth) {
         return _regenerator.default.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
@@ -136,13 +135,11 @@ function () {
                 _context3.next = 4;
                 return rp({
                   method: 'POST',
-                  uri: IdentityAPI.url + '/auth/logout',
+                  uri: IdentityAPI.url + '/auth/login',
                   qs: {
                     access_token: IdentityAPI.accessToken
                   },
-                  body: {
-                    token: token
-                  },
+                  body: auth,
                   json: true
                 });
 
@@ -157,16 +154,16 @@ function () {
         }, _callee3);
       }));
 
-      function logout(_x2) {
-        return _logout.apply(this, arguments);
+      function login(_x2) {
+        return _login.apply(this, arguments);
       }
 
-      return logout;
+      return login;
     }()
   }, {
-    key: "self",
+    key: "logout",
     value: function () {
-      var _self = (0, _asyncToGenerator2.default)(
+      var _logout = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
       _regenerator.default.mark(function _callee4(token) {
         return _regenerator.default.wrap(function _callee4$(_context4) {
@@ -183,13 +180,13 @@ function () {
               case 2:
                 _context4.next = 4;
                 return rp({
-                  method: 'GET',
-                  uri: IdentityAPI.url + '/self',
+                  method: 'POST',
+                  uri: IdentityAPI.url + '/auth/logout',
                   qs: {
                     access_token: IdentityAPI.accessToken
                   },
-                  auth: {
-                    bearer: token
+                  body: {
+                    token: token
                   },
                   json: true
                 });
@@ -205,18 +202,18 @@ function () {
         }, _callee4);
       }));
 
-      function self(_x3) {
-        return _self.apply(this, arguments);
+      function logout(_x3) {
+        return _logout.apply(this, arguments);
       }
 
-      return self;
+      return logout;
     }()
   }, {
-    key: "getUserDetail",
+    key: "self",
     value: function () {
-      var _getUserDetail = (0, _asyncToGenerator2.default)(
+      var _self = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee5(token, uid) {
+      _regenerator.default.mark(function _callee5(token) {
         return _regenerator.default.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
@@ -232,7 +229,7 @@ function () {
                 _context5.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: IdentityAPI.url + "/user/".concat(uid),
+                  uri: IdentityAPI.url + '/self',
                   qs: {
                     access_token: IdentityAPI.accessToken
                   },
@@ -253,47 +250,27 @@ function () {
         }, _callee5);
       }));
 
-      function getUserDetail(_x4, _x5) {
-        return _getUserDetail.apply(this, arguments);
+      function self(_x4) {
+        return _self.apply(this, arguments);
       }
 
-      return getUserDetail;
+      return self;
     }()
-  }, {
-    key: "getUsersDetail",
+  }], [{
+    key: "initialize",
     value: function () {
-      var _getUsersDetail = (0, _asyncToGenerator2.default)(
+      var _initialize = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee6(token, query) {
+      _regenerator.default.mark(function _callee6(url) {
         return _regenerator.default.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                if (IdentityAPI.accessToken) {
-                  _context6.next = 2;
-                  break;
-                }
+                IdentityAPI.url = url;
+                _context6.next = 3;
+                return IdentityAPI.getAccessToken();
 
-                throw new Error('please get access token first');
-
-              case 2:
-                query = query || {};
-                query.access_token = IdentityAPI.accessToken;
-                _context6.next = 6;
-                return rp({
-                  method: 'GET',
-                  uri: IdentityAPI.url + "/user",
-                  qs: query,
-                  auth: {
-                    bearer: token
-                  },
-                  json: true
-                });
-
-              case 6:
-                return _context6.abrupt("return", _context6.sent);
-
-              case 7:
+              case 3:
               case "end":
                 return _context6.stop();
             }
@@ -301,35 +278,7 @@ function () {
         }, _callee6);
       }));
 
-      function getUsersDetail(_x6, _x7) {
-        return _getUsersDetail.apply(this, arguments);
-      }
-
-      return getUsersDetail;
-    }()
-  }], [{
-    key: "initialize",
-    value: function () {
-      var _initialize = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee7(url) {
-        return _regenerator.default.wrap(function _callee7$(_context7) {
-          while (1) {
-            switch (_context7.prev = _context7.next) {
-              case 0:
-                IdentityAPI.url = url;
-                _context7.next = 3;
-                return IdentityAPI.getAccessToken();
-
-              case 3:
-              case "end":
-                return _context7.stop();
-            }
-          }
-        }, _callee7);
-      }));
-
-      function initialize(_x8) {
+      function initialize(_x5) {
         return _initialize.apply(this, arguments);
       }
 
@@ -340,13 +289,13 @@ function () {
     value: function () {
       var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee8() {
+      _regenerator.default.mark(function _callee7() {
         var res;
-        return _regenerator.default.wrap(function _callee8$(_context8) {
+        return _regenerator.default.wrap(function _callee7$(_context7) {
           while (1) {
-            switch (_context8.prev = _context8.next) {
+            switch (_context7.prev = _context7.next) {
               case 0:
-                _context8.next = 2;
+                _context7.next = 2;
                 return rp({
                   method: 'POST',
                   uri: IdentityAPI.url + '/accesstoken',
@@ -354,15 +303,15 @@ function () {
                 });
 
               case 2:
-                res = _context8.sent;
+                res = _context7.sent;
 
                 if (!res.result) {
-                  _context8.next = 7;
+                  _context7.next = 7;
                   break;
                 }
 
                 IdentityAPI.accessToken = res.data;
-                _context8.next = 8;
+                _context7.next = 8;
                 break;
 
               case 7:
@@ -370,10 +319,10 @@ function () {
 
               case 8:
               case "end":
-                return _context8.stop();
+                return _context7.stop();
             }
           }
-        }, _callee8);
+        }, _callee7);
       }));
 
       function getAccessToken() {
