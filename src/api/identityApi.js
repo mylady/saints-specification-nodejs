@@ -22,7 +22,7 @@ export default class IdentityAPI {
         }
     }
 
-    static isAvailable(){
+    static isAvailable() {
         return IdentityAPI.url && IdentityAPI.accessToken;
     }
 
@@ -86,6 +86,42 @@ export default class IdentityAPI {
             qs: {
                 access_token: IdentityAPI.accessToken
             },
+            auth: {
+                bearer: token
+            },
+            json: true
+        });
+    }
+
+    async getUserDetail(token, uid) {
+        if (!IdentityAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        return await rp({
+            method: 'GET',
+            uri: IdentityAPI.url + `/user/${uid}`,
+            qs: {
+                access_token: IdentityAPI.accessToken
+            },
+            auth: {
+                bearer: token
+            },
+            json: true
+        });
+    }
+
+    async getUsersDetail(token, query) {
+        if (!IdentityAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        query = query || {};
+        query.access_token = IdentityAPI.accessToken;
+        return await rp({
+            method: 'GET',
+            uri: IdentityAPI.url + `/user`,
+            qs: query,
             auth: {
                 bearer: token
             },

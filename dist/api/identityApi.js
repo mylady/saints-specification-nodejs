@@ -211,21 +211,41 @@ function () {
 
       return self;
     }()
-  }], [{
-    key: "initialize",
+  }, {
+    key: "getUserDetail",
     value: function () {
-      var _initialize = (0, _asyncToGenerator2.default)(
+      var _getUserDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee5(url) {
+      _regenerator.default.mark(function _callee5(token, uid) {
         return _regenerator.default.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                IdentityAPI.url = url;
-                _context5.next = 3;
-                return IdentityAPI.getAccessToken();
+                if (IdentityAPI.accessToken) {
+                  _context5.next = 2;
+                  break;
+                }
 
-              case 3:
+                throw new Error('please get access token first');
+
+              case 2:
+                _context5.next = 4;
+                return rp({
+                  method: 'GET',
+                  uri: IdentityAPI.url + "/user/".concat(uid),
+                  qs: {
+                    access_token: IdentityAPI.accessToken
+                  },
+                  auth: {
+                    bearer: token
+                  },
+                  json: true
+                });
+
+              case 4:
+                return _context5.abrupt("return", _context5.sent);
+
+              case 5:
               case "end":
                 return _context5.stop();
             }
@@ -233,7 +253,83 @@ function () {
         }, _callee5);
       }));
 
-      function initialize(_x4) {
+      function getUserDetail(_x4, _x5) {
+        return _getUserDetail.apply(this, arguments);
+      }
+
+      return getUserDetail;
+    }()
+  }, {
+    key: "getUsersDetail",
+    value: function () {
+      var _getUsersDetail = (0, _asyncToGenerator2.default)(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee6(token, query) {
+        return _regenerator.default.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                if (IdentityAPI.accessToken) {
+                  _context6.next = 2;
+                  break;
+                }
+
+                throw new Error('please get access token first');
+
+              case 2:
+                query = query || {};
+                query.access_token = IdentityAPI.accessToken;
+                _context6.next = 6;
+                return rp({
+                  method: 'GET',
+                  uri: IdentityAPI.url + "/user",
+                  qs: query,
+                  auth: {
+                    bearer: token
+                  },
+                  json: true
+                });
+
+              case 6:
+                return _context6.abrupt("return", _context6.sent);
+
+              case 7:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6);
+      }));
+
+      function getUsersDetail(_x6, _x7) {
+        return _getUsersDetail.apply(this, arguments);
+      }
+
+      return getUsersDetail;
+    }()
+  }], [{
+    key: "initialize",
+    value: function () {
+      var _initialize = (0, _asyncToGenerator2.default)(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee7(url) {
+        return _regenerator.default.wrap(function _callee7$(_context7) {
+          while (1) {
+            switch (_context7.prev = _context7.next) {
+              case 0:
+                IdentityAPI.url = url;
+                _context7.next = 3;
+                return IdentityAPI.getAccessToken();
+
+              case 3:
+              case "end":
+                return _context7.stop();
+            }
+          }
+        }, _callee7);
+      }));
+
+      function initialize(_x8) {
         return _initialize.apply(this, arguments);
       }
 
@@ -244,13 +340,13 @@ function () {
     value: function () {
       var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee6() {
+      _regenerator.default.mark(function _callee8() {
         var res;
-        return _regenerator.default.wrap(function _callee6$(_context6) {
+        return _regenerator.default.wrap(function _callee8$(_context8) {
           while (1) {
-            switch (_context6.prev = _context6.next) {
+            switch (_context8.prev = _context8.next) {
               case 0:
-                _context6.next = 2;
+                _context8.next = 2;
                 return rp({
                   method: 'POST',
                   uri: IdentityAPI.url + '/accesstoken',
@@ -258,15 +354,15 @@ function () {
                 });
 
               case 2:
-                res = _context6.sent;
+                res = _context8.sent;
 
                 if (!res.result) {
-                  _context6.next = 7;
+                  _context8.next = 7;
                   break;
                 }
 
                 IdentityAPI.accessToken = res.data;
-                _context6.next = 8;
+                _context8.next = 8;
                 break;
 
               case 7:
@@ -274,10 +370,10 @@ function () {
 
               case 8:
               case "end":
-                return _context6.stop();
+                return _context8.stop();
             }
           }
-        }, _callee6);
+        }, _callee8);
       }));
 
       function getAccessToken() {
