@@ -1,12 +1,12 @@
 'use strict';
 
 export default class RestResponse {
-    constructor({ result, error_code, error_msg, data, total_count }) {
+    constructor({ result, err_code, err_msg, data, total }) {
         this.result = result || false;
-        this.error_code = error_code || 0;
-        this.error_msg = error_msg || '';
+        this.err_code = err_code || 0;
+        this.err_msg = err_msg || '';
         this.data = data || null;
-        this.total_count = total_count || 0;
+        this.total= total || 0;
     }
 
     static NewBoolResponse(b, err) {
@@ -14,11 +14,11 @@ export default class RestResponse {
             result: b
         });
         if (err) {
-            resp.error_msg = err.message;
-            resp.error_code = err.code || 0;
+            resp.err_msg = err.message;
+            resp.err_code = err.code || 0;
         } else {
-            resp.error_msg = '';
-            resp.error_code = 0;
+            resp.err_msg = '';
+            resp.err_code = 0;
         }
         return resp;
     }
@@ -27,7 +27,7 @@ export default class RestResponse {
         let resp = new RestResponse({
             result: true,
             data: d,
-            total_count: cnt
+            total: cnt
         });
         return resp;
     }

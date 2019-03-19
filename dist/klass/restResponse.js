@@ -16,16 +16,16 @@ var RestResponse =
 function () {
   function RestResponse(_ref) {
     var result = _ref.result,
-        error_code = _ref.error_code,
-        error_msg = _ref.error_msg,
+        err_code = _ref.err_code,
+        err_msg = _ref.err_msg,
         data = _ref.data,
-        total_count = _ref.total_count;
+        total = _ref.total;
     (0, _classCallCheck2.default)(this, RestResponse);
     this.result = result || false;
-    this.error_code = error_code || 0;
-    this.error_msg = error_msg || '';
+    this.err_code = err_code || 0;
+    this.err_msg = err_msg || '';
     this.data = data || null;
-    this.total_count = total_count || 0;
+    this.total = total || 0;
   }
 
   (0, _createClass2.default)(RestResponse, null, [{
@@ -36,11 +36,11 @@ function () {
       });
 
       if (err) {
-        resp.error_msg = err.message;
-        resp.error_code = err.code || 0;
+        resp.err_msg = err.message;
+        resp.err_code = err.code || 0;
       } else {
-        resp.error_msg = '';
-        resp.error_code = 0;
+        resp.err_msg = '';
+        resp.err_code = 0;
       }
 
       return resp;
@@ -51,7 +51,7 @@ function () {
       var resp = new RestResponse({
         result: true,
         data: d,
-        total_count: cnt
+        total: cnt
       });
       return resp;
     }
