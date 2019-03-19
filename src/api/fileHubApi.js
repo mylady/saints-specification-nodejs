@@ -42,7 +42,7 @@ export default class FileHubAPI {
             method: 'POST',
             uri: FileHubAPI.url + '/upload/doc',
             qs: {
-                access_token: accessToken
+                access_token: FileHubAPI.accessToken
             }
         })).pipe(res);
     }
