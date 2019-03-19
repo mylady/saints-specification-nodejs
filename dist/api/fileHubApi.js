@@ -117,7 +117,6 @@ function () {
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
-                  body: search,
                   json: true
                 });
 
@@ -269,7 +268,6 @@ function () {
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
-                  body: search,
                   json: true
                 });
 
@@ -421,7 +419,6 @@ function () {
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
-                  body: search,
                   json: true
                 });
 

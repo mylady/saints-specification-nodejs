@@ -74,7 +74,6 @@ export default class FileHubAPI {
             qs: {
                 access_token: FileHubAPI.accessToken
             },
-            body: search,
             json: true
         });
     }
@@ -135,7 +134,6 @@ export default class FileHubAPI {
             qs: {
                 access_token: FileHubAPI.accessToken
             },
-            body: search,
             json: true
         });
     }
@@ -196,7 +194,6 @@ export default class FileHubAPI {
             qs: {
                 access_token: FileHubAPI.accessToken
             },
-            body: search,
             json: true
         });
     }
