@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingStatus = {
   waiting: {
     name: '等待中',
@@ -35,8 +36,12 @@ var prisonMeetingStatus = {
   fingerEnd: {
     name: '指纹结束',
     value: 7
+  },
+  audit: {
+    name: '审核',
+    value: 8
   }
 };
-
 Object.freeze(prisonMeetingStatus);
-exports.default = prisonMeetingStatus;
+var _default = prisonMeetingStatus;
+exports.default = _default;

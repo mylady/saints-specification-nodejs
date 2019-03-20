@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonBusinessType = {
   refresh: {
     name: '刷新数据',
@@ -61,6 +62,6 @@ var prisonBusinessType = {
     value: 13
   }
 };
-
 Object.freeze(prisonBusinessType);
-exports.default = prisonBusinessType;
+var _default = prisonBusinessType;
+exports.default = _default;

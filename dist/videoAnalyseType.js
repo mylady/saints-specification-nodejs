@@ -4,22 +4,23 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 var videoAnalyseType = {
-    behavior: {
-        name: '行为分析',
-        value: 0
-    },
-    faceRecognition: {
-        name: '人脸识别',
-        value: 1
-    },
-    carPlateRecognition: {
-        name: '车牌识别',
-        value: 2
-    }
+  behavior: {
+    name: '行为分析',
+    value: 0
+  },
+  faceRecognition: {
+    name: '人脸识别',
+    value: 1
+  },
+  carPlateRecognition: {
+    name: '车牌识别',
+    value: 2
+  }
 };
-
 Object.freeze(videoAnalyseType);
-exports.default = videoAnalyseType;
+var _default = videoAnalyseType;
+exports.default = _default;

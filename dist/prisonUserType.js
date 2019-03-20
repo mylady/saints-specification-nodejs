@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonUserType = {
   admin: {
     name: '管理员',
@@ -32,6 +33,6 @@ var prisonUserType = {
     value: 5
   }
 };
-
 Object.freeze(prisonUserType);
-exports.default = prisonUserType;
+var _default = prisonUserType;
+exports.default = _default;

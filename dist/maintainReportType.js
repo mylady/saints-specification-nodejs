@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var maintainReportType = {
   manuReport: {
     name: '人工报修',
@@ -16,6 +17,6 @@ var maintainReportType = {
     value: 1
   }
 };
-
 Object.freeze(maintainReportType);
-exports.default = maintainReportType;
+var _default = maintainReportType;
+exports.default = _default;

@@ -1,9 +1,9 @@
-
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonWorkNumberType = {
   policeLicense: {
     name: '警官证',
@@ -22,6 +22,6 @@ var prisonWorkNumberType = {
     value: 3
   }
 };
-
 Object.freeze(prisonWorkNumberType);
-exports.default = prisonWorkNumberType;
+var _default = prisonWorkNumberType;
+exports.default = _default;

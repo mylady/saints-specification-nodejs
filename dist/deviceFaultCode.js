@@ -1,25 +1,24 @@
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 
-var _deviceAlarmCode = require('./deviceAlarmCode');
-
-var _deviceAlarmCode2 = _interopRequireDefault(_deviceAlarmCode);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _deviceAlarmCode = _interopRequireDefault(require("./deviceAlarmCode"));
 
 var deviceFaultCode = {
-    videoLost: _deviceAlarmCode2.default.videoLost,
-    audioLost: _deviceAlarmCode2.default.audioLost,
-    diskFull: _deviceAlarmCode2.default.diskFull,
-    diskFault: _deviceAlarmCode2.default.diskFault,
-    offline: _deviceAlarmCode2.default.offline,
-    disturb: _deviceAlarmCode2.default.disturb,
-    powerAbnormal: _deviceAlarmCode2.default.powerAbnormal,
-    videoQuality: _deviceAlarmCode2.default.videoQuality
+  videoLost: _deviceAlarmCode.default.videoLost,
+  audioLost: _deviceAlarmCode.default.audioLost,
+  diskFull: _deviceAlarmCode.default.diskFull,
+  diskFault: _deviceAlarmCode.default.diskFault,
+  offline: _deviceAlarmCode.default.offline,
+  disturb: _deviceAlarmCode.default.disturb,
+  powerAbnormal: _deviceAlarmCode.default.powerAbnormal,
+  videoQuality: _deviceAlarmCode.default.videoQuality
 };
-
 Object.freeze(deviceFaultCode);
-exports.default = deviceFaultCode;
+var _default = deviceFaultCode;
+exports.default = _default;

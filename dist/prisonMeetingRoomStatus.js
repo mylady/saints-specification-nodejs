@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingRoomStatus = {
   unavailable: {
     name: '不可用',
@@ -24,6 +25,6 @@ var prisonMeetingRoomStatus = {
     value: 3
   }
 };
-
 Object.freeze(prisonMeetingRoomStatus);
-exports.default = prisonMeetingRoomStatus;
+var _default = prisonMeetingRoomStatus;
+exports.default = _default;

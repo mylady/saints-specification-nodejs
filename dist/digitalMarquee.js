@@ -3,21 +3,23 @@
  */
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var DigitalMarquee = function DigitalMarquee() {
-    _classCallCheck(this, DigitalMarquee);
-
-    this.FontSize = 0;
-    this.FontColor = '';
-    this.IsBold = false;
-    this.IsItalic = false;
-    this.IsUnderline = false;
-    this.Text = '';
+  (0, _classCallCheck2.default)(this, DigitalMarquee);
+  this.FontSize = 0;
+  this.FontColor = '';
+  this.IsBold = false;
+  this.IsItalic = false;
+  this.IsUnderline = false;
+  this.Text = '';
 };
 
 exports.default = DigitalMarquee;

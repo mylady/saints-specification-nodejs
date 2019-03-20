@@ -32,6 +32,10 @@ let prisonMeetingStatus = {
   fingerEnd: {
     name: '指纹结束',
     value: 7
+  },
+  audit:{
+    name:'审核',
+    value:8
   }
 };
 

@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonerActivity = {
   stay: {
     name: '在监',
@@ -52,6 +53,6 @@ var prisonerActivity = {
     value: 10
   }
 };
-
 Object.freeze(prisonerActivity);
-exports.default = prisonerActivity;
+var _default = prisonerActivity;
+exports.default = _default;

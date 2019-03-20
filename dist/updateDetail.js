@@ -3,21 +3,23 @@
  */
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var UpdateDetail = function UpdateDetail() {
-    _classCallCheck(this, UpdateDetail);
-
-    this.ProductId = '';
-    this.OS = -1;
-    this.OldVersion = -1;
-    this.NewVersion = -1;
-    this.ShouldUpdate = false;
-    this.UpdateAddress = '';
+  (0, _classCallCheck2.default)(this, UpdateDetail);
+  this.ProductId = '';
+  this.OS = -1;
+  this.OldVersion = -1;
+  this.NewVersion = -1;
+  this.ShouldUpdate = false;
+  this.UpdateAddress = '';
 };
 
 exports.default = UpdateDetail;

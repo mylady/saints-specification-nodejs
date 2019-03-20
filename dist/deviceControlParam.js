@@ -3,20 +3,22 @@
  */
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var DeviceControlParam = function DeviceControlParam() {
-    _classCallCheck(this, DeviceControlParam);
-
-    this.ControlCode = -1;
-    this.InterfaceCode = 0;
-    this.Receivers = [];
-    this.Sender = '';
-    this.Parameter = [];
+  (0, _classCallCheck2.default)(this, DeviceControlParam);
+  this.ControlCode = -1;
+  this.InterfaceCode = 0;
+  this.Receivers = [];
+  this.Sender = '';
+  this.Parameter = [];
 };
 
 exports.default = DeviceControlParam;

@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prescriptionType = {
   st: {
     name: 'ST(立即服药)',
@@ -36,6 +37,6 @@ var prescriptionType = {
     value: 6
   }
 };
-
 Object.freeze(prescriptionType);
-exports.default = prescriptionType;
+var _default = prescriptionType;
+exports.default = _default;

@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonerHealthStatus = {
   health: {
     name: '健康',
@@ -20,7 +21,6 @@ var prisonerHealthStatus = {
     value: 2
   }
 };
-
 Object.freeze(prisonerHealthStatus);
-
-exports.default = prisonerHealthStatus;
+var _default = prisonerHealthStatus;
+exports.default = _default;

@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var maintainRepairResult = {
   nonPicked: {
     name: '未分配',
@@ -36,6 +37,6 @@ var maintainRepairResult = {
     value: 6
   }
 };
-
 Object.freeze(maintainRepairResult);
-exports.default = maintainRepairResult;
+var _default = maintainRepairResult;
+exports.default = _default;

@@ -3,24 +3,22 @@
  */
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 
-var _productInfo = require('./productInfo');
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var _productInfo2 = _interopRequireDefault(_productInfo);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _productInfo = _interopRequireDefault(require("./productInfo"));
 
 var TransmitMessageClient = function TransmitMessageClient() {
-    _classCallCheck(this, TransmitMessageClient);
-
-    this.Product = new _productInfo2.default();
-    this.IPAddresses = [];
-    this.MacAddresses = [];
+  (0, _classCallCheck2.default)(this, TransmitMessageClient);
+  this.Product = new _productInfo.default();
+  this.IPAddresses = [];
+  this.MacAddresses = [];
 };
 
 exports.default = TransmitMessageClient;

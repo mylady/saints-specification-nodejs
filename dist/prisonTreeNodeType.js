@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonTreeNodeType = {
   none: {
     name: '无类型',
@@ -28,6 +29,6 @@ var prisonTreeNodeType = {
     value: 4
   }
 };
-
 Object.freeze(prisonTreeNodeType);
-exports.default = prisonTreeNodeType;
+var _default = prisonTreeNodeType;
+exports.default = _default;

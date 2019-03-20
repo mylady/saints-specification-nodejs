@@ -1,16 +1,18 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var CallExtra = function CallExtra() {
-    _classCallCheck(this, CallExtra);
-
-    this.Caller = '';
-    this.Called = '';
+  (0, _classCallCheck2.default)(this, CallExtra);
+  this.Caller = '';
+  this.Called = '';
 };
 
 exports.default = CallExtra;

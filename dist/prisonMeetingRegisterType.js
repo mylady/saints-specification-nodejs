@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingRegisterType = {
   live: {
     name: '现场登记',
@@ -13,6 +14,6 @@ var prisonMeetingRegisterType = {
     value: 1
   }
 };
-
 Object.freeze(prisonMeetingRegisterType);
-exports.default = prisonMeetingRegisterType;
+var _default = prisonMeetingRegisterType;
+exports.default = _default;

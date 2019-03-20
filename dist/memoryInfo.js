@@ -3,19 +3,21 @@
  */
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var MemoryInfo = function MemoryInfo() {
-    _classCallCheck(this, MemoryInfo);
-
-    this.TotalMemory = 0;
-    this.UsedMemory = 0;
-    this.FreeMemory = 0;
-    this.MemoryPercent = '';
+  (0, _classCallCheck2.default)(this, MemoryInfo);
+  this.TotalMemory = 0;
+  this.UsedMemory = 0;
+  this.FreeMemory = 0;
+  this.MemoryPercent = '';
 };
 
 exports.default = MemoryInfo;

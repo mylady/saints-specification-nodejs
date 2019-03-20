@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonerDiagnosticMethod = {
   medicalTreat: {
     name: '药物处置',
@@ -20,6 +21,6 @@ var prisonerDiagnosticMethod = {
     value: 2
   }
 };
-
 Object.freeze(prisonerDiagnosticMethod);
-exports.default = prisonerDiagnosticMethod;
+var _default = prisonerDiagnosticMethod;
+exports.default = _default;

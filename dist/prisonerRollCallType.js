@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonerRollCallType = {
   terminalRollCall: {
     name: '终端点名',
@@ -17,6 +18,6 @@ var prisonerRollCallType = {
     value: 2
   }
 };
-
 Object.freeze(prisonerRollCallType);
-exports.default = prisonerRollCallType;
+var _default = prisonerRollCallType;
+exports.default = _default;

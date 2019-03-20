@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingUserType = {
   police: {
     name: '干警',
@@ -21,6 +22,6 @@ var prisonMeetingUserType = {
     value: 3
   }
 };
-
 Object.freeze(prisonMeetingUserType);
-exports.default = prisonMeetingUserType;
+var _default = prisonMeetingUserType;
+exports.default = _default;

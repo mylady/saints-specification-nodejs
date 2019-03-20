@@ -4,14 +4,15 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 var schoolEmergency = {
-    alarm110: {
-        name: '110报警',
-        value: 0
-    }
+  alarm110: {
+    name: '110报警',
+    value: 0
+  }
 };
-
 Object.freeze(schoolEmergency);
-exports.default = schoolEmergency;
+var _default = schoolEmergency;
+exports.default = _default;

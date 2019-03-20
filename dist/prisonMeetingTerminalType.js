@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingTerminalType = {
   displayTerminal: {
     name: '显示终端',
@@ -25,6 +26,6 @@ var prisonMeetingTerminalType = {
     value: 4
   }
 };
-
 Object.freeze(prisonMeetingTerminalType);
-exports.default = prisonMeetingTerminalType;
+var _default = prisonMeetingTerminalType;
+exports.default = _default;

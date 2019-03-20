@@ -1,21 +1,23 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var FaceRecognitionExtra = function FaceRecognitionExtra() {
-    _classCallCheck(this, FaceRecognitionExtra);
-
-    this.SceneImagePath = '';
-    this.SceneImage = '';
-    this.FaceImagePath = '';
-    this.FaceImage = '';
-    this.PersonId = '';
-    this.PersonName = '';
-    this.Similarity = 0.0;
+  (0, _classCallCheck2.default)(this, FaceRecognitionExtra);
+  this.SceneImagePath = '';
+  this.SceneImage = '';
+  this.FaceImagePath = '';
+  this.FaceImage = '';
+  this.PersonId = '';
+  this.PersonName = '';
+  this.Similarity = 0.0;
 };
 
 exports.default = FaceRecognitionExtra;

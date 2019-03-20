@@ -4,12 +4,14 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 var productOS = {
-    windows: 0,
-    linux_debian: 1,
-    android: 2
+  windows: 0,
+  linux_debian: 1,
+  android: 2
 };
 Object.freeze(productOS);
-exports.default = productOS;
+var _default = productOS;
+exports.default = _default;

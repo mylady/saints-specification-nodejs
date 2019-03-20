@@ -4,14 +4,15 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 var videoRecordSource = {
-    schoolPlatform: {
-        name: '教育安全管理平台',
-        value: 0
-    }
+  schoolPlatform: {
+    name: '教育安全管理平台',
+    value: 0
+  }
 };
-
 Object.freeze(videoRecordSource);
-exports.default = videoRecordSource;
+var _default = videoRecordSource;
+exports.default = _default;

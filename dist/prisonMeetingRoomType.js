@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 var prisonMeetingRoomType = {
   general: {
     name: '通用',
@@ -20,6 +21,6 @@ var prisonMeetingRoomType = {
     value: 2
   }
 };
-
 Object.freeze(prisonMeetingRoomType);
-exports.default = prisonMeetingRoomType;
+var _default = prisonMeetingRoomType;
+exports.default = _default;

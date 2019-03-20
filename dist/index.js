@@ -1,676 +1,404 @@
 /**
  * Created by MyLady on 16/2/25.
  */
-
 'use strict';
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports.default = void 0;
 
-var _airMonitorExtra = require('./airMonitorExtra');
+var _airMonitorExtra = _interopRequireDefault(require("./airMonitorExtra"));
 
-var _airMonitorExtra2 = _interopRequireDefault(_airMonitorExtra);
+var _appointmentStatus = _interopRequireDefault(require("./appointmentStatus"));
 
-var _appointmentStatus = require('./appointmentStatus');
+var _behaviorAnalyseExtra = _interopRequireDefault(require("./behaviorAnalyseExtra"));
 
-var _appointmentStatus2 = _interopRequireDefault(_appointmentStatus);
+var _bioIdentifyMessage = _interopRequireDefault(require("./bioIdentifyMessage"));
 
-var _behaviorAnalyseExtra = require('./behaviorAnalyseExtra');
+var _bioIdentifyType = _interopRequireDefault(require("./bioIdentifyType"));
 
-var _behaviorAnalyseExtra2 = _interopRequireDefault(_behaviorAnalyseExtra);
+var _callExtra = _interopRequireDefault(require("./callExtra"));
 
-var _bioIdentifyMessage = require('./bioIdentifyMessage');
+var _cameraType = _interopRequireDefault(require("./cameraType"));
 
-var _bioIdentifyMessage2 = _interopRequireDefault(_bioIdentifyMessage);
+var _carPlateRecognitionExtra = _interopRequireDefault(require("./carPlateRecognitionExtra"));
 
-var _bioIdentifyType = require('./bioIdentifyType');
+var _connectionMode = _interopRequireDefault(require("./connectionMode"));
 
-var _bioIdentifyType2 = _interopRequireDefault(_bioIdentifyType);
+var _cpuInfo = _interopRequireDefault(require("./cpuInfo"));
 
-var _callExtra = require('./callExtra');
+var _descripter = _interopRequireDefault(require("./descripter"));
 
-var _callExtra2 = _interopRequireDefault(_callExtra);
+var _deviceAlarmCode = _interopRequireDefault(require("./deviceAlarmCode"));
 
-var _cameraType = require('./cameraType');
+var _deviceFaultCode = _interopRequireDefault(require("./deviceFaultCode"));
 
-var _cameraType2 = _interopRequireDefault(_cameraType);
+var _deviceControlCode = _interopRequireDefault(require("./deviceControlCode"));
 
-var _carPlateRecognitionExtra = require('./carPlateRecognitionExtra');
+var _deviceControlParam = _interopRequireDefault(require("./deviceControlParam"));
 
-var _carPlateRecognitionExtra2 = _interopRequireDefault(_carPlateRecognitionExtra);
+var _deviceDataType = _interopRequireDefault(require("./deviceDataType"));
 
-var _connectionMode = require('./connectionMode');
+var _deviceEventCode = _interopRequireDefault(require("./deviceEventCode"));
 
-var _connectionMode2 = _interopRequireDefault(_connectionMode);
+var _deviceEventData = _interopRequireDefault(require("./deviceEventData"));
 
-var _cpuInfo = require('./cpuInfo');
+var _deviceEventLevel = _interopRequireDefault(require("./deviceEventLevel"));
 
-var _cpuInfo2 = _interopRequireDefault(_cpuInfo);
+var _deviceEventType = _interopRequireDefault(require("./deviceEventType"));
 
-var _descripter = require('./descripter');
+var _deviceInterfaceCode = _interopRequireDefault(require("./deviceInterfaceCode"));
 
-var _descripter2 = _interopRequireDefault(_descripter);
+var _deviceWorkingStatus = _interopRequireDefault(require("./deviceWorkingStatus"));
 
-var _deviceAlarmCode = require('./deviceAlarmCode');
+var _digitalCommand = _interopRequireDefault(require("./digitalCommand"));
 
-var _deviceAlarmCode2 = _interopRequireDefault(_deviceAlarmCode);
+var _digitalContentType = _interopRequireDefault(require("./digitalContentType"));
 
-var _deviceFaultCode = require('./deviceFaultCode');
+var _digitalControlCode = _interopRequireDefault(require("./digitalControlCode"));
 
-var _deviceFaultCode2 = _interopRequireDefault(_deviceFaultCode);
+var _digitalLayout = _interopRequireDefault(require("./digitalLayout"));
 
-var _deviceControlCode = require('./deviceControlCode');
+var _digitalLayoutArea = _interopRequireDefault(require("./digitalLayoutArea"));
 
-var _deviceControlCode2 = _interopRequireDefault(_deviceControlCode);
+var _digitalMarquee = _interopRequireDefault(require("./digitalMarquee"));
 
-var _deviceControlParam = require('./deviceControlParam');
+var _digitalTerminalType = _interopRequireDefault(require("./digitalTerminalType"));
 
-var _deviceControlParam2 = _interopRequireDefault(_deviceControlParam);
+var _discovery = require("./discovery");
 
-var _deviceDataType = require('./deviceDataType');
+var _diskInfo = _interopRequireDefault(require("./diskInfo"));
 
-var _deviceDataType2 = _interopRequireDefault(_deviceDataType);
+var _doorExtra = _interopRequireDefault(require("./doorExtra"));
 
-var _deviceEventCode = require('./deviceEventCode');
+var _envMonitorExtra = _interopRequireDefault(require("./envMonitorExtra"));
 
-var _deviceEventCode2 = _interopRequireDefault(_deviceEventCode);
+var _faceRecognition = _interopRequireDefault(require("./faceRecognition"));
 
-var _deviceEventData = require('./deviceEventData');
+var _faceRecognitionExtra = _interopRequireDefault(require("./faceRecognitionExtra"));
 
-var _deviceEventData2 = _interopRequireDefault(_deviceEventData);
+var _faceRollCallFeedback = _interopRequireDefault(require("./faceRollCallFeedback"));
 
-var _deviceEventLevel = require('./deviceEventLevel');
+var _faceRollCallStatus = _interopRequireDefault(require("./faceRollCallStatus"));
 
-var _deviceEventLevel2 = _interopRequireDefault(_deviceEventLevel);
+var _fingerPrint = _interopRequireDefault(require("./fingerPrint"));
 
-var _deviceEventType = require('./deviceEventType');
+var _hospitalCall = _interopRequireDefault(require("./hospitalCall"));
 
-var _deviceEventType2 = _interopRequireDefault(_deviceEventType);
+var _hospitalCallType = _interopRequireDefault(require("./hospitalCallType"));
 
-var _deviceInterfaceCode = require('./deviceInterfaceCode');
+var _initParam = _interopRequireDefault(require("./initParam"));
 
-var _deviceInterfaceCode2 = _interopRequireDefault(_deviceInterfaceCode);
+var _maintainRepairResult = _interopRequireDefault(require("./maintainRepairResult"));
 
-var _deviceWorkingStatus = require('./deviceWorkingStatus');
+var _maintainReportType = _interopRequireDefault(require("./maintainReportType"));
 
-var _deviceWorkingStatus2 = _interopRequireDefault(_deviceWorkingStatus);
+var _maintainRoleType = _interopRequireDefault(require("./maintainRoleType"));
 
-var _digitalCommand = require('./digitalCommand');
+var _manufacturerCode = _interopRequireDefault(require("./manufacturerCode"));
 
-var _digitalCommand2 = _interopRequireDefault(_digitalCommand);
+var _memoryInfo = _interopRequireDefault(require("./memoryInfo"));
 
-var _digitalContentType = require('./digitalContentType');
+var _nicConfig = _interopRequireDefault(require("./nicConfig"));
 
-var _digitalContentType2 = _interopRequireDefault(_digitalContentType);
+var _prescriptionType = _interopRequireDefault(require("./prescriptionType"));
 
-var _digitalControlCode = require('./digitalControlCode');
+var _prisonBusinessType = _interopRequireDefault(require("./prisonBusinessType"));
 
-var _digitalControlCode2 = _interopRequireDefault(_digitalControlCode);
+var _prisonerActivity = _interopRequireDefault(require("./prisonerActivity"));
 
-var _digitalLayout = require('./digitalLayout');
+var _prisonerDiagnosticMethod = _interopRequireDefault(require("./prisonerDiagnosticMethod"));
 
-var _digitalLayout2 = _interopRequireDefault(_digitalLayout);
+var _prisonerDispatchRequestStatus = _interopRequireDefault(require("./prisonerDispatchRequestStatus"));
 
-var _digitalLayoutArea = require('./digitalLayoutArea');
+var _prisonerDoseResult = _interopRequireDefault(require("./prisonerDoseResult"));
 
-var _digitalLayoutArea2 = _interopRequireDefault(_digitalLayoutArea);
+var _prisonerDutySubType = _interopRequireDefault(require("./prisonerDutySubType"));
 
-var _digitalMarquee = require('./digitalMarquee');
+var _prisonerDutyType = _interopRequireDefault(require("./prisonerDutyType"));
 
-var _digitalMarquee2 = _interopRequireDefault(_digitalMarquee);
+var _prisonerHealthStatus = _interopRequireDefault(require("./prisonerHealthStatus"));
 
-var _digitalTerminalType = require('./digitalTerminalType');
+var _prisonerRollCallResult = _interopRequireDefault(require("./prisonerRollCallResult"));
 
-var _digitalTerminalType2 = _interopRequireDefault(_digitalTerminalType);
+var _prisonerRollCallType = _interopRequireDefault(require("./prisonerRollCallType"));
 
-var _discovery = require('./discovery');
+var _prisonMeetingRegisterType = _interopRequireDefault(require("./prisonMeetingRegisterType"));
 
-var _diskInfo = require('./diskInfo');
+var _prisonMeetingStatus = _interopRequireDefault(require("./prisonMeetingStatus"));
 
-var _diskInfo2 = _interopRequireDefault(_diskInfo);
+var _prisonMeetingType = _interopRequireDefault(require("./prisonMeetingType"));
 
-var _doorExtra = require('./doorExtra');
+var _prisonMeetingUserType = _interopRequireDefault(require("./prisonMeetingUserType"));
 
-var _doorExtra2 = _interopRequireDefault(_doorExtra);
+var _prisonMessage = _interopRequireDefault(require("./prisonMessage"));
 
-var _envMonitorExtra = require('./envMonitorExtra');
+var _prisonRoomStatus = _interopRequireDefault(require("./prisonRoomStatus"));
 
-var _envMonitorExtra2 = _interopRequireDefault(_envMonitorExtra);
+var _prisonRoomType = _interopRequireDefault(require("./prisonRoomType"));
 
-var _faceRecognition = require('./faceRecognition');
+var _prisonTerminalType = _interopRequireDefault(require("./prisonTerminalType"));
 
-var _faceRecognition2 = _interopRequireDefault(_faceRecognition);
+var _prisonMeetingTerminalType = _interopRequireDefault(require("./prisonMeetingTerminalType"));
 
-var _faceRecognitionExtra = require('./faceRecognitionExtra');
+var _prisonTreeNodeType = _interopRequireDefault(require("./prisonTreeNodeType"));
 
-var _faceRecognitionExtra2 = _interopRequireDefault(_faceRecognitionExtra);
+var _prisonUserType = _interopRequireDefault(require("./prisonUserType"));
 
-var _faceRollCallFeedback = require('./faceRollCallFeedback');
+var _prisonVisitType = _interopRequireDefault(require("./prisonVisitType"));
 
-var _faceRollCallFeedback2 = _interopRequireDefault(_faceRollCallFeedback);
+var _prisonWorkNumberType = _interopRequireDefault(require("./prisonWorkNumberType"));
 
-var _faceRollCallStatus = require('./faceRollCallStatus');
+var _prisonMeetingQueueStatus = _interopRequireDefault(require("./prisonMeetingQueueStatus"));
 
-var _faceRollCallStatus2 = _interopRequireDefault(_faceRollCallStatus);
+var _productIds = _interopRequireDefault(require("./productIds"));
 
-var _fingerPrint = require('./fingerPrint');
+var _productInfo = _interopRequireDefault(require("./productInfo"));
 
-var _fingerPrint2 = _interopRequireDefault(_fingerPrint);
+var _productOS = _interopRequireDefault(require("./productOS"));
 
-var _hospitalCall = require('./hospitalCall');
+var _productType = _interopRequireDefault(require("./productType"));
 
-var _hospitalCall2 = _interopRequireDefault(_hospitalCall);
+var _projectStatus = _interopRequireDefault(require("./projectStatus"));
 
-var _hospitalCallType = require('./hospitalCallType');
+var _protocolService = _interopRequireDefault(require("./protocolService"));
 
-var _hospitalCallType2 = _interopRequireDefault(_hospitalCallType);
+var _protocolServiceType = _interopRequireDefault(require("./protocolServiceType"));
 
-var _initParam = require('./initParam');
+var _resourceCode = _interopRequireDefault(require("./resourceCode"));
 
-var _initParam2 = _interopRequireDefault(_initParam);
+var _restQuery = _interopRequireDefault(require("./restQuery"));
 
-var _maintainRepairResult = require('./maintainRepairResult');
+var _restQueryConst = _interopRequireDefault(require("./restQueryConst"));
 
-var _maintainRepairResult2 = _interopRequireDefault(_maintainRepairResult);
+var _restReponse = _interopRequireDefault(require("./restReponse"));
 
-var _maintainReportType = require('./maintainReportType');
+var _rfidTagExtra = _interopRequireDefault(require("./rfidTagExtra"));
 
-var _maintainReportType2 = _interopRequireDefault(_maintainReportType);
+var _schoolAffiliatedType = _interopRequireDefault(require("./schoolAffiliatedType"));
 
-var _maintainRoleType = require('./maintainRoleType');
+var _schoolCategory = _interopRequireDefault(require("./schoolCategory"));
 
-var _maintainRoleType2 = _interopRequireDefault(_maintainRoleType);
+var _schoolEmergencyType = _interopRequireDefault(require("./schoolEmergencyType"));
 
-var _manufacturerCode = require('./manufacturerCode');
+var _schoolNature = _interopRequireDefault(require("./schoolNature"));
 
-var _manufacturerCode2 = _interopRequireDefault(_manufacturerCode);
+var _schoolCheckPaperType = _interopRequireDefault(require("./schoolCheckPaperType"));
 
-var _memoryInfo = require('./memoryInfo');
+var _schoolCheckPlanStatus = _interopRequireDefault(require("./schoolCheckPlanStatus"));
 
-var _memoryInfo2 = _interopRequireDefault(_memoryInfo);
+var _schoolCheckQuestionSource = _interopRequireDefault(require("./schoolCheckQuestionSource"));
 
-var _nicConfig = require('./nicConfig');
+var _schoolCheckQuestionType = _interopRequireDefault(require("./schoolCheckQuestionType"));
 
-var _nicConfig2 = _interopRequireDefault(_nicConfig);
+var _schoolCheckQuestionStatus = _interopRequireDefault(require("./schoolCheckQuestionStatus"));
 
-var _prescriptionType = require('./prescriptionType');
+var _schoolCheckRedressStatus = _interopRequireDefault(require("./schoolCheckRedressStatus"));
 
-var _prescriptionType2 = _interopRequireDefault(_prescriptionType);
+var _schoolCheckTaskStatus = _interopRequireDefault(require("./schoolCheckTaskStatus"));
 
-var _prisonBusinessType = require('./prisonBusinessType');
+var _schoolCheckType = _interopRequireDefault(require("./schoolCheckType"));
 
-var _prisonBusinessType2 = _interopRequireDefault(_prisonBusinessType);
+var _schoolUserType = _interopRequireDefault(require("./schoolUserType"));
 
-var _prisonerActivity = require('./prisonerActivity');
+var _schoolCheckResult = _interopRequireDefault(require("./schoolCheckResult"));
 
-var _prisonerActivity2 = _interopRequireDefault(_prisonerActivity);
+var _schoolChemicalType = _interopRequireDefault(require("./schoolChemicalType"));
 
-var _prisonerDiagnosticMethod = require('./prisonerDiagnosticMethod');
+var _schoolReportActivityType = _interopRequireDefault(require("./schoolReportActivityType"));
 
-var _prisonerDiagnosticMethod2 = _interopRequireDefault(_prisonerDiagnosticMethod);
+var _schoolReportActivityCategory = _interopRequireDefault(require("./schoolReportActivityCategory"));
 
-var _prisonerDispatchRequestStatus = require('./prisonerDispatchRequestStatus');
+var _schoolReportEventType = _interopRequireDefault(require("./schoolReportEventType"));
 
-var _prisonerDispatchRequestStatus2 = _interopRequireDefault(_prisonerDispatchRequestStatus);
+var _schoolMessageType = _interopRequireDefault(require("./schoolMessageType"));
 
-var _prisonerDoseResult = require('./prisonerDoseResult');
+var _schoolMessageWrapperType = _interopRequireDefault(require("./schoolMessageWrapperType"));
 
-var _prisonerDoseResult2 = _interopRequireDefault(_prisonerDoseResult);
+var _schoolMapType = _interopRequireDefault(require("./schoolMapType"));
 
-var _prisonerDutySubType = require('./prisonerDutySubType');
+var _schoolNoticeType = _interopRequireDefault(require("./schoolNoticeType"));
 
-var _prisonerDutySubType2 = _interopRequireDefault(_prisonerDutySubType);
+var _schoolWaterUsage = _interopRequireDefault(require("./schoolWaterUsage"));
 
-var _prisonerDutyType = require('./prisonerDutyType');
+var _schoolLicenseType = _interopRequireDefault(require("./schoolLicenseType"));
 
-var _prisonerDutyType2 = _interopRequireDefault(_prisonerDutyType);
+var _schoolDocumentType = _interopRequireDefault(require("./schoolDocumentType"));
 
-var _prisonerHealthStatus = require('./prisonerHealthStatus');
+var _schoolCitizenReportBizType = _interopRequireDefault(require("./schoolCitizenReportBizType"));
 
-var _prisonerHealthStatus2 = _interopRequireDefault(_prisonerHealthStatus);
+var _schoolCitizenReportDealResult = _interopRequireDefault(require("./schoolCitizenReportDealResult"));
 
-var _prisonerRollCallResult = require('./prisonerRollCallResult');
+var _schoolCitizenReportSource = _interopRequireDefault(require("./schoolCitizenReportSource"));
 
-var _prisonerRollCallResult2 = _interopRequireDefault(_prisonerRollCallResult);
+var _schoolCitizenReportTransferType = _interopRequireDefault(require("./schoolCitizenReportTransferType"));
 
-var _prisonerRollCallType = require('./prisonerRollCallType');
+var _schoolCitizenReportUrgentLevel = _interopRequireDefault(require("./schoolCitizenReportUrgentLevel"));
 
-var _prisonerRollCallType2 = _interopRequireDefault(_prisonerRollCallType);
+var _schoolVacateType = _interopRequireDefault(require("./schoolVacateType"));
 
-var _prisonMeetingRegisterType = require('./prisonMeetingRegisterType');
+var _specificationSettings = _interopRequireDefault(require("./specificationSettings"));
 
-var _prisonMeetingRegisterType2 = _interopRequireDefault(_prisonMeetingRegisterType);
+var _transmitMessage = _interopRequireDefault(require("./transmitMessage"));
 
-var _prisonMeetingStatus = require('./prisonMeetingStatus');
+var _transmitMessageClient = _interopRequireDefault(require("./transmitMessageClient"));
 
-var _prisonMeetingStatus2 = _interopRequireDefault(_prisonMeetingStatus);
+var _transmitMessageSpec = _interopRequireDefault(require("./transmitMessageSpec"));
 
-var _prisonMeetingType = require('./prisonMeetingType');
+var _transmitMessageType = _interopRequireDefault(require("./transmitMessageType"));
 
-var _prisonMeetingType2 = _interopRequireDefault(_prisonMeetingType);
+var _updateDetail = _interopRequireDefault(require("./updateDetail"));
 
-var _prisonMeetingUserType = require('./prisonMeetingUserType');
+var _upsExtra = _interopRequireDefault(require("./upsExtra"));
 
-var _prisonMeetingUserType2 = _interopRequireDefault(_prisonMeetingUserType);
+var _videoAnalyseExtra = _interopRequireDefault(require("./videoAnalyseExtra"));
 
-var _prisonMessage = require('./prisonMessage');
+var _videoAnalyseType = _interopRequireDefault(require("./videoAnalyseType"));
 
-var _prisonMessage2 = _interopRequireDefault(_prisonMessage);
+var _videoDiagnosticResult = _interopRequireDefault(require("./videoDiagnosticResult"));
 
-var _prisonRoomStatus = require('./prisonRoomStatus');
+var _videoRecordSource = _interopRequireDefault(require("./videoRecordSource"));
 
-var _prisonRoomStatus2 = _interopRequireDefault(_prisonRoomStatus);
+var _videoRecordStatus = _interopRequireDefault(require("./videoRecordStatus"));
 
-var _prisonRoomType = require('./prisonRoomType');
+var _videoStorageType = _interopRequireDefault(require("./videoStorageType"));
 
-var _prisonRoomType2 = _interopRequireDefault(_prisonRoomType);
+var _voicePrint = _interopRequireDefault(require("./voicePrint"));
 
-var _prisonTerminalType = require('./prisonTerminalType');
-
-var _prisonTerminalType2 = _interopRequireDefault(_prisonTerminalType);
-
-var _prisonMeetingTerminalType = require('./prisonMeetingTerminalType');
-
-var _prisonMeetingTerminalType2 = _interopRequireDefault(_prisonMeetingTerminalType);
-
-var _prisonTreeNodeType = require('./prisonTreeNodeType');
-
-var _prisonTreeNodeType2 = _interopRequireDefault(_prisonTreeNodeType);
-
-var _prisonUserType = require('./prisonUserType');
-
-var _prisonUserType2 = _interopRequireDefault(_prisonUserType);
-
-var _prisonVisitType = require('./prisonVisitType');
-
-var _prisonVisitType2 = _interopRequireDefault(_prisonVisitType);
-
-var _prisonWorkNumberType = require('./prisonWorkNumberType');
-
-var _prisonWorkNumberType2 = _interopRequireDefault(_prisonWorkNumberType);
-
-var _prisonMeetingQueueStatus = require('./prisonMeetingQueueStatus');
-
-var _prisonMeetingQueueStatus2 = _interopRequireDefault(_prisonMeetingQueueStatus);
-
-var _productIds = require('./productIds');
-
-var _productIds2 = _interopRequireDefault(_productIds);
-
-var _productInfo = require('./productInfo');
-
-var _productInfo2 = _interopRequireDefault(_productInfo);
-
-var _productOS = require('./productOS');
-
-var _productOS2 = _interopRequireDefault(_productOS);
-
-var _productType = require('./productType');
-
-var _productType2 = _interopRequireDefault(_productType);
-
-var _projectStatus = require('./projectStatus');
-
-var _projectStatus2 = _interopRequireDefault(_projectStatus);
-
-var _protocolService = require('./protocolService');
-
-var _protocolService2 = _interopRequireDefault(_protocolService);
-
-var _protocolServiceType = require('./protocolServiceType');
-
-var _protocolServiceType2 = _interopRequireDefault(_protocolServiceType);
-
-var _resourceCode = require('./resourceCode');
-
-var _resourceCode2 = _interopRequireDefault(_resourceCode);
-
-var _restQuery = require('./restQuery');
-
-var _restQuery2 = _interopRequireDefault(_restQuery);
-
-var _restQueryConst = require('./restQueryConst');
-
-var _restQueryConst2 = _interopRequireDefault(_restQueryConst);
-
-var _restReponse = require('./restReponse');
-
-var _restReponse2 = _interopRequireDefault(_restReponse);
-
-var _rfidTagExtra = require('./rfidTagExtra');
-
-var _rfidTagExtra2 = _interopRequireDefault(_rfidTagExtra);
-
-var _schoolAffiliatedType = require('./schoolAffiliatedType');
-
-var _schoolAffiliatedType2 = _interopRequireDefault(_schoolAffiliatedType);
-
-var _schoolCategory = require('./schoolCategory');
-
-var _schoolCategory2 = _interopRequireDefault(_schoolCategory);
-
-var _schoolEmergencyType = require('./schoolEmergencyType');
-
-var _schoolEmergencyType2 = _interopRequireDefault(_schoolEmergencyType);
-
-var _schoolNature = require('./schoolNature');
-
-var _schoolNature2 = _interopRequireDefault(_schoolNature);
-
-var _schoolCheckPaperType = require('./schoolCheckPaperType');
-
-var _schoolCheckPaperType2 = _interopRequireDefault(_schoolCheckPaperType);
-
-var _schoolCheckPlanStatus = require('./schoolCheckPlanStatus');
-
-var _schoolCheckPlanStatus2 = _interopRequireDefault(_schoolCheckPlanStatus);
-
-var _schoolCheckQuestionSource = require('./schoolCheckQuestionSource');
-
-var _schoolCheckQuestionSource2 = _interopRequireDefault(_schoolCheckQuestionSource);
-
-var _schoolCheckQuestionType = require('./schoolCheckQuestionType');
-
-var _schoolCheckQuestionType2 = _interopRequireDefault(_schoolCheckQuestionType);
-
-var _schoolCheckQuestionStatus = require('./schoolCheckQuestionStatus');
-
-var _schoolCheckQuestionStatus2 = _interopRequireDefault(_schoolCheckQuestionStatus);
-
-var _schoolCheckRedressStatus = require('./schoolCheckRedressStatus');
-
-var _schoolCheckRedressStatus2 = _interopRequireDefault(_schoolCheckRedressStatus);
-
-var _schoolCheckTaskStatus = require('./schoolCheckTaskStatus');
-
-var _schoolCheckTaskStatus2 = _interopRequireDefault(_schoolCheckTaskStatus);
-
-var _schoolCheckType = require('./schoolCheckType');
-
-var _schoolCheckType2 = _interopRequireDefault(_schoolCheckType);
-
-var _schoolUserType = require('./schoolUserType');
-
-var _schoolUserType2 = _interopRequireDefault(_schoolUserType);
-
-var _schoolCheckResult = require('./schoolCheckResult');
-
-var _schoolCheckResult2 = _interopRequireDefault(_schoolCheckResult);
-
-var _schoolChemicalType = require('./schoolChemicalType');
-
-var _schoolChemicalType2 = _interopRequireDefault(_schoolChemicalType);
-
-var _schoolReportActivityType = require('./schoolReportActivityType');
-
-var _schoolReportActivityType2 = _interopRequireDefault(_schoolReportActivityType);
-
-var _schoolReportActivityCategory = require('./schoolReportActivityCategory');
-
-var _schoolReportActivityCategory2 = _interopRequireDefault(_schoolReportActivityCategory);
-
-var _schoolReportEventType = require('./schoolReportEventType');
-
-var _schoolReportEventType2 = _interopRequireDefault(_schoolReportEventType);
-
-var _schoolMessageType = require('./schoolMessageType');
-
-var _schoolMessageType2 = _interopRequireDefault(_schoolMessageType);
-
-var _schoolMessageWrapperType = require('./schoolMessageWrapperType');
-
-var _schoolMessageWrapperType2 = _interopRequireDefault(_schoolMessageWrapperType);
-
-var _schoolMapType = require('./schoolMapType');
-
-var _schoolMapType2 = _interopRequireDefault(_schoolMapType);
-
-var _schoolNoticeType = require('./schoolNoticeType');
-
-var _schoolNoticeType2 = _interopRequireDefault(_schoolNoticeType);
-
-var _schoolWaterUsage = require('./schoolWaterUsage');
-
-var _schoolWaterUsage2 = _interopRequireDefault(_schoolWaterUsage);
-
-var _schoolLicenseType = require('./schoolLicenseType');
-
-var _schoolLicenseType2 = _interopRequireDefault(_schoolLicenseType);
-
-var _schoolDocumentType = require('./schoolDocumentType');
-
-var _schoolDocumentType2 = _interopRequireDefault(_schoolDocumentType);
-
-var _schoolCitizenReportBizType = require('./schoolCitizenReportBizType');
-
-var _schoolCitizenReportBizType2 = _interopRequireDefault(_schoolCitizenReportBizType);
-
-var _schoolCitizenReportDealResult = require('./schoolCitizenReportDealResult');
-
-var _schoolCitizenReportDealResult2 = _interopRequireDefault(_schoolCitizenReportDealResult);
-
-var _schoolCitizenReportSource = require('./schoolCitizenReportSource');
-
-var _schoolCitizenReportSource2 = _interopRequireDefault(_schoolCitizenReportSource);
-
-var _schoolCitizenReportTransferType = require('./schoolCitizenReportTransferType');
-
-var _schoolCitizenReportTransferType2 = _interopRequireDefault(_schoolCitizenReportTransferType);
-
-var _schoolCitizenReportUrgentLevel = require('./schoolCitizenReportUrgentLevel');
-
-var _schoolCitizenReportUrgentLevel2 = _interopRequireDefault(_schoolCitizenReportUrgentLevel);
-
-var _schoolVacateType = require('./schoolVacateType');
-
-var _schoolVacateType2 = _interopRequireDefault(_schoolVacateType);
-
-var _specificationSettings = require('./specificationSettings');
-
-var _specificationSettings2 = _interopRequireDefault(_specificationSettings);
-
-var _transmitMessage = require('./transmitMessage');
-
-var _transmitMessage2 = _interopRequireDefault(_transmitMessage);
-
-var _transmitMessageClient = require('./transmitMessageClient');
-
-var _transmitMessageClient2 = _interopRequireDefault(_transmitMessageClient);
-
-var _transmitMessageSpec = require('./transmitMessageSpec');
-
-var _transmitMessageSpec2 = _interopRequireDefault(_transmitMessageSpec);
-
-var _transmitMessageType = require('./transmitMessageType');
-
-var _transmitMessageType2 = _interopRequireDefault(_transmitMessageType);
-
-var _updateDetail = require('./updateDetail');
-
-var _updateDetail2 = _interopRequireDefault(_updateDetail);
-
-var _upsExtra = require('./upsExtra');
-
-var _upsExtra2 = _interopRequireDefault(_upsExtra);
-
-var _videoAnalyseExtra = require('./videoAnalyseExtra');
-
-var _videoAnalyseExtra2 = _interopRequireDefault(_videoAnalyseExtra);
-
-var _videoAnalyseType = require('./videoAnalyseType');
-
-var _videoAnalyseType2 = _interopRequireDefault(_videoAnalyseType);
-
-var _videoDiagnosticResult = require('./videoDiagnosticResult');
-
-var _videoDiagnosticResult2 = _interopRequireDefault(_videoDiagnosticResult);
-
-var _videoRecordSource = require('./videoRecordSource');
-
-var _videoRecordSource2 = _interopRequireDefault(_videoRecordSource);
-
-var _videoRecordStatus = require('./videoRecordStatus');
-
-var _videoRecordStatus2 = _interopRequireDefault(_videoRecordStatus);
-
-var _videoStorageType = require('./videoStorageType');
-
-var _videoStorageType2 = _interopRequireDefault(_videoStorageType);
-
-var _voicePrint = require('./voicePrint');
-
-var _voicePrint2 = _interopRequireDefault(_voicePrint);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-    AirMonitorExtra: _airMonitorExtra2.default,
-    AppointmentStatus: _appointmentStatus2.default,
-
-    BehaviorAnalyseExtra: _behaviorAnalyseExtra2.default,
-    BioIdentifyMessage: _bioIdentifyMessage2.default,
-    BioIdentifyType: _bioIdentifyType2.default,
-
-    CallExtra: _callExtra2.default,
-    CameraType: _cameraType2.default,
-    CarPlateRecognitionExtra: _carPlateRecognitionExtra2.default,
-    ConnectionMode: _connectionMode2.default,
-    CpuInfo: _cpuInfo2.default,
-
-    Descripter: _descripter2.default,
-    DeviceAlarmCode: _deviceAlarmCode2.default,
-    DeviceFaultCode: _deviceFaultCode2.default,
-    DeviceControlCode: _deviceControlCode2.default,
-    DeviceControlParam: _deviceControlParam2.default,
-    DeviceDataType: _deviceDataType2.default,
-    DeviceEventCode: _deviceEventCode2.default,
-    DeviceEventData: _deviceEventData2.default,
-    DeviceEventLevel: _deviceEventLevel2.default,
-    DeviceEventType: _deviceEventType2.default,
-    DeviceInterfaceCode: _deviceInterfaceCode2.default,
-    DeviceWorkingStatus: _deviceWorkingStatus2.default,
-    DigitalCommand: _digitalCommand2.default,
-    DigitalContentType: _digitalContentType2.default,
-    DigitalControlCode: _digitalControlCode2.default,
-    DigitalLayout: _digitalLayout2.default,
-    DigitalLayoutArea: _digitalLayoutArea2.default,
-    DigitalMarquee: _digitalMarquee2.default,
-    DigitalTerminalType: _digitalTerminalType2.default,
-    ProductRegister: _discovery.ProductRegister,
-    ServiceRegister: _discovery.ServiceRegister,
-    ServiceDiscovery: _discovery.ServiceDiscovery,
-    DiskInfo: _diskInfo2.default,
-    DoorExtra: _doorExtra2.default,
-
-    EnvMonitorExtra: _envMonitorExtra2.default,
-
-    FaceRecognition: _faceRecognition2.default,
-    FaceRecognitionExtra: _faceRecognitionExtra2.default,
-    FaceRollCallFeedback: _faceRollCallFeedback2.default,
-    FaceRollCallStatus: _faceRollCallStatus2.default,
-    FingerPrint: _fingerPrint2.default,
-
-    HospitalCall: _hospitalCall2.default,
-    HospitalCallType: _hospitalCallType2.default,
-
-    InitParam: _initParam2.default,
-
-    MaintainRepairResult: _maintainRepairResult2.default,
-    MaintainReportType: _maintainReportType2.default,
-    MaintainRoleType: _maintainRoleType2.default,
-    ManufacturerCode: _manufacturerCode2.default,
-    MemoryInfo: _memoryInfo2.default,
-
-    NicConfig: _nicConfig2.default,
-
-    PrescriptionType: _prescriptionType2.default,
-    PrisonBusinessType: _prisonBusinessType2.default,
-    PrisonerActivity: _prisonerActivity2.default,
-    PrisonerDiagnosticMethod: _prisonerDiagnosticMethod2.default,
-    PrisonerDispatchRequestStatus: _prisonerDispatchRequestStatus2.default,
-    PrisonerDoseResult: _prisonerDoseResult2.default,
-    PrisonerDutySubType: _prisonerDutySubType2.default,
-    PrisonerDutyType: _prisonerDutyType2.default,
-    PrisonerHealthStatus: _prisonerHealthStatus2.default,
-    PrisonerRollCallResult: _prisonerRollCallResult2.default,
-    PrisonerRollCallType: _prisonerRollCallType2.default,
-    PrisonMeetingRegisterType: _prisonMeetingRegisterType2.default,
-    PrisonMeetingStatus: _prisonMeetingStatus2.default,
-    PrisonMeetingType: _prisonMeetingType2.default,
-    PrisonMeetingUserType: _prisonMeetingUserType2.default,
-    PrisonMessage: _prisonMessage2.default,
-    PrisonRoomStatus: _prisonRoomStatus2.default,
-    PrisonRoomType: _prisonRoomType2.default,
-    PrisonTerminalType: _prisonTerminalType2.default,
-    PrisonMeetingTerminalType: _prisonMeetingTerminalType2.default,
-    PrisonTreeNodeType: _prisonTreeNodeType2.default,
-    PrisonUserType: _prisonUserType2.default,
-    PrisonVisitType: _prisonVisitType2.default,
-    PrisonWorkNumberType: _prisonWorkNumberType2.default,
-    PrisonMeetingQueueStatus: _prisonMeetingQueueStatus2.default,
-
-    ProductIds: _productIds2.default,
-    ProductInfo: _productInfo2.default,
-    ProductOS: _productOS2.default,
-    ProductType: _productType2.default,
-    ProjectStatus: _projectStatus2.default,
-    ProtocolService: _protocolService2.default,
-    ProtocolServiceType: _protocolServiceType2.default,
-
-    ResourceCode: _resourceCode2.default,
-    RestQuery: _restQuery2.default,
-    RestQueryConst: _restQueryConst2.default,
-    RestResponse: _restReponse2.default,
-    RFIDTagExtra: _rfidTagExtra2.default,
-
-    SchoolAffiliatedType: _schoolAffiliatedType2.default,
-    SchoolCategory: _schoolCategory2.default,
-    SchoolEmergencyType: _schoolEmergencyType2.default,
-    SchoolNature: _schoolNature2.default,
-    SchoolCheckPaperType: _schoolCheckPaperType2.default,
-    SchoolCheckPlanStatus: _schoolCheckPlanStatus2.default,
-    SchoolCheckQuestionSource: _schoolCheckQuestionSource2.default,
-    SchoolCheckQuestionType: _schoolCheckQuestionType2.default,
-    SchoolCheckQuestionStatus: _schoolCheckQuestionStatus2.default,
-    SchoolCheckRedressStatus: _schoolCheckRedressStatus2.default,
-    SchoolCheckTaskStatus: _schoolCheckTaskStatus2.default,
-    SchoolCheckType: _schoolCheckType2.default,
-    SchoolChemicalType: _schoolChemicalType2.default,
-    SchoolCheckResult: _schoolCheckResult2.default,
-    SchoolUserType: _schoolUserType2.default,
-    SchoolReportActivityType: _schoolReportActivityType2.default,
-    SchoolReportActivityCategory: _schoolReportActivityCategory2.default,
-    SchoolReportEventType: _schoolReportEventType2.default,
-    SchoolMessageType: _schoolMessageType2.default,
-    SchoolMessageWrapperType: _schoolMessageWrapperType2.default,
-    SchoolMapType: _schoolMapType2.default,
-    SchoolNoticeType: _schoolNoticeType2.default,
-    SchoolWaterUsage: _schoolWaterUsage2.default,
-    SchoolLicenseType: _schoolLicenseType2.default,
-    SchoolDocumentType: _schoolDocumentType2.default,
-    SchoolCitizenReportBizType: _schoolCitizenReportBizType2.default,
-    SchoolCitizenReportDealResult: _schoolCitizenReportDealResult2.default,
-    SchoolCitizenReportSource: _schoolCitizenReportSource2.default,
-    SchoolCitizenReportTransferType: _schoolCitizenReportTransferType2.default,
-    SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel2.default,
-    SchoolVacateType: _schoolVacateType2.default,
-
-    SpecificationSettings: _specificationSettings2.default,
-
-    TransmitMessage: _transmitMessage2.default,
-    TransmitMessageClient: _transmitMessageClient2.default,
-    TransmitMessageSpec: _transmitMessageSpec2.default,
-    TransmitMessageType: _transmitMessageType2.default,
-
-    UpdateDetail: _updateDetail2.default,
-    UpsExtra: _upsExtra2.default,
-
-    VideoAnalyseExtra: _videoAnalyseExtra2.default,
-    VideoAnalyseType: _videoAnalyseType2.default,
-    VideoDiagnosticResult: _videoDiagnosticResult2.default,
-    VideoRecordSource: _videoRecordSource2.default,
-    VideoRecordStatus: _videoRecordStatus2.default,
-    VideoStorageType: _videoStorageType2.default,
-    VoicePrint: _voicePrint2.default
+var _default = {
+  AirMonitorExtra: _airMonitorExtra.default,
+  AppointmentStatus: _appointmentStatus.default,
+  BehaviorAnalyseExtra: _behaviorAnalyseExtra.default,
+  BioIdentifyMessage: _bioIdentifyMessage.default,
+  BioIdentifyType: _bioIdentifyType.default,
+  CallExtra: _callExtra.default,
+  CameraType: _cameraType.default,
+  CarPlateRecognitionExtra: _carPlateRecognitionExtra.default,
+  ConnectionMode: _connectionMode.default,
+  CpuInfo: _cpuInfo.default,
+  Descripter: _descripter.default,
+  DeviceAlarmCode: _deviceAlarmCode.default,
+  DeviceFaultCode: _deviceFaultCode.default,
+  DeviceControlCode: _deviceControlCode.default,
+  DeviceControlParam: _deviceControlParam.default,
+  DeviceDataType: _deviceDataType.default,
+  DeviceEventCode: _deviceEventCode.default,
+  DeviceEventData: _deviceEventData.default,
+  DeviceEventLevel: _deviceEventLevel.default,
+  DeviceEventType: _deviceEventType.default,
+  DeviceInterfaceCode: _deviceInterfaceCode.default,
+  DeviceWorkingStatus: _deviceWorkingStatus.default,
+  DigitalCommand: _digitalCommand.default,
+  DigitalContentType: _digitalContentType.default,
+  DigitalControlCode: _digitalControlCode.default,
+  DigitalLayout: _digitalLayout.default,
+  DigitalLayoutArea: _digitalLayoutArea.default,
+  DigitalMarquee: _digitalMarquee.default,
+  DigitalTerminalType: _digitalTerminalType.default,
+  ProductRegister: _discovery.ProductRegister,
+  ServiceRegister: _discovery.ServiceRegister,
+  ServiceDiscovery: _discovery.ServiceDiscovery,
+  DiskInfo: _diskInfo.default,
+  DoorExtra: _doorExtra.default,
+  EnvMonitorExtra: _envMonitorExtra.default,
+  FaceRecognition: _faceRecognition.default,
+  FaceRecognitionExtra: _faceRecognitionExtra.default,
+  FaceRollCallFeedback: _faceRollCallFeedback.default,
+  FaceRollCallStatus: _faceRollCallStatus.default,
+  FingerPrint: _fingerPrint.default,
+  HospitalCall: _hospitalCall.default,
+  HospitalCallType: _hospitalCallType.default,
+  InitParam: _initParam.default,
+  MaintainRepairResult: _maintainRepairResult.default,
+  MaintainReportType: _maintainReportType.default,
+  MaintainRoleType: _maintainRoleType.default,
+  ManufacturerCode: _manufacturerCode.default,
+  MemoryInfo: _memoryInfo.default,
+  NicConfig: _nicConfig.default,
+  PrescriptionType: _prescriptionType.default,
+  PrisonBusinessType: _prisonBusinessType.default,
+  PrisonerActivity: _prisonerActivity.default,
+  PrisonerDiagnosticMethod: _prisonerDiagnosticMethod.default,
+  PrisonerDispatchRequestStatus: _prisonerDispatchRequestStatus.default,
+  PrisonerDoseResult: _prisonerDoseResult.default,
+  PrisonerDutySubType: _prisonerDutySubType.default,
+  PrisonerDutyType: _prisonerDutyType.default,
+  PrisonerHealthStatus: _prisonerHealthStatus.default,
+  PrisonerRollCallResult: _prisonerRollCallResult.default,
+  PrisonerRollCallType: _prisonerRollCallType.default,
+  PrisonMeetingRegisterType: _prisonMeetingRegisterType.default,
+  PrisonMeetingStatus: _prisonMeetingStatus.default,
+  PrisonMeetingType: _prisonMeetingType.default,
+  PrisonMeetingUserType: _prisonMeetingUserType.default,
+  PrisonMessage: _prisonMessage.default,
+  PrisonRoomStatus: _prisonRoomStatus.default,
+  PrisonRoomType: _prisonRoomType.default,
+  PrisonTerminalType: _prisonTerminalType.default,
+  PrisonMeetingTerminalType: _prisonMeetingTerminalType.default,
+  PrisonTreeNodeType: _prisonTreeNodeType.default,
+  PrisonUserType: _prisonUserType.default,
+  PrisonVisitType: _prisonVisitType.default,
+  PrisonWorkNumberType: _prisonWorkNumberType.default,
+  PrisonMeetingQueueStatus: _prisonMeetingQueueStatus.default,
+  ProductIds: _productIds.default,
+  ProductInfo: _productInfo.default,
+  ProductOS: _productOS.default,
+  ProductType: _productType.default,
+  ProjectStatus: _projectStatus.default,
+  ProtocolService: _protocolService.default,
+  ProtocolServiceType: _protocolServiceType.default,
+  ResourceCode: _resourceCode.default,
+  RestQuery: _restQuery.default,
+  RestQueryConst: _restQueryConst.default,
+  RestResponse: _restReponse.default,
+  RFIDTagExtra: _rfidTagExtra.default,
+  SchoolAffiliatedType: _schoolAffiliatedType.default,
+  SchoolCategory: _schoolCategory.default,
+  SchoolEmergencyType: _schoolEmergencyType.default,
+  SchoolNature: _schoolNature.default,
+  SchoolCheckPaperType: _schoolCheckPaperType.default,
+  SchoolCheckPlanStatus: _schoolCheckPlanStatus.default,
+  SchoolCheckQuestionSource: _schoolCheckQuestionSource.default,
+  SchoolCheckQuestionType: _schoolCheckQuestionType.default,
+  SchoolCheckQuestionStatus: _schoolCheckQuestionStatus.default,
+  SchoolCheckRedressStatus: _schoolCheckRedressStatus.default,
+  SchoolCheckTaskStatus: _schoolCheckTaskStatus.default,
+  SchoolCheckType: _schoolCheckType.default,
+  SchoolChemicalType: _schoolChemicalType.default,
+  SchoolCheckResult: _schoolCheckResult.default,
+  SchoolUserType: _schoolUserType.default,
+  SchoolReportActivityType: _schoolReportActivityType.default,
+  SchoolReportActivityCategory: _schoolReportActivityCategory.default,
+  SchoolReportEventType: _schoolReportEventType.default,
+  SchoolMessageType: _schoolMessageType.default,
+  SchoolMessageWrapperType: _schoolMessageWrapperType.default,
+  SchoolMapType: _schoolMapType.default,
+  SchoolNoticeType: _schoolNoticeType.default,
+  SchoolWaterUsage: _schoolWaterUsage.default,
+  SchoolLicenseType: _schoolLicenseType.default,
+  SchoolDocumentType: _schoolDocumentType.default,
+  SchoolCitizenReportBizType: _schoolCitizenReportBizType.default,
+  SchoolCitizenReportDealResult: _schoolCitizenReportDealResult.default,
+  SchoolCitizenReportSource: _schoolCitizenReportSource.default,
+  SchoolCitizenReportTransferType: _schoolCitizenReportTransferType.default,
+  SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel.default,
+  SchoolVacateType: _schoolVacateType.default,
+  SpecificationSettings: _specificationSettings.default,
+  TransmitMessage: _transmitMessage.default,
+  TransmitMessageClient: _transmitMessageClient.default,
+  TransmitMessageSpec: _transmitMessageSpec.default,
+  TransmitMessageType: _transmitMessageType.default,
+  UpdateDetail: _updateDetail.default,
+  UpsExtra: _upsExtra.default,
+  VideoAnalyseExtra: _videoAnalyseExtra.default,
+  VideoAnalyseType: _videoAnalyseType.default,
+  VideoDiagnosticResult: _videoDiagnosticResult.default,
+  VideoRecordSource: _videoRecordSource.default,
+  VideoRecordStatus: _videoRecordStatus.default,
+  VideoStorageType: _videoStorageType.default,
+  VoicePrint: _voicePrint.default
 };
+exports.default = _default;
