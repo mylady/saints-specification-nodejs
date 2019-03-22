@@ -122,7 +122,7 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
-    downloadAttachProxy(id) {
+    downloadImageProxy(id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }

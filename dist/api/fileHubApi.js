@@ -214,8 +214,8 @@ function () {
       })).pipe(res);
     }
   }, {
-    key: "downloadAttachProxy",
-    value: function downloadAttachProxy(id) {
+    key: "downloadImageProxy",
+    value: function downloadImageProxy(id) {
       if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
