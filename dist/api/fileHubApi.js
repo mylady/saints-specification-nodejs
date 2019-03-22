@@ -47,6 +47,21 @@ function () {
       })).pipe(res);
     }
   }, {
+    key: "downloadDocProxy",
+    value: function downloadDocProxy(id) {
+      if (!FileHubAPI.accessToken) {
+        throw new Error('please get access token first');
+      }
+
+      req.pipe(request({
+        method: 'GET',
+        uri: FileHubAPI.url + "/download/doc/".concat(id),
+        qs: {
+          access_token: FileHubAPI.accessToken
+        }
+      })).pipe(res);
+    }
+  }, {
     key: "searchDoc",
     value: function () {
       var _searchDoc = (0, _asyncToGenerator2.default)(
@@ -113,7 +128,7 @@ function () {
                 _context2.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: FileHubAPI.url + "/doc/detail/".concat(id),
+                  uri: FileHubAPI.url + "/detail/doc/".concat(id),
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
@@ -184,9 +199,39 @@ function () {
       return getDocs;
     }()
   }, {
-    key: "getDocURL",
+    key: "uploadImageProxy",
+    value: function uploadImageProxy(req, res) {
+      if (!FileHubAPI.accessToken) {
+        throw new Error('please get access token first');
+      }
+
+      req.pipe(request({
+        method: 'POST',
+        uri: FileHubAPI.url + '/upload/image',
+        qs: {
+          access_token: FileHubAPI.accessToken
+        }
+      })).pipe(res);
+    }
+  }, {
+    key: "downloadAttachProxy",
+    value: function downloadAttachProxy(id) {
+      if (!FileHubAPI.accessToken) {
+        throw new Error('please get access token first');
+      }
+
+      req.pipe(request({
+        method: 'GET',
+        uri: FileHubAPI.url + "/download/image/".concat(id),
+        qs: {
+          access_token: FileHubAPI.accessToken
+        }
+      })).pipe(res);
+    }
+  }, {
+    key: "getImageDetail",
     value: function () {
-      var _getDocURL = (0, _asyncToGenerator2.default)(
+      var _getImageDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
       _regenerator.default.mark(function _callee4(id) {
         return _regenerator.default.wrap(function _callee4$(_context4) {
@@ -204,7 +249,7 @@ function () {
                 _context4.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: FileHubAPI.url + "/doc/download/".concat(id),
+                  uri: FileHubAPI.url + "/detail/image/".concat(id),
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
@@ -222,33 +267,18 @@ function () {
         }, _callee4);
       }));
 
-      function getDocURL(_x4) {
-        return _getDocURL.apply(this, arguments);
+      function getImageDetail(_x4) {
+        return _getImageDetail.apply(this, arguments);
       }
 
-      return getDocURL;
+      return getImageDetail;
     }()
   }, {
-    key: "uploadImageProxy",
-    value: function uploadImageProxy(req, res) {
-      if (!FileHubAPI.accessToken) {
-        throw new Error('please get access token first');
-      }
-
-      req.pipe(request({
-        method: 'POST',
-        uri: FileHubAPI.url + '/upload/image',
-        qs: {
-          access_token: FileHubAPI.accessToken
-        }
-      })).pipe(res);
-    }
-  }, {
-    key: "getImageDetail",
+    key: "getImages",
     value: function () {
-      var _getImageDetail = (0, _asyncToGenerator2.default)(
+      var _getImages = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee5(id) {
+      _regenerator.default.mark(function _callee5(ids) {
         return _regenerator.default.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
@@ -263,11 +293,12 @@ function () {
               case 2:
                 _context5.next = 4;
                 return rp({
-                  method: 'GET',
-                  uri: FileHubAPI.url + "/image/detail/".concat(id),
+                  method: 'POST',
+                  uri: FileHubAPI.url + '/query/image',
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
+                  body: ids,
                   json: true
                 });
 
@@ -282,102 +313,11 @@ function () {
         }, _callee5);
       }));
 
-      function getImageDetail(_x5) {
-        return _getImageDetail.apply(this, arguments);
-      }
-
-      return getImageDetail;
-    }()
-  }, {
-    key: "getImages",
-    value: function () {
-      var _getImages = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee6(ids) {
-        return _regenerator.default.wrap(function _callee6$(_context6) {
-          while (1) {
-            switch (_context6.prev = _context6.next) {
-              case 0:
-                if (FileHubAPI.accessToken) {
-                  _context6.next = 2;
-                  break;
-                }
-
-                throw new Error('please get access token first');
-
-              case 2:
-                _context6.next = 4;
-                return rp({
-                  method: 'POST',
-                  uri: FileHubAPI.url + '/query/image',
-                  qs: {
-                    access_token: FileHubAPI.accessToken
-                  },
-                  body: ids,
-                  json: true
-                });
-
-              case 4:
-                return _context6.abrupt("return", _context6.sent);
-
-              case 5:
-              case "end":
-                return _context6.stop();
-            }
-          }
-        }, _callee6);
-      }));
-
-      function getImages(_x6) {
+      function getImages(_x5) {
         return _getImages.apply(this, arguments);
       }
 
       return getImages;
-    }()
-  }, {
-    key: "getImageURL",
-    value: function () {
-      var _getImageURL = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee7(id) {
-        return _regenerator.default.wrap(function _callee7$(_context7) {
-          while (1) {
-            switch (_context7.prev = _context7.next) {
-              case 0:
-                if (FileHubAPI.accessToken) {
-                  _context7.next = 2;
-                  break;
-                }
-
-                throw new Error('please get access token first');
-
-              case 2:
-                _context7.next = 4;
-                return rp({
-                  method: 'GET',
-                  uri: FileHubAPI.url + "/image/download/".concat(id),
-                  qs: {
-                    access_token: FileHubAPI.accessToken
-                  },
-                  json: true
-                });
-
-              case 4:
-                return _context7.abrupt("return", _context7.sent);
-
-              case 5:
-              case "end":
-                return _context7.stop();
-            }
-          }
-        }, _callee7);
-      }));
-
-      function getImageURL(_x7) {
-        return _getImageURL.apply(this, arguments);
-      }
-
-      return getImageURL;
     }()
   }, {
     key: "uploadAttachProxy",
@@ -395,27 +335,42 @@ function () {
       })).pipe(res);
     }
   }, {
+    key: "downloadAttachProxy",
+    value: function downloadAttachProxy(id) {
+      if (!FileHubAPI.accessToken) {
+        throw new Error('please get access token first');
+      }
+
+      req.pipe(request({
+        method: 'GET',
+        uri: FileHubAPI.url + "/download/attach/".concat(id),
+        qs: {
+          access_token: FileHubAPI.accessToken
+        }
+      })).pipe(res);
+    }
+  }, {
     key: "getAttachDetail",
     value: function () {
       var _getAttachDetail = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee8(id) {
-        return _regenerator.default.wrap(function _callee8$(_context8) {
+      _regenerator.default.mark(function _callee6(id) {
+        return _regenerator.default.wrap(function _callee6$(_context6) {
           while (1) {
-            switch (_context8.prev = _context8.next) {
+            switch (_context6.prev = _context6.next) {
               case 0:
                 if (FileHubAPI.accessToken) {
-                  _context8.next = 2;
+                  _context6.next = 2;
                   break;
                 }
 
                 throw new Error('please get access token first');
 
               case 2:
-                _context8.next = 4;
+                _context6.next = 4;
                 return rp({
                   method: 'GET',
-                  uri: FileHubAPI.url + "/attach/detail/".concat(id),
+                  uri: FileHubAPI.url + "/detail/attach/".concat(id),
                   qs: {
                     access_token: FileHubAPI.accessToken
                   },
@@ -423,17 +378,17 @@ function () {
                 });
 
               case 4:
-                return _context8.abrupt("return", _context8.sent);
+                return _context6.abrupt("return", _context6.sent);
 
               case 5:
               case "end":
-                return _context8.stop();
+                return _context6.stop();
             }
           }
-        }, _callee8);
+        }, _callee6);
       }));
 
-      function getAttachDetail(_x8) {
+      function getAttachDetail(_x6) {
         return _getAttachDetail.apply(this, arguments);
       }
 
@@ -444,20 +399,20 @@ function () {
     value: function () {
       var _getAttaches = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee9(ids) {
-        return _regenerator.default.wrap(function _callee9$(_context9) {
+      _regenerator.default.mark(function _callee7(ids) {
+        return _regenerator.default.wrap(function _callee7$(_context7) {
           while (1) {
-            switch (_context9.prev = _context9.next) {
+            switch (_context7.prev = _context7.next) {
               case 0:
                 if (FileHubAPI.accessToken) {
-                  _context9.next = 2;
+                  _context7.next = 2;
                   break;
                 }
 
                 throw new Error('please get access token first');
 
               case 2:
-                _context9.next = 4;
+                _context7.next = 4;
                 return rp({
                   method: 'POST',
                   uri: FileHubAPI.url + '/query/attach',
@@ -469,90 +424,45 @@ function () {
                 });
 
               case 4:
-                return _context9.abrupt("return", _context9.sent);
+                return _context7.abrupt("return", _context7.sent);
 
               case 5:
               case "end":
-                return _context9.stop();
+                return _context7.stop();
             }
           }
-        }, _callee9);
+        }, _callee7);
       }));
 
-      function getAttaches(_x9) {
+      function getAttaches(_x7) {
         return _getAttaches.apply(this, arguments);
       }
 
       return getAttaches;
-    }()
-  }, {
-    key: "getAttachURL",
-    value: function () {
-      var _getAttachURL = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee10(id) {
-        return _regenerator.default.wrap(function _callee10$(_context10) {
-          while (1) {
-            switch (_context10.prev = _context10.next) {
-              case 0:
-                if (FileHubAPI.accessToken) {
-                  _context10.next = 2;
-                  break;
-                }
-
-                throw new Error('please get access token first');
-
-              case 2:
-                _context10.next = 4;
-                return rp({
-                  method: 'GET',
-                  uri: FileHubAPI.url + "/attach/download/".concat(id),
-                  qs: {
-                    access_token: FileHubAPI.accessToken
-                  },
-                  json: true
-                });
-
-              case 4:
-                return _context10.abrupt("return", _context10.sent);
-
-              case 5:
-              case "end":
-                return _context10.stop();
-            }
-          }
-        }, _callee10);
-      }));
-
-      function getAttachURL(_x10) {
-        return _getAttachURL.apply(this, arguments);
-      }
-
-      return getAttachURL;
     }()
   }], [{
     key: "initialize",
     value: function () {
       var _initialize = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee11(url) {
-        return _regenerator.default.wrap(function _callee11$(_context11) {
+      _regenerator.default.mark(function _callee8(url) {
+        return _regenerator.default.wrap(function _callee8$(_context8) {
           while (1) {
-            switch (_context11.prev = _context11.next) {
+            switch (_context8.prev = _context8.next) {
               case 0:
                 FileHubAPI.url = url;
-                _context11.next = 3;
+                _context8.next = 3;
                 return FileHubAPI.getAccessToken();
 
               case 3:
               case "end":
-                return _context11.stop();
+                return _context8.stop();
             }
           }
-        }, _callee11);
+        }, _callee8);
       }));
 
-      function initialize(_x11) {
+      function initialize(_x8) {
         return _initialize.apply(this, arguments);
       }
 
@@ -563,13 +473,13 @@ function () {
     value: function () {
       var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee12() {
+      _regenerator.default.mark(function _callee9() {
         var res;
-        return _regenerator.default.wrap(function _callee12$(_context12) {
+        return _regenerator.default.wrap(function _callee9$(_context9) {
           while (1) {
-            switch (_context12.prev = _context12.next) {
+            switch (_context9.prev = _context9.next) {
               case 0:
-                _context12.next = 2;
+                _context9.next = 2;
                 return rp({
                   method: 'POST',
                   uri: FileHubAPI.url + '/accesstoken',
@@ -577,15 +487,15 @@ function () {
                 });
 
               case 2:
-                res = _context12.sent;
+                res = _context9.sent;
 
                 if (!res.result) {
-                  _context12.next = 7;
+                  _context9.next = 7;
                   break;
                 }
 
                 FileHubAPI.accessToken = res.data;
-                _context12.next = 8;
+                _context9.next = 8;
                 break;
 
               case 7:
@@ -593,10 +503,10 @@ function () {
 
               case 8:
               case "end":
-                return _context12.stop();
+                return _context9.stop();
             }
           }
-        }, _callee12);
+        }, _callee9);
       }));
 
       function getAccessToken() {

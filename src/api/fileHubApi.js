@@ -29,7 +29,7 @@ export default class FileHubAPI {
         }
     }
 
-    static isAvailable(){
+    static isAvailable() {
         return FileHubAPI.url && FileHubAPI.accessToken;
     }
 
@@ -41,6 +41,20 @@ export default class FileHubAPI {
         req.pipe(request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/doc',
+            qs: {
+                access_token: FileHubAPI.accessToken
+            }
+        })).pipe(res);
+    }
+
+    downloadDocProxy(id) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        req.pipe(request({
+            method: 'GET',
+            uri: FileHubAPI.url + `/download/doc/${id}`,
             qs: {
                 access_token: FileHubAPI.accessToken
             }
@@ -70,7 +84,7 @@ export default class FileHubAPI {
 
         return await rp({
             method: 'GET',
-            uri: FileHubAPI.url + `/doc/detail/${id}`,
+            uri: FileHubAPI.url + `/detail/doc/${id}`,
             qs: {
                 access_token: FileHubAPI.accessToken
             },
@@ -94,21 +108,6 @@ export default class FileHubAPI {
         });
     }
 
-    async getDocURL(id) {
-        if (!FileHubAPI.accessToken) {
-            throw new Error('please get access token first');
-        }
-
-        return await rp({
-            method: 'GET',
-            uri: FileHubAPI.url + `/doc/download/${id}`,
-            qs: {
-                access_token: FileHubAPI.accessToken
-            },
-            json: true
-        });
-    }
-
     uploadImageProxy(req, res) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
@@ -123,6 +122,20 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
+    downloadAttachProxy(id) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        req.pipe(request({
+            method: 'GET',
+            uri: FileHubAPI.url + `/download/image/${id}`,
+            qs: {
+                access_token: FileHubAPI.accessToken
+            }
+        })).pipe(res);
+    }
+
     async getImageDetail(id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
@@ -130,7 +143,7 @@ export default class FileHubAPI {
 
         return await rp({
             method: 'GET',
-            uri: FileHubAPI.url + `/image/detail/${id}`,
+            uri: FileHubAPI.url + `/detail/image/${id}`,
             qs: {
                 access_token: FileHubAPI.accessToken
             },
@@ -154,21 +167,6 @@ export default class FileHubAPI {
         });
     }
 
-    async getImageURL(id) {
-        if (!FileHubAPI.accessToken) {
-            throw new Error('please get access token first');
-        }
-
-        return await rp({
-            method: 'GET',
-            uri: FileHubAPI.url + `/image/download/${id}`,
-            qs: {
-                access_token: FileHubAPI.accessToken
-            },
-            json: true
-        });
-    }
-
     uploadAttachProxy(req, res) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
@@ -183,6 +181,20 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
+    downloadAttachProxy(id) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        req.pipe(request({
+            method: 'GET',
+            uri: FileHubAPI.url + `/download/attach/${id}`,
+            qs: {
+                access_token: FileHubAPI.accessToken
+            }
+        })).pipe(res);
+    }
+
     async getAttachDetail(id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
@@ -190,7 +202,7 @@ export default class FileHubAPI {
 
         return await rp({
             method: 'GET',
-            uri: FileHubAPI.url + `/attach/detail/${id}`,
+            uri: FileHubAPI.url + `/detail/attach/${id}`,
             qs: {
                 access_token: FileHubAPI.accessToken
             },
@@ -210,21 +222,6 @@ export default class FileHubAPI {
                 access_token: FileHubAPI.accessToken
             },
             body: ids,
-            json: true
-        });
-    }
-
-    async getAttachURL(id) {
-        if (!FileHubAPI.accessToken) {
-            throw new Error('please get access token first');
-        }
-
-        return await rp({
-            method: 'GET',
-            uri: FileHubAPI.url + `/attach/download/${id}`,
-            qs: {
-                access_token: FileHubAPI.accessToken
-            },
             json: true
         });
     }
