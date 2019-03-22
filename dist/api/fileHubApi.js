@@ -344,7 +344,7 @@ function () {
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
-                if (accessToken) {
+                if (FileHubAPI.accessToken) {
                   _context7.next = 2;
                   break;
                 }

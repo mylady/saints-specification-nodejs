@@ -155,7 +155,7 @@ export default class FileHubAPI {
     }
 
     async getImageURL(id) {
-        if (!accessToken) {
+        if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
 
