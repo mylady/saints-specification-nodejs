@@ -1,6 +1,6 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "2.0.25",
+  "version": "2.0.26",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

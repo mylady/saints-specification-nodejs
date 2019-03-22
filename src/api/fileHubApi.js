@@ -47,7 +47,7 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
-    downloadDocProxy(id) {
+    downloadDocProxy(req, res, id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -122,7 +122,7 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
-    downloadImageProxy(id) {
+    downloadImageProxy(req, res, id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -181,7 +181,7 @@ export default class FileHubAPI {
         })).pipe(res);
     }
 
-    downloadAttachProxy(id) {
+    downloadAttachProxy(req, res, id) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }

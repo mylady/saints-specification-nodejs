@@ -48,7 +48,7 @@ function () {
     }
   }, {
     key: "downloadDocProxy",
-    value: function downloadDocProxy(id) {
+    value: function downloadDocProxy(req, res, id) {
       if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
@@ -215,7 +215,7 @@ function () {
     }
   }, {
     key: "downloadImageProxy",
-    value: function downloadImageProxy(id) {
+    value: function downloadImageProxy(req, res, id) {
       if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
@@ -336,7 +336,7 @@ function () {
     }
   }, {
     key: "downloadAttachProxy",
-    value: function downloadAttachProxy(id) {
+    value: function downloadAttachProxy(req, res, id) {
       if (!FileHubAPI.accessToken) {
         throw new Error('please get access token first');
       }
