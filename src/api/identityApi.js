@@ -107,6 +107,27 @@ export default class IdentityAPI {
             json: true
         });
     }
+
+    async password(token, body) {
+        if (!IdentityAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        return await rp({
+            method: 'POST',
+            uri: IdentityAPI.url + '/self/password',
+            qs: {
+                access_token: IdentityAPI.accessToken
+            },
+            auth: {
+                bearer: token
+            },
+            body: {
+                body
+            },
+            json: true
+        });
+    }
 }
 
 module.exports = IdentityAPI;
