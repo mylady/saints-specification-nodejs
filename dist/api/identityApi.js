@@ -261,7 +261,7 @@ function () {
     value: function () {
       var _password = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee6(token, body) {
+      _regenerator.default.mark(function _callee6(token, pwd) {
         return _regenerator.default.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
@@ -284,9 +284,7 @@ function () {
                   auth: {
                     bearer: token
                   },
-                  body: {
-                    body: body
-                  },
+                  body: pwd,
                   json: true
                 });
 

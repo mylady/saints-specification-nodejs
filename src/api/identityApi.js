@@ -108,7 +108,7 @@ export default class IdentityAPI {
         });
     }
 
-    async password(token, body) {
+    async password(token, pwd) {
         if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -122,9 +122,7 @@ export default class IdentityAPI {
             auth: {
                 bearer: token
             },
-            body: {
-                body
-            },
+            body: pwd,
             json: true
         });
     }
