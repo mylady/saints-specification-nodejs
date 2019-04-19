@@ -108,6 +108,26 @@ export default class IdentityAPI {
         });
     }
 
+    async updateSelf(token, body) {
+        if (!IdentityAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        return await rp({
+            method: 'PUT',
+            uri: IdentityAPI.url + '/self',
+            qs: {
+                access_token: IdentityAPI.accessToken
+            },
+            auth: {
+                bearer: token
+            },
+            body: body,
+            json: true
+        });
+    }
+
+
     async password(token, pwd) {
         if (!IdentityAPI.accessToken) {
             throw new Error('please get access token first');

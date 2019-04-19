@@ -257,11 +257,11 @@ function () {
       return self;
     }()
   }, {
-    key: "password",
+    key: "updateSelf",
     value: function () {
-      var _password = (0, _asyncToGenerator2.default)(
+      var _updateSelf = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee6(token, pwd) {
+      _regenerator.default.mark(function _callee6(token, body) {
         return _regenerator.default.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
@@ -276,15 +276,15 @@ function () {
               case 2:
                 _context6.next = 4;
                 return rp({
-                  method: 'POST',
-                  uri: IdentityAPI.url + '/self/password',
+                  method: 'PUT',
+                  uri: IdentityAPI.url + '/self',
                   qs: {
                     access_token: IdentityAPI.accessToken
                   },
                   auth: {
                     bearer: token
                   },
-                  body: pwd,
+                  body: body,
                   json: true
                 });
 
@@ -299,7 +299,56 @@ function () {
         }, _callee6);
       }));
 
-      function password(_x5, _x6) {
+      function updateSelf(_x5, _x6) {
+        return _updateSelf.apply(this, arguments);
+      }
+
+      return updateSelf;
+    }()
+  }, {
+    key: "password",
+    value: function () {
+      var _password = (0, _asyncToGenerator2.default)(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee7(token, pwd) {
+        return _regenerator.default.wrap(function _callee7$(_context7) {
+          while (1) {
+            switch (_context7.prev = _context7.next) {
+              case 0:
+                if (IdentityAPI.accessToken) {
+                  _context7.next = 2;
+                  break;
+                }
+
+                throw new Error('please get access token first');
+
+              case 2:
+                _context7.next = 4;
+                return rp({
+                  method: 'POST',
+                  uri: IdentityAPI.url + '/self/password',
+                  qs: {
+                    access_token: IdentityAPI.accessToken
+                  },
+                  auth: {
+                    bearer: token
+                  },
+                  body: pwd,
+                  json: true
+                });
+
+              case 4:
+                return _context7.abrupt("return", _context7.sent);
+
+              case 5:
+              case "end":
+                return _context7.stop();
+            }
+          }
+        }, _callee7);
+      }));
+
+      function password(_x7, _x8) {
         return _password.apply(this, arguments);
       }
 
@@ -310,24 +359,24 @@ function () {
     value: function () {
       var _initialize = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee7(url) {
-        return _regenerator.default.wrap(function _callee7$(_context7) {
+      _regenerator.default.mark(function _callee8(url) {
+        return _regenerator.default.wrap(function _callee8$(_context8) {
           while (1) {
-            switch (_context7.prev = _context7.next) {
+            switch (_context8.prev = _context8.next) {
               case 0:
                 IdentityAPI.url = url;
-                _context7.next = 3;
+                _context8.next = 3;
                 return IdentityAPI.getAccessToken();
 
               case 3:
               case "end":
-                return _context7.stop();
+                return _context8.stop();
             }
           }
-        }, _callee7);
+        }, _callee8);
       }));
 
-      function initialize(_x7) {
+      function initialize(_x9) {
         return _initialize.apply(this, arguments);
       }
 
@@ -338,13 +387,13 @@ function () {
     value: function () {
       var _getAccessToken = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee8() {
+      _regenerator.default.mark(function _callee9() {
         var res;
-        return _regenerator.default.wrap(function _callee8$(_context8) {
+        return _regenerator.default.wrap(function _callee9$(_context9) {
           while (1) {
-            switch (_context8.prev = _context8.next) {
+            switch (_context9.prev = _context9.next) {
               case 0:
-                _context8.next = 2;
+                _context9.next = 2;
                 return rp({
                   method: 'POST',
                   uri: IdentityAPI.url + '/accesstoken',
@@ -352,15 +401,15 @@ function () {
                 });
 
               case 2:
-                res = _context8.sent;
+                res = _context9.sent;
 
                 if (!res.result) {
-                  _context8.next = 7;
+                  _context9.next = 7;
                   break;
                 }
 
                 IdentityAPI.accessToken = res.data;
-                _context8.next = 8;
+                _context9.next = 8;
                 break;
 
               case 7:
@@ -368,10 +417,10 @@ function () {
 
               case 8:
               case "end":
-                return _context8.stop();
+                return _context9.stop();
             }
           }
-        }, _callee8);
+        }, _callee9);
       }));
 
       function getAccessToken() {
