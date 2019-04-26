@@ -1422,10 +1422,18 @@ declare namespace spec {
         vacation: SpecValue,
         business: SpecValue,
         illness: SpecValue,
+        exchange:SpecValue,
         other: SpecValue
     }
 
     const SchoolVacateType: SchoolVacateTypeStatic;
+
+    interface SchoolLogTypeStatic {
+        login: SpecValue,
+        operation: SpecValue
+    }
+
+    const SchoolLogType: SchoolLogTypeStatic;
 
     interface SpecificationSettingsStatic {
         discoveryHttpPort: number;

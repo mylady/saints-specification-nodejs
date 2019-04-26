@@ -13,9 +13,13 @@ let schoolVacateType = {
         name: '病假',
         value: 2
     },
+    exchange: {
+        name: '调休',
+        value: 3
+    },
     other:{
         name:'其他',
-        value:3
+        value:100
     }
 };
 

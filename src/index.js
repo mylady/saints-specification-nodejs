@@ -136,6 +136,7 @@ import SchoolCitizenReportSource from './schoolCitizenReportSource';
 import SchoolCitizenReportTransferType from './schoolCitizenReportTransferType';
 import SchoolCitizenReportUrgentLevel from './schoolCitizenReportUrgentLevel';
 import SchoolVacateType from './schoolVacateType';
+import SchoolLogType from './schoolLogType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -272,7 +273,7 @@ export default {
     SchoolUserType: SchoolUserType,
     SchoolReportActivityType: SchoolReportActivityType,
     SchoolReportActivityCategory: SchoolReportActivityCategory,
-    SchoolReportEventType:SchoolReportEventType,
+    SchoolReportEventType: SchoolReportEventType,
     SchoolMessageType: SchoolMessageType,
     SchoolMessageWrapperType: SchoolMessageWrapperType,
     SchoolMapType: SchoolMapType,
@@ -286,6 +287,7 @@ export default {
     SchoolCitizenReportTransferType: SchoolCitizenReportTransferType,
     SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevel,
     SchoolVacateType: SchoolVacateType,
+    SchoolLogType: SchoolLogType,
 
     SpecificationSettings: SpecificationSettings,
 

@@ -240,6 +240,8 @@ var _schoolCitizenReportUrgentLevel = _interopRequireDefault(require("./schoolCi
 
 var _schoolVacateType = _interopRequireDefault(require("./schoolVacateType"));
 
+var _schoolLogType = _interopRequireDefault(require("./schoolLogType"));
+
 var _specificationSettings = _interopRequireDefault(require("./specificationSettings"));
 
 var _transmitMessage = _interopRequireDefault(require("./transmitMessage"));
@@ -386,6 +388,7 @@ var _default = {
   SchoolCitizenReportTransferType: _schoolCitizenReportTransferType.default,
   SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel.default,
   SchoolVacateType: _schoolVacateType.default,
+  SchoolLogType: _schoolLogType.default,
   SpecificationSettings: _specificationSettings.default,
   TransmitMessage: _transmitMessage.default,
   TransmitMessageClient: _transmitMessageClient.default,
