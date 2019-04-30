@@ -153,6 +153,17 @@ declare namespace spec {
     }
     const ServiceType: ServiceTypeStatic;
 
+    interface DeviceStatusStatic {
+        '0': string;
+        '1': string;
+        '2': string;
+        '3': string;
+        '4': string;
+        '5': string;
+        '6': string;
+    }
+    const DeviceStatus: DeviceStatusStatic;
+
     interface ConfigStatic {
         envDevelopment: string;
         envProducton: string;

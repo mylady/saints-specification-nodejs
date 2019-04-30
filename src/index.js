@@ -7,11 +7,14 @@ import CameraType from './predefined/cameraType';
 import DeviceCode from './predefined/deviceCode';
 import InterfaceCategory from './predefined/interfaceCategory';
 import ServiceType from './predefined/serviceType';
+import DeviceStatus from './predefined/deviceStatus';
 
 import EnvValue from './klass/envValue';
 import PowerGridValue from './klass/powerGridValue';
 import RFIDTagValue from './klass/rfidTagValue';
 import UPSValue from './klass/upsValue';
+import TwoDimension  from './klass/2d';
+import ThreeDimension from './klass/3d';
 
 import RestQuery from './klass/restQuery';
 import RestResponse from './klass/restResponse';
@@ -31,11 +34,14 @@ export default {
     DeviceCode:DeviceCode,
     InterfaceCategory:InterfaceCategory,
     ServiceType:ServiceType,
+    DeviceStatus:DeviceStatus,
     
     EnvValue:EnvValue,
     PowerGridValue:PowerGridValue,
     RFIDTagValue:RFIDTagValue,
     UPSValue:UPSValue,
+    TwoDimension:TwoDimension,
+    ThreeDimension:ThreeDimension,
 
     RestQuery:RestQuery,
     RestResponse:RestResponse,

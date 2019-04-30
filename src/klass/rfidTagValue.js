@@ -2,9 +2,9 @@
 
 export default class RFIDTagValue {
     constructor({ x, y, battery, heart_rate }) {
-        this.x = 0.0;
-        this.y = 0.0;
-        this.battery = 0.0;
-        this.heart_rate = 0.0;
+        this.x = x || 0.0;
+        this.y = y || 0.0;
+        this.battery = battery || 0.0;
+        this.heart_rate = heart_rate || 0.0;
     }
 }

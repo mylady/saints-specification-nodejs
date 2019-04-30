@@ -19,6 +19,8 @@ var _interfaceCategory = _interopRequireDefault(require("./predefined/interfaceC
 
 var _serviceType = _interopRequireDefault(require("./predefined/serviceType"));
 
+var _deviceStatus = _interopRequireDefault(require("./predefined/deviceStatus"));
+
 var _envValue = _interopRequireDefault(require("./klass/envValue"));
 
 var _powerGridValue = _interopRequireDefault(require("./klass/powerGridValue"));
@@ -26,6 +28,10 @@ var _powerGridValue = _interopRequireDefault(require("./klass/powerGridValue"));
 var _rfidTagValue = _interopRequireDefault(require("./klass/rfidTagValue"));
 
 var _upsValue = _interopRequireDefault(require("./klass/upsValue"));
+
+var _d = _interopRequireDefault(require("./klass/2d"));
+
+var _d2 = _interopRequireDefault(require("./klass/3d"));
 
 var _restQuery = _interopRequireDefault(require("./klass/restQuery"));
 
@@ -48,10 +54,13 @@ var _default = {
   DeviceCode: _deviceCode.default,
   InterfaceCategory: _interfaceCategory.default,
   ServiceType: _serviceType.default,
+  DeviceStatus: _deviceStatus.default,
   EnvValue: _envValue.default,
   PowerGridValue: _powerGridValue.default,
   RFIDTagValue: _rfidTagValue.default,
   UPSValue: _upsValue.default,
+  TwoDimension: _d.default,
+  ThreeDimension: _d2.default,
   RestQuery: _restQuery.default,
   RestResponse: _restResponse.default,
   Service: _service.default,

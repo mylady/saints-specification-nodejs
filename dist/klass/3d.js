@@ -9,16 +9,14 @@ exports.default = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var RFIDTagValue = function RFIDTagValue(_ref) {
+var ThreeDimension = function ThreeDimension(_ref) {
   var x = _ref.x,
       y = _ref.y,
-      battery = _ref.battery,
-      heart_rate = _ref.heart_rate;
-  (0, _classCallCheck2.default)(this, RFIDTagValue);
+      z = _ref.z;
+  (0, _classCallCheck2.default)(this, ThreeDimension);
   this.x = x || 0.0;
   this.y = y || 0.0;
-  this.battery = battery || 0.0;
-  this.heart_rate = heart_rate || 0.0;
+  this.z = z || 0.0;
 };
 
-exports.default = RFIDTagValue;
+exports.default = ThreeDimension;
