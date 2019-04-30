@@ -11,7 +11,10 @@ var deviceStatus = {
   '3': '打开',
   '4': '关闭',
   '5': '断开',
-  '6': '闭合'
+  '6': '闭合',
+  '7': '报警',
+  '8': '故障',
+  '100': '未知'
 };
 Object.freeze(deviceStatus);
 var _default = deviceStatus;
