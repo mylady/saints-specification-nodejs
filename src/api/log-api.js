@@ -71,4 +71,4 @@ export default class LogAPI {
     }
 }
 
-module.exports = IdentityAPI;
+module.exports = LogAPI;

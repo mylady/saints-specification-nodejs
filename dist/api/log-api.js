@@ -261,4 +261,4 @@ function () {
 }();
 
 exports.default = LogAPI;
-module.exports = IdentityAPI;
+module.exports = LogAPI;
