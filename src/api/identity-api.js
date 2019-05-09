@@ -9,7 +9,6 @@ export default class IdentityAPI {
 
     static async initialize(url) {
         IdentityAPI.url = url;
-        await IdentityAPI.getAccessToken();
     }
 
     async getAccessToken() {
