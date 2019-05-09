@@ -92,7 +92,7 @@ export default class FileHubAPI {
         });
     }
 
-    async getDocs(ids) {
+    async queryDocs(ids) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -104,6 +104,20 @@ export default class FileHubAPI {
                 access_token: FileHubAPI.accessToken
             },
             body: ids,
+            json: true
+        });
+    }
+
+    async getDocs(query) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        query['access_token'] = FileHubAPI.accessToken;
+        return await rp({
+            method: 'GET',
+            uri: FileHubAPI.url + '/doc',
+            qs: query,
             json: true
         });
     }
@@ -151,7 +165,7 @@ export default class FileHubAPI {
         });
     }
 
-    async getImages(ids) {
+    async queryImages(ids) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -163,6 +177,20 @@ export default class FileHubAPI {
                 access_token: FileHubAPI.accessToken
             },
             body: ids,
+            json: true
+        });
+    }
+
+    async getImages(query) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        query['access_token'] = FileHubAPI.accessToken;
+        return await rp({
+            method: 'GET',
+            uri: FileHubAPI.url + '/image',
+            qs: query,
             json: true
         });
     }
@@ -210,7 +238,7 @@ export default class FileHubAPI {
         });
     }
 
-    async getAttaches(ids) {
+    async queryAttaches(ids) {
         if (!FileHubAPI.accessToken) {
             throw new Error('please get access token first');
         }
@@ -222,6 +250,20 @@ export default class FileHubAPI {
                 access_token: FileHubAPI.accessToken
             },
             body: ids,
+            json: true
+        });
+    }
+
+    async getAttaches(query) {
+        if (!FileHubAPI.accessToken) {
+            throw new Error('please get access token first');
+        }
+
+        query['access_token'] = FileHubAPI.accessToken;
+        return await rp({
+            method: 'GET',
+            uri: FileHubAPI.url + '/attach',
+            qs: query,
             json: true
         });
     }

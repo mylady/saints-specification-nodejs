@@ -49,6 +49,8 @@ var _fileHubApi = _interopRequireDefault(require("./api/file-hub-api"));
 
 var _identityApi = _interopRequireDefault(require("./api/identity-api"));
 
+var _logApi = _interopRequireDefault(require("./api/log-api"));
+
 var _default = {
   Config: _config.default,
   AuthError: _authError.default,
@@ -70,6 +72,7 @@ var _default = {
   ServiceRegister: _serviceRegister.default,
   ServiceFinder: _serviceFinder.default,
   FileHubAPI: _fileHubApi.default,
-  IdentityAPI: _identityApi.default
+  IdentityAPI: _identityApi.default,
+  LogAPI: _logApi.default
 };
 exports.default = _default;

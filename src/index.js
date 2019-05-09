@@ -27,6 +27,7 @@ import ServiceFinder from './klass/service-finder';
 
 import FileHubAPI from './api/file-hub-api';
 import IdentityAPI from './api/identity-api';
+import LogAPI from './api/log-api';
 
 export default {
     Config:Config,
@@ -55,5 +56,6 @@ export default {
     ServiceFinder:ServiceFinder,
 
     FileHubAPI:FileHubAPI,
-    IdentityAPI:IdentityAPI
+    IdentityAPI:IdentityAPI,
+    LogAPI:LogAPI
 }
