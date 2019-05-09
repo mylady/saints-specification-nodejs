@@ -235,9 +235,17 @@ function () {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                LogAPI.url = url;
+                if (!(typeof url !== 'string')) {
+                  _context6.next = 2;
+                  break;
+                }
 
-              case 1:
+                throw new Error('invalid url');
+
+              case 2:
+                LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+
+              case 3:
               case "end":
                 return _context6.stop();
             }

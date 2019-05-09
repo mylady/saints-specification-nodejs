@@ -10,13 +10,15 @@ const request = require('request'),
 */
 
 export default class FileHubAPI {
-    constructor(){
+    constructor() {
         this.accessToken = '';
     }
 
     static async initialize(url) {
-        FileHubAPI.url = url;
-        await FileHubAPI.getAccessToken();
+        if (typeof (url) !== 'string') {
+            throw new Error('invalid url');
+        }
+        FileHubAPI.url = url.substring(0,url.lastIndexOf('/'));
     }
 
     async getAccessToken() {

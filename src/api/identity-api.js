@@ -8,7 +8,10 @@ export default class IdentityAPI {
     }
 
     static async initialize(url) {
-        IdentityAPI.url = url;
+        if (typeof (url) !== 'string') {
+            throw new Error('invalid url');
+        }
+        IdentityAPI.url = url.substring(0,url.lastIndexOf('/'));
     }
 
     async getAccessToken() {

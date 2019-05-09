@@ -8,7 +8,10 @@ export default class LogAPI {
     }
 
     static async initialize(url) {
-        LogAPI.url = url;
+        if (typeof (url) !== 'string') {
+            throw new Error('invalid url');
+        }
+        LogAPI.url = url.substring(0,url.lastIndexOf('/'));
     }
 
     async getAccessToken() {

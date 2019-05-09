@@ -705,9 +705,15 @@ function () {
           while (1) {
             switch (_context18.prev = _context18.next) {
               case 0:
-                FileHubAPI.url = url;
-                _context18.next = 3;
-                return FileHubAPI.getAccessToken();
+                if (!(typeof url !== 'string')) {
+                  _context18.next = 2;
+                  break;
+                }
+
+                throw new Error('invalid url');
+
+              case 2:
+                FileHubAPI.url = url.substring(0, url.lastIndexOf('/'));
 
               case 3:
               case "end":

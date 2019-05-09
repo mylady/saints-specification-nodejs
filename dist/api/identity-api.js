@@ -373,9 +373,17 @@ function () {
           while (1) {
             switch (_context9.prev = _context9.next) {
               case 0:
-                IdentityAPI.url = url;
+                if (!(typeof url !== 'string')) {
+                  _context9.next = 2;
+                  break;
+                }
 
-              case 1:
+                throw new Error('invalid url');
+
+              case 2:
+                IdentityAPI.url = url.substring(0, url.lastIndexOf('/'));
+
+              case 3:
               case "end":
                 return _context9.stop();
             }
