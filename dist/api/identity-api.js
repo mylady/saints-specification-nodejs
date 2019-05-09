@@ -379,10 +379,8 @@ function () {
             switch (_context9.prev = _context9.next) {
               case 0:
                 IdentityAPI.url = url;
-                _context9.next = 3;
-                return IdentityAPI.getAccessToken();
 
-              case 3:
+              case 1:
               case "end":
                 return _context9.stop();
             }
