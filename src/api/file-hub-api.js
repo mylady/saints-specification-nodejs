@@ -24,7 +24,7 @@ export default class FileHubAPI {
     async getAccessToken() {
         let res = await rp({
             method: 'POST',
-            uri: IdentityAPI.url + '/accesstoken',
+            uri: FileHubAPI.url + '/accesstoken',
             json: true
         });
         this.accessToken = res.data;

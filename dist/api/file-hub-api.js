@@ -46,7 +46,7 @@ function () {
                 _context.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: IdentityAPI.url + '/accesstoken',
+                  uri: FileHubAPI.url + '/accesstoken',
                   json: true
                 });
 
