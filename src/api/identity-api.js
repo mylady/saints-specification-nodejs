@@ -12,14 +12,12 @@ export default class IdentityAPI {
     }
 
     async getAccessToken() {
-        if(!this.accessToken){
-            let res = await rp({
-                method: 'POST',
-                uri: IdentityAPI.url + '/accesstoken',
-                json: true
-            });
-            this.accessToken = res.data;
-        }
+        let res = await rp({
+            method: 'POST',
+            uri: IdentityAPI.url + '/accesstoken',
+            json: true
+        });
+        this.accessToken = res.data;
     }
 
     async getUserList() {

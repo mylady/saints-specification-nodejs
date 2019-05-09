@@ -12,14 +12,12 @@ export default class LogAPI {
     }
 
     async getAccessToken() {
-        if (!this.accessToken) {
-            let res = await rp({
-                method: 'POST',
-                uri: LogAPI.url + '/accesstoken',
-                json: true
-            });
-            this.accessToken = res.data;
-        }
+        let res = await rp({
+            method: 'POST',
+            uri: IdentityAPI.url + '/accesstoken',
+            json: true
+        });
+        this.accessToken = res.data;
     }
 
     async addPortalLog(log) {
