@@ -9,6 +9,8 @@ exports.default = void 0;
 
 var _config = _interopRequireDefault(require("./predefined/config"));
 
+var _authError = _interopRequireDefault(require("./klass/auth-error"));
+
 var _alarmType = _interopRequireDefault(require("./predefined/alarm-type"));
 
 var _cameraType = _interopRequireDefault(require("./predefined/camera-type"));
@@ -49,6 +51,7 @@ var _identityApi = _interopRequireDefault(require("./api/identity-api"));
 
 var _default = {
   Config: _config.default,
+  AuthError: _authError.default,
   AlarmType: _alarmType.default,
   CameraType: _cameraType.default,
   DeviceCode: _deviceCode.default,

@@ -2,6 +2,8 @@
 
 import Config from './predefined/config';
 
+import AuthError from './klass/auth-error';
+
 import AlarmType from './predefined/alarm-type';
 import CameraType from './predefined/camera-type';
 import DeviceCode from './predefined/device-code';
@@ -28,6 +30,8 @@ import IdentityAPI from './api/identity-api';
 
 export default {
     Config:Config,
+
+    AuthError:AuthError,
 
     AlarmType:AlarmType,
     CameraType:CameraType,
