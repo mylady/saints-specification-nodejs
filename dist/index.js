@@ -9,55 +9,55 @@ exports.default = void 0;
 
 var _config = _interopRequireDefault(require("./predefined/config"));
 
-var _alarmType = _interopRequireDefault(require("./predefined/alarmType"));
+var _alarmYpe = _interopRequireDefault(require("./predefined/alarm-ype"));
 
-var _cameraType = _interopRequireDefault(require("./predefined/cameraType"));
+var _cameraYpe = _interopRequireDefault(require("./predefined/camera-ype"));
 
-var _deviceCode = _interopRequireDefault(require("./predefined/deviceCode"));
+var _deviceCode = _interopRequireDefault(require("./predefined/device-code"));
 
-var _interfaceCategory = _interopRequireDefault(require("./predefined/interfaceCategory"));
+var _interfaceCategory = _interopRequireDefault(require("./predefined/interface-category"));
 
-var _serviceType = _interopRequireDefault(require("./predefined/serviceType"));
+var _serviceType = _interopRequireDefault(require("./predefined/service-type"));
 
-var _deviceStatus = _interopRequireDefault(require("./predefined/deviceStatus"));
+var _deviceStatus = _interopRequireDefault(require("./predefined/device-status"));
 
-var _envValue = _interopRequireDefault(require("./klass/envValue"));
+var _envValue = _interopRequireDefault(require("./klass/env-value"));
 
-var _powerGridValue = _interopRequireDefault(require("./klass/powerGridValue"));
+var _powerGridValue = _interopRequireDefault(require("./klass/power-grid-value"));
 
-var _rfidTagValue = _interopRequireDefault(require("./klass/rfidTagValue"));
+var _rfidtagValue = _interopRequireDefault(require("./klass/rfidtag-value"));
 
-var _upsValue = _interopRequireDefault(require("./klass/upsValue"));
+var _upsValue = _interopRequireDefault(require("./klass/ups-value"));
 
 var _d = _interopRequireDefault(require("./klass/2d"));
 
 var _d2 = _interopRequireDefault(require("./klass/3d"));
 
-var _restQuery = _interopRequireDefault(require("./klass/restQuery"));
+var _restQuery = _interopRequireDefault(require("./klass/rest-query"));
 
-var _restResponse = _interopRequireDefault(require("./klass/restResponse"));
+var _restResponse = _interopRequireDefault(require("./klass/rest-response"));
 
 var _service = _interopRequireDefault(require("./klass/service"));
 
-var _serviceRegister = _interopRequireDefault(require("./klass/serviceRegister"));
+var _serviceRegister = _interopRequireDefault(require("./klass/service-register"));
 
-var _serviceFinder = _interopRequireDefault(require("./klass/serviceFinder"));
+var _serviceFinder = _interopRequireDefault(require("./klass/service-finder"));
 
-var _fileHubApi = _interopRequireDefault(require("./api/fileHubApi"));
+var _fileHubApi = _interopRequireDefault(require("./api/file-hub-api"));
 
-var _identityApi = _interopRequireDefault(require("./api/identityApi"));
+var _identityApi = _interopRequireDefault(require("./api/identity-api"));
 
 var _default = {
   Config: _config.default,
-  AlarmType: _alarmType.default,
-  CameraType: _cameraType.default,
+  AlarmType: _alarmYpe.default,
+  CameraType: _cameraYpe.default,
   DeviceCode: _deviceCode.default,
   InterfaceCategory: _interfaceCategory.default,
   ServiceType: _serviceType.default,
   DeviceStatus: _deviceStatus.default,
   EnvValue: _envValue.default,
   PowerGridValue: _powerGridValue.default,
-  RFIDTagValue: _rfidTagValue.default,
+  RFIDTagValue: _rfidtagValue.default,
   UPSValue: _upsValue.default,
   TwoDimension: _d.default,
   ThreeDimension: _d2.default,

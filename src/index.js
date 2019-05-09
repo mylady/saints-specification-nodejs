@@ -2,29 +2,29 @@
 
 import Config from './predefined/config';
 
-import AlarmType from './predefined/alarmType';
-import CameraType from './predefined/cameraType';
-import DeviceCode from './predefined/deviceCode';
-import InterfaceCategory from './predefined/interfaceCategory';
-import ServiceType from './predefined/serviceType';
-import DeviceStatus from './predefined/deviceStatus';
+import AlarmType from './predefined/alarm-ype';
+import CameraType from './predefined/camera-ype';
+import DeviceCode from './predefined/device-code';
+import InterfaceCategory from './predefined/interface-category';
+import ServiceType from './predefined/service-type';
+import DeviceStatus from './predefined/device-status';
 
-import EnvValue from './klass/envValue';
-import PowerGridValue from './klass/powerGridValue';
-import RFIDTagValue from './klass/rfidTagValue';
-import UPSValue from './klass/upsValue';
+import EnvValue from './klass/env-value';
+import PowerGridValue from './klass/power-grid-value';
+import RFIDTagValue from './klass/rfidtag-value';
+import UPSValue from './klass/ups-value';
 import TwoDimension  from './klass/2d';
 import ThreeDimension from './klass/3d';
 
-import RestQuery from './klass/restQuery';
-import RestResponse from './klass/restResponse';
+import RestQuery from './klass/rest-query';
+import RestResponse from './klass/rest-response';
 
 import Service from './klass/service';
-import ServiceRegister from './klass/serviceRegister';
-import ServiceFinder from './klass/serviceFinder';
+import ServiceRegister from './klass/service-register';
+import ServiceFinder from './klass/service-finder';
 
-import FileHubAPI from './api/fileHubApi';
-import IdentityAPI from './api/identityApi';
+import FileHubAPI from './api/file-hub-api';
+import IdentityAPI from './api/identity-api';
 
 export default {
     Config:Config,
