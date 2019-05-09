@@ -9,7 +9,7 @@ export default class RestResponse {
         this.total= total || 0;
     }
 
-    static NewBoolResponse(b, err) {
+    static boolResponse(b, err) {
         let resp = new RestResponse({
             result: b
         });
@@ -23,7 +23,7 @@ export default class RestResponse {
         return resp;
     }
 
-    static NewDataResponse(d, cnt) {
+    static dataResponse(d, cnt) {
         let resp = new RestResponse({
             result: true,
             data: d,

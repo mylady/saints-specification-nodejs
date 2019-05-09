@@ -2,8 +2,8 @@
 
 import Config from './predefined/config';
 
-import AlarmType from './predefined/alarm-ype';
-import CameraType from './predefined/camera-ype';
+import AlarmType from './predefined/alarm-type';
+import CameraType from './predefined/camera-type';
 import DeviceCode from './predefined/device-code';
 import InterfaceCategory from './predefined/interface-category';
 import ServiceType from './predefined/service-type';

@@ -9,9 +9,9 @@ exports.default = void 0;
 
 var _config = _interopRequireDefault(require("./predefined/config"));
 
-var _alarmYpe = _interopRequireDefault(require("./predefined/alarm-ype"));
+var _alarmType = _interopRequireDefault(require("./predefined/alarm-type"));
 
-var _cameraYpe = _interopRequireDefault(require("./predefined/camera-ype"));
+var _cameraType = _interopRequireDefault(require("./predefined/camera-type"));
 
 var _deviceCode = _interopRequireDefault(require("./predefined/device-code"));
 
@@ -49,8 +49,8 @@ var _identityApi = _interopRequireDefault(require("./api/identity-api"));
 
 var _default = {
   Config: _config.default,
-  AlarmType: _alarmYpe.default,
-  CameraType: _cameraYpe.default,
+  AlarmType: _alarmType.default,
+  CameraType: _cameraType.default,
   DeviceCode: _deviceCode.default,
   InterfaceCategory: _interfaceCategory.default,
   ServiceType: _serviceType.default,

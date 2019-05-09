@@ -29,8 +29,8 @@ function () {
   }
 
   (0, _createClass2.default)(RestResponse, null, [{
-    key: "NewBoolResponse",
-    value: function NewBoolResponse(b, err) {
+    key: "boolResponse",
+    value: function boolResponse(b, err) {
       var resp = new RestResponse({
         result: b
       });
@@ -46,8 +46,8 @@ function () {
       return resp;
     }
   }, {
-    key: "NewDataResponse",
-    value: function NewDataResponse(d, cnt) {
+    key: "dataResponse",
+    value: function dataResponse(d, cnt) {
       var resp = new RestResponse({
         result: true,
         data: d,
