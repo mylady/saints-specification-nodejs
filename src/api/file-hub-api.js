@@ -18,7 +18,10 @@ export default class FileHubAPI {
         if (typeof (url) !== 'string') {
             throw new Error('invalid url');
         }
-        FileHubAPI.url = url.substring(0,url.lastIndexOf('/'));
+
+        if(url.lastIndexOf('/') === url.length -1){
+            FileHubAPI.url = url.substring(0,url.lastIndexOf('/'));
+        }
     }
 
     async getAccessToken() {
@@ -30,26 +33,24 @@ export default class FileHubAPI {
         this.accessToken = res.data;
     }
 
-    async uploadDocProxy(req, res) {
-        await this.getAccessToken();
-        req.pipe(request({
+    uploadDocProxy(res) {
+        request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/doc',
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
-    async downloadDocProxy(req, res, id) {
-        await this.getAccessToken();
-        req.pipe(request({
+    downloadDocProxy(id,res) {
+        request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/doc/${id}`,
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
     async searchDoc(search) {
@@ -101,26 +102,24 @@ export default class FileHubAPI {
         });
     }
 
-    async uploadImageProxy(req, res) {
-        await this.getAccessToken();
-        req.pipe(request({
+    uploadImageProxy(res) {
+        request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/image',
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
-    async downloadImageProxy(req, res, id) {
-        await this.getAccessToken();
-        req.pipe(request({
+    downloadImageProxy(id, res) {
+        request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/image/${id}`,
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
     async getImageDetail(id) {
@@ -159,26 +158,24 @@ export default class FileHubAPI {
         });
     }
 
-    async uploadAttachProxy(req, res) {
-        await this.getAccessToken();
-        req.pipe(request({
+    uploadAttachProxy(res) {
+        request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/attach',
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
-    async downloadAttachProxy(req, res, id) {
-        await this.getAccessToken();
-        req.pipe(request({
+    downloadAttachProxy(id, res) {
+        request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/attach/${id}`,
             qs: {
                 access_token: this.accessToken
             }
-        })).pipe(res);
+        }).pipe(res);
     }
 
     async getAttachDetail(id) {
