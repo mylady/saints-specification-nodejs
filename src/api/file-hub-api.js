@@ -19,8 +19,10 @@ export default class FileHubAPI {
             throw new Error('invalid url');
         }
 
-        if(url.lastIndexOf('/') === url.length -1){
-            FileHubAPI.url = url.substring(0,url.lastIndexOf('/'));
+        if (url.lastIndexOf('/') === url.length - 1) {
+            FileHubAPI.url = url.substring(0, url.lastIndexOf('/'));
+        } else {
+            FileHubAPI.url = url;
         }
     }
 
@@ -43,7 +45,7 @@ export default class FileHubAPI {
         }).pipe(res);
     }
 
-    downloadDocProxy(id,res) {
+    downloadDocProxy(id, res) {
         request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/doc/${id}`,

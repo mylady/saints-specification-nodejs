@@ -11,7 +11,12 @@ export default class IdentityAPI {
         if (typeof (url) !== 'string') {
             throw new Error('invalid url');
         }
-        IdentityAPI.url = url.substring(0,url.lastIndexOf('/'));
+
+        if(url.lastIndexOf('/') === url.length -1){
+            IdentityAPI.url = url.substring(0,url.lastIndexOf('/'));
+        }else{
+            IdentityAPI.url = url;
+        }
     }
 
     async getAccessToken() {

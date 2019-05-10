@@ -243,7 +243,11 @@ function () {
                 throw new Error('invalid url');
 
               case 2:
-                LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+                if (url.lastIndexOf('/') === url.length - 1) {
+                  LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+                } else {
+                  LogAPI.url = url;
+                }
 
               case 3:
               case "end":

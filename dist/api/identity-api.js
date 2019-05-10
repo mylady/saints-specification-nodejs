@@ -381,7 +381,11 @@ function () {
                 throw new Error('invalid url');
 
               case 2:
-                IdentityAPI.url = url.substring(0, url.lastIndexOf('/'));
+                if (url.lastIndexOf('/') === url.length - 1) {
+                  IdentityAPI.url = url.substring(0, url.lastIndexOf('/'));
+                } else {
+                  IdentityAPI.url = url;
+                }
 
               case 3:
               case "end":

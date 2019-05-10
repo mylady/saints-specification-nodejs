@@ -11,7 +11,12 @@ export default class LogAPI {
         if (typeof (url) !== 'string') {
             throw new Error('invalid url');
         }
-        LogAPI.url = url.substring(0,url.lastIndexOf('/'));
+        
+        if (url.lastIndexOf('/') === url.length - 1) {
+            LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+        } else {
+            LogAPI.url = url;
+        }
     }
 
     async getAccessToken() {

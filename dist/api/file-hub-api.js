@@ -565,6 +565,8 @@ function () {
               case 2:
                 if (url.lastIndexOf('/') === url.length - 1) {
                   FileHubAPI.url = url.substring(0, url.lastIndexOf('/'));
+                } else {
+                  FileHubAPI.url = url;
                 }
 
               case 3:
