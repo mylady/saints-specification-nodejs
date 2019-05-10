@@ -35,7 +35,8 @@ export default class FileHubAPI {
         this.accessToken = res.data;
     }
 
-    uploadDocProxy(res) {
+    async uploadDocProxy(res) {
+        await this.getAccessToken();
         request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/doc',
@@ -45,7 +46,8 @@ export default class FileHubAPI {
         }).pipe(res);
     }
 
-    downloadDocProxy(id, res) {
+    async downloadDocProxy(id, res) {
+        await this.getAccessToken();
         request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/doc/${id}`,
@@ -104,7 +106,8 @@ export default class FileHubAPI {
         });
     }
 
-    uploadImageProxy(res) {
+    async uploadImageProxy(res) {
+        await this.getAccessToken();
         request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/image',
@@ -114,7 +117,8 @@ export default class FileHubAPI {
         }).pipe(res);
     }
 
-    downloadImageProxy(id, res) {
+    async downloadImageProxy(id, res) {
+        await this.getAccessToken();
         request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/image/${id}`,
@@ -160,7 +164,8 @@ export default class FileHubAPI {
         });
     }
 
-    uploadAttachProxy(res) {
+    async uploadAttachProxy(res) {
+        await this.getAccessToken();
         request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/attach',
@@ -170,7 +175,8 @@ export default class FileHubAPI {
         }).pipe(res);
     }
 
-    downloadAttachProxy(id, res) {
+    async downloadAttachProxy(id, res) {
+        await this.getAccessToken();
         request({
             method: 'GET',
             uri: FileHubAPI.url + `/download/attach/${id}`,
