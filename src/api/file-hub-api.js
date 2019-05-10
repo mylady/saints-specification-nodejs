@@ -35,15 +35,15 @@ export default class FileHubAPI {
         this.accessToken = res.data;
     }
 
-    async uploadDocProxy(res) {
+    async uploadDocProxy(req,res) {
         await this.getAccessToken();
-        request({
+        req.pipe(request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/doc',
             qs: {
                 access_token: this.accessToken
             }
-        }).pipe(res);
+        })).pipe(res);
     }
 
     async downloadDocProxy(id, res) {
@@ -106,15 +106,15 @@ export default class FileHubAPI {
         });
     }
 
-    async uploadImageProxy(res) {
+    async uploadImageProxy(req,res) {
         await this.getAccessToken();
-        request({
+        req.pipe(request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/image',
             qs: {
                 access_token: this.accessToken
             }
-        }).pipe(res);
+        })).pipe(res);
     }
 
     async downloadImageProxy(id, res) {
@@ -164,15 +164,15 @@ export default class FileHubAPI {
         });
     }
 
-    async uploadAttachProxy(res) {
+    async uploadAttachProxy(req,res) {
         await this.getAccessToken();
-        request({
+        req.pipe(request({
             method: 'POST',
             uri: FileHubAPI.url + '/upload/attach',
             qs: {
                 access_token: this.accessToken
             }
-        }).pipe(res);
+        })).pipe(res);
     }
 
     async downloadAttachProxy(id, res) {

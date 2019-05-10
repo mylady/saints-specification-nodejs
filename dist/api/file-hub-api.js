@@ -73,7 +73,7 @@ function () {
     value: function () {
       var _uploadDocProxy = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee2(res) {
+      _regenerator.default.mark(function _callee2(req, res) {
         return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -82,13 +82,13 @@ function () {
                 return this.getAccessToken();
 
               case 2:
-                request({
+                req.pipe(request({
                   method: 'POST',
                   uri: FileHubAPI.url + '/upload/doc',
                   qs: {
                     access_token: this.accessToken
                   }
-                }).pipe(res);
+                })).pipe(res);
 
               case 3:
               case "end":
@@ -98,7 +98,7 @@ function () {
         }, _callee2, this);
       }));
 
-      function uploadDocProxy(_x) {
+      function uploadDocProxy(_x, _x2) {
         return _uploadDocProxy.apply(this, arguments);
       }
 
@@ -134,7 +134,7 @@ function () {
         }, _callee3, this);
       }));
 
-      function downloadDocProxy(_x2, _x3) {
+      function downloadDocProxy(_x3, _x4) {
         return _downloadDocProxy.apply(this, arguments);
       }
 
@@ -176,7 +176,7 @@ function () {
         }, _callee4, this);
       }));
 
-      function searchDoc(_x4) {
+      function searchDoc(_x5) {
         return _searchDoc.apply(this, arguments);
       }
 
@@ -217,7 +217,7 @@ function () {
         }, _callee5, this);
       }));
 
-      function getDocDetail(_x5) {
+      function getDocDetail(_x6) {
         return _getDocDetail.apply(this, arguments);
       }
 
@@ -259,7 +259,7 @@ function () {
         }, _callee6, this);
       }));
 
-      function queryDocs(_x6) {
+      function queryDocs(_x7) {
         return _queryDocs.apply(this, arguments);
       }
 
@@ -299,7 +299,7 @@ function () {
         }, _callee7, this);
       }));
 
-      function getDocs(_x7) {
+      function getDocs(_x8) {
         return _getDocs.apply(this, arguments);
       }
 
@@ -310,7 +310,7 @@ function () {
     value: function () {
       var _uploadImageProxy = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee8(res) {
+      _regenerator.default.mark(function _callee8(req, res) {
         return _regenerator.default.wrap(function _callee8$(_context8) {
           while (1) {
             switch (_context8.prev = _context8.next) {
@@ -319,13 +319,13 @@ function () {
                 return this.getAccessToken();
 
               case 2:
-                request({
+                req.pipe(request({
                   method: 'POST',
                   uri: FileHubAPI.url + '/upload/image',
                   qs: {
                     access_token: this.accessToken
                   }
-                }).pipe(res);
+                })).pipe(res);
 
               case 3:
               case "end":
@@ -335,7 +335,7 @@ function () {
         }, _callee8, this);
       }));
 
-      function uploadImageProxy(_x8) {
+      function uploadImageProxy(_x9, _x10) {
         return _uploadImageProxy.apply(this, arguments);
       }
 
@@ -371,7 +371,7 @@ function () {
         }, _callee9, this);
       }));
 
-      function downloadImageProxy(_x9, _x10) {
+      function downloadImageProxy(_x11, _x12) {
         return _downloadImageProxy.apply(this, arguments);
       }
 
@@ -412,7 +412,7 @@ function () {
         }, _callee10, this);
       }));
 
-      function getImageDetail(_x11) {
+      function getImageDetail(_x13) {
         return _getImageDetail.apply(this, arguments);
       }
 
@@ -454,7 +454,7 @@ function () {
         }, _callee11, this);
       }));
 
-      function queryImages(_x12) {
+      function queryImages(_x14) {
         return _queryImages.apply(this, arguments);
       }
 
@@ -494,7 +494,7 @@ function () {
         }, _callee12, this);
       }));
 
-      function getImages(_x13) {
+      function getImages(_x15) {
         return _getImages.apply(this, arguments);
       }
 
@@ -505,7 +505,7 @@ function () {
     value: function () {
       var _uploadAttachProxy = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee13(res) {
+      _regenerator.default.mark(function _callee13(req, res) {
         return _regenerator.default.wrap(function _callee13$(_context13) {
           while (1) {
             switch (_context13.prev = _context13.next) {
@@ -514,13 +514,13 @@ function () {
                 return this.getAccessToken();
 
               case 2:
-                request({
+                req.pipe(request({
                   method: 'POST',
                   uri: FileHubAPI.url + '/upload/attach',
                   qs: {
                     access_token: this.accessToken
                   }
-                }).pipe(res);
+                })).pipe(res);
 
               case 3:
               case "end":
@@ -530,7 +530,7 @@ function () {
         }, _callee13, this);
       }));
 
-      function uploadAttachProxy(_x14) {
+      function uploadAttachProxy(_x16, _x17) {
         return _uploadAttachProxy.apply(this, arguments);
       }
 
@@ -566,7 +566,7 @@ function () {
         }, _callee14, this);
       }));
 
-      function downloadAttachProxy(_x15, _x16) {
+      function downloadAttachProxy(_x18, _x19) {
         return _downloadAttachProxy.apply(this, arguments);
       }
 
@@ -607,7 +607,7 @@ function () {
         }, _callee15, this);
       }));
 
-      function getAttachDetail(_x17) {
+      function getAttachDetail(_x20) {
         return _getAttachDetail.apply(this, arguments);
       }
 
@@ -649,7 +649,7 @@ function () {
         }, _callee16, this);
       }));
 
-      function queryAttaches(_x18) {
+      function queryAttaches(_x21) {
         return _queryAttaches.apply(this, arguments);
       }
 
@@ -689,7 +689,7 @@ function () {
         }, _callee17, this);
       }));
 
-      function getAttaches(_x19) {
+      function getAttaches(_x22) {
         return _getAttaches.apply(this, arguments);
       }
 
@@ -727,7 +727,7 @@ function () {
         }, _callee18);
       }));
 
-      function initialize(_x20) {
+      function initialize(_x23) {
         return _initialize.apply(this, arguments);
       }
 
