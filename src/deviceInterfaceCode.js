@@ -400,6 +400,10 @@ let deviceInterfaceCode = {
         name:'商汤人脸识别接口',
         value:97
     },
+    qushiVideoAnalyseSDK:{
+        name:'趋石视频分析接口',
+        value:98
+    },
 
     //saints define
     shengxiDoorUDP:{
