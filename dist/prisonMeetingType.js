@@ -27,6 +27,14 @@ var prisonMeetingType = {
   signArraignment: {
     name: '签字提审',
     value: 4
+  },
+  localJudicial: {
+    name: '本区司法机关',
+    value: 5
+  },
+  other: {
+    name: '其他',
+    value: 100
   }
 };
 Object.freeze(prisonMeetingType);
