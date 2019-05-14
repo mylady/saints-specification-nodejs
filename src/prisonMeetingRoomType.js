@@ -15,6 +15,10 @@ let prisonMeetingRoomType = {
   meeting: {
     name: '会见',
     value: 2
+  },
+  special:{
+    name:'专用',
+    value:3
   }
 };
 
