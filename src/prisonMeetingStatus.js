@@ -36,6 +36,10 @@ let prisonMeetingStatus = {
   audit:{
     name:'审核',
     value:8
+  },
+  queue:{
+    name:'排队',
+    value:9
   }
 };
 
