@@ -48,9 +48,13 @@ var prisonerActivity = {
     name: '禁闭',
     value: 9
   },
+  judicialMeeting: {
+    name: '司法会见',
+    value: 10
+  },
   other: {
     name: '其他',
-    value: 10
+    value: 100
   }
 };
 Object.freeze(prisonerActivity);
