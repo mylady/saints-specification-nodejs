@@ -408,6 +408,10 @@ var deviceInterfaceCode = {
     name: '趋石视频分析接口',
     value: 98
   },
+  qushiFaceAnalyseTCPServer: {
+    name: '趋石人脸识别接口',
+    value: 99
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',

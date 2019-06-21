@@ -292,123 +292,127 @@ let deviceInterfaceCode = {
         name: '熙凌行为分析接口',
         value: 70
     },
-    sihuaRFIDWEBSOCKET :{
-        name:'思华人员定位报警接口',
-        value:71
+    sihuaRFIDWEBSOCKET: {
+        name: '思华人员定位报警接口',
+        value: 71
     },
-    unicomIOTREST:{
-        name:'联通物联网接口',
-        value:72
+    unicomIOTREST: {
+        name: '联通物联网接口',
+        value: 72
     },
-    dahuaVideoAnalyseSDK:{
-        name:'大华视频分析设备接口',
-        value:73
+    dahuaVideoAnalyseSDK: {
+        name: '大华视频分析设备接口',
+        value: 73
     },
-    sihuaRFIDLocatingREST:{
-        name:'思华人员定位接口',
-        value:74
+    sihuaRFIDLocatingREST: {
+        name: '思华人员定位接口',
+        value: 74
     },
-    juyingRelayTCP:{
-        name:'聚英继电器接口',
-        value:75
+    juyingRelayTCP: {
+        name: '聚英继电器接口',
+        value: 75
     },
-    wanguDoorUDP:{
-        name:'万谷门禁状态监测接口',
-        value:76
+    wanguDoorUDP: {
+        name: '万谷门禁状态监测接口',
+        value: 76
     },
-    shengkeAlarmPlatform:{
-        name:'盛科报警平台接口',
-        value:77
+    shengkeAlarmPlatform: {
+        name: '盛科报警平台接口',
+        value: 77
     },
-    lingxinLedControllerV6:{
-        name:'灵信电子屏控制器接口v6',
-        value:78
+    lingxinLedControllerV6: {
+        name: '灵信电子屏控制器接口v6',
+        value: 78
     },
     yituFaceRecognitionV18REST: {
         name: '依图人脸识别接口1.8版',
         value: 79
     },
-    renweiRFIDUDP:{
-        name:'仁微人员定位接口',
-        value:80
+    renweiRFIDUDP: {
+        name: '仁微人员定位接口',
+        value: 80
     },
-    yushiFaceRecognitionREST:{
-        name:'宇视人脸识别接口',
-        value:81
+    yushiFaceRecognitionREST: {
+        name: '宇视人脸识别接口',
+        value: 81
     },
-    jinzhiVideoPlatformSDK:{
-        name:'金智视频平台接口',
-        value:82
+    jinzhiVideoPlatformSDK: {
+        name: '金智视频平台接口',
+        value: 82
     },
-    miaoguanEnvMonitorTCPServer:{
-        name:'妙观温湿度监测服务端接口',
-        value:83
+    miaoguanEnvMonitorTCPServer: {
+        name: '妙观温湿度监测服务端接口',
+        value: 83
     },
-    meizanmeiIPCEnvMonitorUDP:{
-        name:'美赞美温湿度接口',
-        value:84
+    meizanmeiIPCEnvMonitorUDP: {
+        name: '美赞美温湿度接口',
+        value: 84
     },
-    renshuoEnvMonitorSDK:{
-        name:'仁硕温湿度接口',
-        value:85
+    renshuoEnvMonitorSDK: {
+        name: '仁硕温湿度接口',
+        value: 85
     },
-    zhongkeyunkongEnvMonitorREST:{
-        name:'中科云控温湿度接口',
-        value:86
+    zhongkeyunkongEnvMonitorREST: {
+        name: '中科云控温湿度接口',
+        value: 86
     },
-    zhongxinweiRFIDSDK:{
-        name:'中芯微人员定位接口',
-        value:87
+    zhongxinweiRFIDSDK: {
+        name: '中芯微人员定位接口',
+        value: 87
     },
-    xufeiPowerGridTCP:{
-        name:'旭飞高压电网接口',
-        value:88
+    xufeiPowerGridTCP: {
+        name: '旭飞高压电网接口',
+        value: 88
     },
-    xufeiIrAlarmTCP:{
-        name:'旭飞红外幕帘接口',
-        value:89
+    xufeiIrAlarmTCP: {
+        name: '旭飞红外幕帘接口',
+        value: 89
     },
-    jieanPerimeterTCP:{
-        name:'界安震动光缆接口',
-        value:90
+    jieanPerimeterTCP: {
+        name: '界安震动光缆接口',
+        value: 90
     },
-    siniuteEnvMonitorREST:{
-        name:'斯纽特温湿度接口',
-        value:91
+    siniuteEnvMonitorREST: {
+        name: '斯纽特温湿度接口',
+        value: 91
     },
-    kedaVideoAnalyseWebService:{
-        name:'科达视频分析接口',
-        value:92
+    kedaVideoAnalyseWebService: {
+        name: '科达视频分析接口',
+        value: 92
     },
-    kedaVideoDiagnosticREST:{
-        name:'科达视频诊断接口',
-        value:93
+    kedaVideoDiagnosticREST: {
+        name: '科达视频诊断接口',
+        value: 93
     },
-    kuaiyuDigitalCallSDKV2:{
+    kuaiyuDigitalCallSDKV2: {
         name: '快鱼数字对讲接口V2',
         value: 94
     },
-    kuaiyuDigitalCallSDKV3:{
+    kuaiyuDigitalCallSDKV3: {
         name: '快鱼数字对讲接口V3',
         value: 95
     },
-    guangtuoPerimeterSDK:{
+    guangtuoPerimeterSDK: {
         name: '广拓电子围栏接口',
         value: 96
     },
-    shangtangFaceRecognitionV32REST:{
-        name:'商汤人脸识别接口',
-        value:97
+    shangtangFaceRecognitionV32REST: {
+        name: '商汤人脸识别接口',
+        value: 97
     },
-    qushiVideoAnalyseSDK:{
-        name:'趋石视频分析接口',
-        value:98
+    qushiVideoAnalyseSDK: {
+        name: '趋石视频分析接口',
+        value: 98
+    },
+    qushiFaceAnalyseTCPServer: {
+        name: '趋石人脸识别接口',
+        value: 99
     },
 
     //saints define
-    shengxiDoorUDP:{
-        name:'圣熙门禁接口',
-        value:10001
+    shengxiDoorUDP: {
+        name: '圣熙门禁接口',
+        value: 10001
     }
 };
 
