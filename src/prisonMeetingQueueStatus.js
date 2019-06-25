@@ -12,6 +12,10 @@ let prisonMeetingQueueStatus = {
     cancel: {
         name: '取消',
         value: 2
+    },
+    outdated: {
+        name: '过号',
+        value: 3
     }
 };
 
