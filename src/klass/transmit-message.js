@@ -2,10 +2,10 @@
 
 //for biz message exchange
 export default class TransmitMessage {
-    constructor({ type, content,id }) {
-        this.message_type = type || 0;
-        this.message_content = content || '';
-        this.socket_io_id = id || '';
+    constructor({ message_type, messge_content,socket_io_id }) {
+        this.message_type = message_type || 0;
+        this.message_content = messge_content || '';
+        this.socket_io_id = socket_io_id || '';
     }
 
     static isValid(message) {

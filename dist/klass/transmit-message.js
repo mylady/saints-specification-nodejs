@@ -15,13 +15,13 @@ var TransmitMessage =
 /*#__PURE__*/
 function () {
   function TransmitMessage(_ref) {
-    var type = _ref.type,
-        content = _ref.content,
-        id = _ref.id;
+    var message_type = _ref.message_type,
+        messge_content = _ref.messge_content,
+        socket_io_id = _ref.socket_io_id;
     (0, _classCallCheck2.default)(this, TransmitMessage);
-    this.message_type = type || 0;
-    this.message_content = content || '';
-    this.socket_io_id = id || '';
+    this.message_type = message_type || 0;
+    this.message_content = messge_content || '';
+    this.socket_io_id = socket_io_id || '';
   }
 
   (0, _createClass2.default)(TransmitMessage, null, [{

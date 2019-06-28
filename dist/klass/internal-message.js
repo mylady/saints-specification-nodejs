@@ -15,16 +15,16 @@ var InternalMessage =
 /*#__PURE__*/
 function () {
   function InternalMessage(_ref) {
-    var type = _ref.type,
-        content = _ref.content;
+    var internal_type = _ref.internal_type,
+        message_content = _ref.message_content;
     (0, _classCallCheck2.default)(this, InternalMessage);
-    this.internal_type = type || 0;
-    this.message_content = content || '';
+    this.internal_type = internal_type || 0;
+    this.message_content = message_content || '';
   }
 
   (0, _createClass2.default)(InternalMessage, null, [{
-    key: "checkValid",
-    value: function checkValid(message) {
+    key: "isValid",
+    value: function isValid(message) {
       return message.hasOwnProperty('message_content') && message.hasOwnProperty('internal_type');
     }
   }]);
