@@ -61,6 +61,10 @@ var _identityApi = _interopRequireDefault(require("./api/identity-api"));
 
 var _logApi = _interopRequireDefault(require("./api/log-api"));
 
+var _eventApi = _interopRequireDefault(require("./api/event-api"));
+
+var _messageHubApi = _interopRequireDefault(require("./api/message-hub-api"));
+
 var _default = {
   Config: _config.default,
   KafkaIO: _kafkaIo.default,
@@ -88,6 +92,8 @@ var _default = {
   TransmitMessageType: _tranmitMessageType.default,
   FileHubAPI: _fileHubApi.default,
   IdentityAPI: _identityApi.default,
-  LogAPI: _logApi.default
+  LogAPI: _logApi.default,
+  EventAPI: _eventApi.default,
+  MessageHubAPI: _messageHubApi.default
 };
 exports.default = _default;

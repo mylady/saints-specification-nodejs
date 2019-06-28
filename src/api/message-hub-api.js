@@ -2,7 +2,7 @@
 
 const rp = require('request-promise');
 
-export default class LogAPI {
+export default class MessageHubAPI {
     constructor() {
         this.accessToken = '';
     }
@@ -13,64 +13,38 @@ export default class LogAPI {
         }
         
         if (url.lastIndexOf('/') === url.length - 1) {
-            LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+            MessageHubAPI.url = url.substring(0, url.lastIndexOf('/'));
         } else {
-            LogAPI.url = url;
+            MessageHubAPI.url = url;
         }
     }
 
     async getAccessToken() {
         let res = await rp({
             method: 'POST',
-            uri: LogAPI.url + '/accesstoken',
+            uri: MessageHubAPI.url + '/accesstoken',
             json: true
         });
         this.accessToken = res.data;
     }
 
-    async addPortalLog(log) {
-        await this.getAccessToken();
-        return await rp({
-            method: 'POST',
-            uri: LogAPI.url + '/portal',
-            qs: {
-                access_token: this.accessToken
-            },
-            body: log,
-            json: true
-        });
-    }
-
-    async getPortalLog(query) {
+    async getInternalMessage(query) {
         await this.getAccessToken();
         query['access_token'] = this.accessToken;
         return await rp({
             method: 'GET',
-            uri: LogAPI.url + '/portal',
+            uri: MessageHubAPI.url + '/internal',
             qs: query,
             json: true
         });
     }
 
-    async addCommonLog(log) {
-        await this.getAccessToken();
-        return await rp({
-            method: 'POST',
-            uri: LogAPI.url + '/common',
-            qs: {
-                access_token: this.accessToken
-            },
-            body: log,
-            json: true
-        });
-    }
-
-    async getCommonLog(query) {
+    async getTransmitMessage(query) {
         await this.getAccessToken();
         query['access_token'] = this.accessToken;
         return await rp({
             method: 'GET',
-            uri: LogAPI.url + '/common',
+            uri: MessageHubAPI.url + '/transmit',
             qs: query,
             json: true
         });

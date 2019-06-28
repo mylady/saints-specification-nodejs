@@ -17,15 +17,15 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var rp = require('request-promise');
 
-var LogAPI =
+var MessageHubAPI =
 /*#__PURE__*/
 function () {
-  function LogAPI() {
-    (0, _classCallCheck2.default)(this, LogAPI);
+  function MessageHubAPI() {
+    (0, _classCallCheck2.default)(this, MessageHubAPI);
     this.accessToken = '';
   }
 
-  (0, _createClass2.default)(LogAPI, [{
+  (0, _createClass2.default)(MessageHubAPI, [{
     key: "getAccessToken",
     value: function () {
       var _getAccessToken = (0, _asyncToGenerator2.default)(
@@ -39,7 +39,7 @@ function () {
                 _context.next = 2;
                 return rp({
                   method: 'POST',
-                  uri: LogAPI.url + '/accesstoken',
+                  uri: MessageHubAPI.url + '/accesstoken',
                   json: true
                 });
 
@@ -62,11 +62,11 @@ function () {
       return getAccessToken;
     }()
   }, {
-    key: "addPortalLog",
+    key: "getInternalMessage",
     value: function () {
-      var _addPortalLog = (0, _asyncToGenerator2.default)(
+      var _getInternalMessage = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee2(log) {
+      _regenerator.default.mark(function _callee2(query) {
         return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -75,21 +75,19 @@ function () {
                 return this.getAccessToken();
 
               case 2:
-                _context2.next = 4;
+                query['access_token'] = this.accessToken;
+                _context2.next = 5;
                 return rp({
-                  method: 'POST',
-                  uri: LogAPI.url + '/portal',
-                  qs: {
-                    access_token: this.accessToken
-                  },
-                  body: log,
+                  method: 'GET',
+                  uri: MessageHubAPI.url + '/internal',
+                  qs: query,
                   json: true
                 });
 
-              case 4:
+              case 5:
                 return _context2.abrupt("return", _context2.sent);
 
-              case 5:
+              case 6:
               case "end":
                 return _context2.stop();
             }
@@ -97,16 +95,16 @@ function () {
         }, _callee2, this);
       }));
 
-      function addPortalLog(_x) {
-        return _addPortalLog.apply(this, arguments);
+      function getInternalMessage(_x) {
+        return _getInternalMessage.apply(this, arguments);
       }
 
-      return addPortalLog;
+      return getInternalMessage;
     }()
   }, {
-    key: "getPortalLog",
+    key: "getTransmitMessage",
     value: function () {
-      var _getPortalLog = (0, _asyncToGenerator2.default)(
+      var _getTransmitMessage = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
       _regenerator.default.mark(function _callee3(query) {
         return _regenerator.default.wrap(function _callee3$(_context3) {
@@ -121,7 +119,7 @@ function () {
                 _context3.next = 5;
                 return rp({
                   method: 'GET',
-                  uri: LogAPI.url + '/portal',
+                  uri: MessageHubAPI.url + '/transmit',
                   qs: query,
                   json: true
                 });
@@ -137,106 +135,24 @@ function () {
         }, _callee3, this);
       }));
 
-      function getPortalLog(_x2) {
-        return _getPortalLog.apply(this, arguments);
+      function getTransmitMessage(_x2) {
+        return _getTransmitMessage.apply(this, arguments);
       }
 
-      return getPortalLog;
-    }()
-  }, {
-    key: "addCommonLog",
-    value: function () {
-      var _addCommonLog = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee4(log) {
-        return _regenerator.default.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                _context4.next = 2;
-                return this.getAccessToken();
-
-              case 2:
-                _context4.next = 4;
-                return rp({
-                  method: 'POST',
-                  uri: LogAPI.url + '/common',
-                  qs: {
-                    access_token: this.accessToken
-                  },
-                  body: log,
-                  json: true
-                });
-
-              case 4:
-                return _context4.abrupt("return", _context4.sent);
-
-              case 5:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function addCommonLog(_x3) {
-        return _addCommonLog.apply(this, arguments);
-      }
-
-      return addCommonLog;
-    }()
-  }, {
-    key: "getCommonLog",
-    value: function () {
-      var _getCommonLog = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee5(query) {
-        return _regenerator.default.wrap(function _callee5$(_context5) {
-          while (1) {
-            switch (_context5.prev = _context5.next) {
-              case 0:
-                _context5.next = 2;
-                return this.getAccessToken();
-
-              case 2:
-                query['access_token'] = this.accessToken;
-                _context5.next = 5;
-                return rp({
-                  method: 'GET',
-                  uri: LogAPI.url + '/common',
-                  qs: query,
-                  json: true
-                });
-
-              case 5:
-                return _context5.abrupt("return", _context5.sent);
-
-              case 6:
-              case "end":
-                return _context5.stop();
-            }
-          }
-        }, _callee5, this);
-      }));
-
-      function getCommonLog(_x4) {
-        return _getCommonLog.apply(this, arguments);
-      }
-
-      return getCommonLog;
+      return getTransmitMessage;
     }()
   }], [{
     key: "initialize",
     value: function () {
       var _initialize = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
-      _regenerator.default.mark(function _callee6(url) {
-        return _regenerator.default.wrap(function _callee6$(_context6) {
+      _regenerator.default.mark(function _callee4(url) {
+        return _regenerator.default.wrap(function _callee4$(_context4) {
           while (1) {
-            switch (_context6.prev = _context6.next) {
+            switch (_context4.prev = _context4.next) {
               case 0:
                 if (!(typeof url !== 'string')) {
-                  _context6.next = 2;
+                  _context4.next = 2;
                   break;
                 }
 
@@ -244,28 +160,28 @@ function () {
 
               case 2:
                 if (url.lastIndexOf('/') === url.length - 1) {
-                  LogAPI.url = url.substring(0, url.lastIndexOf('/'));
+                  MessageHubAPI.url = url.substring(0, url.lastIndexOf('/'));
                 } else {
-                  LogAPI.url = url;
+                  MessageHubAPI.url = url;
                 }
 
               case 3:
               case "end":
-                return _context6.stop();
+                return _context4.stop();
             }
           }
-        }, _callee6);
+        }, _callee4);
       }));
 
-      function initialize(_x5) {
+      function initialize(_x3) {
         return _initialize.apply(this, arguments);
       }
 
       return initialize;
     }()
   }]);
-  return LogAPI;
+  return MessageHubAPI;
 }();
 
-exports.default = LogAPI;
+exports.default = MessageHubAPI;
 module.exports = LogAPI;

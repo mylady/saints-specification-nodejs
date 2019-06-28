@@ -34,6 +34,8 @@ import TransmitMessageType from './predefined/tranmit-message-type';
 import FileHubAPI from './api/file-hub-api';
 import IdentityAPI from './api/identity-api';
 import LogAPI from './api/log-api';
+import EventAPI from './api/event-api';
+import MessageHubAPI from './api/message-hub-api';
 
 export default {
     Config:Config,
@@ -69,5 +71,7 @@ export default {
 
     FileHubAPI:FileHubAPI,
     IdentityAPI:IdentityAPI,
-    LogAPI:LogAPI
+    LogAPI:LogAPI,
+    EventAPI:EventAPI,
+    MessageHubAPI:MessageHubAPI
 }
