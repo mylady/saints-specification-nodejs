@@ -2,9 +2,9 @@
 
 //for biz message exchange
 export default class TransmitMessage {
-    constructor({ message_type, messge_content,socket_io_id }) {
+    constructor({ message_type, message_content,socket_io_id }) {
         this.message_type = message_type || 0;
-        this.message_content = messge_content || '';
+        this.message_content = message_content || '';
         this.socket_io_id = socket_io_id || '';
     }
 
