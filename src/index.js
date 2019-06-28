@@ -1,6 +1,7 @@
 'use strict';
 
 import Config from './predefined/config';
+import KafkaIO from './predefined/kafka-io';
 
 import AuthError from './klass/auth-error';
 
@@ -25,12 +26,18 @@ import Service from './klass/service';
 import ServiceRegister from './klass/service-register';
 import ServiceFinder from './klass/service-finder';
 
+import InternalMessage from './klass/internal-message';
+import TransmitMessage from './klass/transmit-message';
+import InternalMessageType from './predefined/internal-message-type';
+import TransmitMessageType from './predefined/tranmit-message-type';
+
 import FileHubAPI from './api/file-hub-api';
 import IdentityAPI from './api/identity-api';
 import LogAPI from './api/log-api';
 
 export default {
     Config:Config,
+    KafkaIO:KafkaIO,
 
     AuthError:AuthError,
 
@@ -54,6 +61,11 @@ export default {
     Service:Service,
     ServiceRegister:ServiceRegister,
     ServiceFinder:ServiceFinder,
+
+    InternalMessage:InternalMessage,
+    InternalMessageType:InternalMessageType,
+    TransmitMessage:TransmitMessage,
+    TransmitMessageType:TransmitMessageType,
 
     FileHubAPI:FileHubAPI,
     IdentityAPI:IdentityAPI,
