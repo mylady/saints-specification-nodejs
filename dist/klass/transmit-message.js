@@ -16,11 +16,11 @@ var TransmitMessage =
 function () {
   function TransmitMessage(_ref) {
     var message_type = _ref.message_type,
-        messge_content = _ref.messge_content,
+        message_content = _ref.message_content,
         socket_io_id = _ref.socket_io_id;
     (0, _classCallCheck2.default)(this, TransmitMessage);
     this.message_type = message_type || 0;
-    this.message_content = messge_content || '';
+    this.message_content = message_content || '';
     this.socket_io_id = socket_io_id || '';
   }
 
