@@ -1,6 +1,6 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "2.0.56",
+  "version": "2.0.57",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "scripts": {
