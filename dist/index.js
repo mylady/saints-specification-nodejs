@@ -23,8 +23,6 @@ var _interfaceCategory = _interopRequireDefault(require("./predefined/interface-
 
 var _serviceType = _interopRequireDefault(require("./predefined/service-type"));
 
-var _deviceStatus = _interopRequireDefault(require("./predefined/device-status"));
-
 var _envValue = _interopRequireDefault(require("./klass/env-value"));
 
 var _powerGridValue = _interopRequireDefault(require("./klass/power-grid-value"));
@@ -65,6 +63,12 @@ var _eventApi = _interopRequireDefault(require("./api/event-api"));
 
 var _messageHubApi = _interopRequireDefault(require("./api/message-hub-api"));
 
+var _deviceAlarmCode = _interopRequireDefault(require("./predefined/device-alarm-code"));
+
+var _deviceRealCode = _interopRequireDefault(require("./predefined/device-real-code"));
+
+var _deviceStatusCode = _interopRequireDefault(require("./predefined/device-status-code"));
+
 var _default = {
   Config: _config.default,
   KafkaIO: _kafkaIo.default,
@@ -74,7 +78,6 @@ var _default = {
   DeviceCode: _deviceCode.default,
   InterfaceCategory: _interfaceCategory.default,
   ServiceType: _serviceType.default,
-  DeviceStatus: _deviceStatus.default,
   EnvValue: _envValue.default,
   PowerGridValue: _powerGridValue.default,
   RFIDTagValue: _rfidtagValue.default,
@@ -94,6 +97,9 @@ var _default = {
   IdentityAPI: _identityApi.default,
   LogAPI: _logApi.default,
   EventAPI: _eventApi.default,
-  MessageHubAPI: _messageHubApi.default
+  MessageHubAPI: _messageHubApi.default,
+  DeviceAlarmCode: _deviceAlarmCode.default,
+  DeviceRealCode: _deviceRealCode.default,
+  DeviceStatusCode: _deviceStatusCode.default
 };
 exports.default = _default;

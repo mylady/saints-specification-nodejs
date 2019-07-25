@@ -10,13 +10,12 @@ import CameraType from './predefined/camera-type';
 import DeviceCode from './predefined/device-code';
 import InterfaceCategory from './predefined/interface-category';
 import ServiceType from './predefined/service-type';
-import DeviceStatus from './predefined/device-status';
 
 import EnvValue from './klass/env-value';
 import PowerGridValue from './klass/power-grid-value';
 import RFIDTagValue from './klass/rfidtag-value';
 import UPSValue from './klass/ups-value';
-import TwoDimension  from './klass/2d';
+import TwoDimension from './klass/2d';
 import ThreeDimension from './klass/3d';
 
 import RestQuery from './klass/rest-query';
@@ -37,41 +36,48 @@ import LogAPI from './api/log-api';
 import EventAPI from './api/event-api';
 import MessageHubAPI from './api/message-hub-api';
 
+import DeviceAlarmCode from './predefined/device-alarm-code';
+import DeviceRealCode from './predefined/device-real-code';
+import DeviceStatusCode from './predefined/device-status-code';
+
 export default {
-    Config:Config,
-    KafkaIO:KafkaIO,
+    Config: Config,
+    KafkaIO: KafkaIO,
 
-    AuthError:AuthError,
+    AuthError: AuthError,
 
-    AlarmType:AlarmType,
-    CameraType:CameraType,
-    DeviceCode:DeviceCode,
-    InterfaceCategory:InterfaceCategory,
-    ServiceType:ServiceType,
-    DeviceStatus:DeviceStatus,
-    
-    EnvValue:EnvValue,
-    PowerGridValue:PowerGridValue,
-    RFIDTagValue:RFIDTagValue,
-    UPSValue:UPSValue,
-    TwoDimension:TwoDimension,
-    ThreeDimension:ThreeDimension,
+    AlarmType: AlarmType,
+    CameraType: CameraType,
+    DeviceCode: DeviceCode,
+    InterfaceCategory: InterfaceCategory,
+    ServiceType: ServiceType,
 
-    RestQuery:RestQuery,
-    RestResponse:RestResponse,
+    EnvValue: EnvValue,
+    PowerGridValue: PowerGridValue,
+    RFIDTagValue: RFIDTagValue,
+    UPSValue: UPSValue,
+    TwoDimension: TwoDimension,
+    ThreeDimension: ThreeDimension,
 
-    Service:Service,
-    ServiceRegister:ServiceRegister,
-    ServiceFinder:ServiceFinder,
+    RestQuery: RestQuery,
+    RestResponse: RestResponse,
 
-    InternalMessage:InternalMessage,
-    InternalMessageType:InternalMessageType,
-    TransmitMessage:TransmitMessage,
-    TransmitMessageType:TransmitMessageType,
+    Service: Service,
+    ServiceRegister: ServiceRegister,
+    ServiceFinder: ServiceFinder,
 
-    FileHubAPI:FileHubAPI,
-    IdentityAPI:IdentityAPI,
-    LogAPI:LogAPI,
-    EventAPI:EventAPI,
-    MessageHubAPI:MessageHubAPI
+    InternalMessage: InternalMessage,
+    InternalMessageType: InternalMessageType,
+    TransmitMessage: TransmitMessage,
+    TransmitMessageType: TransmitMessageType,
+
+    FileHubAPI: FileHubAPI,
+    IdentityAPI: IdentityAPI,
+    LogAPI: LogAPI,
+    EventAPI: EventAPI,
+    MessageHubAPI: MessageHubAPI,
+
+    DeviceAlarmCode: DeviceAlarmCode,
+    DeviceRealCode: DeviceRealCode,
+    DeviceStatusCode: DeviceStatusCode
 }
