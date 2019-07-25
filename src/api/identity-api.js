@@ -128,5 +128,3 @@ export default class IdentityAPI {
         });
     }
 }
-
-module.exports = IdentityAPI;

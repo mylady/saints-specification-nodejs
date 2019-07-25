@@ -184,4 +184,3 @@ function () {
 }();
 
 exports.default = MessageHubAPI;
-module.exports = LogAPI;

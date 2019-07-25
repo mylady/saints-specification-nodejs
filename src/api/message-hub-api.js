@@ -50,5 +50,3 @@ export default class MessageHubAPI {
         });
     }
 }
-
-module.exports = LogAPI;

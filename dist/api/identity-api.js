@@ -406,4 +406,3 @@ function () {
 }();
 
 exports.default = IdentityAPI;
-module.exports = IdentityAPI;

@@ -268,4 +268,3 @@ function () {
 }();
 
 exports.default = LogAPI;
-module.exports = LogAPI;

@@ -76,5 +76,3 @@ export default class LogAPI {
         });
     }
 }
-
-module.exports = LogAPI;

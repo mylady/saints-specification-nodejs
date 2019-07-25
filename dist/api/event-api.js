@@ -184,4 +184,3 @@ function () {
 }();
 
 exports.default = EventAPI;
-module.exports = LogAPI;
