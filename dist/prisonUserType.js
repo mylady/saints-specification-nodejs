@@ -31,6 +31,14 @@ var prisonUserType = {
   registerArraignPolice: {
     name: '登记和提押干警',
     value: 5
+  },
+  districtPatrolPolice: {
+    name: '分控巡控干警',
+    value: 6
+  },
+  districtManagePolice: {
+    name: '分控管教干警',
+    value: 7
   }
 };
 Object.freeze(prisonUserType);
