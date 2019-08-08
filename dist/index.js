@@ -156,6 +156,8 @@ var _prisonMeetingQueueStatus = _interopRequireDefault(require("./prisonMeetingQ
 
 var _prisonStaffType = _interopRequireDefault(require("./prisonStaffType"));
 
+var _prisonRemindType = _interopRequireDefault(require("./prisonRemindType"));
+
 var _productIds = _interopRequireDefault(require("./productIds"));
 
 var _productInfo = _interopRequireDefault(require("./productInfo"));
@@ -348,6 +350,7 @@ var _default = {
   PrisonWorkNumberType: _prisonWorkNumberType.default,
   PrisonMeetingQueueStatus: _prisonMeetingQueueStatus.default,
   PrisonStaffType: _prisonStaffType.default,
+  PrisonRemindType: _prisonRemindType.default,
   ProductIds: _productIds.default,
   ProductInfo: _productInfo.default,
   ProductOS: _productOS.default,

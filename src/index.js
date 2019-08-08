@@ -91,6 +91,7 @@ import PrisonVisitType from './prisonVisitType';
 import PrisonWorkNumberType from './prisonWorkNumberType';
 import PrisonMeetingQueueStatus from './prisonMeetingQueueStatus';
 import PrisonStaffType from './prisonStaffType';
+import PrisonRemindType from './prisonRemindType';
 
 import ProductIds from './productIds';
 import ProductInfo from './productInfo';
@@ -243,6 +244,7 @@ export default {
     PrisonWorkNumberType: PrisonWorkNumberType,
     PrisonMeetingQueueStatus: PrisonMeetingQueueStatus,
     PrisonStaffType:PrisonStaffType,
+    PrisonRemindType:PrisonRemindType,
 
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
