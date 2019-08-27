@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var prisonMeetingUserType = {
   police: {
-    name: '干警',
+    name: '民警',
     value: 0
   },
   lawyer: {
@@ -22,7 +22,7 @@ var prisonMeetingUserType = {
     value: 3
   },
   court: {
-    name: '法院',
+    name: '法警',
     value: 4
   },
   other: {

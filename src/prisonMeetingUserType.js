@@ -2,7 +2,7 @@
 
 let prisonMeetingUserType = {
   police: {
-    name: '干警',
+    name: '民警',
     value: 0
   },
   lawyer: {
@@ -18,7 +18,7 @@ let prisonMeetingUserType = {
     value: 3
   },
   court: {
-    name: '法院',
+    name: '法警',
     value: 4
   },
   other:{
