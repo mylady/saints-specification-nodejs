@@ -67,6 +67,7 @@ import NicConfig from './nicConfig';
 
 import PrescriptionType from './prescriptionType';
 import PrisonBusinessType from './prisonBusinessType';
+import PrisonDutyTableType from './prisonDutyTableType';
 import PrisonerActivity from './prisonerActivity';
 import PrisonerDiagnosticMethod from './prisonerDiagnosticMethod';
 import PrisonerDispatchRequestStatus from './prisonerDispatchRequestStatus';
@@ -220,6 +221,7 @@ export default {
 
     PrescriptionType: PrescriptionType,
     PrisonBusinessType: PrisonBusinessType,
+    PrisonDutyTableType: PrisonDutyTableType,
     PrisonerActivity: PrisonerActivity,
     PrisonerDiagnosticMethod: PrisonerDiagnosticMethod,
     PrisonerDispatchRequestStatus: PrisonerDispatchRequestStatus,
@@ -243,8 +245,8 @@ export default {
     PrisonVisitType: PrisonVisitType,
     PrisonWorkNumberType: PrisonWorkNumberType,
     PrisonMeetingQueueStatus: PrisonMeetingQueueStatus,
-    PrisonStaffType:PrisonStaffType,
-    PrisonRemindType:PrisonRemindType,
+    PrisonStaffType: PrisonStaffType,
+    PrisonRemindType: PrisonRemindType,
 
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,

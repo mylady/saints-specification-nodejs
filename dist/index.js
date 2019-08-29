@@ -108,6 +108,8 @@ var _prescriptionType = _interopRequireDefault(require("./prescriptionType"));
 
 var _prisonBusinessType = _interopRequireDefault(require("./prisonBusinessType"));
 
+var _prisonDutyTableType = _interopRequireDefault(require("./prisonDutyTableType"));
+
 var _prisonerActivity = _interopRequireDefault(require("./prisonerActivity"));
 
 var _prisonerDiagnosticMethod = _interopRequireDefault(require("./prisonerDiagnosticMethod"));
@@ -326,6 +328,7 @@ var _default = {
   NicConfig: _nicConfig.default,
   PrescriptionType: _prescriptionType.default,
   PrisonBusinessType: _prisonBusinessType.default,
+  PrisonDutyTableType: _prisonDutyTableType.default,
   PrisonerActivity: _prisonerActivity.default,
   PrisonerDiagnosticMethod: _prisonerDiagnosticMethod.default,
   PrisonerDispatchRequestStatus: _prisonerDispatchRequestStatus.default,
