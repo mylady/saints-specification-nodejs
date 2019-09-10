@@ -412,6 +412,10 @@ var deviceInterfaceCode = {
     name: '趋石人脸识别接口',
     value: 99
   },
+  haikangISCPassive: {
+    name: '海康ISC平台消息推送接口',
+    value: 100
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
