@@ -39,6 +39,18 @@ var prisonUserType = {
   districtManagePolice: {
     name: '分控管教干警',
     value: 7
+  },
+  districtAdmin: {
+    name: '监区管理员',
+    value: 8
+  },
+  commandCenter: {
+    name: '指挥中心',
+    value: 9
+  },
+  leader: {
+    name: '所领导',
+    value: 10
   }
 };
 Object.freeze(prisonUserType);
