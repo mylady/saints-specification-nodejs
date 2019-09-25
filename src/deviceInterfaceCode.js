@@ -412,6 +412,10 @@ let deviceInterfaceCode = {
         name: '海康ISC平台消息推送接口',
         value: 100
     },
+    haikang8200ArtemisPlatformSDK:{
+        name: '海康8200Artemis平台',
+        value: 101
+    },
 
     //saints define
     shengxiDoorUDP: {
