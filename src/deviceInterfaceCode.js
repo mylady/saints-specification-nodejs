@@ -416,6 +416,10 @@ let deviceInterfaceCode = {
         name: '海康8200Artemis平台',
         value: 101
     },
+    kuaiyuDigitalBroadcastSDK:{
+        name: '快鱼数字广播',
+        value: 102
+    },
 
     //saints define
     shengxiDoorUDP: {

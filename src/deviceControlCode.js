@@ -95,6 +95,18 @@ let deviceControlCode = {
     resetArm:{
         name:'复位布防',
         value:22
+    },
+    stayClose:{
+        name:'戒严-常关',
+        value:23
+    },
+    resumeStatus:{
+        name:'恢复-常关',
+        value:24
+    },
+    voiceBroadcast:{
+        name:'语音广播',
+        value:25
     }
 };
 
