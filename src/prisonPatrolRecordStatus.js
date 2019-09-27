@@ -4,16 +4,16 @@
 'use strict';
 
 let prisonPatrolRecordStatus = {
-    commit: {
-        name: '提交',
+    manageConfirm: {
+        name: '待管教确认',
         value: 0
     },
-    appeal: {
-        name: '申诉',
+    adminAudit: {
+        name: '待领导审核',
         value: 1
     },
-    audit:{
-        name:'审核',
+    finish:{
+        name:'完成',
         value:2
     }
 };
