@@ -9,7 +9,7 @@ let prisonPatrolRecordStatus = {
         value: 0
     },
     adminAudit: {
-        name: '待领导审核',
+        name: '待中队长审核',
         value: 1
     },
     finish:{
