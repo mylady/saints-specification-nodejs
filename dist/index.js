@@ -162,6 +162,8 @@ var _prisonRemindType = _interopRequireDefault(require("./prisonRemindType"));
 
 var _prisonPatrolRecordStatus = _interopRequireDefault(require("./prisonPatrolRecordStatus"));
 
+var _prisonUserOperationType = _interopRequireDefault(require("./prisonUserOperationType"));
+
 var _productIds = _interopRequireDefault(require("./productIds"));
 
 var _productInfo = _interopRequireDefault(require("./productInfo"));
@@ -357,6 +359,7 @@ var _default = {
   PrisonStaffType: _prisonStaffType.default,
   PrisonRemindType: _prisonRemindType.default,
   PrisonPatrolRecordStatus: _prisonPatrolRecordStatus.default,
+  PrisonUserOperationType: _prisonUserOperationType.default,
   ProductIds: _productIds.default,
   ProductInfo: _productInfo.default,
   ProductOS: _productOS.default,
