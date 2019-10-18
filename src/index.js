@@ -95,6 +95,7 @@ import PrisonStaffType from './prisonStaffType';
 import PrisonRemindType from './prisonRemindType';
 import PrisonPatrolRecordStatus from './prisonPatrolRecordStatus';
 import PrisonUserOperationType from './prisonUserOperationType';
+import PrisonClueStatus from './prisonClueStatus';
 
 import ProductIds from './productIds';
 import ProductInfo from './productInfo';
@@ -251,6 +252,7 @@ export default {
     PrisonRemindType: PrisonRemindType,
     PrisonPatrolRecordStatus: PrisonPatrolRecordStatus,
     PrisonUserOperationType:PrisonUserOperationType,
+    PrisonClueStatus:PrisonClueStatus,
 
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
