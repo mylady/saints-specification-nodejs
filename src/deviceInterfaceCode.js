@@ -420,6 +420,10 @@ let deviceInterfaceCode = {
         name: '快鱼数字广播',
         value: 102
     },
+    hanweiAirMonitorUDP:{
+        name: '汉威空气质量监测',
+        value: 103
+    },
 
     //saints define
     shengxiDoorUDP: {
