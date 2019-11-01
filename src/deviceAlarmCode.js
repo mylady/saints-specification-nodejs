@@ -197,37 +197,45 @@ let deviceAlarmCode = {
         name: '火警',
         value: 47
     },
-    gathering:{
-        name:'人员聚集报警',
-        value:48
+    gathering: {
+        name: '人员聚集报警',
+        value: 48
     },
-    dutySleep:{
-        name:'值班睡觉',
-        value:49
+    dutySleep: {
+        name: '值班睡觉',
+        value: 49
     },
-    fight:{
-        name:'打架',
-        value:50
+    fight: {
+        name: '打架',
+        value: 50
     },
-    leftDuty:{
-        name:'无人值守',
-        value:51
+    leftDuty: {
+        name: '无人值守',
+        value: 51
     },
-    crossLine:{
-        name:'警戒线报警',
-        value:52
+    crossLine: {
+        name: '警戒线报警',
+        value: 52
     },
-    powergridOpenAlarm:{
-        name:'高压断网报警',
-        value:53
+    powergridOpenAlarm: {
+        name: '高压断网报警',
+        value: 53
     },
-    powergridTouchAlarm:{
-        name:'高压触网报警',
-        value:54
+    powergridTouchAlarm: {
+        name: '高压触网报警',
+        value: 54
     },
-    powergridShortAlarm:{
-        name:'高压短路报警',
-        value:55
+    powergridShortAlarm: {
+        name: '高压短路报警',
+        value: 55
+    },
+    perimeterAlarm: {
+        name: '周界报警',
+        value: 56
+    },
+    irAlarm: {
+        name: '红外报警',
+        value: 57
     }
 };
 

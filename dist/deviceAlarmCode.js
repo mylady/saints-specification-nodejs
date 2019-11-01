@@ -232,6 +232,14 @@ var deviceAlarmCode = {
   powergridShortAlarm: {
     name: '高压短路报警',
     value: 55
+  },
+  perimeterAlarm: {
+    name: '周界报警',
+    value: 56
+  },
+  irAlarm: {
+    name: '红外报警',
+    value: 57
   }
 };
 Object.freeze(deviceAlarmCode);
