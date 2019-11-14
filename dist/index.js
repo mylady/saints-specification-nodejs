@@ -192,6 +192,8 @@ var _rfidTagExtra = _interopRequireDefault(require("./rfidTagExtra"));
 
 var _schoolAffiliatedType = _interopRequireDefault(require("./schoolAffiliatedType"));
 
+var _schoolCanteenType = _interopRequireDefault(require("./schoolCanteenType"));
+
 var _schoolCategory = _interopRequireDefault(require("./schoolCategory"));
 
 var _schoolEmergencyType = _interopRequireDefault(require("./schoolEmergencyType"));
@@ -253,6 +255,10 @@ var _schoolCitizenReportUrgentLevel = _interopRequireDefault(require("./schoolCi
 var _schoolVacateType = _interopRequireDefault(require("./schoolVacateType"));
 
 var _schoolLogType = _interopRequireDefault(require("./schoolLogType"));
+
+var _schoolDiningType = _interopRequireDefault(require("./schoolDiningType"));
+
+var _schoolDiningProvideType = _interopRequireDefault(require("./schoolDiningProvideType"));
 
 var _specificationSettings = _interopRequireDefault(require("./specificationSettings"));
 
@@ -376,6 +382,7 @@ var _default = {
   RestResponse: _restReponse.default,
   RFIDTagExtra: _rfidTagExtra.default,
   SchoolAffiliatedType: _schoolAffiliatedType.default,
+  SchoolCanteenType: _schoolCanteenType.default,
   SchoolCategory: _schoolCategory.default,
   SchoolEmergencyType: _schoolEmergencyType.default,
   SchoolNature: _schoolNature.default,
@@ -407,6 +414,8 @@ var _default = {
   SchoolCitizenReportUrgentLevel: _schoolCitizenReportUrgentLevel.default,
   SchoolVacateType: _schoolVacateType.default,
   SchoolLogType: _schoolLogType.default,
+  SchoolDiningType: _schoolDiningType.default,
+  SchoolDiningProvideType: _schoolDiningProvideType.default,
   SpecificationSettings: _specificationSettings.default,
   TransmitMessage: _transmitMessage.default,
   TransmitMessageClient: _transmitMessageClient.default,

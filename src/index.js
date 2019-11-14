@@ -112,6 +112,7 @@ import RestResponse from './restReponse';
 import RFIDTagExtra from './rfidTagExtra';
 
 import SchoolAffiliatedType from './schoolAffiliatedType';
+import SchoolCanteenType from './schoolCanteenType';
 import SchoolCategory from './schoolCategory';
 import SchoolEmergencyType from './schoolEmergencyType';
 import SchoolNature from './schoolNature';
@@ -143,6 +144,8 @@ import SchoolCitizenReportTransferType from './schoolCitizenReportTransferType';
 import SchoolCitizenReportUrgentLevel from './schoolCitizenReportUrgentLevel';
 import SchoolVacateType from './schoolVacateType';
 import SchoolLogType from './schoolLogType';
+import SchoolDiningType from './schoolDiningType';
+import SchoolDiningProvideType from './schoolDiningProvideType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -251,8 +254,8 @@ export default {
     PrisonStaffType: PrisonStaffType,
     PrisonRemindType: PrisonRemindType,
     PrisonPatrolRecordStatus: PrisonPatrolRecordStatus,
-    PrisonUserOperationType:PrisonUserOperationType,
-    PrisonClueStatus:PrisonClueStatus,
+    PrisonUserOperationType: PrisonUserOperationType,
+    PrisonClueStatus: PrisonClueStatus,
 
     ProductIds: ProductIds,
     ProductInfo: ProductInfo,
@@ -269,6 +272,7 @@ export default {
     RFIDTagExtra: RFIDTagExtra,
 
     SchoolAffiliatedType: SchoolAffiliatedType,
+    SchoolCanteenType: SchoolCanteenType,
     SchoolCategory: SchoolCategory,
     SchoolEmergencyType: SchoolEmergencyType,
     SchoolNature: SchoolNature,
@@ -300,6 +304,8 @@ export default {
     SchoolCitizenReportUrgentLevel: SchoolCitizenReportUrgentLevel,
     SchoolVacateType: SchoolVacateType,
     SchoolLogType: SchoolLogType,
+    SchoolDiningType: SchoolDiningType,
+    SchoolDiningProvideType: SchoolDiningProvideType,
 
     SpecificationSettings: SpecificationSettings,
 
