@@ -8,6 +8,10 @@ let schoolCheckQuestionType = {
     count: {
         name: '数量题',
         value: 1
+    },
+    singleSelect: {
+        name: '选择题',
+        value: 2
     }
 };
 

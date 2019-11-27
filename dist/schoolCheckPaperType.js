@@ -49,9 +49,13 @@ var schoolCheckPaperType = {
     name: '安全管理',
     value: 10
   },
+  uniform: {
+    name: '校服安全',
+    value: 11
+  },
   others: {
     name: '其他',
-    value: 11
+    value: 100
   }
 };
 Object.freeze(schoolCheckPaperType);
