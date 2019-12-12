@@ -94,6 +94,7 @@ import PrisonMeetingQueueStatus from './prisonMeetingQueueStatus';
 import PrisonStaffType from './prisonStaffType';
 import PrisonRemindType from './prisonRemindType';
 import PrisonPatrolRecordStatus from './prisonPatrolRecordStatus';
+import PrisonPoliceAssessmentStatus from './prisonPoliceAssessmentStatus';
 import PrisonUserOperationType from './prisonUserOperationType';
 import PrisonClueStatus from './prisonClueStatus';
 
@@ -254,6 +255,7 @@ export default {
     PrisonStaffType: PrisonStaffType,
     PrisonRemindType: PrisonRemindType,
     PrisonPatrolRecordStatus: PrisonPatrolRecordStatus,
+    PrisonPoliceAssessmentStatus:PrisonPoliceAssessmentStatus,
     PrisonUserOperationType: PrisonUserOperationType,
     PrisonClueStatus: PrisonClueStatus,
 
