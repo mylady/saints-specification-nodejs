@@ -424,7 +424,7 @@ let deviceInterfaceCode = {
         name: '汉威空气质量监测',
         value: 103
     },
-    junLingUPSHttpServer:{
+    junlingUPSHttpServer:{
         name: '君凌用电检测',
         value: 104
     },
