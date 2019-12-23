@@ -428,6 +428,10 @@ var deviceInterfaceCode = {
     name: '汉威空气质量监测',
     value: 103
   },
+  junLingUPSHttpServer: {
+    name: '君凌用电检测',
+    value: 104
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
