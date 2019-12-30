@@ -1,34 +1,34 @@
 'use strict';
 
-import Config from './predefined/config';
-import KafkaIO from './predefined/kafka-io';
+import Config from './code/config';
+import KafkaIO from './code/kafka-io';
 
-import AuthError from './klass/auth-error';
+import AuthError from './types/auth-error';
 
-import AlarmType from './predefined/alarm-type';
-import CameraType from './predefined/camera-type';
-import DeviceCode from './predefined/device-code';
-import InterfaceCategory from './predefined/interface-category';
-import ServiceType from './predefined/service-type';
+import AlarmType from './code/alarm-type';
+import CameraType from './code/camera-type';
+import DeviceCode from './code/device-code';
+import InterfaceCategory from './code/interface-category';
+import ServiceType from './code/service-type';
 
-import EnvValue from './klass/env-value';
-import PowerGridValue from './klass/power-grid-value';
-import RFIDTagValue from './klass/rfidtag-value';
-import UPSValue from './klass/ups-value';
-import TwoDimension from './klass/2d';
-import ThreeDimension from './klass/3d';
+import EnvValue from './types/env-value';
+import PowerGridValue from './types/power-grid-value';
+import RFIDTagValue from './types/rfidtag-value';
+import UPSValue from './types/ups-value';
+import TwoDimension from './types/2d';
+import ThreeDimension from './types/3d';
 
-import RestQuery from './klass/rest-query';
-import RestResponse from './klass/rest-response';
+import RestQuery from './types/rest-query';
+import RestResponse from './types/rest-response';
 
-import Service from './klass/service';
-import ServiceRegister from './klass/service-register';
-import ServiceFinder from './klass/service-finder';
+import Service from './types/service';
+import ServiceRegister from './types/service-register';
+import ServiceFinder from './types/service-finder';
 
-import InternalMessage from './klass/internal-message';
-import TransmitMessage from './klass/transmit-message';
-import InternalMessageType from './predefined/internal-message-type';
-import TransmitMessageType from './predefined/tranmit-message-type';
+import InternalMessage from './types/internal-message';
+import TransmitMessage from './types/transmit-message';
+import InternalMessageType from './code/internal-message-type';
+import TransmitMessageType from './code/tranmit-message-type';
 
 import FileHubAPI from './api/file-hub-api';
 import IdentityAPI from './api/identity-api';
@@ -36,9 +36,9 @@ import LogAPI from './api/log-api';
 import EventAPI from './api/event-api';
 import MessageHubAPI from './api/message-hub-api';
 
-import DeviceAlarmCode from './predefined/device-alarm-code';
-import DeviceRealCode from './predefined/device-real-code';
-import DeviceStatusCode from './predefined/device-status-code';
+import DeviceAlarmCode from './code/device-alarm-code';
+import DeviceRealCode from './code/device-real-code';
+import DeviceStatusCode from './code/device-status-code';
 
 export default {
     Config: Config,
