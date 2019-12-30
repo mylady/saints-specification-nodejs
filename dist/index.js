@@ -7,51 +7,51 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _config = _interopRequireDefault(require("./predefined/config"));
+var _config = _interopRequireDefault(require("./code/config"));
 
-var _kafkaIo = _interopRequireDefault(require("./predefined/kafka-io"));
+var _kafkaIo = _interopRequireDefault(require("./code/kafka-io"));
 
-var _authError = _interopRequireDefault(require("./klass/auth-error"));
+var _authError = _interopRequireDefault(require("./types/auth-error"));
 
-var _alarmType = _interopRequireDefault(require("./predefined/alarm-type"));
+var _alarmType = _interopRequireDefault(require("./code/alarm-type"));
 
-var _cameraType = _interopRequireDefault(require("./predefined/camera-type"));
+var _cameraType = _interopRequireDefault(require("./code/camera-type"));
 
-var _deviceCode = _interopRequireDefault(require("./predefined/device-code"));
+var _deviceCode = _interopRequireDefault(require("./code/device-code"));
 
-var _interfaceCategory = _interopRequireDefault(require("./predefined/interface-category"));
+var _interfaceCategory = _interopRequireDefault(require("./code/interface-category"));
 
-var _serviceType = _interopRequireDefault(require("./predefined/service-type"));
+var _serviceType = _interopRequireDefault(require("./code/service-type"));
 
-var _envValue = _interopRequireDefault(require("./klass/env-value"));
+var _envValue = _interopRequireDefault(require("./types/env-value"));
 
-var _powerGridValue = _interopRequireDefault(require("./klass/power-grid-value"));
+var _powerGridValue = _interopRequireDefault(require("./types/power-grid-value"));
 
-var _rfidtagValue = _interopRequireDefault(require("./klass/rfidtag-value"));
+var _rfidtagValue = _interopRequireDefault(require("./types/rfidtag-value"));
 
-var _upsValue = _interopRequireDefault(require("./klass/ups-value"));
+var _upsValue = _interopRequireDefault(require("./types/ups-value"));
 
-var _d = _interopRequireDefault(require("./klass/2d"));
+var _d = _interopRequireDefault(require("./types/2d"));
 
-var _d2 = _interopRequireDefault(require("./klass/3d"));
+var _d2 = _interopRequireDefault(require("./types/3d"));
 
-var _restQuery = _interopRequireDefault(require("./klass/rest-query"));
+var _restQuery = _interopRequireDefault(require("./types/rest-query"));
 
-var _restResponse = _interopRequireDefault(require("./klass/rest-response"));
+var _restResponse = _interopRequireDefault(require("./types/rest-response"));
 
-var _service = _interopRequireDefault(require("./klass/service"));
+var _service = _interopRequireDefault(require("./types/service"));
 
-var _serviceRegister = _interopRequireDefault(require("./klass/service-register"));
+var _serviceRegister = _interopRequireDefault(require("./types/service-register"));
 
-var _serviceFinder = _interopRequireDefault(require("./klass/service-finder"));
+var _serviceFinder = _interopRequireDefault(require("./types/service-finder"));
 
-var _internalMessage = _interopRequireDefault(require("./klass/internal-message"));
+var _internalMessage = _interopRequireDefault(require("./types/internal-message"));
 
-var _transmitMessage = _interopRequireDefault(require("./klass/transmit-message"));
+var _transmitMessage = _interopRequireDefault(require("./types/transmit-message"));
 
-var _internalMessageType = _interopRequireDefault(require("./predefined/internal-message-type"));
+var _internalMessageType = _interopRequireDefault(require("./code/internal-message-type"));
 
-var _tranmitMessageType = _interopRequireDefault(require("./predefined/tranmit-message-type"));
+var _tranmitMessageType = _interopRequireDefault(require("./code/tranmit-message-type"));
 
 var _fileHubApi = _interopRequireDefault(require("./api/file-hub-api"));
 
@@ -63,11 +63,11 @@ var _eventApi = _interopRequireDefault(require("./api/event-api"));
 
 var _messageHubApi = _interopRequireDefault(require("./api/message-hub-api"));
 
-var _deviceAlarmCode = _interopRequireDefault(require("./predefined/device-alarm-code"));
+var _deviceAlarmCode = _interopRequireDefault(require("./code/device-alarm-code"));
 
-var _deviceRealCode = _interopRequireDefault(require("./predefined/device-real-code"));
+var _deviceRealCode = _interopRequireDefault(require("./code/device-real-code"));
 
-var _deviceStatusCode = _interopRequireDefault(require("./predefined/device-status-code"));
+var _deviceStatusCode = _interopRequireDefault(require("./code/device-status-code"));
 
 var _default = {
   Config: _config.default,
