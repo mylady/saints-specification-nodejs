@@ -432,6 +432,10 @@ var deviceInterfaceCode = {
     name: '君凌用电检测',
     value: 104
   },
+  maoteRFIDREST: {
+    name: '懋特人员定位',
+    value: 105
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
