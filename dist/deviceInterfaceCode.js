@@ -440,6 +440,10 @@ var deviceInterfaceCode = {
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
     value: 10001
+  },
+  shengxiEnvUPSHttpServer: {
+    name: '圣熙动力环境接口',
+    value: 10002
   }
 };
 Object.freeze(deviceInterfaceCode);
