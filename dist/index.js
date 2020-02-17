@@ -262,6 +262,8 @@ var _schoolDiningType = _interopRequireDefault(require("./schoolDiningType"));
 
 var _schoolDiningProvideType = _interopRequireDefault(require("./schoolDiningProvideType"));
 
+var _schoolSecurityGroupCustomType = _interopRequireDefault(require("./schoolSecurityGroupCustomType"));
+
 var _specificationSettings = _interopRequireDefault(require("./specificationSettings"));
 
 var _transmitMessage = _interopRequireDefault(require("./transmitMessage"));
@@ -419,6 +421,7 @@ var _default = {
   SchoolLogType: _schoolLogType.default,
   SchoolDiningType: _schoolDiningType.default,
   SchoolDiningProvideType: _schoolDiningProvideType.default,
+  SchoolSecurityGroupCustomType: _schoolSecurityGroupCustomType.default,
   SpecificationSettings: _specificationSettings.default,
   TransmitMessage: _transmitMessage.default,
   TransmitMessageClient: _transmitMessageClient.default,

@@ -147,6 +147,7 @@ import SchoolVacateType from './schoolVacateType';
 import SchoolLogType from './schoolLogType';
 import SchoolDiningType from './schoolDiningType';
 import SchoolDiningProvideType from './schoolDiningProvideType';
+import SchoolSecurityGroupCustomType from './schoolSecurityGroupCustomType';
 
 import SpecificationSettings from './specificationSettings';
 
@@ -165,6 +166,7 @@ import VideoRecordSource from './videoRecordSource';
 import VideoRecordStatus from './videoRecordStatus';
 import VideoStorageType from './videoStorageType';
 import VoicePrint from './voicePrint';
+import schoolSecurityGroupCustomType from './schoolSecurityGroupCustomType';
 
 export default {
     AirMonitorExtra: AirMonitorExtra,
@@ -308,6 +310,7 @@ export default {
     SchoolLogType: SchoolLogType,
     SchoolDiningType: SchoolDiningType,
     SchoolDiningProvideType: SchoolDiningProvideType,
+    SchoolSecurityGroupCustomType:SchoolSecurityGroupCustomType,
 
     SpecificationSettings: SpecificationSettings,
 
