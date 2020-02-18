@@ -52,6 +52,34 @@ var schoolLicenseType = {
   specialDeviceOperation: {
     name: '特殊设备操作证',
     value: 11
+  },
+  busCheck: {
+    name: '车辆年检证明',
+    value: 12
+  },
+  securityGuard: {
+    name: '保安证',
+    value: 13
+  },
+  maintain: {
+    name: '维保日期',
+    value: 14
+  },
+  test: {
+    name: '测试日期',
+    value: 15
+  },
+  decay: {
+    name: '报废日期',
+    value: 16
+  },
+  maintainExpire: {
+    name: '维保过期',
+    value: 17
+  },
+  check: {
+    name: '检测日期',
+    value: 18
   }
 };
 Object.freeze(schoolLicenseType);
