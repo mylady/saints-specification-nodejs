@@ -52,6 +52,14 @@ var schoolNoticeType = {
   urgeCenterNotification: {
     name: '催促教育局公告',
     value: 11
+  },
+  enquiryNotice: {
+    name: '调查问卷通知',
+    value: 12
+  },
+  safetyReportNotice: {
+    name: '平安上报通知',
+    value: 13
   }
 };
 Object.freeze(schoolNoticeType);
