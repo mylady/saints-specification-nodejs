@@ -36,11 +36,11 @@ import DigitalLayout from './digitalLayout';
 import DigitalLayoutArea from './digitalLayoutArea';
 import DigitalMarquee from './digitalMarquee';
 import DigitalTerminalType from './digitalTerminalType';
-import {
-    ProductRegister,
-    ServiceRegister,
-    ServiceDiscovery
-} from './discovery';
+// import {
+//     ProductRegister,
+//     ServiceRegister,
+//     ServiceDiscovery
+// } from './discovery';
 import DiskInfo from './diskInfo';
 import DoorExtra from './doorExtra';
 

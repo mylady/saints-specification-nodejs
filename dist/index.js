@@ -68,8 +68,6 @@ var _digitalMarquee = _interopRequireDefault(require("./digitalMarquee"));
 
 var _digitalTerminalType = _interopRequireDefault(require("./digitalTerminalType"));
 
-var _discovery = require("./discovery");
-
 var _diskInfo = _interopRequireDefault(require("./diskInfo"));
 
 var _doorExtra = _interopRequireDefault(require("./doorExtra"));
@@ -292,6 +290,11 @@ var _videoStorageType = _interopRequireDefault(require("./videoStorageType"));
 
 var _voicePrint = _interopRequireDefault(require("./voicePrint"));
 
+// import {
+//     ProductRegister,
+//     ServiceRegister,
+//     ServiceDiscovery
+// } from './discovery';
 var _default = {
   AirMonitorExtra: _airMonitorExtra.default,
   AppointmentStatus: _appointmentStatus.default,
@@ -322,9 +325,9 @@ var _default = {
   DigitalLayoutArea: _digitalLayoutArea.default,
   DigitalMarquee: _digitalMarquee.default,
   DigitalTerminalType: _digitalTerminalType.default,
-  ProductRegister: _discovery.ProductRegister,
-  ServiceRegister: _discovery.ServiceRegister,
-  ServiceDiscovery: _discovery.ServiceDiscovery,
+  ProductRegister: ProductRegister,
+  ServiceRegister: ServiceRegister,
+  ServiceDiscovery: ServiceDiscovery,
   DiskInfo: _diskInfo.default,
   DoorExtra: _doorExtra.default,
   EnvMonitorExtra: _envMonitorExtra.default,
