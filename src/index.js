@@ -201,9 +201,9 @@ export default {
     DigitalLayoutArea: DigitalLayoutArea,
     DigitalMarquee: DigitalMarquee,
     DigitalTerminalType: DigitalTerminalType,
-    ProductRegister: ProductRegister,
-    ServiceRegister: ServiceRegister,
-    ServiceDiscovery: ServiceDiscovery,
+    // ProductRegister: ProductRegister,
+    // ServiceRegister: ServiceRegister,
+    // ServiceDiscovery: ServiceDiscovery,
     DiskInfo: DiskInfo,
     DoorExtra: DoorExtra,
 
