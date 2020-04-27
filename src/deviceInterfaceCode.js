@@ -408,30 +408,61 @@ let deviceInterfaceCode = {
         name: '趋石人脸识别接口',
         value: 99
     },
-    haikangISCPassive:{
+    haikangISCPassive: {
         name: '海康ISC平台消息推送接口',
         value: 100
     },
-    haikang8200ArtemisPlatformSDK:{
+    haikang8200ArtemisPlatformSDK: {
         name: '海康8200Artemis平台',
         value: 101
     },
-    kuaiyuDigitalBroadcastSDK:{
+    kuaiyuDigitalBroadcastSDK: {
         name: '快鱼数字广播',
         value: 102
     },
-    hanweiAirMonitorUDP:{
+    hanweiAirMonitorUDP: {
         name: '汉威空气质量监测',
         value: 103
     },
-    junlingUPSHttpServer:{
+    junlingUPSHttpServer: {
         name: '君凌用电检测',
         value: 104
     },
-    maoteRFIDREST:{
+    maoteRFIDREST: {
         name: '懋特人员定位',
         value: 105
     },
+
+    meiDiAirConditionModbusSERIAL: {
+        name: '美的空调控制接口',
+        value: 106
+    },
+    meiDiAirConditionModbusTCP: {
+        name: '美的空调控制接口',
+        value: 107
+    },
+    yongLinRelaySERIAL: {
+        name: '永林继电器串口控制器',
+        value: 108
+    },
+    yongLinRelayTCP: {
+        name: '永林继电器网络控制器',
+        value: 109
+    },
+    biYiTeRelaySERIAL: {
+        name: '比益特电窗串口控制器',
+        value: 110
+    },
+    biYiTeRelayTCP: {
+        name: '比益特电窗网络控制器',
+        value: 111
+    },
+    songJiangAlarmHostTCP: {
+        name: '松江消防报警主机',
+        value: 112
+    },
+
+
 
     //saints define
     shengxiDoorUDP: {
