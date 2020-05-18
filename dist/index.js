@@ -130,6 +130,8 @@ var _prisonMeetingRegisterType = _interopRequireDefault(require("./prisonMeeting
 
 var _prisonMeetingStatus = _interopRequireDefault(require("./prisonMeetingStatus"));
 
+var _prisonMeetingReservationStatus = _interopRequireDefault(require("./prisonMeetingReservationStatus"));
+
 var _prisonMeetingType = _interopRequireDefault(require("./prisonMeetingType"));
 
 var _prisonMeetingUserType = _interopRequireDefault(require("./prisonMeetingUserType"));
@@ -359,6 +361,7 @@ var _default = {
   PrisonerRollCallType: _prisonerRollCallType.default,
   PrisonMeetingRegisterType: _prisonMeetingRegisterType.default,
   PrisonMeetingStatus: _prisonMeetingStatus.default,
+  prisonMeetingReservationStatus: prisonMeetingReservationStatus,
   PrisonMeetingType: _prisonMeetingType.default,
   PrisonMeetingUserType: _prisonMeetingUserType.default,
   PrisonMessage: _prisonMessage.default,

@@ -79,6 +79,7 @@ import PrisonerRollCallResult from './prisonerRollCallResult';
 import PrisonerRollCallType from './prisonerRollCallType';
 import PrisonMeetingRegisterType from './prisonMeetingRegisterType';
 import PrisonMeetingStatus from './prisonMeetingStatus';
+import PrisonReservationStatus from './prisonMeetingReservationStatus';
 import PrisonMeetingType from './prisonMeetingType';
 import PrisonMeetingUserType from './prisonMeetingUserType';
 import PrisonMessage from './prisonMessage';
@@ -242,6 +243,7 @@ export default {
     PrisonerRollCallType: PrisonerRollCallType,
     PrisonMeetingRegisterType: PrisonMeetingRegisterType,
     PrisonMeetingStatus: PrisonMeetingStatus,
+    prisonMeetingReservationStatus:prisonMeetingReservationStatus,
     PrisonMeetingType: PrisonMeetingType,
     PrisonMeetingUserType: PrisonMeetingUserType,
     PrisonMessage: PrisonMessage,
