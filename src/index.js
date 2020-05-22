@@ -79,7 +79,7 @@ import PrisonerRollCallResult from './prisonerRollCallResult';
 import PrisonerRollCallType from './prisonerRollCallType';
 import PrisonMeetingRegisterType from './prisonMeetingRegisterType';
 import PrisonMeetingStatus from './prisonMeetingStatus';
-import PrisonReservationStatus from './prisonMeetingReservationStatus';
+import PrisonMeetingReservationStatus from './prisonMeetingReservationStatus';
 import PrisonMeetingType from './prisonMeetingType';
 import PrisonMeetingUserType from './prisonMeetingUserType';
 import PrisonMessage from './prisonMessage';
@@ -126,6 +126,7 @@ import SchoolCheckQuestionStatus from './schoolCheckQuestionStatus';
 import SchoolCheckRedressStatus from './schoolCheckRedressStatus';
 import SchoolCheckTaskStatus from './schoolCheckTaskStatus';
 import SchoolCheckType from './schoolCheckType';
+import SchoolUserSignupType from './schoolUserSignupType';
 import SchoolUserType from './schoolUserType';
 import SchoolCheckResult from './schoolCheckResult';
 import SchoolChemicalType from './schoolChemicalType';
@@ -243,7 +244,7 @@ export default {
     PrisonerRollCallType: PrisonerRollCallType,
     PrisonMeetingRegisterType: PrisonMeetingRegisterType,
     PrisonMeetingStatus: PrisonMeetingStatus,
-    prisonMeetingReservationStatus:prisonMeetingReservationStatus,
+    PrisonMeetingReservationStatus:PrisonMeetingReservationStatus,
     PrisonMeetingType: PrisonMeetingType,
     PrisonMeetingUserType: PrisonMeetingUserType,
     PrisonMessage: PrisonMessage,
@@ -292,6 +293,7 @@ export default {
     SchoolCheckType: SchoolCheckType,
     SchoolChemicalType: SchoolChemicalType,
     SchoolCheckResult: SchoolCheckResult,
+    SchoolUserSignupType:SchoolUserSignupType,
     SchoolUserType: SchoolUserType,
     SchoolReportActivityType: SchoolReportActivityType,
     SchoolReportActivityCategory: SchoolReportActivityCategory,

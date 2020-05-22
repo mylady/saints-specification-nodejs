@@ -218,6 +218,8 @@ var _schoolCheckTaskStatus = _interopRequireDefault(require("./schoolCheckTaskSt
 
 var _schoolCheckType = _interopRequireDefault(require("./schoolCheckType"));
 
+var _schoolUserSignupType = _interopRequireDefault(require("./schoolUserSignupType"));
+
 var _schoolUserType = _interopRequireDefault(require("./schoolUserType"));
 
 var _schoolCheckResult = _interopRequireDefault(require("./schoolCheckResult"));
@@ -361,7 +363,7 @@ var _default = {
   PrisonerRollCallType: _prisonerRollCallType.default,
   PrisonMeetingRegisterType: _prisonMeetingRegisterType.default,
   PrisonMeetingStatus: _prisonMeetingStatus.default,
-  prisonMeetingReservationStatus: prisonMeetingReservationStatus,
+  PrisonMeetingReservationStatus: _prisonMeetingReservationStatus.default,
   PrisonMeetingType: _prisonMeetingType.default,
   PrisonMeetingUserType: _prisonMeetingUserType.default,
   PrisonMessage: _prisonMessage.default,
@@ -407,6 +409,7 @@ var _default = {
   SchoolCheckType: _schoolCheckType.default,
   SchoolChemicalType: _schoolChemicalType.default,
   SchoolCheckResult: _schoolCheckResult.default,
+  SchoolUserSignupType: _schoolUserSignupType.default,
   SchoolUserType: _schoolUserType.default,
   SchoolReportActivityType: _schoolReportActivityType.default,
   SchoolReportActivityCategory: _schoolReportActivityCategory.default,
