@@ -15,21 +15,20 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var config = require('./../predefined/config'),
-    rp = require('request-promise'),
-    serviceIPHolder = "ip",
+var rp = require('request-promise'),
+    serviceIPHolder = "address",
     serviceRegisterInterval = 10,
-    registerAddress = "http://ip:".concat(config.serviceHubPort, "/rest/register");
+    registerAddress = "http://address/rest/register";
 
 var ServiceRegister =
 /*#__PURE__*/
 function () {
-  function ServiceRegister(ip, service) {
+  function ServiceRegister(address, service) {
     (0, _classCallCheck2.default)(this, ServiceRegister);
     this.running = false;
     this.timer = null;
     this.service = service;
-    this.hub = registerAddress.replace(serviceIPHolder, ip);
+    this.hub = registerAddress.replace(serviceIPHolder, address);
   }
 
   (0, _createClass2.default)(ServiceRegister, [{
