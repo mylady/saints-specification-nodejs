@@ -16,15 +16,16 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var rp = require('request-promise'),
-    serviceIPHolder = "address",
-    hubAddress = "http://address/rest";
+    config = require('../code/config'),
+    serviceIPHolder = "ip",
+    hubAddress = "http://ip:".concat(config.serviceHubPort, "/rest");
 
 var ServiceFinder =
 /*#__PURE__*/
 function () {
-  function ServiceFinder(address) {
+  function ServiceFinder(ip) {
     (0, _classCallCheck2.default)(this, ServiceFinder);
-    this.hub = hubAddress.replace(serviceIPHolder, address);
+    this.hub = hubAddress.replace(serviceIPHolder, ip);
   }
 
   (0, _createClass2.default)(ServiceFinder, [{

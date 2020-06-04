@@ -1,16 +1,17 @@
 'use strict';
 
 const  rp = require('request-promise'),
-    serviceIPHolder = "address",
+    config = require('../code/config'),
+    serviceIPHolder = "ip",
     serviceRegisterInterval = 10,
-    registerAddress = `http://address/rest/register`;
+    registerAddress = `http://ip:${config.serviceHubPort}/rest/register`;
 
 export default class ServiceRegister {
-    constructor(address, service) {
+    constructor(ip, service) {
         this.running = false;
         this.timer = null;
         this.service = service;
-        this.hub = registerAddress.replace(serviceIPHolder, address);
+        this.hub = registerAddress.replace(serviceIPHolder, ip);
     }
 
     start() {

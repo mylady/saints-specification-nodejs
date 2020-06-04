@@ -1,12 +1,13 @@
 'use strict';
 
 const rp = require('request-promise'),
-    serviceIPHolder = "address",
-    hubAddress = `http://address/rest`;
+    config = require('../code/config'),
+    serviceIPHolder = "ip",
+    hubAddress = `http://ip:${config.serviceHubPort}/rest`;
 
 export default class ServiceFinder {
-    constructor(address) {
-        this.hub = hubAddress.replace(serviceIPHolder, address);
+    constructor(ip) {
+        this.hub = hubAddress.replace(serviceIPHolder, ip);
     }
 
     async listService() {
