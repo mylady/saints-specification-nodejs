@@ -30,12 +30,6 @@ import TransmitMessage from './types/transmit-message';
 import InternalMessageType from './code/internal-message-type';
 import TransmitMessageType from './code/tranmit-message-type';
 
-import FileHubAPI from './api/file-hub-api';
-import IdentityAPI from './api/identity-api';
-import LogAPI from './api/log-api';
-import EventAPI from './api/event-api';
-import MessageHubAPI from './api/message-hub-api';
-
 import DeviceAlarmCode from './code/device-alarm-code';
 import DeviceRealCode from './code/device-real-code';
 import DeviceStatusCode from './code/device-status-code';
@@ -70,12 +64,6 @@ export default {
     InternalMessageType: InternalMessageType,
     TransmitMessage: TransmitMessage,
     TransmitMessageType: TransmitMessageType,
-
-    FileHubAPI: FileHubAPI,
-    IdentityAPI: IdentityAPI,
-    LogAPI: LogAPI,
-    EventAPI: EventAPI,
-    MessageHubAPI: MessageHubAPI,
 
     DeviceAlarmCode: DeviceAlarmCode,
     DeviceRealCode: DeviceRealCode,

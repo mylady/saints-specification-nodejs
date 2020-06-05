@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceCode = {
   '0': '摄像头',
   '1': '门禁点',
@@ -33,4 +33,4 @@ var deviceCode = {
 };
 Object.freeze(deviceCode);
 var _default = deviceCode;
-exports.default = _default;
+exports["default"] = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceAlarmCode = {
   '-1': '未知类型',
   '0': '防区报警',
@@ -51,4 +51,4 @@ var deviceAlarmCode = {
 };
 Object.freeze(deviceAlarmCode);
 var _default = deviceAlarmCode;
-exports.default = _default;
+exports["default"] = _default;

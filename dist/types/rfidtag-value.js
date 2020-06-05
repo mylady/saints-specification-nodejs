@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
@@ -14,11 +14,11 @@ var RFIDTagValue = function RFIDTagValue(_ref) {
       y = _ref.y,
       battery = _ref.battery,
       heart_rate = _ref.heart_rate;
-  (0, _classCallCheck2.default)(this, RFIDTagValue);
+  (0, _classCallCheck2["default"])(this, RFIDTagValue);
   this.x = x || 0.0;
   this.y = y || 0.0;
   this.battery = battery || 0.0;
   this.heart_rate = heart_rate || 0.0;
 };
 
-exports.default = RFIDTagValue;
+exports["default"] = RFIDTagValue;

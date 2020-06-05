@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var interfaceCategory = {
   '0': '海康威视视频设备通用接口',
   '1': '大华视频设备通用接口',
@@ -105,4 +105,4 @@ var interfaceCategory = {
 };
 Object.freeze(interfaceCategory);
 var _default = interfaceCategory;
-exports.default = _default;
+exports["default"] = _default;

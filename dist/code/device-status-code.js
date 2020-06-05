@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceStatusCode = {
   '-1': '未知类型',
   '0': '故障',
@@ -19,4 +19,4 @@ var deviceStatusCode = {
 };
 Object.freeze(deviceStatusCode);
 var _default = deviceStatusCode;
-exports.default = _default;
+exports["default"] = _default;

@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _config = _interopRequireDefault(require("./code/config"));
 
@@ -53,16 +53,6 @@ var _internalMessageType = _interopRequireDefault(require("./code/internal-messa
 
 var _tranmitMessageType = _interopRequireDefault(require("./code/tranmit-message-type"));
 
-var _fileHubApi = _interopRequireDefault(require("./api/file-hub-api"));
-
-var _identityApi = _interopRequireDefault(require("./api/identity-api"));
-
-var _logApi = _interopRequireDefault(require("./api/log-api"));
-
-var _eventApi = _interopRequireDefault(require("./api/event-api"));
-
-var _messageHubApi = _interopRequireDefault(require("./api/message-hub-api"));
-
 var _deviceAlarmCode = _interopRequireDefault(require("./code/device-alarm-code"));
 
 var _deviceRealCode = _interopRequireDefault(require("./code/device-real-code"));
@@ -70,36 +60,31 @@ var _deviceRealCode = _interopRequireDefault(require("./code/device-real-code"))
 var _deviceStatusCode = _interopRequireDefault(require("./code/device-status-code"));
 
 var _default = {
-  Config: _config.default,
-  KafkaIO: _kafkaIo.default,
-  AuthError: _authError.default,
-  AlarmType: _alarmType.default,
-  CameraType: _cameraType.default,
-  DeviceCode: _deviceCode.default,
-  InterfaceCategory: _interfaceCategory.default,
-  ServiceType: _serviceType.default,
-  EnvValue: _envValue.default,
-  PowerGridValue: _powerGridValue.default,
-  RFIDTagValue: _rfidtagValue.default,
-  UPSValue: _upsValue.default,
-  TwoDimension: _d.default,
-  ThreeDimension: _d2.default,
-  RestQuery: _restQuery.default,
-  RestResponse: _restResponse.default,
-  Service: _service.default,
-  ServiceRegister: _serviceRegister.default,
-  ServiceFinder: _serviceFinder.default,
-  InternalMessage: _internalMessage.default,
-  InternalMessageType: _internalMessageType.default,
-  TransmitMessage: _transmitMessage.default,
-  TransmitMessageType: _tranmitMessageType.default,
-  FileHubAPI: _fileHubApi.default,
-  IdentityAPI: _identityApi.default,
-  LogAPI: _logApi.default,
-  EventAPI: _eventApi.default,
-  MessageHubAPI: _messageHubApi.default,
-  DeviceAlarmCode: _deviceAlarmCode.default,
-  DeviceRealCode: _deviceRealCode.default,
-  DeviceStatusCode: _deviceStatusCode.default
+  Config: _config["default"],
+  KafkaIO: _kafkaIo["default"],
+  AuthError: _authError["default"],
+  AlarmType: _alarmType["default"],
+  CameraType: _cameraType["default"],
+  DeviceCode: _deviceCode["default"],
+  InterfaceCategory: _interfaceCategory["default"],
+  ServiceType: _serviceType["default"],
+  EnvValue: _envValue["default"],
+  PowerGridValue: _powerGridValue["default"],
+  RFIDTagValue: _rfidtagValue["default"],
+  UPSValue: _upsValue["default"],
+  TwoDimension: _d["default"],
+  ThreeDimension: _d2["default"],
+  RestQuery: _restQuery["default"],
+  RestResponse: _restResponse["default"],
+  Service: _service["default"],
+  ServiceRegister: _serviceRegister["default"],
+  ServiceFinder: _serviceFinder["default"],
+  InternalMessage: _internalMessage["default"],
+  InternalMessageType: _internalMessageType["default"],
+  TransmitMessage: _transmitMessage["default"],
+  TransmitMessageType: _tranmitMessageType["default"],
+  DeviceAlarmCode: _deviceAlarmCode["default"],
+  DeviceRealCode: _deviceRealCode["default"],
+  DeviceStatusCode: _deviceStatusCode["default"]
 };
-exports.default = _default;
+exports["default"] = _default;

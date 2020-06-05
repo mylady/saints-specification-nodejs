@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -20,21 +20,17 @@ var rp = require('request-promise'),
     serviceIPHolder = "ip",
     hubAddress = "http://ip:".concat(config.serviceHubPort, "/rest");
 
-var ServiceFinder =
-/*#__PURE__*/
-function () {
+var ServiceFinder = /*#__PURE__*/function () {
   function ServiceFinder(ip) {
-    (0, _classCallCheck2.default)(this, ServiceFinder);
+    (0, _classCallCheck2["default"])(this, ServiceFinder);
     this.hub = hubAddress.replace(serviceIPHolder, ip);
   }
 
-  (0, _createClass2.default)(ServiceFinder, [{
+  (0, _createClass2["default"])(ServiceFinder, [{
     key: "listService",
     value: function () {
-      var _listService = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee() {
-        return _regenerator.default.wrap(function _callee$(_context) {
+      var _listService = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee() {
+        return _regenerator["default"].wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
@@ -65,10 +61,8 @@ function () {
   }, {
     key: "searchService",
     value: function () {
-      var _searchService = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee2(serviceType) {
-        return _regenerator.default.wrap(function _callee2$(_context2) {
+      var _searchService = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(serviceType) {
+        return _regenerator["default"].wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
@@ -103,4 +97,4 @@ function () {
   return ServiceFinder;
 }();
 
-exports.default = ServiceFinder;
+exports["default"] = ServiceFinder;

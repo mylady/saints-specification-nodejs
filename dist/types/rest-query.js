@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
@@ -15,7 +15,7 @@ var RestQuery = function RestQuery(_ref) {
       sort = _ref.sort,
       dir = _ref.dir,
       keyword = _ref.keyword;
-  (0, _classCallCheck2.default)(this, RestQuery);
+  (0, _classCallCheck2["default"])(this, RestQuery);
   this.start = start || 0;
   this.limit = limit || 0;
   this.sort = sort || '';
@@ -23,4 +23,4 @@ var RestQuery = function RestQuery(_ref) {
   this.keyword = keyword || '';
 };
 
-exports.default = RestQuery;
+exports["default"] = RestQuery;

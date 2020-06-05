@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceRealCode = {
   '-1': '未知类型',
   '0': '刷卡开门',
@@ -17,4 +17,4 @@ var deviceRealCode = {
 };
 Object.freeze(deviceRealCode);
 var _default = deviceRealCode;
-exports.default = _default;
+exports["default"] = _default;

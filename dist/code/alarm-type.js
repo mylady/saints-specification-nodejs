@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var alarmType = {
   '0': '手动报警',
   '1': '红外报警',
@@ -13,4 +13,4 @@ var alarmType = {
 };
 Object.freeze(alarmType);
 var _default = alarmType;
-exports.default = _default;
+exports["default"] = _default;

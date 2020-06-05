@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
@@ -18,7 +18,7 @@ var EnvValue = function EnvValue(_ref) {
       tvoc = _ref.tvoc,
       n3h = _ref.n3h,
       h2s = _ref.h2s;
-  (0, _classCallCheck2.default)(this, EnvValue);
+  (0, _classCallCheck2["default"])(this, EnvValue);
   this.temp = temp || 0.0;
   this.humi = humi || 0.0;
   this.hcho = hcho || 0.0;
@@ -29,4 +29,4 @@ var EnvValue = function EnvValue(_ref) {
   this.h2s = h2s || 0.0;
 };
 
-exports.default = EnvValue;
+exports["default"] = EnvValue;

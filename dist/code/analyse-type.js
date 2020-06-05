@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var analyseType = {
   '0': '人脸识别',
   '1': '行为分析',
@@ -11,4 +11,4 @@ var analyseType = {
 };
 Object.freeze(analyseType);
 var _default = analyseType;
-exports.default = _default;
+exports["default"] = _default;
