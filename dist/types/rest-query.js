@@ -19,7 +19,7 @@ var RestQuery = function RestQuery(_ref) {
   this.start = start || 0;
   this.limit = limit || 0;
   this.sort = sort || '';
-  this.dir = dir || 'ASC';
+  this.dir = dir || 'asc';
   this.keyword = keyword || '';
 };
 
