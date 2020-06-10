@@ -63,6 +63,10 @@ var AuthErrorNoSystem = {
   message: '没有权限使用此系统',
   code: 10
 };
+var AuthErrorNoLogin = {
+  message: '用户未登陆',
+  code: 11
+};
 
 var AuthError = /*#__PURE__*/function (_Error) {
   (0, _inherits2["default"])(AuthError, _Error);
@@ -135,6 +139,11 @@ var AuthError = /*#__PURE__*/function (_Error) {
     key: "noSystem",
     value: function noSystem() {
       return new AuthError(AuthErrorNoSystem);
+    }
+  }, {
+    key: "noLogin",
+    value: function noLogin() {
+      return new AuthError(AuthErrorNoLogin);
     }
   }]);
   return AuthError;

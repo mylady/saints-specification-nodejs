@@ -50,6 +50,12 @@ const AuthErrorNoSystem = {
     code: 10
 }
 
+const AuthErrorNoLogin = {
+    message: '用户未登陆',
+    code: 11
+}
+
+
 
 export default class AuthError extends Error {
     constructor(obj) {
@@ -101,5 +107,9 @@ export default class AuthError extends Error {
 
     static noSystem() {
         return new AuthError(AuthErrorNoSystem);
+    }
+
+    static noLogin() {
+        return new AuthError(AuthErrorNoLogin);
     }
 }
