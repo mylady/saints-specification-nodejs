@@ -59,6 +59,10 @@ var AuthErrorUserTokenExpired = {
   message: '用户令牌已过期',
   code: 9
 };
+var AuthErrorNoSystem = {
+  message: '没有权限使用此系统',
+  code: 10
+};
 
 var AuthError = /*#__PURE__*/function (_Error) {
   (0, _inherits2["default"])(AuthError, _Error);
@@ -126,6 +130,11 @@ var AuthError = /*#__PURE__*/function (_Error) {
     key: "userTokenExpired",
     value: function userTokenExpired() {
       return new AuthError(AuthErrorUserTokenExpired);
+    }
+  }, {
+    key: "noSystem",
+    value: function noSystem() {
+      return new AuthError(AuthErrorNoSystem);
     }
   }]);
   return AuthError;
