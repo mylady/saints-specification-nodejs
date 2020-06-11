@@ -11,8 +11,6 @@ var _config = _interopRequireDefault(require("./code/config"));
 
 var _kafkaIo = _interopRequireDefault(require("./code/kafka-io"));
 
-var _authError = _interopRequireDefault(require("./types/auth-error"));
-
 var _alarmType = _interopRequireDefault(require("./code/alarm-type"));
 
 var _cameraType = _interopRequireDefault(require("./code/camera-type"));
@@ -62,7 +60,6 @@ var _deviceStatusCode = _interopRequireDefault(require("./code/device-status-cod
 var _default = {
   Config: _config["default"],
   KafkaIO: _kafkaIo["default"],
-  AuthError: _authError["default"],
   AlarmType: _alarmType["default"],
   CameraType: _cameraType["default"],
   DeviceCode: _deviceCode["default"],

@@ -3,8 +3,6 @@
 import Config from './code/config';
 import KafkaIO from './code/kafka-io';
 
-import AuthError from './types/auth-error';
-
 import AlarmType from './code/alarm-type';
 import CameraType from './code/camera-type';
 import DeviceCode from './code/device-code';
@@ -37,8 +35,6 @@ import DeviceStatusCode from './code/device-status-code';
 export default {
     Config: Config,
     KafkaIO: KafkaIO,
-
-    AuthError: AuthError,
 
     AlarmType: AlarmType,
     CameraType: CameraType,
