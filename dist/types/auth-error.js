@@ -67,6 +67,10 @@ var AuthErrorNoLogin = {
   message: '用户未登陆',
   code: 11
 };
+var AuthErrorResetAdminPwd = {
+  message: '不能重置管理员密码',
+  code: 12
+};
 
 var AuthError = /*#__PURE__*/function (_Error) {
   (0, _inherits2["default"])(AuthError, _Error);
@@ -144,6 +148,11 @@ var AuthError = /*#__PURE__*/function (_Error) {
     key: "noLogin",
     value: function noLogin() {
       return new AuthError(AuthErrorNoLogin);
+    }
+  }, {
+    key: "resetAdminPwd",
+    value: function resetAdminPwd() {
+      return new AuthError(AuthErrorResetAdminPwd);
     }
   }]);
   return AuthError;

@@ -55,7 +55,10 @@ const AuthErrorNoLogin = {
     code: 11
 }
 
-
+const AuthErrorResetAdminPwd = {
+    message: '不能重置管理员密码',
+    code: 12
+}
 
 export default class AuthError extends Error {
     constructor(obj) {
@@ -111,5 +114,9 @@ export default class AuthError extends Error {
 
     static noLogin() {
         return new AuthError(AuthErrorNoLogin);
+    }
+
+    static resetAdminPwd() {
+        return new AuthError(AuthErrorResetAdminPwd);
     }
 }
