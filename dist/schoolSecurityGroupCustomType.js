@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolSecurityGroupCustomType = {
   leaderGroup: {
     name: '安全领导小组',
@@ -28,4 +28,4 @@ var schoolSecurityGroupCustomType = {
 };
 Object.freeze(schoolSecurityGroupCustomType);
 var _default = schoolSecurityGroupCustomType;
-exports.default = _default;
+exports["default"] = _default;

@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var digitalTerminalType = {
   infopubTerminal: {
     name: '信息发布终端',
@@ -23,4 +23,4 @@ var digitalTerminalType = {
 };
 Object.freeze(digitalTerminalType);
 var _default = digitalTerminalType;
-exports.default = _default;
+exports["default"] = _default;

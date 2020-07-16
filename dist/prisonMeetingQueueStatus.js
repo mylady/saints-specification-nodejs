@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonMeetingQueueStatus = {
   wait: {
     name: '等待',
@@ -24,4 +24,4 @@ var prisonMeetingQueueStatus = {
 };
 Object.freeze(prisonMeetingQueueStatus);
 var _default = prisonMeetingQueueStatus;
-exports.default = _default;
+exports["default"] = _default;

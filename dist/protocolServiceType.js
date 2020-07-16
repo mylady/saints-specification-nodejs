@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var protocolServiceType = {
   deviceDataService: 0,
   deviceEventService: 1,
@@ -31,4 +31,4 @@ var protocolServiceType = {
 };
 Object.freeze(protocolServiceType);
 var _default = protocolServiceType;
-exports.default = _default;
+exports["default"] = _default;

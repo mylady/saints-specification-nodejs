@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolReportActivityType = {
   force: {
     name: '强制参加',
@@ -16,4 +16,4 @@ var schoolReportActivityType = {
 };
 Object.freeze(schoolReportActivityType);
 var _default = schoolReportActivityType;
-exports.default = _default;
+exports["default"] = _default;

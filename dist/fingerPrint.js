@@ -5,13 +5,13 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var FingerPrint = function FingerPrint() {
-  (0, _classCallCheck2.default)(this, FingerPrint);
+  (0, _classCallCheck2["default"])(this, FingerPrint);
   this.CharacterCode = '';
 };
 
-exports.default = FingerPrint;
+exports["default"] = FingerPrint;

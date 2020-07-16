@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceDataType = {
   device: {
     name: '设备信息',
@@ -19,4 +19,4 @@ var deviceDataType = {
 };
 Object.freeze(deviceDataType);
 var _default = deviceDataType;
-exports.default = _default;
+exports["default"] = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckPlanStatus = {
   planning: {
     name: '计划中',
@@ -20,4 +20,4 @@ var schoolCheckPlanStatus = {
 };
 Object.freeze(schoolCheckPlanStatus);
 var _default = schoolCheckPlanStatus;
-exports.default = _default;
+exports["default"] = _default;

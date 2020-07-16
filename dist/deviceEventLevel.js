@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceEventLevel = {
   level0: {
     name: '等级1',
@@ -51,4 +51,4 @@ var deviceEventLevel = {
 };
 Object.freeze(deviceEventLevel);
 var _default = deviceEventLevel;
-exports.default = _default;
+exports["default"] = _default;

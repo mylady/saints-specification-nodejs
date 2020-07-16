@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonClueStatus = {
   submit: {
     name: '待所领导确认',
@@ -27,4 +27,4 @@ var prisonClueStatus = {
 };
 Object.freeze(prisonClueStatus);
 var _default = prisonClueStatus;
-exports.default = _default;
+exports["default"] = _default;

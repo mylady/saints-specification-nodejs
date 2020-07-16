@@ -8,12 +8,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var ProductInfo = function ProductInfo() {
-  (0, _classCallCheck2.default)(this, ProductInfo);
+  (0, _classCallCheck2["default"])(this, ProductInfo);
   this.ProductName = '';
   this.ProductId = '';
   this.DisplayName = '';
@@ -24,4 +24,4 @@ var ProductInfo = function ProductInfo() {
   this.OS = -1;
 };
 
-exports.default = ProductInfo;
+exports["default"] = ProductInfo;

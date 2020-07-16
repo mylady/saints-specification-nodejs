@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var hospitalCallType = {
   clinicLevel1: {
     name: '一级分诊信息',
@@ -39,4 +39,4 @@ var hospitalCallType = {
 };
 Object.freeze(hospitalCallType);
 var _default = hospitalCallType;
-exports.default = _default;
+exports["default"] = _default;

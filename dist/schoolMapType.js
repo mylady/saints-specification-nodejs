@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolMapType = {
   image: {
     name: '图片',
@@ -20,4 +20,4 @@ var schoolMapType = {
 };
 Object.freeze(schoolMapType);
 var _default = schoolMapType;
-exports.default = _default;
+exports["default"] = _default;

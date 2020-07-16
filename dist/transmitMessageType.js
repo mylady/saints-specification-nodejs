@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var transmitMessageType = {
   systemMessage: {
     name: '系统事件',
@@ -51,4 +51,4 @@ var transmitMessageType = {
 };
 Object.freeze(transmitMessageType);
 var _default = transmitMessageType;
-exports.default = _default;
+exports["default"] = _default;

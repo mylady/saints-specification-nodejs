@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckRedressStatus = {
   no: {
     name: '未整改',
@@ -24,4 +24,4 @@ var schoolCheckRedressStatus = {
 };
 Object.freeze(schoolCheckRedressStatus);
 var _default = schoolCheckRedressStatus;
-exports.default = _default;
+exports["default"] = _default;

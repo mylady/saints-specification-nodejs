@@ -8,12 +8,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var DigitalLayoutArea = function DigitalLayoutArea() {
-  (0, _classCallCheck2.default)(this, DigitalLayoutArea);
+  (0, _classCallCheck2["default"])(this, DigitalLayoutArea);
   this.ContentType = 0;
   this.X = 0;
   this.Y = 0;
@@ -23,4 +23,4 @@ var DigitalLayoutArea = function DigitalLayoutArea() {
   this.SwitchTime = 0;
 };
 
-exports.default = DigitalLayoutArea;
+exports["default"] = DigitalLayoutArea;

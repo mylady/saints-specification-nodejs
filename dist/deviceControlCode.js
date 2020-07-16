@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceControlCode = {
   outarm: {
     name: '外出布防',
@@ -115,4 +115,4 @@ var deviceControlCode = {
 };
 Object.freeze(deviceControlCode);
 var _default = deviceControlCode;
-exports.default = _default;
+exports["default"] = _default;

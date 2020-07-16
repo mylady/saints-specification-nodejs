@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonMeetingReservationStatus = {
   cancel: {
     name: '已取消',
@@ -20,4 +20,4 @@ var prisonMeetingReservationStatus = {
 };
 Object.freeze(prisonMeetingReservationStatus);
 var _default = prisonMeetingReservationStatus;
-exports.default = _default;
+exports["default"] = _default;

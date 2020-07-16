@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckType = {
   centerCheck: {
     name: '教育局巡查',
@@ -20,4 +20,4 @@ var schoolCheckType = {
 };
 Object.freeze(schoolCheckType);
 var _default = schoolCheckType;
-exports.default = _default;
+exports["default"] = _default;

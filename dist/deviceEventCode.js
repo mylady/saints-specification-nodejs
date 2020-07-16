@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceEventCode = {
   unknown: {
     name: '未知类型',
@@ -55,4 +55,4 @@ var deviceEventCode = {
 };
 Object.freeze(deviceEventCode);
 var _default = deviceEventCode;
-exports.default = _default;
+exports["default"] = _default;

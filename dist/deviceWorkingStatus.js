@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceWorkingStatus = {
   normal: {
     name: '正常',
@@ -19,4 +19,4 @@ var deviceWorkingStatus = {
 };
 Object.freeze(deviceWorkingStatus);
 var _default = deviceWorkingStatus;
-exports.default = _default;
+exports["default"] = _default;

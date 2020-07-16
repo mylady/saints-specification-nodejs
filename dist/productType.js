@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var productType = {
   client: 0,
   server: 1,
@@ -14,4 +14,4 @@ var productType = {
 };
 Object.freeze(productType);
 var _default = productType;
-exports.default = _default;
+exports["default"] = _default;

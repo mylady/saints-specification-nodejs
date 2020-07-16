@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonerRollCallResult = {
   normal: {
     name: '正常',
@@ -19,4 +19,4 @@ var prisonerRollCallResult = {
 };
 Object.freeze(prisonerRollCallResult);
 var _default = prisonerRollCallResult;
-exports.default = _default;
+exports["default"] = _default;

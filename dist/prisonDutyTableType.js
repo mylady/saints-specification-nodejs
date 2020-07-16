@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonDutyTableType = {
   normal: {
     name: '普通值班',
@@ -19,4 +19,4 @@ var prisonDutyTableType = {
 };
 Object.freeze(prisonDutyTableType);
 var _default = prisonDutyTableType;
-exports.default = _default;
+exports["default"] = _default;

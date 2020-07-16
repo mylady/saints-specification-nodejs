@@ -5,12 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var UpsExtra = function UpsExtra() {
-  (0, _classCallCheck2.default)(this, UpsExtra);
+  (0, _classCallCheck2["default"])(this, UpsExtra);
   this.Volter = 0.0;
   this.Electricity = 0.0;
   this.Battery = 0.0;
@@ -18,4 +18,4 @@ var UpsExtra = function UpsExtra() {
   this.Temperature = 0.0;
 };
 
-exports.default = UpsExtra;
+exports["default"] = UpsExtra;

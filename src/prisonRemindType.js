@@ -16,6 +16,14 @@ let prisonRemindType = {
         name:'环节变动谈话',
         value:2
     },
+    roomChangeTalk:{
+        name:'监室变动谈话',
+        value:3
+    },
+    spySetting:{
+        name:'耳目设置',
+        value:4
+    },
     patrol: {
         name: '巡视',
         value: 100

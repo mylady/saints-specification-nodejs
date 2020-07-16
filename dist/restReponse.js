@@ -5,17 +5,15 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var RestResponse =
-/*#__PURE__*/
-function () {
+var RestResponse = /*#__PURE__*/function () {
   function RestResponse() {
-    (0, _classCallCheck2.default)(this, RestResponse);
+    (0, _classCallCheck2["default"])(this, RestResponse);
     this.result = false;
     this.error_code = 0;
     this.error_msg = '';
@@ -23,7 +21,7 @@ function () {
     this.total_count = 0;
   }
 
-  (0, _createClass2.default)(RestResponse, null, [{
+  (0, _createClass2["default"])(RestResponse, null, [{
     key: "NewBoolResponse",
     value: function NewBoolResponse(b, err) {
       var resp = new RestResponse();
@@ -49,4 +47,4 @@ function () {
   return RestResponse;
 }();
 
-exports.default = RestResponse;
+exports["default"] = RestResponse;

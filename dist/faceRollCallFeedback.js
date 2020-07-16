@@ -5,12 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var FaceRollCallFeedback = function FaceRollCallFeedback() {
-  (0, _classCallCheck2.default)(this, FaceRollCallFeedback);
+  (0, _classCallCheck2["default"])(this, FaceRollCallFeedback);
   this.PrisonerJsh = '';
   this.PrisonerSnbh = '';
   this.PrisonerName = '';
@@ -19,4 +19,4 @@ var FaceRollCallFeedback = function FaceRollCallFeedback() {
   this.RollCallResult = 0;
 };
 
-exports.default = FaceRollCallFeedback;
+exports["default"] = FaceRollCallFeedback;

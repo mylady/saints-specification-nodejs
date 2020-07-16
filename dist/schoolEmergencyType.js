@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolEmergency = {
   alarm110: {
     name: '110报警',
@@ -15,4 +15,4 @@ var schoolEmergency = {
 };
 Object.freeze(schoolEmergency);
 var _default = schoolEmergency;
-exports.default = _default;
+exports["default"] = _default;

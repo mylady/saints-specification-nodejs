@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var videoAnalyseType = {
   behavior: {
     name: '行为分析',
@@ -23,4 +23,4 @@ var videoAnalyseType = {
 };
 Object.freeze(videoAnalyseType);
 var _default = videoAnalyseType;
-exports.default = _default;
+exports["default"] = _default;

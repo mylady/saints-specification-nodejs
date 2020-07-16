@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var productIds = {
   commandcenterID: 'aa5088a8-3f77-455e-bb5c-1405fcb01d2b',
   videoManageID: '1aa8faa2-596c-4834-98a3-c3fbeb0332be',
@@ -40,4 +40,4 @@ var productIds = {
 };
 Object.freeze(productIds);
 var _default = productIds;
-exports.default = _default;
+exports["default"] = _default;

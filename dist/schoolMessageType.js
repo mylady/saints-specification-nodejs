@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolMessageType = {
   incipientFault: {
     name: '隐患',
@@ -28,4 +28,4 @@ var schoolMessageType = {
 };
 Object.freeze(schoolMessageType);
 var _default = schoolMessageType;
-exports.default = _default;
+exports["default"] = _default;

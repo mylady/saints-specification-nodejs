@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolNoticeType = {
   centerNotification: {
     name: '教育局公告',
@@ -64,4 +64,4 @@ var schoolNoticeType = {
 };
 Object.freeze(schoolNoticeType);
 var _default = schoolNoticeType;
-exports.default = _default;
+exports["default"] = _default;

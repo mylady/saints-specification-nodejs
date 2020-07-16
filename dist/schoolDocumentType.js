@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolDocumentType = {
   law: {
     name: '法律法规',
@@ -20,4 +20,4 @@ var schoolDocumentType = {
 };
 Object.freeze(schoolDocumentType);
 var _default = schoolDocumentType;
-exports.default = _default;
+exports["default"] = _default;

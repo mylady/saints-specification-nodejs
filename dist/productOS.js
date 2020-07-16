@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var productOS = {
   windows: 0,
   linux_debian: 1,
@@ -14,4 +14,4 @@ var productOS = {
 };
 Object.freeze(productOS);
 var _default = productOS;
-exports.default = _default;
+exports["default"] = _default;

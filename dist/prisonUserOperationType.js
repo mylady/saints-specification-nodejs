@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonUserOperationType = {
   rollCall: {
     name: '点名',
@@ -23,4 +23,4 @@ var prisonUserOperationType = {
 };
 Object.freeze(prisonUserOperationType);
 var _default = prisonUserOperationType;
-exports.default = _default;
+exports["default"] = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolChemicalType = {
   poison: {
     name: '剧毒品',
@@ -24,4 +24,4 @@ var schoolChemicalType = {
 };
 Object.freeze(schoolChemicalType);
 var _default = schoolChemicalType;
-exports.default = _default;
+exports["default"] = _default;

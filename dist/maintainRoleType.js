@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var maintainRoleType = {
   owner: {
     name: '业主',
@@ -27,4 +27,4 @@ var maintainRoleType = {
 };
 Object.freeze(maintainRoleType);
 var _default = maintainRoleType;
-exports.default = _default;
+exports["default"] = _default;

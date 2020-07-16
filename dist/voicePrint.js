@@ -5,12 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var VoicePrint = function VoicePrint() {
-  (0, _classCallCheck2.default)(this, VoicePrint);
+  (0, _classCallCheck2["default"])(this, VoicePrint);
 };
 
-exports.default = VoicePrint;
+exports["default"] = VoicePrint;

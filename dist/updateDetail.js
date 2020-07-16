@@ -8,12 +8,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var UpdateDetail = function UpdateDetail() {
-  (0, _classCallCheck2.default)(this, UpdateDetail);
+  (0, _classCallCheck2["default"])(this, UpdateDetail);
   this.ProductId = '';
   this.OS = -1;
   this.OldVersion = -1;
@@ -22,4 +22,4 @@ var UpdateDetail = function UpdateDetail() {
   this.UpdateAddress = '';
 };
 
-exports.default = UpdateDetail;
+exports["default"] = UpdateDetail;

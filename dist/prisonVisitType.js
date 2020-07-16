@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonVisitType = {
   arraignment: {
     name: '提审',
@@ -32,4 +32,4 @@ var prisonVisitType = {
 };
 Object.freeze(prisonVisitType);
 var _default = prisonVisitType;
-exports.default = _default;
+exports["default"] = _default;

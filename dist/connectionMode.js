@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var connectionMode = {
   RJ45: {
     name: '网线连接',
@@ -32,4 +32,4 @@ var connectionMode = {
 };
 Object.freeze(connectionMode);
 var _default = connectionMode;
-exports.default = _default;
+exports["default"] = _default;

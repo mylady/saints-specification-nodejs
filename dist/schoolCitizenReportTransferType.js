@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCitizenReportTransferType = {
   administrationPlatform: {
     name: '行政平台',
@@ -24,4 +24,4 @@ var schoolCitizenReportTransferType = {
 };
 Object.freeze(schoolCitizenReportTransferType);
 var _default = schoolCitizenReportTransferType;
-exports.default = _default;
+exports["default"] = _default;

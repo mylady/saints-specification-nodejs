@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCategory = {
   youErYuan: {
     name: '幼儿园',
@@ -55,4 +55,4 @@ var schoolCategory = {
 };
 Object.freeze(schoolCategory);
 var _default = schoolCategory;
-exports.default = _default;
+exports["default"] = _default;

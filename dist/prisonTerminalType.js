@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonTerminalType = {
   outsideTerminal: {
     name: '监外屏',
@@ -28,4 +28,4 @@ var prisonTerminalType = {
 };
 Object.freeze(prisonTerminalType);
 var _default = prisonTerminalType;
-exports.default = _default;
+exports["default"] = _default;

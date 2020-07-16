@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var videoRecordSource = {
   schoolPlatform: {
     name: '教育安全管理平台',
@@ -15,4 +15,4 @@ var videoRecordSource = {
 };
 Object.freeze(videoRecordSource);
 var _default = videoRecordSource;
-exports.default = _default;
+exports["default"] = _default;

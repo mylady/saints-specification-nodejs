@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonerDispatchRequestStatus = {
   request: {
     name: '申请调监',
@@ -27,4 +27,4 @@ var prisonerDispatchRequestStatus = {
 };
 Object.freeze(prisonerDispatchRequestStatus);
 var _default = prisonerDispatchRequestStatus;
-exports.default = _default;
+exports["default"] = _default;

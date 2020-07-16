@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolUserSignupType = {
   work: {
     name: '工作签到',
@@ -16,4 +16,4 @@ var schoolUserSignupType = {
 };
 Object.freeze(schoolUserSignupType);
 var _default = schoolUserSignupType;
-exports.default = _default;
+exports["default"] = _default;

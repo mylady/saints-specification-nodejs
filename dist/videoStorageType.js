@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var videoStorageType = {
   plan: {
     name: '计划任务',
@@ -23,4 +23,4 @@ var videoStorageType = {
 };
 Object.freeze(videoStorageType);
 var _default = videoStorageType;
-exports.default = _default;
+exports["default"] = _default;

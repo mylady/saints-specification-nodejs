@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolReportEventType = {
   fireProtection: {
     name: '消防安全',
@@ -44,4 +44,4 @@ var schoolReportEventType = {
 };
 Object.freeze(schoolReportEventType);
 var _default = schoolReportEventType;
-exports.default = _default;
+exports["default"] = _default;

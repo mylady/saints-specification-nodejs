@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceAlarmCode = {
   unknown: {
     name: '未知类型',
@@ -244,4 +244,4 @@ var deviceAlarmCode = {
 };
 Object.freeze(deviceAlarmCode);
 var _default = deviceAlarmCode;
-exports.default = _default;
+exports["default"] = _default;

@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var digitalContentType = {
   realVideo: {
     name: '直播源',
@@ -31,4 +31,4 @@ var digitalContentType = {
 };
 Object.freeze(digitalContentType);
 var _default = digitalContentType;
-exports.default = _default;
+exports["default"] = _default;

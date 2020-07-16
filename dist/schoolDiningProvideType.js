@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolDiningProvideType = {
   combo: {
     name: '套餐模式',
@@ -16,4 +16,4 @@ var schoolDiningProvideType = {
 };
 Object.freeze(schoolDiningProvideType);
 var _default = schoolDiningProvideType;
-exports.default = _default;
+exports["default"] = _default;

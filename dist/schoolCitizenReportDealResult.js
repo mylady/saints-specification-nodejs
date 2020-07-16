@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCitizenReportDealResult = {
   processing: {
     name: '正在处理',
@@ -24,4 +24,4 @@ var schoolCitizenReportDealResult = {
 };
 Object.freeze(schoolCitizenReportDealResult);
 var _default = schoolCitizenReportDealResult;
-exports.default = _default;
+exports["default"] = _default;

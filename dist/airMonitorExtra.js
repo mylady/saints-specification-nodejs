@@ -5,12 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var AirMonitorExtra = function AirMonitorExtra() {
-  (0, _classCallCheck2.default)(this, AirMonitorExtra);
+  (0, _classCallCheck2["default"])(this, AirMonitorExtra);
   this.Temperature = 0.0;
   this.Humidity = 0.0;
   this.HCHO = 0.0;
@@ -21,4 +21,4 @@ var AirMonitorExtra = function AirMonitorExtra() {
   this.H2S = 0.0;
 };
 
-exports.default = AirMonitorExtra;
+exports["default"] = AirMonitorExtra;

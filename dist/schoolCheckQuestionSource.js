@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckQuestionSource = {
   cityCouncil: {
     name: '市教委',
@@ -16,4 +16,4 @@ var schoolCheckQuestionSource = {
 };
 Object.freeze(schoolCheckQuestionSource);
 var _default = schoolCheckQuestionSource;
-exports.default = _default;
+exports["default"] = _default;

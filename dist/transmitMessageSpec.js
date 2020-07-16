@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var transmitMessageSpec = {
   helloEvent: 'hello',
   joinEvent: 'join_room',
@@ -26,4 +26,4 @@ var transmitMessageSpec = {
 };
 Object.freeze(transmitMessageSpec);
 var _default = transmitMessageSpec;
-exports.default = _default;
+exports["default"] = _default;

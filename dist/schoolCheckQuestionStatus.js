@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckQuestionStatus = {
   editable: {
     name: '可编辑',
@@ -20,4 +20,4 @@ var schoolCheckQuestionStatus = {
 };
 Object.freeze(schoolCheckQuestionStatus);
 var _default = schoolCheckQuestionStatus;
-exports.default = _default;
+exports["default"] = _default;

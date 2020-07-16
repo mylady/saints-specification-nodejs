@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCitizenReportSource = {
   source12345: {
     name: '12345',
@@ -20,4 +20,4 @@ var schoolCitizenReportSource = {
 };
 Object.freeze(schoolCitizenReportSource);
 var _default = schoolCitizenReportSource;
-exports.default = _default;
+exports["default"] = _default;

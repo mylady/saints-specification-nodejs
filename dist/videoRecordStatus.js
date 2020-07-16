@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var videoRecordStatus = {
   idle: {
     name: '未启动',
@@ -31,4 +31,4 @@ var videoRecordStatus = {
 };
 Object.freeze(videoRecordStatus);
 var _default = videoRecordStatus;
-exports.default = _default;
+exports["default"] = _default;

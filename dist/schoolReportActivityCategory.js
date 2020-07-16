@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolReportActivityCategory = {
   securityActivity: {
     name: '安全活动',
@@ -12,4 +12,4 @@ var schoolReportActivityCategory = {
 };
 Object.freeze(schoolReportActivityCategory);
 var _default = schoolReportActivityCategory;
-exports.default = _default;
+exports["default"] = _default;

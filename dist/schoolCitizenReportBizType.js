@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCitizenReportBizType = {
   consult: {
     name: '咨询',
@@ -24,4 +24,4 @@ var schoolCitizenReportBizType = {
 };
 Object.freeze(schoolCitizenReportBizType);
 var _default = schoolCitizenReportBizType;
-exports.default = _default;
+exports["default"] = _default;

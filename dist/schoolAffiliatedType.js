@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolAffiliatedType = {
   agency: {
     name: '区教育局',
@@ -16,4 +16,4 @@ var schoolAffiliatedType = {
 };
 Object.freeze(schoolAffiliatedType);
 var _default = schoolAffiliatedType;
-exports.default = _default;
+exports["default"] = _default;

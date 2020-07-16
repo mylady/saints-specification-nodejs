@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var deviceEventType = {
   normalEvent: {
     name: '一般事件',
@@ -23,4 +23,4 @@ var deviceEventType = {
 };
 Object.freeze(deviceEventType);
 var _default = deviceEventType;
-exports.default = _default;
+exports["default"] = _default;

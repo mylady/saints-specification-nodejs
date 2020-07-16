@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolUserType = {
   schoolNormal: {
     name: '学校用户',
@@ -24,4 +24,4 @@ var schoolUserType = {
 };
 Object.freeze(schoolUserType);
 var _default = schoolUserType;
-exports.default = _default;
+exports["default"] = _default;

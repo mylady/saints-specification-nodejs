@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckTaskStatus = {
   notStarted: {
     name: '未开始',
@@ -20,4 +20,4 @@ var schoolCheckTaskStatus = {
 };
 Object.freeze(schoolCheckTaskStatus);
 var _default = schoolCheckTaskStatus;
-exports.default = _default;
+exports["default"] = _default;

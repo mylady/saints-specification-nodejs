@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var videoDiagnosticResult = {
   unknown: {
     name: '未知',
@@ -59,4 +59,4 @@ var videoDiagnosticResult = {
 };
 Object.freeze(videoDiagnosticResult);
 var _default = videoDiagnosticResult;
-exports.default = _default;
+exports["default"] = _default;

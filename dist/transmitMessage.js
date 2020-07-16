@@ -8,12 +8,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var TransmitMessage = function TransmitMessage() {
-  (0, _classCallCheck2.default)(this, TransmitMessage);
+  (0, _classCallCheck2["default"])(this, TransmitMessage);
   this.MessageId = '';
   this.MessageType = -1;
   this.MessageContent = '';
@@ -21,4 +21,4 @@ var TransmitMessage = function TransmitMessage() {
   this.MessageReceiver = [];
 };
 
-exports.default = TransmitMessage;
+exports["default"] = TransmitMessage;

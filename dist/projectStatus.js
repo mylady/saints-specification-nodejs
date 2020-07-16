@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var projectStatus = {
   preparing: {
     name: '筹备中',
@@ -27,4 +27,4 @@ var projectStatus = {
 };
 Object.freeze(projectStatus);
 var _default = projectStatus;
-exports.default = _default;
+exports["default"] = _default;

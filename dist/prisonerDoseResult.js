@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonerDoseResult = {
   accpeted: {
     name: '当场服用',
@@ -19,4 +19,4 @@ var prisonerDoseResult = {
 };
 Object.freeze(prisonerDoseResult);
 var _default = prisonerDoseResult;
-exports.default = _default;
+exports["default"] = _default;

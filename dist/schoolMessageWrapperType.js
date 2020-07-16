@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolMessageWrapperType = {
   checkTask: {
     name: '新巡查任务',
@@ -36,4 +36,4 @@ var schoolMessageWrapperType = {
 };
 Object.freeze(schoolMessageWrapperType);
 var _default = schoolMessageWrapperType;
-exports.default = _default;
+exports["default"] = _default;

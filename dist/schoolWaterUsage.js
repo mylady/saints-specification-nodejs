@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolWaterUsage = {
   canteen: {
     name: '食堂用水',
@@ -24,4 +24,4 @@ var schoolWaterUsage = {
 };
 Object.freeze(schoolWaterUsage);
 var _default = schoolWaterUsage;
-exports.default = _default;
+exports["default"] = _default;

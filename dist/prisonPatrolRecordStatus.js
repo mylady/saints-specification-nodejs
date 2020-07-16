@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonPatrolRecordStatus = {
   manageConfirm: {
     name: '待管教确认',
@@ -23,4 +23,4 @@ var prisonPatrolRecordStatus = {
 };
 Object.freeze(prisonPatrolRecordStatus);
 var _default = prisonPatrolRecordStatus;
-exports.default = _default;
+exports["default"] = _default;

@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var manufacturerCode = {
   none: {
     name: '无厂商',
@@ -239,4 +239,4 @@ var manufacturerCode = {
 };
 Object.freeze(manufacturerCode);
 var _default = manufacturerCode;
-exports.default = _default;
+exports["default"] = _default;

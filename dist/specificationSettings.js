@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var discoveryHttpPort = 23001;
 var discoveryApiPrefix = '/api/v1';
 var proxyHttpPort = 23003;
@@ -22,4 +22,4 @@ var specificationSettings = {
   proxyApiService: 'http://ip:' + proxyHttpPort + discoveryApiPrefix + '/services'
 };
 var _default = specificationSettings;
-exports.default = _default;
+exports["default"] = _default;

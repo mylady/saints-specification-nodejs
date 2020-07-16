@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckResult = {
   none: {
     name: '无',
@@ -20,4 +20,4 @@ var schoolCheckResult = {
 };
 Object.freeze(schoolCheckResult);
 var _default = schoolCheckResult;
-exports.default = _default;
+exports["default"] = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolVacateType = {
   vacation: {
     name: '公休',
@@ -28,4 +28,4 @@ var schoolVacateType = {
 };
 Object.freeze(schoolVacateType);
 var _default = schoolVacateType;
-exports.default = _default;
+exports["default"] = _default;

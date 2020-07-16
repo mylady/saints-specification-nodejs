@@ -64,7 +64,7 @@ function getBasicAuth(path, username, userpwd) {
 
 function doRequest(path, data, option) {
   return new Promise(function (resolve, reject) {
-    var parsedUrl = _url.default.parse(path),
+    var parsedUrl = _url["default"].parse(path),
         jsonData = JSON.stringify(data);
 
     var opts = {
@@ -85,7 +85,7 @@ function doRequest(path, data, option) {
       opts.auth = option.username + ':' + option.userpwd;
     }
 
-    var req = _http.default.request(opts, function (res) {
+    var req = _http["default"].request(opts, function (res) {
       if (res.statusCode !== 200) {
         console.error(res);
         reject(new Error('status code ' + res.statusCode));

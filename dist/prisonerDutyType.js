@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var prisonerDutyType = {
   noon: {
     name: '午间值班',
@@ -23,4 +23,4 @@ var prisonerDutyType = {
 };
 Object.freeze(prisonerDutyType);
 var _default = prisonerDutyType;
-exports.default = _default;
+exports["default"] = _default;

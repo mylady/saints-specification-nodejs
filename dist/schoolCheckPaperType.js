@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCheckPaperType = {
   campusAround: {
     name: '校园及周边',
@@ -60,4 +60,4 @@ var schoolCheckPaperType = {
 };
 Object.freeze(schoolCheckPaperType);
 var _default = schoolCheckPaperType;
-exports.default = _default;
+exports["default"] = _default;

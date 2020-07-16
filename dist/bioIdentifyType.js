@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var bioIdentifyType = {
   fingerPrint: {
     name: '指纹',
@@ -20,4 +20,4 @@ var bioIdentifyType = {
 };
 Object.freeze(bioIdentifyType);
 var _default = bioIdentifyType;
-exports.default = _default;
+exports["default"] = _default;

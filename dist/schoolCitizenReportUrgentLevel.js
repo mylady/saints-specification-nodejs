@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolCitizenReportUrgentLevel = {
   normal: {
     name: '一般',
@@ -16,4 +16,4 @@ var schoolCitizenReportUrgentLevel = {
 };
 Object.freeze(schoolCitizenReportUrgentLevel);
 var _default = schoolCitizenReportUrgentLevel;
-exports.default = _default;
+exports["default"] = _default;

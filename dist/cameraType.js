@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var cameraType = {
   gun: {
     name: '枪机',
@@ -16,4 +16,4 @@ var cameraType = {
 };
 Object.freeze(cameraType);
 var _default = cameraType;
-exports.default = _default;
+exports["default"] = _default;

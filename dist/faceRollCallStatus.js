@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var faceRollCallStatus = {
   notStarted: {
     name: '未开始',
@@ -20,4 +20,4 @@ var faceRollCallStatus = {
 };
 Object.freeze(faceRollCallStatus);
 var _default = faceRollCallStatus;
-exports.default = _default;
+exports["default"] = _default;

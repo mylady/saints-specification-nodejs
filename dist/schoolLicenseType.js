@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var schoolLicenseType = {
   cateringService: {
     name: '餐饮服务许可证',
@@ -84,4 +84,4 @@ var schoolLicenseType = {
 };
 Object.freeze(schoolLicenseType);
 var _default = schoolLicenseType;
-exports.default = _default;
+exports["default"] = _default;

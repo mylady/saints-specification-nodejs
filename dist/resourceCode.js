@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 var resourceCode = {
   none: {
     name: '未知类型',
@@ -160,7 +160,7 @@ var resourceCode = {
     name: '平板电脑',
     value: 1028
   },
-  switch: {
+  "switch": {
     name: '交换机',
     value: 1029
   },
@@ -267,4 +267,4 @@ var resourceCode = {
 };
 Object.freeze(resourceCode);
 var _default = resourceCode;
-exports.default = _default;
+exports["default"] = _default;
