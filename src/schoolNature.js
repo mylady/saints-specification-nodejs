@@ -5,11 +5,11 @@
 
 let schoolNature = {
     publicSchool: {
-        name: '公立',
+        name: '公办',
         value: 0
     },
     privateSchool: {
-        name: '私立',
+        name: '民办',
         value: 1
     }
 };
