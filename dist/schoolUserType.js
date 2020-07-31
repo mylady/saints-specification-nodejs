@@ -20,6 +20,10 @@ var schoolUserType = {
   centerSecurity: {
     name: '教育局安全人员',
     value: 3
+  },
+  centerUniform: {
+    name: '教育局校服管理员',
+    value: 4
   }
 };
 Object.freeze(schoolUserType);
