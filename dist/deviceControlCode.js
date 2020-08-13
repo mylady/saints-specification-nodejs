@@ -111,6 +111,34 @@ var deviceControlCode = {
   voiceBroadcast: {
     name: '语音广播',
     value: 25
+  },
+  openWindowsProcedure: {
+    name: '开窗流程',
+    value: 26
+  },
+  closeWindowsProcedure: {
+    name: '关窗流程',
+    value: 27
+  },
+  stopProcedure: {
+    name: '停止流程',
+    value: 28
+  },
+  acOn: {
+    name: '打开空调',
+    value: 29
+  },
+  acOff: {
+    name: '关闭空调',
+    value: 30
+  },
+  acMode: {
+    name: '设置空调模式',
+    value: 31
+  },
+  acTemperature: {
+    name: '设置空调温度',
+    value: 32
   }
 };
 Object.freeze(deviceControlCode);
