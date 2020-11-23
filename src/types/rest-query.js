@@ -5,7 +5,7 @@ export default class RestQuery {
         this.start = start || 0;
         this.limit = limit || 0;
         this.sort = sort || '';
-        this.dir = dir || 'asc';
+        this.dir = dir || '';
         this.keyword = keyword || '';
     }
 }

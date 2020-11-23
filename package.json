@@ -1,6 +1,6 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "scripts": {
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.2",
+    "caniuse-lite": "^1.0.30001159",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   }

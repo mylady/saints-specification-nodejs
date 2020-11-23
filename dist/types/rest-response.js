@@ -34,8 +34,12 @@ var RestResponse = /*#__PURE__*/function () {
       });
 
       if (err) {
-        resp.err_msg = err.message;
-        resp.err_code = err.code || 0;
+        if (err instanceof String) {
+          resp.err_msg = err;
+        } else if (err instanceof Error) {
+          resp.err_msg = err.message;
+          resp.err_code = err.code || 0;
+        }
       } else {
         resp.err_msg = '';
         resp.err_code = 0;

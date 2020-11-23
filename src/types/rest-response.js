@@ -6,7 +6,7 @@ export default class RestResponse {
         this.err_code = err_code || 0;
         this.err_msg = err_msg || '';
         this.data = data || null;
-        this.total= total || 0;
+        this.total = total || 0;
     }
 
     static boolResponse(b, err) {
@@ -14,8 +14,12 @@ export default class RestResponse {
             result: b
         });
         if (err) {
-            resp.err_msg = err.message;
-            resp.err_code = err.code || 0;
+            if (err instanceof String) {
+                resp.err_msg = err;
+            } else if (err instanceof Error) {
+                resp.err_msg = err.message;
+                resp.err_code = err.code || 0;
+            }
         } else {
             resp.err_msg = '';
             resp.err_code = 0;
