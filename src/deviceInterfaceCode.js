@@ -461,7 +461,10 @@ let deviceInterfaceCode = {
         name: '松江消防报警主机',
         value: 112
     },
-
+    yituVideoAnalyseHttpServer: {
+        name: '依图视频分析接口',
+        value: 113
+    },
 
 
     //saints define
