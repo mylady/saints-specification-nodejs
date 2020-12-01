@@ -460,8 +460,8 @@ var deviceInterfaceCode = {
     name: '比益特电窗网络控制器',
     value: 111
   },
-  songJiangAlarmHostTCP: {
-    name: '松江消防报警主机',
+  feiFanAlarmHostSERIAL: {
+    name: '飞繁消防报警主机',
     value: 112
   },
   yituVideoAnalyseHttpServer: {
