@@ -9,8 +9,6 @@ exports["default"] = void 0;
 
 var _config = _interopRequireDefault(require("./code/config"));
 
-var _kafkaIo = _interopRequireDefault(require("./code/kafka-io"));
-
 var _alarmType = _interopRequireDefault(require("./code/alarm-type"));
 
 var _cameraType = _interopRequireDefault(require("./code/camera-type"));
@@ -51,6 +49,8 @@ var _internalMessageType = _interopRequireDefault(require("./code/internal-messa
 
 var _tranmitMessageType = _interopRequireDefault(require("./code/tranmit-message-type"));
 
+var _messageTopic = _interopRequireDefault(require("./code/message-topic"));
+
 var _deviceAlarmCode = _interopRequireDefault(require("./code/device-alarm-code"));
 
 var _deviceRealCode = _interopRequireDefault(require("./code/device-real-code"));
@@ -59,7 +59,6 @@ var _deviceStatusCode = _interopRequireDefault(require("./code/device-status-cod
 
 var _default = {
   Config: _config["default"],
-  KafkaIO: _kafkaIo["default"],
   AlarmType: _alarmType["default"],
   CameraType: _cameraType["default"],
   DeviceCode: _deviceCode["default"],
@@ -80,6 +79,7 @@ var _default = {
   InternalMessageType: _internalMessageType["default"],
   TransmitMessage: _transmitMessage["default"],
   TransmitMessageType: _tranmitMessageType["default"],
+  MessageTopic: _messageTopic["default"],
   DeviceAlarmCode: _deviceAlarmCode["default"],
   DeviceRealCode: _deviceRealCode["default"],
   DeviceStatusCode: _deviceStatusCode["default"]

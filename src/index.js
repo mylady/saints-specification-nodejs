@@ -1,7 +1,6 @@
 'use strict';
 
 import Config from './code/config';
-import KafkaIO from './code/kafka-io';
 
 import AlarmType from './code/alarm-type';
 import CameraType from './code/camera-type';
@@ -27,6 +26,7 @@ import InternalMessage from './types/internal-message';
 import TransmitMessage from './types/transmit-message';
 import InternalMessageType from './code/internal-message-type';
 import TransmitMessageType from './code/tranmit-message-type';
+import MessageTopic from './code/message-topic';
 
 import DeviceAlarmCode from './code/device-alarm-code';
 import DeviceRealCode from './code/device-real-code';
@@ -34,7 +34,6 @@ import DeviceStatusCode from './code/device-status-code';
 
 export default {
     Config: Config,
-    KafkaIO: KafkaIO,
 
     AlarmType: AlarmType,
     CameraType: CameraType,
@@ -60,6 +59,7 @@ export default {
     InternalMessageType: InternalMessageType,
     TransmitMessage: TransmitMessage,
     TransmitMessageType: TransmitMessageType,
+    MessageTopic: MessageTopic,
 
     DeviceAlarmCode: DeviceAlarmCode,
     DeviceRealCode: DeviceRealCode,
