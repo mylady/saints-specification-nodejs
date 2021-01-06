@@ -12,6 +12,8 @@ const error_1 = require("./error");
 const interface_category_1 = require("./interface-category");
 const interface_value_1 = require("./interface-value");
 const message_1 = require("./message");
+const rest_1 = require("./rest");
+const service_1 = require("./service");
 exports.default = {
     CodeMap: code_map_1.CodeMap,
     SpecError: error_1.SpecError,
@@ -35,5 +37,11 @@ exports.default = {
     VideoAnalyseValue: interface_value_1.VideoAnalyseValue,
     VideoAnalyseType: interface_value_1.VideoAnalyseType,
     Face: interface_value_1.Face,
-    CarPlate: interface_value_1.CarPlate
+    CarPlate: interface_value_1.CarPlate,
+    RestQuery: rest_1.RestQuery,
+    RestResponse: rest_1.RestResponse,
+    Service: service_1.Service,
+    ServiceFinder: service_1.ServiceFinder,
+    ServiceRegister: service_1.ServiceRegister,
+    ServiceType: service_1.ServiceType
 };

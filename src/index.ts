@@ -10,9 +10,8 @@ import { SpecError } from './error';
 import { InterfaceCategory } from './interface-category';
 import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate } from './interface-value';
 import { Message, MessageType, MessageTopics } from './message';
-import { } from './rest';
-import { } from './service';
-
+import { RestQuery, RestResponse } from './rest';
+import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
 
 export default {
     CodeMap,
@@ -37,5 +36,11 @@ export default {
     VideoAnalyseValue,
     VideoAnalyseType,
     Face,
-    CarPlate
+    CarPlate,
+    RestQuery,
+    RestResponse,
+    Service,
+    ServiceFinder,
+    ServiceRegister,
+    ServiceType
 }

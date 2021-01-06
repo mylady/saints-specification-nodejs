@@ -6,7 +6,9 @@
         "target": "es2019",
         "lib": [
             "ES2019"
-        ]
+        ],
+        "declaration": true,
+        "declarationDir": "@types/saints-specification-nodejs"
     },
     "include": [
         "./src/**/*"
