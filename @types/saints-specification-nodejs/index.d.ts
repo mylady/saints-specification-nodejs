@@ -5,7 +5,7 @@ import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, Vid
 import { Message, MessageType } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
-declare const _default: {
+declare const spec: {
     CodeMap: typeof CodeMap;
     SpecError: typeof SpecError;
     TwoDimension: typeof TwoDimension;
@@ -41,4 +41,4 @@ declare const _default: {
     ServiceRegister: typeof ServiceRegister;
     ServiceType: typeof ServiceType;
 };
-export default _default;
+export default spec;

@@ -13,7 +13,7 @@ import { Message, MessageType, MessageTopics } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
 
-export default {
+const spec = {
     CodeMap,
     SpecError,
     TwoDimension,
@@ -44,3 +44,8 @@ export default {
     ServiceRegister,
     ServiceType
 }
+
+export default spec;
+
+module.exports = spec;
+module.exports.default = spec;

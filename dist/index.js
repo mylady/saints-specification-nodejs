@@ -14,7 +14,7 @@ const interface_value_1 = require("./interface-value");
 const message_1 = require("./message");
 const rest_1 = require("./rest");
 const service_1 = require("./service");
-exports.default = {
+const spec = {
     CodeMap: code_map_1.CodeMap,
     SpecError: error_1.SpecError,
     TwoDimension: dimension_1.TwoDimension,
@@ -45,3 +45,6 @@ exports.default = {
     ServiceRegister: service_1.ServiceRegister,
     ServiceType: service_1.ServiceType
 };
+exports.default = spec;
+module.exports = spec;
+module.exports.default = spec;
