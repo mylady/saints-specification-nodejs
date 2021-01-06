@@ -1,11 +1,10 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "2.1.7",
+  "version": "3.0.0",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d dist",
-    "test": "./node_modules/.bin/babel-node ./test/es6Test.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,16 +21,7 @@
     "url": "https://github.com/mylady/saints-specification-nodejs/issues"
   },
   "homepage": "https://github.com/mylady/saints-specification-nodejs#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.2",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.2"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.10.2",
-    "caniuse-lite": "^1.0.30001159",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.5"
+    "got": "^11.8.1"
   }
 }
