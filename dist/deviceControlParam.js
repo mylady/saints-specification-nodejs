@@ -18,7 +18,7 @@ var DeviceControlParam = function DeviceControlParam() {
   this.InterfaceCode = 0;
   this.Receivers = [];
   this.Sender = '';
-  this.Parameter = [];
+  this.Parameters = [];
 };
 
 exports["default"] = DeviceControlParam;

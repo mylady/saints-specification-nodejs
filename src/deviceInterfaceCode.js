@@ -465,6 +465,10 @@ let deviceInterfaceCode = {
         name: '依图视频分析接口',
         value: 113
     },
+    hanweiAirMonitorUDPV2: {
+        name: '汉威空气质量监测V2',
+        value: 114
+    },
 
 
     //saints define
