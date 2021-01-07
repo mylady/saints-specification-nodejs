@@ -51,8 +51,8 @@ export class RestResponse {
         return resp;
     }
 
-    static dataResponse(d, cnt) {
-        let resp = new RestResponse(true, d, cnt);
+    static dataResponse(d: any, cnt: number) {
+        let resp = new RestResponse(true, 0, '', d, cnt);
         return resp;
     }
 }

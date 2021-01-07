@@ -15,5 +15,5 @@ export declare class RestResponse {
     total: number;
     constructor(result: boolean, err_code?: number, err_msg?: string, data?: any, total?: number);
     static boolResponse(b: boolean, err: string | Error | SpecError): RestResponse;
-    static dataResponse(d: any, cnt: any): RestResponse;
+    static dataResponse(d: any, cnt: number): RestResponse;
 }
