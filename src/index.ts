@@ -1,14 +1,9 @@
 import { CodeMap } from './code-map';
 import { Config } from './config';
-import { ResourceCode } from './resource-code';
-import { DeviceAlarmCode } from './device-alarm-code';
-import { DeviceEventCode } from './device-event-code';
-import { DeviceStatusCode } from './device-status-code';
-import { DeviceFaultCode } from './device-fault-code';
+import { ResourceCode, DeviceAlarmCode, DeviceEventCode, DeviceStatusCode, DeviceFaultCode, InterfaceCategory } from './device-code';
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
-import { InterfaceCategory } from './interface-category';
-import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate } from './interface-value';
+import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam } from './device-interface';
 import { Message, MessageType, MessageTopics } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
@@ -42,7 +37,9 @@ const spec = {
     Service,
     ServiceFinder,
     ServiceRegister,
-    ServiceType
+    ServiceType,
+    DeviceControlParam,
+    InterfaceInitParam
 }
 
 export default spec;

@@ -1,7 +1,7 @@
 import { CodeMap } from './code-map';
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
-import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate } from './interface-value';
+import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam } from './device-interface';
 import { Message, MessageType } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
@@ -40,5 +40,7 @@ declare const spec: {
     ServiceFinder: typeof ServiceFinder;
     ServiceRegister: typeof ServiceRegister;
     ServiceType: typeof ServiceType;
+    DeviceControlParam: typeof DeviceControlParam;
+    InterfaceInitParam: typeof InterfaceInitParam;
 };
 export default spec;

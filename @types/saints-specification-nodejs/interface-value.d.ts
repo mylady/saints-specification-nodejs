@@ -1,3 +1,10 @@
+export declare class DoorValue {
+    person_name: string;
+    person_card: string;
+    scene_image: string;
+    scene_image_path: string;
+    constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string);
+}
 export declare class EnvMonitorValue {
     temp: number;
     humi: number;

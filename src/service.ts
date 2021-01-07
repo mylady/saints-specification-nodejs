@@ -19,17 +19,21 @@ export enum ServiceType {
     TimeSerialService = 8
 };
 
-/*
-'0': '身份认证服务',
-    '1': '文件管理服务',
-    '2': '设备信息服务',
-    '3': '云代理服务',
-    '4': '实时监控服务',
-    '5': '消息服务',
-    '6': '事件服务',
-    '7': '日志服务',
-    '8': '时间流服务'
-*/
+let serviceTypeMap: Map<ServiceType, string> = new Map([
+    [ServiceType.IdentityService, '身份认证服务'],
+    [ServiceType.FileHub, '文件管理服务'],
+    [ServiceType.DeviceService, '设备信息服务'],
+    [ServiceType.CloudProxyService, '云代理服务'],
+    [ServiceType.MonitorService, '实时监控服务'],
+    [ServiceType.MessageHub, '消息服务'],
+    [ServiceType.EventService, '事件服务'],
+    [ServiceType.LogService, '日志服务'],
+    [ServiceType.TimeSerialService, '时间流服务'],
+]);
+
+export function translateServiceType(type: ServiceType) {
+    return serviceTypeMap.get(type);
+};
 
 export class Service {
     address: string;

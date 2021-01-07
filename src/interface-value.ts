@@ -1,3 +1,18 @@
+export class DoorValue {
+    person_name: string;
+    person_card: string;
+    scene_image: string;
+    scene_image_path: string;
+
+
+    constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
+        this.person_card = card;
+        this.person_name = name;
+        this.scene_image = sceneImage;
+        this.scene_image_path = sceneImagePath;
+    }
+}
+
 export class EnvMonitorValue {
     temp: number;
     humi: number;
@@ -42,7 +57,6 @@ export class RFIDTagValue {
         this.heart_rate = heartRate;
     }
 }
-
 
 export class UPSValue {
     backup_time: string;

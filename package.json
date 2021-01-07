@@ -1,6 +1,6 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/mylady/saints-specification-nodejs#readme",
   "dependencies": {
-    "got": "^11.8.1"
+    "got": "^11.8.1",
+    "moment": "^2.29.1"
   }
 }

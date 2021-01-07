@@ -14,6 +14,7 @@ var MessageType;
 let sysMessageTypeMap = new Map([
     [MessageType.DeviceStatus, '设备状态'],
     [MessageType.DeviceEvent, '设备事件'],
+    [MessageType.DeviceFault, '设备故障'],
     [MessageType.DeviceControl, '设备控制'],
     [MessageType.Custom, '自定义'],
     [MessageType.Others, '其他'],

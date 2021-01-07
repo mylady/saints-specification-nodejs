@@ -9,6 +9,7 @@ export declare enum ServiceType {
     LogService = 7,
     TimeSerialService = 8
 }
+export declare function translateServiceType(type: ServiceType): string;
 export declare class Service {
     address: string;
     type: ServiceType;
