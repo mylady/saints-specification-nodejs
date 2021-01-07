@@ -195,6 +195,22 @@ export class DeviceControlParam {
     }
 }
 
+export interface InterfaceInitParamOption {
+    remote_service_address?: string;
+    remote_ip_address?: string;
+    remote_port?: number;
+    local_port?: number;
+    user_name?: string;
+    user_pwd?: string;
+    com_port?: string;
+    baud_rate?: number;
+    data_bits?: number;
+    stop_bits?: number;
+    parity?: number;
+    connection_string?: string;
+    extra?: string;
+}
+
 export class InterfaceInitParam {
     remote_service_address: string;
     remote_ip_address: string;
@@ -210,20 +226,20 @@ export class InterfaceInitParam {
     connection_string: string;
     extra: string;
 
-    constructor(serviceAddress?: string, remoteIP?: string, remotePort?: number, localPort?: number, user?: string, pwd?: string, com?: string, baudRate: number = 9600, dataBits: number = 8, stopBits: number = 1, parity: number = 0, conn: string = '', extra: string = '') {
-        this.remote_service_address = serviceAddress;
-        this.remote_ip_address = remoteIP;
-        this.remote_port = remotePort;
-        this.local_port = localPort;
-        this.user_name = user;
-        this.user_pwd = pwd;
-        this.com_port = com;
-        this.baud_rate = baudRate;
-        this.data_bits = dataBits;
-        this.stop_bits = stopBits;
-        this.parity = parity;
-        this.connection_string = conn;
-        this.extra = extra;
+    constructor(opt: InterfaceInitParamOption) {
+        this.remote_service_address = opt.remote_service_address;
+        this.remote_ip_address = opt.remote_ip_address;
+        this.remote_port = opt.remote_port;
+        this.local_port = opt.local_port;
+        this.user_name = opt.user_name;
+        this.user_pwd = opt.user_pwd;
+        this.com_port = opt.com_port;
+        this.baud_rate = opt.baud_rate;
+        this.data_bits = opt.data_bits;
+        this.stop_bits = opt.stop_bits;
+        this.parity = opt.parity;
+        this.connection_string = opt.connection_string;
+        this.extra = opt.extra;
     }
 }
 

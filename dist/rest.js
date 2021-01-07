@@ -4,28 +4,28 @@ exports.RestResponse = exports.RestQuery = void 0;
 const error_1 = require("./error");
 //this is for server process not for client
 class RestQuery {
-    constructor(start, limit, sort, dir, keyword) {
+    constructor(opt) {
         this.sort = '';
         this.dir = '';
         this.keyword = '';
-        this.start = start;
-        this.limit = limit;
-        this.sort = sort;
-        this.dir = dir;
-        this.keyword = keyword;
+        this.start = opt.start;
+        this.limit = opt.limit || 0;
+        this.sort = opt.sort || '';
+        this.dir = opt.dir || '';
+        this.keyword = opt.keyword || '';
     }
 }
 exports.RestQuery = RestQuery;
 class RestResponse {
-    constructor(result, err_code = 0, err_msg = '', data = null, total = 0) {
-        this.result = result;
-        this.err_code = err_code;
-        this.err_msg = err_msg;
-        this.data = data;
-        this.total = total;
+    constructor(opt) {
+        this.result = opt.result;
+        this.err_code = opt.err_code;
+        this.err_msg = opt.err_msg;
+        this.data = opt.data;
+        this.total = opt.total;
     }
     static boolResponse(b, err) {
-        let resp = new RestResponse(b);
+        let resp = new RestResponse({ result: b });
         if (err) {
             if (err instanceof String) {
                 resp.err_msg = err;
@@ -46,7 +46,11 @@ class RestResponse {
         return resp;
     }
     static dataResponse(d, cnt) {
-        let resp = new RestResponse(true, 0, '', d, cnt);
+        let resp = new RestResponse({
+            result: true,
+            data: d,
+            total: cnt
+        });
         return resp;
     }
 }

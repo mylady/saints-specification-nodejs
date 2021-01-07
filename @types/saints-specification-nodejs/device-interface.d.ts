@@ -115,6 +115,21 @@ export declare class DeviceControlParam {
     parameters: Array<string>;
     constructor(sdk: number, control: DeviceControlCode, receivers: Array<string>, parameters?: Array<string>, sender?: string);
 }
+export interface InterfaceInitParamOption {
+    remote_service_address?: string;
+    remote_ip_address?: string;
+    remote_port?: number;
+    local_port?: number;
+    user_name?: string;
+    user_pwd?: string;
+    com_port?: string;
+    baud_rate?: number;
+    data_bits?: number;
+    stop_bits?: number;
+    parity?: number;
+    connection_string?: string;
+    extra?: string;
+}
 export declare class InterfaceInitParam {
     remote_service_address: string;
     remote_ip_address: string;
@@ -129,7 +144,7 @@ export declare class InterfaceInitParam {
     parity: number;
     connection_string: string;
     extra: string;
-    constructor(serviceAddress?: string, remoteIP?: string, remotePort?: number, localPort?: number, user?: string, pwd?: string, com?: string, baudRate?: number, dataBits?: number, stopBits?: number, parity?: number, conn?: string, extra?: string);
+    constructor(opt: InterfaceInitParamOption);
 }
 export declare class InterfaceDescripter {
     name: string;

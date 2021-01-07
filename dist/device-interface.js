@@ -142,20 +142,20 @@ class DeviceControlParam {
 }
 exports.DeviceControlParam = DeviceControlParam;
 class InterfaceInitParam {
-    constructor(serviceAddress, remoteIP, remotePort, localPort, user, pwd, com, baudRate = 9600, dataBits = 8, stopBits = 1, parity = 0, conn = '', extra = '') {
-        this.remote_service_address = serviceAddress;
-        this.remote_ip_address = remoteIP;
-        this.remote_port = remotePort;
-        this.local_port = localPort;
-        this.user_name = user;
-        this.user_pwd = pwd;
-        this.com_port = com;
-        this.baud_rate = baudRate;
-        this.data_bits = dataBits;
-        this.stop_bits = stopBits;
-        this.parity = parity;
-        this.connection_string = conn;
-        this.extra = extra;
+    constructor(opt) {
+        this.remote_service_address = opt.remote_service_address;
+        this.remote_ip_address = opt.remote_ip_address;
+        this.remote_port = opt.remote_port;
+        this.local_port = opt.local_port;
+        this.user_name = opt.user_name;
+        this.user_pwd = opt.user_pwd;
+        this.com_port = opt.com_port;
+        this.baud_rate = opt.baud_rate;
+        this.data_bits = opt.data_bits;
+        this.stop_bits = opt.stop_bits;
+        this.parity = opt.parity;
+        this.connection_string = opt.connection_string;
+        this.extra = opt.extra;
     }
 }
 exports.InterfaceInitParam = InterfaceInitParam;
