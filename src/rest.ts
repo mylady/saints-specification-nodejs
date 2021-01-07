@@ -12,12 +12,12 @@ export interface RestQueryOption {
 export class RestQuery {
     start: number;
     limit: number;
-    sort: string = '';
-    dir: string = '';
-    keyword: string = '';
+    sort: string;
+    dir: string;
+    keyword: string;
 
     constructor(opt: RestQueryOption) {
-        this.start = opt.start;
+        this.start = opt.start || 0;
         this.limit = opt.limit || 0;
         this.sort = opt.sort || '';
         this.dir = opt.dir || '';
@@ -41,11 +41,11 @@ export class RestResponse {
     total: number;
 
     constructor(opt: RestResponseOption) {
-        this.result = opt.result;
-        this.err_code = opt.err_code;
-        this.err_msg = opt.err_msg;
+        this.result = opt.result || false;
+        this.err_code = opt.err_code || 0;
+        this.err_msg = opt.err_msg || '';
         this.data = opt.data;
-        this.total = opt.total;
+        this.total = opt.total || 0;
     }
 
     static boolResponse(b: boolean, err: string | Error | SpecError) {

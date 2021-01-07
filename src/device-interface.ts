@@ -227,19 +227,19 @@ export class InterfaceInitParam {
     extra: string;
 
     constructor(opt: InterfaceInitParamOption) {
-        this.remote_service_address = opt.remote_service_address;
-        this.remote_ip_address = opt.remote_ip_address;
-        this.remote_port = opt.remote_port;
-        this.local_port = opt.local_port;
-        this.user_name = opt.user_name;
-        this.user_pwd = opt.user_pwd;
-        this.com_port = opt.com_port;
-        this.baud_rate = opt.baud_rate;
-        this.data_bits = opt.data_bits;
-        this.stop_bits = opt.stop_bits;
-        this.parity = opt.parity;
-        this.connection_string = opt.connection_string;
-        this.extra = opt.extra;
+        this.remote_service_address = opt.remote_service_address || '';
+        this.remote_ip_address = opt.remote_ip_address || '';
+        this.remote_port = opt.remote_port || 0;
+        this.local_port = opt.local_port || 0;
+        this.user_name = opt.user_name || '';
+        this.user_pwd = opt.user_pwd || '';
+        this.com_port = opt.com_port || '';
+        this.baud_rate = opt.baud_rate || 9600;
+        this.data_bits = opt.data_bits || 8;
+        this.stop_bits = opt.stop_bits || 1;
+        this.parity = opt.parity || 0;
+        this.connection_string = opt.connection_string || '';
+        this.extra = opt.extra || '';
     }
 }
 
