@@ -1,6 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VideoAnalyseValue = exports.CarPlate = exports.Face = exports.VideoAnalyseType = exports.CallValue = exports.UPSValue = exports.RFIDTagValue = exports.PowerGridValue = exports.EnvMonitorValue = void 0;
+exports.VideoAnalyseValue = exports.CarPlate = exports.Face = exports.VideoAnalyseType = exports.CallValue = exports.UPSValue = exports.RFIDTagValue = exports.PowerGridValue = exports.EnvMonitorValue = exports.DoorValue = void 0;
+class DoorValue {
+    constructor(card, name, sceneImage, sceneImagePath) {
+        this.person_card = card;
+        this.person_name = name;
+        this.scene_image = sceneImage;
+        this.scene_image_path = sceneImagePath;
+    }
+}
+exports.DoorValue = DoorValue;
 class EnvMonitorValue {
     constructor(temp, humi, hcho = 0, co2 = 0, pm25 = 0, tvoc = 0, n3h = 0, h2s = 0) {
         this.temp = temp;
