@@ -5,10 +5,7 @@ const error_1 = require("./error");
 //this is for server process not for client
 class RestQuery {
     constructor(opt) {
-        this.sort = '';
-        this.dir = '';
-        this.keyword = '';
-        this.start = opt.start;
+        this.start = opt.start || 0;
         this.limit = opt.limit || 0;
         this.sort = opt.sort || '';
         this.dir = opt.dir || '';
@@ -18,11 +15,11 @@ class RestQuery {
 exports.RestQuery = RestQuery;
 class RestResponse {
     constructor(opt) {
-        this.result = opt.result;
-        this.err_code = opt.err_code;
-        this.err_msg = opt.err_msg;
+        this.result = opt.result || false;
+        this.err_code = opt.err_code || 0;
+        this.err_msg = opt.err_msg || '';
         this.data = opt.data;
-        this.total = opt.total;
+        this.total = opt.total || 0;
     }
     static boolResponse(b, err) {
         let resp = new RestResponse({ result: b });
