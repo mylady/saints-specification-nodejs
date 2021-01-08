@@ -29,7 +29,7 @@ export class Message {
     type: MessageType;
     content: string;
     sender: string;
-
+    
     constructor(type: MessageType, content: string, sender?: string) {
         this.type = type;
         this.content = content;
