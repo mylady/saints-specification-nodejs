@@ -33,7 +33,8 @@ export const DeviceAlarmCode: Array<CodeMap> = [
     CodeMap.from('28', '打架报警'),
     CodeMap.from('29', '高压断网报警'),
     CodeMap.from('30', '高压触网报警'),
-    CodeMap.from('31', '高压短路报警')
+    CodeMap.from('31', '高压短路报警'),
+    CodeMap.from('32', '视频分析报警')
 ];
 
 export const DeviceEventCode: Array<CodeMap> = [
@@ -71,11 +72,32 @@ export const DeviceFaultCode: Array<CodeMap> = [
     CodeMap.from('4', '硬盘满'),
     CodeMap.from('5', '硬盘故障'),
     CodeMap.from('6', '网络异常'),
-    CodeMap.from('7', '物品遗留'),
-    CodeMap.from('8', '干扰'),
-    CodeMap.from('9', '电源异常'),
-    CodeMap.from('10', '视质异常'),
-    CodeMap.from('11', '离线')
+    CodeMap.from('7', '干扰'),
+    CodeMap.from('8', '电源异常'),
+    CodeMap.from('9', '视质异常'),
+    CodeMap.from('10', '离线'),
+    CodeMap.from('11', '亮度异常'),
+    CodeMap.from('12', '颜色异常'),
+    CodeMap.from('13', '对比度异常'),
+    CodeMap.from('14', '画面冻结'),
+    CodeMap.from('15', '图像模糊'),
+    CodeMap.from('16', '噪声干扰'),
+    CodeMap.from('17', '强横纹'),
+    CodeMap.from('18', '滚屏'),
+    CodeMap.from('19', '图像偏色'),
+    CodeMap.from('20', '云台异常'),
+    CodeMap.from('21', '黑白监测'),
+    CodeMap.from('22', '图像抖动'),
+    CodeMap.from('23', '图像剧变'),
+    CodeMap.from('24', '场景变换'),
+    CodeMap.from('25', '图像过暗'),
+    CodeMap.from('26', '信令延迟'),
+    CodeMap.from('27', '视频流延迟'),
+    CodeMap.from('28', '关键帧延迟'),
+    CodeMap.from('29', '图像过亮'),
+    CodeMap.from('30', '马赛克'),
+    CodeMap.from('31', '实时图像异常'),
+    CodeMap.from('32', '录像异常')
 ];
 
 export const ResourceCode: Array<CodeMap> = [
@@ -224,9 +246,5 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('111', '比易特电窗网络控制接口'),
     CodeMap.from('112', '飞繁消防报警主机接口'),
     CodeMap.from('113', '依图视频分析接口'),
-    CodeMap.from('114', '汉威空气质量接口v2'),
-
-    //saints define
-    CodeMap.from('10001', '圣熙门禁接口'),
-    CodeMap.from('10002', '圣熙动力环境接口'),
+    CodeMap.from('114', '汉威空气质量接口v2')
 ];

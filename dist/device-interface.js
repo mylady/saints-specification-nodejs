@@ -32,37 +32,43 @@ class PowerGridValue {
 }
 exports.PowerGridValue = PowerGridValue;
 class RFIDTagValue {
-    constructor(x, y, battery, heartRate) {
-        this.x = x;
-        this.y = y;
-        this.battery = battery;
-        this.heart_rate = heartRate;
+    constructor(opt) {
+        this.x = opt.x || 0;
+        this.y = opt.y || 0;
+        this.z = opt.z || 0;
+        this.tag_id = opt.tag_id || '';
+        this.person_id = opt.person_id || '';
+        this.battery = opt.battery || 0;
+        this.heart_rate = opt.heart_rate || 0;
+        this.blood_pressure_high = opt.blood_pressure_high || 0;
+        this.blood_pressure_low = opt.blood_pressure_low || 0;
     }
 }
 exports.RFIDTagValue = RFIDTagValue;
 class UPSValue {
-    constructor(backupTime, aVolter, bVolter, cVolter, aElec, bElec, cElec) {
-        this.backup_time = backupTime;
-        this.av = aVolter;
-        this.bv = bVolter;
-        this.cv = cVolter;
-        this.ae = aElec;
-        this.be = bElec;
-        this.ce = cElec;
+    constructor(opt) {
+        this.backup_time = opt.backup_time || '';
+        this.battry = opt.battry || '';
+        this.a_volter = opt.a_volter || 0;
+        this.b_volter = opt.b_volter || 0;
+        this.c_volter = opt.c_volter || 0;
+        this.a_elec = opt.a_elec || 0;
+        this.b_elec = opt.b_elec || 0;
+        this.c_elec = opt.c_elec || 0;
     }
 }
 exports.UPSValue = UPSValue;
 class CallValue {
-    constructor(master, slave) {
-        this.master = master;
-        this.slave = slave;
+    constructor(caller, called) {
+        this.caller = caller;
+        this.called = called;
     }
 }
 exports.CallValue = CallValue;
 var VideoAnalyseType;
 (function (VideoAnalyseType) {
-    VideoAnalyseType[VideoAnalyseType["Face"] = 0] = "Face";
-    VideoAnalyseType[VideoAnalyseType["Behavior"] = 1] = "Behavior";
+    VideoAnalyseType[VideoAnalyseType["Behavior"] = 0] = "Behavior";
+    VideoAnalyseType[VideoAnalyseType["Face"] = 1] = "Face";
     VideoAnalyseType[VideoAnalyseType["CarPlate"] = 2] = "CarPlate";
 })(VideoAnalyseType = exports.VideoAnalyseType || (exports.VideoAnalyseType = {}));
 class Face {
@@ -170,6 +176,7 @@ class InterfaceDescripter {
 exports.InterfaceDescripter = InterfaceDescripter;
 var DeviceEventType;
 (function (DeviceEventType) {
+    DeviceEventType[DeviceEventType["Unknown"] = -1] = "Unknown";
     DeviceEventType[DeviceEventType["Status"] = 0] = "Status";
     DeviceEventType[DeviceEventType["Normal"] = 1] = "Normal";
     DeviceEventType[DeviceEventType["Alarm"] = 2] = "Alarm";
@@ -185,7 +192,7 @@ class DeviceEventData {
         this.status_code = statusCode;
         this.fault_code = faultCode;
         this.event_time = moment().format('YYYY-MM-DD HH:mm:ss');
-        this.event_description = desp;
+        this.event_desp = desp;
         this.event_extra = extra;
     }
 }

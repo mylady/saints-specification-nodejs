@@ -1,5 +1,6 @@
 import { CodeMap } from './code-map';
 export declare enum MessageType {
+    Unknown = -1,
     DeviceStatus = 0,
     DeviceEvent = 1,
     DeviceFault = 2,

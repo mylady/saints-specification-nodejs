@@ -45,54 +45,90 @@ export class PowerGridValue {
     }
 }
 
+export interface RFIDTagValueOption {
+    x: number;
+    y: number;
+    z?: number;
+    tag_id: string;
+    person_id?: string;
+    person_name?: string;
+    battery: number;
+    heart_rate?: number;
+    blood_pressure_high?: number;
+    blood_pressure_low?: number;
+}
+
 export class RFIDTagValue {
     x: number;
     y: number;
+    z: number;
+    tag_id: string;
+    person_id: string;
+    person_name: string;
     battery: number;
     heart_rate: number;
+    blood_pressure_high: number;
+    blood_pressure_low: number;
 
-    constructor(x: number, y: number, battery: number, heartRate?: number) {
-        this.x = x;
-        this.y = y;
-        this.battery = battery;
-        this.heart_rate = heartRate;
+    constructor(opt: RFIDTagValueOption) {
+        this.x = opt.x || 0;
+        this.y = opt.y || 0;
+        this.z = opt.z || 0;
+        this.tag_id = opt.tag_id || '';
+        this.person_id = opt.person_id || '';
+        this.battery = opt.battery || 0;
+        this.heart_rate = opt.heart_rate || 0;
+        this.blood_pressure_high = opt.blood_pressure_high || 0;
+        this.blood_pressure_low = opt.blood_pressure_low || 0;
     }
 }
 
+export interface UPSValueOption {
+    backup_time: string;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
+}
 
 export class UPSValue {
     backup_time: string;
-    av: number;
-    bv: number;
-    cv: number;
-    ae: number;
-    be: number;
-    ce: number;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
 
-    constructor(backupTime: string, aVolter?: number, bVolter?: number, cVolter?: number, aElec?: number, bElec?: number, cElec?: number) {
-        this.backup_time = backupTime;
-        this.av = aVolter;
-        this.bv = bVolter;
-        this.cv = cVolter;
-        this.ae = aElec;
-        this.be = bElec;
-        this.ce = cElec;
+    constructor(opt: UPSValueOption) {
+        this.backup_time = opt.backup_time || '';
+        this.battry = opt.battry || '';
+        this.a_volter = opt.a_volter || 0;
+        this.b_volter = opt.b_volter || 0;
+        this.c_volter = opt.c_volter || 0;
+        this.a_elec = opt.a_elec || 0;
+        this.b_elec = opt.b_elec || 0;
+        this.c_elec = opt.c_elec || 0;
     }
 }
 
 export class CallValue {
-    master: string;
-    slave: string;
+    caller: string;
+    called: string;
 
-    constructor(master: string, slave: string) {
-        this.master = master;
-        this.slave = slave;
+    constructor(caller: string, called: string) {
+        this.caller = caller;
+        this.called = called;
     }
 }
 
 export enum VideoAnalyseType {
-    Face = 0,
-    Behavior = 1,
+    Behavior = 0,
+    Face = 1,
     CarPlate = 2
 }
 
@@ -258,6 +294,7 @@ export class InterfaceDescripter {
 }
 
 export enum DeviceEventType {
+    Unknown = -1,
     Status = 0,
     Normal = 1,
     Alarm = 2,
@@ -273,7 +310,7 @@ export class DeviceEventData {
     status_code: number;
     fault_code: number;
     event_time: string;
-    event_description: string;
+    event_desp: string;
     event_extra: string;
 
     constructor(resourceCode: number, address: string, eventType: DeviceEventType, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
@@ -285,7 +322,7 @@ export class DeviceEventData {
         this.status_code = statusCode;
         this.fault_code = faultCode;
         this.event_time = moment().format('YYYY-MM-DD HH:mm:ss');
-        this.event_description = desp;
+        this.event_desp = desp;
         this.event_extra = extra;
     }
 }

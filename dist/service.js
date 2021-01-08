@@ -8,6 +8,7 @@ const HubTemplateAddress = `http://ip:${config_1.Config.serviceHubPort}/rest`;
 const ServiceRegisterInterval = 10;
 var ServiceType;
 (function (ServiceType) {
+    ServiceType[ServiceType["Unknown"] = -1] = "Unknown";
     ServiceType[ServiceType["IdentityService"] = 0] = "IdentityService";
     ServiceType[ServiceType["FileHub"] = 1] = "FileHub";
     ServiceType[ServiceType["DeviceService"] = 2] = "DeviceService";
@@ -20,6 +21,7 @@ var ServiceType;
 })(ServiceType = exports.ServiceType || (exports.ServiceType = {}));
 ;
 let serviceTypeMap = new Map([
+    [ServiceType.Unknown, '未知服务'],
     [ServiceType.IdentityService, '身份认证服务'],
     [ServiceType.FileHub, '文件管理服务'],
     [ServiceType.DeviceService, '设备信息服务'],

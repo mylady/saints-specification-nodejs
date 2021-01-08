@@ -35,7 +35,8 @@ exports.DeviceAlarmCode = [
     code_map_1.CodeMap.from('28', '打架报警'),
     code_map_1.CodeMap.from('29', '高压断网报警'),
     code_map_1.CodeMap.from('30', '高压触网报警'),
-    code_map_1.CodeMap.from('31', '高压短路报警')
+    code_map_1.CodeMap.from('31', '高压短路报警'),
+    code_map_1.CodeMap.from('32', '视频分析报警')
 ];
 exports.DeviceEventCode = [
     code_map_1.CodeMap.from('-1', '未知类型'),
@@ -70,11 +71,32 @@ exports.DeviceFaultCode = [
     code_map_1.CodeMap.from('4', '硬盘满'),
     code_map_1.CodeMap.from('5', '硬盘故障'),
     code_map_1.CodeMap.from('6', '网络异常'),
-    code_map_1.CodeMap.from('7', '物品遗留'),
-    code_map_1.CodeMap.from('8', '干扰'),
-    code_map_1.CodeMap.from('9', '电源异常'),
-    code_map_1.CodeMap.from('10', '视质异常'),
-    code_map_1.CodeMap.from('11', '离线')
+    code_map_1.CodeMap.from('7', '干扰'),
+    code_map_1.CodeMap.from('8', '电源异常'),
+    code_map_1.CodeMap.from('9', '视质异常'),
+    code_map_1.CodeMap.from('10', '离线'),
+    code_map_1.CodeMap.from('11', '亮度异常'),
+    code_map_1.CodeMap.from('12', '颜色异常'),
+    code_map_1.CodeMap.from('13', '对比度异常'),
+    code_map_1.CodeMap.from('14', '画面冻结'),
+    code_map_1.CodeMap.from('15', '图像模糊'),
+    code_map_1.CodeMap.from('16', '噪声干扰'),
+    code_map_1.CodeMap.from('17', '强横纹'),
+    code_map_1.CodeMap.from('18', '滚屏'),
+    code_map_1.CodeMap.from('19', '图像偏色'),
+    code_map_1.CodeMap.from('20', '云台异常'),
+    code_map_1.CodeMap.from('21', '黑白监测'),
+    code_map_1.CodeMap.from('22', '图像抖动'),
+    code_map_1.CodeMap.from('23', '图像剧变'),
+    code_map_1.CodeMap.from('24', '场景变换'),
+    code_map_1.CodeMap.from('25', '图像过暗'),
+    code_map_1.CodeMap.from('26', '信令延迟'),
+    code_map_1.CodeMap.from('27', '视频流延迟'),
+    code_map_1.CodeMap.from('28', '关键帧延迟'),
+    code_map_1.CodeMap.from('29', '图像过亮'),
+    code_map_1.CodeMap.from('30', '马赛克'),
+    code_map_1.CodeMap.from('31', '实时图像异常'),
+    code_map_1.CodeMap.from('32', '录像异常')
 ];
 exports.ResourceCode = [
     code_map_1.CodeMap.from('-1', '未知类型'),
@@ -217,8 +239,5 @@ exports.InterfaceCategory = [
     code_map_1.CodeMap.from('111', '比易特电窗网络控制接口'),
     code_map_1.CodeMap.from('112', '飞繁消防报警主机接口'),
     code_map_1.CodeMap.from('113', '依图视频分析接口'),
-    code_map_1.CodeMap.from('114', '汉威空气质量接口v2'),
-    //saints define
-    code_map_1.CodeMap.from('10001', '圣熙门禁接口'),
-    code_map_1.CodeMap.from('10002', '圣熙动力环境接口'),
+    code_map_1.CodeMap.from('114', '汉威空气质量接口v2')
 ];

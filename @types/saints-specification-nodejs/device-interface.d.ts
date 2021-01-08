@@ -21,31 +21,60 @@ export declare class PowerGridValue {
     elec: number;
     constructor(v: number, e: number);
 }
+export interface RFIDTagValueOption {
+    x: number;
+    y: number;
+    z?: number;
+    tag_id: string;
+    person_id?: string;
+    person_name?: string;
+    battery: number;
+    heart_rate?: number;
+    blood_pressure_high?: number;
+    blood_pressure_low?: number;
+}
 export declare class RFIDTagValue {
     x: number;
     y: number;
+    z: number;
+    tag_id: string;
+    person_id: string;
+    person_name: string;
     battery: number;
     heart_rate: number;
-    constructor(x: number, y: number, battery: number, heartRate?: number);
+    blood_pressure_high: number;
+    blood_pressure_low: number;
+    constructor(opt: RFIDTagValueOption);
+}
+export interface UPSValueOption {
+    backup_time: string;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
 }
 export declare class UPSValue {
     backup_time: string;
-    av: number;
-    bv: number;
-    cv: number;
-    ae: number;
-    be: number;
-    ce: number;
-    constructor(backupTime: string, aVolter?: number, bVolter?: number, cVolter?: number, aElec?: number, bElec?: number, cElec?: number);
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
+    constructor(opt: UPSValueOption);
 }
 export declare class CallValue {
-    master: string;
-    slave: string;
-    constructor(master: string, slave: string);
+    caller: string;
+    called: string;
+    constructor(caller: string, called: string);
 }
 export declare enum VideoAnalyseType {
-    Face = 0,
-    Behavior = 1,
+    Behavior = 0,
+    Face = 1,
     CarPlate = 2
 }
 export declare class Face {
@@ -154,6 +183,7 @@ export declare class InterfaceDescripter {
     constructor(name: string, version: string, support: string, configable?: boolean);
 }
 export declare enum DeviceEventType {
+    Unknown = -1,
     Status = 0,
     Normal = 1,
     Alarm = 2,
@@ -168,7 +198,7 @@ export declare class DeviceEventData {
     status_code: number;
     fault_code: number;
     event_time: string;
-    event_description: string;
+    event_desp: string;
     event_extra: string;
     constructor(resourceCode: number, address: string, eventType: DeviceEventType, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
 }

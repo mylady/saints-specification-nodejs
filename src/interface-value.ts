@@ -4,7 +4,6 @@ export class DoorValue {
     scene_image: string;
     scene_image_path: string;
 
-
     constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
         this.person_card = card;
         this.person_name = name;

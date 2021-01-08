@@ -8,6 +8,7 @@ const HubTemplateAddress = `http://ip:${Config.serviceHubPort}/rest`;
 const ServiceRegisterInterval = 10;
 
 export enum ServiceType {
+    Unknown = -1,
     IdentityService = 0,
     FileHub = 1,
     DeviceService = 2,
@@ -20,6 +21,7 @@ export enum ServiceType {
 };
 
 let serviceTypeMap: Map<ServiceType, string> = new Map([
+    [ServiceType.Unknown, '未知服务'],
     [ServiceType.IdentityService, '身份认证服务'],
     [ServiceType.FileHub, '文件管理服务'],
     [ServiceType.DeviceService, '设备信息服务'],

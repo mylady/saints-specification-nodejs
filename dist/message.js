@@ -4,6 +4,7 @@ exports.MessageTopics = exports.Message = exports.translateMessageType = exports
 const code_map_1 = require("./code-map");
 var MessageType;
 (function (MessageType) {
+    MessageType[MessageType["Unknown"] = -1] = "Unknown";
     MessageType[MessageType["DeviceStatus"] = 0] = "DeviceStatus";
     MessageType[MessageType["DeviceEvent"] = 1] = "DeviceEvent";
     MessageType[MessageType["DeviceFault"] = 2] = "DeviceFault";
@@ -12,6 +13,7 @@ var MessageType;
     MessageType[MessageType["Others"] = 100] = "Others";
 })(MessageType = exports.MessageType || (exports.MessageType = {}));
 let sysMessageTypeMap = new Map([
+    [MessageType.Unknown, '未知类型'],
     [MessageType.DeviceStatus, '设备状态'],
     [MessageType.DeviceEvent, '设备事件'],
     [MessageType.DeviceFault, '设备故障'],

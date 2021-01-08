@@ -1,4 +1,5 @@
 export declare enum ServiceType {
+    Unknown = -1,
     IdentityService = 0,
     FileHub = 1,
     DeviceService = 2,
