@@ -3,16 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MessageTopic = exports.Message = exports.MessageType = void 0;
 const code_map_1 = require("./code-map");
 exports.MessageType = {
-    unknown: code_map_1.CodeMap.from('未知服务', -1),
-    deviceEvent: code_map_1.CodeMap.from('身份认证服务', 0),
-    deviceStatus: code_map_1.CodeMap.from('文件管理服务', 1),
-    deviceFault: code_map_1.CodeMap.from('设备信息服务', 2),
-    deviceControl: code_map_1.CodeMap.from('云代理服务', 3),
-    monitorService: code_map_1.CodeMap.from('实时监控服务', 4),
-    messageHub: code_map_1.CodeMap.from('消息服务', 5),
-    eventService: code_map_1.CodeMap.from('事件服务', 6),
-    logService: code_map_1.CodeMap.from('日志服务', 7),
-    timeSerialService: code_map_1.CodeMap.from('时间流服务', 8)
+    unknown: code_map_1.CodeMap.from('未知类型', -1),
+    deviceEvent: code_map_1.CodeMap.from('设备事件', 0),
+    deviceStatus: code_map_1.CodeMap.from('设备状态', 1),
+    deviceFault: code_map_1.CodeMap.from('设备故障', 2),
+    deviceControl: code_map_1.CodeMap.from('设备控制', 3),
+    custom: code_map_1.CodeMap.from('自定义', 99),
+    others: code_map_1.CodeMap.from('其他', 100),
 };
 //for biz message exchange
 class Message {

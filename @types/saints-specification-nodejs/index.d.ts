@@ -33,11 +33,8 @@ declare const spec: {
         deviceStatus: CodeMap;
         deviceFault: CodeMap;
         deviceControl: CodeMap;
-        monitorService: CodeMap;
-        messageHub: CodeMap;
-        eventService: CodeMap;
-        logService: CodeMap;
-        timeSerialService: CodeMap;
+        custom: CodeMap;
+        others: CodeMap;
     };
     DeviceAlarmCode: CodeMap[];
     DeviceEventCode: CodeMap[];

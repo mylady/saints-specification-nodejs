@@ -5,11 +5,8 @@ export declare const MessageType: {
     deviceStatus: CodeMap;
     deviceFault: CodeMap;
     deviceControl: CodeMap;
-    monitorService: CodeMap;
-    messageHub: CodeMap;
-    eventService: CodeMap;
-    logService: CodeMap;
-    timeSerialService: CodeMap;
+    custom: CodeMap;
+    others: CodeMap;
 };
 export declare class Message {
     type: number;

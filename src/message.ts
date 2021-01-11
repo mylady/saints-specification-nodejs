@@ -1,16 +1,13 @@
 import { CodeMap } from './code-map';
 
 export const MessageType = {
-    unknown: CodeMap.from('未知服务', -1),
-    deviceEvent: CodeMap.from('身份认证服务', 0),
-    deviceStatus: CodeMap.from('文件管理服务', 1),
-    deviceFault: CodeMap.from('设备信息服务', 2),
-    deviceControl: CodeMap.from('云代理服务', 3),
-    monitorService: CodeMap.from('实时监控服务', 4),
-    messageHub: CodeMap.from('消息服务', 5),
-    eventService: CodeMap.from('事件服务', 6),
-    logService: CodeMap.from('日志服务', 7),
-    timeSerialService: CodeMap.from('时间流服务', 8)
+    unknown: CodeMap.from('未知类型', -1),
+    deviceEvent: CodeMap.from('设备事件', 0),
+    deviceStatus: CodeMap.from('设备状态', 1),
+    deviceFault: CodeMap.from('设备故障', 2),
+    deviceControl: CodeMap.from('设备控制', 3),
+    custom: CodeMap.from('自定义', 99),
+    others: CodeMap.from('其他', 100),
 };
 
 //for biz message exchange
