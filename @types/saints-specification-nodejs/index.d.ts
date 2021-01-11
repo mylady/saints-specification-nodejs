@@ -1,7 +1,7 @@
 import { CodeMap } from './code-map';
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
-import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam } from './device-interface';
+import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceDescripter, DeviceEventData } from './device-interface';
 import { Message } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister } from './service';
@@ -40,6 +40,7 @@ declare const spec: {
     DeviceEventCode: CodeMap[];
     DeviceStatusCode: CodeMap[];
     DeviceFaultCode: CodeMap[];
+    DoorValue: typeof DoorValue;
     EnvMonitorValue: typeof EnvMonitorValue;
     PowerGridValue: typeof PowerGridValue;
     UPSValue: typeof UPSValue;
@@ -68,5 +69,14 @@ declare const spec: {
     };
     DeviceControlParam: typeof DeviceControlParam;
     InterfaceInitParam: typeof InterfaceInitParam;
+    InterfaceDescripter: typeof InterfaceDescripter;
+    DeviceEventType: {
+        unknown: number;
+        status: number;
+        normal: number;
+        alarm: number;
+        fault: number;
+    };
+    DeviceEventData: typeof DeviceEventData;
 };
 export default spec;

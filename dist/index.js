@@ -24,6 +24,7 @@ const spec = {
     DeviceEventCode: device_code_1.DeviceEventCode,
     DeviceStatusCode: device_code_1.DeviceStatusCode,
     DeviceFaultCode: device_code_1.DeviceFaultCode,
+    DoorValue: device_interface_1.DoorValue,
     EnvMonitorValue: device_interface_1.EnvMonitorValue,
     PowerGridValue: device_interface_1.PowerGridValue,
     UPSValue: device_interface_1.UPSValue,
@@ -40,7 +41,10 @@ const spec = {
     ServiceRegister: service_1.ServiceRegister,
     ServiceType: service_1.ServiceType,
     DeviceControlParam: device_interface_1.DeviceControlParam,
-    InterfaceInitParam: device_interface_1.InterfaceInitParam
+    InterfaceInitParam: device_interface_1.InterfaceInitParam,
+    InterfaceDescripter: device_interface_1.InterfaceDescripter,
+    DeviceEventType: device_interface_1.DeviceEventType,
+    DeviceEventData: device_interface_1.DeviceEventData,
 };
 exports.default = spec;
 module.exports = spec;

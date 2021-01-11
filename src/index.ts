@@ -3,7 +3,7 @@ import { Config } from './config';
 import { ResourceCode, DeviceAlarmCode, DeviceEventCode, DeviceStatusCode, DeviceFaultCode, InterfaceCategory } from './device-code';
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
-import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceInitParamOption } from './device-interface';
+import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceInitParamOption, InterfaceDescripter, DeviceEventData, DeviceEventType } from './device-interface';
 import { Message, MessageType, MessageTopic } from './message';
 import { RestQuery, RestQueryOption, RestResponse, RestResponseOption } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
@@ -23,6 +23,7 @@ const spec = {
     DeviceEventCode,
     DeviceStatusCode,
     DeviceFaultCode,
+    DoorValue,
     EnvMonitorValue,
     PowerGridValue,
     UPSValue,
@@ -39,7 +40,10 @@ const spec = {
     ServiceRegister,
     ServiceType,
     DeviceControlParam,
-    InterfaceInitParam
+    InterfaceInitParam,
+    InterfaceDescripter,
+    DeviceEventType,
+    DeviceEventData,
 }
 
 export default spec;
