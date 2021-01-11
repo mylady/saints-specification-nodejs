@@ -100,43 +100,42 @@ class VideoAnalyseValue {
     }
 }
 exports.VideoAnalyseValue = VideoAnalyseValue;
-var DeviceControlCode;
-(function (DeviceControlCode) {
-    DeviceControlCode[DeviceControlCode["StopInterface"] = -1] = "StopInterface";
-    DeviceControlCode[DeviceControlCode["AwayArm"] = 0] = "AwayArm";
-    DeviceControlCode[DeviceControlCode["StayArm"] = 1] = "StayArm";
-    DeviceControlCode[DeviceControlCode["DisArm"] = 2] = "DisArm";
-    DeviceControlCode[DeviceControlCode["ConnectRelay"] = 3] = "ConnectRelay";
-    DeviceControlCode[DeviceControlCode["DisconnectRelay"] = 4] = "DisconnectRelay";
-    DeviceControlCode[DeviceControlCode["ByPass"] = 5] = "ByPass";
-    DeviceControlCode[DeviceControlCode["CancelByPass"] = 6] = "CancelByPass";
-    DeviceControlCode[DeviceControlCode["CallSlave"] = 7] = "CallSlave";
-    DeviceControlCode[DeviceControlCode["ListenSlave"] = 8] = "ListenSlave";
-    DeviceControlCode[DeviceControlCode["HangupSlave"] = 9] = "HangupSlave";
-    DeviceControlCode[DeviceControlCode["StartBroadcast"] = 10] = "StartBroadcast";
-    DeviceControlCode[DeviceControlCode["StopBroadcast"] = 11] = "StopBroadcast";
-    DeviceControlCode[DeviceControlCode["SetContent"] = 12] = "SetContent";
-    DeviceControlCode[DeviceControlCode["ResumeContent"] = 13] = "ResumeContent";
-    DeviceControlCode[DeviceControlCode["SwitchDecoderChannel"] = 14] = "SwitchDecoderChannel";
-    DeviceControlCode[DeviceControlCode["SwitchMatrixChannel"] = 15] = "SwitchMatrixChannel";
-    DeviceControlCode[DeviceControlCode["MatrixPTZ"] = 16] = "MatrixPTZ";
-    DeviceControlCode[DeviceControlCode["MatrixPreset"] = 17] = "MatrixPreset";
-    DeviceControlCode[DeviceControlCode["TvWallLayout"] = 18] = "TvWallLayout";
-    DeviceControlCode[DeviceControlCode["OpenDoor"] = 19] = "OpenDoor";
-    DeviceControlCode[DeviceControlCode["CloseDoor"] = 20] = "CloseDoor";
-    DeviceControlCode[DeviceControlCode["ResetArm"] = 21] = "ResetArm";
-    DeviceControlCode[DeviceControlCode["StayClose"] = 22] = "StayClose";
-    DeviceControlCode[DeviceControlCode["ResumeStatus"] = 23] = "ResumeStatus";
-    DeviceControlCode[DeviceControlCode["VoiceBroadcast"] = 24] = "VoiceBroadcast";
-    DeviceControlCode[DeviceControlCode["OpenWindow"] = 25] = "OpenWindow";
-    DeviceControlCode[DeviceControlCode["CloseWindow"] = 26] = "CloseWindow";
-    DeviceControlCode[DeviceControlCode["StopProcedure"] = 27] = "StopProcedure";
-    DeviceControlCode[DeviceControlCode["AcOn"] = 28] = "AcOn";
-    DeviceControlCode[DeviceControlCode["AcOff"] = 29] = "AcOff";
-    DeviceControlCode[DeviceControlCode["AcMode"] = 30] = "AcMode";
-    DeviceControlCode[DeviceControlCode["AcTemperature"] = 31] = "AcTemperature";
-    DeviceControlCode[DeviceControlCode["Cmd"] = 32] = "Cmd"; //命令
-})(DeviceControlCode = exports.DeviceControlCode || (exports.DeviceControlCode = {}));
+exports.DeviceControlCode = {
+    stopInterface: -1,
+    awayArm: 0,
+    stayArm: 1,
+    disArm: 2,
+    connectRelay: 3,
+    disconnectRelay: 4,
+    byPass: 5,
+    cancelByPass: 6,
+    callSlave: 7,
+    listenSlave: 8,
+    hangupSlave: 9,
+    startBroadcast: 10,
+    stopBroadcast: 11,
+    setContent: 12,
+    sesumeContent: 13,
+    switchDecoderChannel: 14,
+    switchMatrixChannel: 15,
+    matrixPTZ: 16,
+    matrixPreset: 17,
+    tvWallLayout: 18,
+    openDoor: 19,
+    closeDoor: 20,
+    resetArm: 21,
+    stayClose: 22,
+    resumeStatus: 23,
+    voiceBroadcast: 24,
+    openWindow: 25,
+    closeWindow: 26,
+    stopProcedure: 27,
+    acOn: 28,
+    acOff: 29,
+    acMode: 30,
+    acTemperature: 31,
+    cmd: 32 //命令
+};
 class DeviceControlParam {
     constructor(sdk, control, receivers, parameters, sender) {
         this.sdk_code = sdk;
@@ -174,14 +173,13 @@ class InterfaceDescripter {
     }
 }
 exports.InterfaceDescripter = InterfaceDescripter;
-var DeviceEventType;
-(function (DeviceEventType) {
-    DeviceEventType[DeviceEventType["Unknown"] = -1] = "Unknown";
-    DeviceEventType[DeviceEventType["Status"] = 0] = "Status";
-    DeviceEventType[DeviceEventType["Normal"] = 1] = "Normal";
-    DeviceEventType[DeviceEventType["Alarm"] = 2] = "Alarm";
-    DeviceEventType[DeviceEventType["Fault"] = 3] = "Fault";
-})(DeviceEventType = exports.DeviceEventType || (exports.DeviceEventType = {}));
+exports.DeviceEventType = {
+    unknown: -1,
+    status: 0,
+    normal: 1,
+    alarm: 2,
+    fault: 3
+};
 class DeviceEventData {
     constructor(resourceCode, address, eventType, desp, eventCode = -1, alarmCode = -1, statusCode = -1, faultCode = -1, extra) {
         this.resource_code = resourceCode;

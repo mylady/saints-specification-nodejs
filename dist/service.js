@@ -1,42 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ServiceRegister = exports.ServiceFinder = exports.Service = exports.translateServiceType = exports.ServiceType = void 0;
+exports.ServiceRegister = exports.ServiceFinder = exports.Service = exports.ServiceType = void 0;
 const config_1 = require("./config");
 const url_1 = require("url");
 const got_1 = require("got");
+const code_map_1 = require("./code-map");
 const HubTemplateAddress = `http://ip:${config_1.Config.serviceHubPort}/rest`;
 const ServiceRegisterInterval = 10;
-var ServiceType;
-(function (ServiceType) {
-    ServiceType[ServiceType["Unknown"] = -1] = "Unknown";
-    ServiceType[ServiceType["IdentityService"] = 0] = "IdentityService";
-    ServiceType[ServiceType["FileHub"] = 1] = "FileHub";
-    ServiceType[ServiceType["DeviceService"] = 2] = "DeviceService";
-    ServiceType[ServiceType["CloudProxyService"] = 3] = "CloudProxyService";
-    ServiceType[ServiceType["MonitorService"] = 4] = "MonitorService";
-    ServiceType[ServiceType["MessageHub"] = 5] = "MessageHub";
-    ServiceType[ServiceType["EventService"] = 6] = "EventService";
-    ServiceType[ServiceType["LogService"] = 7] = "LogService";
-    ServiceType[ServiceType["TimeSerialService"] = 8] = "TimeSerialService";
-})(ServiceType = exports.ServiceType || (exports.ServiceType = {}));
-;
-let serviceTypeMap = new Map([
-    [ServiceType.Unknown, '未知服务'],
-    [ServiceType.IdentityService, '身份认证服务'],
-    [ServiceType.FileHub, '文件管理服务'],
-    [ServiceType.DeviceService, '设备信息服务'],
-    [ServiceType.CloudProxyService, '云代理服务'],
-    [ServiceType.MonitorService, '实时监控服务'],
-    [ServiceType.MessageHub, '消息服务'],
-    [ServiceType.EventService, '事件服务'],
-    [ServiceType.LogService, '日志服务'],
-    [ServiceType.TimeSerialService, '时间流服务'],
-]);
-function translateServiceType(type) {
-    return serviceTypeMap.get(type);
-}
-exports.translateServiceType = translateServiceType;
-;
+exports.ServiceType = {
+    unknown: code_map_1.CodeMap.from('未知服务', -1),
+    identityService: code_map_1.CodeMap.from('身份认证服务', 0),
+    fileHub: code_map_1.CodeMap.from('文件管理服务', 1),
+    deviceService: code_map_1.CodeMap.from('设备信息服务', 2),
+    cloudProxyService: code_map_1.CodeMap.from('云代理服务', 3),
+    monitorService: code_map_1.CodeMap.from('实时监控服务', 4),
+    messageHub: code_map_1.CodeMap.from('消息服务', 5),
+    eventService: code_map_1.CodeMap.from('事件服务', 6),
+    logService: code_map_1.CodeMap.from('日志服务', 7),
+    timeSerialService: code_map_1.CodeMap.from('时间流服务', 8)
+};
 class Service {
     constructor(address, type, priority) {
         this.address = address;

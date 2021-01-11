@@ -3,52 +3,35 @@ import { Config } from './config';
 import { RestResponse } from './rest';
 import { URLSearchParams } from 'url';
 import got from 'got';
+import { CodeMap } from './code-map';
 
 const HubTemplateAddress = `http://ip:${Config.serviceHubPort}/rest`;
 const ServiceRegisterInterval = 10;
 
-export enum ServiceType {
-    Unknown = -1,
-    IdentityService = 0,
-    FileHub = 1,
-    DeviceService = 2,
-    CloudProxyService = 3,
-    MonitorService = 4,
-    MessageHub = 5,
-    EventService = 6,
-    LogService = 7,
-    TimeSerialService = 8
-};
-
-let serviceTypeMap: Map<ServiceType, string> = new Map([
-    [ServiceType.Unknown, '未知服务'],
-    [ServiceType.IdentityService, '身份认证服务'],
-    [ServiceType.FileHub, '文件管理服务'],
-    [ServiceType.DeviceService, '设备信息服务'],
-    [ServiceType.CloudProxyService, '云代理服务'],
-    [ServiceType.MonitorService, '实时监控服务'],
-    [ServiceType.MessageHub, '消息服务'],
-    [ServiceType.EventService, '事件服务'],
-    [ServiceType.LogService, '日志服务'],
-    [ServiceType.TimeSerialService, '时间流服务'],
-]);
-
-export function translateServiceType(type: ServiceType) {
-    return serviceTypeMap.get(type);
+export const ServiceType = {
+    unknown: CodeMap.from('未知服务', -1),
+    identityService: CodeMap.from('身份认证服务', 0),
+    fileHub: CodeMap.from('文件管理服务', 1),
+    deviceService: CodeMap.from('设备信息服务', 2),
+    cloudProxyService: CodeMap.from('云代理服务', 3),
+    monitorService: CodeMap.from('实时监控服务', 4),
+    messageHub: CodeMap.from('消息服务', 5),
+    eventService: CodeMap.from('事件服务', 6),
+    logService: CodeMap.from('日志服务', 7),
+    timeSerialService: CodeMap.from('时间流服务', 8)
 };
 
 export class Service {
     address: string;
-    type: ServiceType;
+    type: number;
     priority: number;
 
-    constructor(address: string, type: ServiceType, priority: number) {
+    constructor(address: string, type: number, priority: number) {
         this.address = address;
         this.type = type;
         this.priority = priority;
     }
 }
-
 
 export class ServiceFinder {
     hub: string;
@@ -63,7 +46,7 @@ export class ServiceFinder {
         return v.body;
     }
 
-    async searchService(type: ServiceType) {
+    async searchService(type: number) {
         let qs = new URLSearchParams([['service_type', type.toString()]]);
         let v = await got.get(`${this.hub}/search`, {
             searchParams: qs,

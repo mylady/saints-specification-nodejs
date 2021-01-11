@@ -178,51 +178,51 @@ export class VideoAnalyseValue {
     }
 }
 
-export enum DeviceControlCode {
-    StopInterface = -1,
-    AwayArm = 0,//外出布防
-    StayArm = 1,//留守布防
-    DisArm = 2,//解除布防
-    ConnectRelay = 3,//接通继电器
-    DisconnectRelay = 4,//断开继电器
-    ByPass = 5,//旁路
-    CancelByPass = 6,//解除旁路
-    CallSlave = 7,//呼叫分机
-    ListenSlave = 8,//监听分机
-    HangupSlave = 9,//挂断分机
-    StartBroadcast = 10,//启动广播
-    StopBroadcast = 11,//停止广播
-    SetContent = 12,//设置内容
-    ResumeContent = 13,//恢复内容
-    SwitchDecoderChannel = 14,//设置解码器通道
-    SwitchMatrixChannel = 15,//设置矩阵通道
-    MatrixPTZ = 16,//矩阵云台控制
-    MatrixPreset = 17,//矩阵预置位控制
-    TvWallLayout = 18,//设置大屏布局
-    OpenDoor = 19,//开门
-    CloseDoor = 20,//关门
-    ResetArm = 21,//复位布防
-    StayClose = 22,//戒严-常关
-    ResumeStatus = 23,//恢复-常关
-    VoiceBroadcast = 24,//语音广播
-    OpenWindow = 25,//开窗
-    CloseWindow = 26,//关窗
-    StopProcedure = 27,//停止流程
-    AcOn = 28,//打开空调
-    AcOff = 29,//关闭空调
-    AcMode = 30,//设置空调模式
-    AcTemperature = 31,//设置空调温度
-    Cmd = 32//命令
+export const DeviceControlCode = {
+    stopInterface: -1,
+    awayArm: 0,//外出布防
+    stayArm: 1,//留守布防
+    disArm: 2,//解除布防
+    connectRelay: 3,//接通继电器
+    disconnectRelay: 4,//断开继电器
+    byPass: 5,//旁路
+    cancelByPass: 6,//解除旁路
+    callSlave: 7,//呼叫分机
+    listenSlave: 8,//监听分机
+    hangupSlave: 9,//挂断分机
+    startBroadcast: 10,//启动广播
+    stopBroadcast: 11,//停止广播
+    setContent: 12,//设置内容
+    sesumeContent: 13,//恢复内容
+    switchDecoderChannel: 14,//设置解码器通道
+    switchMatrixChannel: 15,//设置矩阵通道
+    matrixPTZ: 16,//矩阵云台控制
+    matrixPreset: 17,//矩阵预置位控制
+    tvWallLayout: 18,//设置大屏布局
+    openDoor: 19,//开门
+    closeDoor: 20,//关门
+    resetArm: 21,//复位布防
+    stayClose: 22,//戒严-常关
+    resumeStatus: 23,//恢复-常关
+    voiceBroadcast: 24,//语音广播
+    openWindow: 25,//开窗
+    closeWindow: 26,//关窗
+    stopProcedure: 27,//停止流程
+    acOn: 28,//打开空调
+    acOff: 29,//关闭空调
+    acMode: 30,//设置空调模式
+    acTemperature: 31,//设置空调温度
+    cmd: 32//命令
 }
 
 export class DeviceControlParam {
     sdk_code: number;
-    control_code: DeviceControlCode;
+    control_code: number;
     receivers: Array<string>;
     sender: string;
     parameters: Array<string>;
 
-    constructor(sdk: number, control: DeviceControlCode, receivers: Array<string>, parameters?: Array<string>, sender?: string) {
+    constructor(sdk: number, control: number, receivers: Array<string>, parameters?: Array<string>, sender?: string) {
         this.sdk_code = sdk;
         this.control_code = control;
         this.receivers = receivers;
@@ -293,18 +293,18 @@ export class InterfaceDescripter {
     }
 }
 
-export enum DeviceEventType {
-    Unknown = -1,
-    Status = 0,
-    Normal = 1,
-    Alarm = 2,
-    Fault = 3
+export const DeviceEventType = {
+    unknown: -1,
+    status: 0,
+    normal: 1,
+    alarm: 2,
+    fault: 3
 }
 
 export class DeviceEventData {
     resource_code: number;
     address: string;
-    event_type: DeviceEventType;
+    event_type: number;
     event_code: number;
     alarm_code: number;
     status_code: number;
@@ -313,7 +313,7 @@ export class DeviceEventData {
     event_desp: string;
     event_extra: string;
 
-    constructor(resourceCode: number, address: string, eventType: DeviceEventType, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
+    constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
         this.resource_code = resourceCode;
         this.address = address;
         this.event_type = eventType;

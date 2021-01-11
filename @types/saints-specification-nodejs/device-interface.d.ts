@@ -100,49 +100,49 @@ export declare class VideoAnalyseValue {
     car: CarPlate;
     constructor(analyseType: VideoAnalyseType, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate);
 }
-export declare enum DeviceControlCode {
-    StopInterface = -1,
-    AwayArm = 0,
-    StayArm = 1,
-    DisArm = 2,
-    ConnectRelay = 3,
-    DisconnectRelay = 4,
-    ByPass = 5,
-    CancelByPass = 6,
-    CallSlave = 7,
-    ListenSlave = 8,
-    HangupSlave = 9,
-    StartBroadcast = 10,
-    StopBroadcast = 11,
-    SetContent = 12,
-    ResumeContent = 13,
-    SwitchDecoderChannel = 14,
-    SwitchMatrixChannel = 15,
-    MatrixPTZ = 16,
-    MatrixPreset = 17,
-    TvWallLayout = 18,
-    OpenDoor = 19,
-    CloseDoor = 20,
-    ResetArm = 21,
-    StayClose = 22,
-    ResumeStatus = 23,
-    VoiceBroadcast = 24,
-    OpenWindow = 25,
-    CloseWindow = 26,
-    StopProcedure = 27,
-    AcOn = 28,
-    AcOff = 29,
-    AcMode = 30,
-    AcTemperature = 31,
-    Cmd = 32
-}
+export declare const DeviceControlCode: {
+    stopInterface: number;
+    awayArm: number;
+    stayArm: number;
+    disArm: number;
+    connectRelay: number;
+    disconnectRelay: number;
+    byPass: number;
+    cancelByPass: number;
+    callSlave: number;
+    listenSlave: number;
+    hangupSlave: number;
+    startBroadcast: number;
+    stopBroadcast: number;
+    setContent: number;
+    sesumeContent: number;
+    switchDecoderChannel: number;
+    switchMatrixChannel: number;
+    matrixPTZ: number;
+    matrixPreset: number;
+    tvWallLayout: number;
+    openDoor: number;
+    closeDoor: number;
+    resetArm: number;
+    stayClose: number;
+    resumeStatus: number;
+    voiceBroadcast: number;
+    openWindow: number;
+    closeWindow: number;
+    stopProcedure: number;
+    acOn: number;
+    acOff: number;
+    acMode: number;
+    acTemperature: number;
+    cmd: number;
+};
 export declare class DeviceControlParam {
     sdk_code: number;
-    control_code: DeviceControlCode;
+    control_code: number;
     receivers: Array<string>;
     sender: string;
     parameters: Array<string>;
-    constructor(sdk: number, control: DeviceControlCode, receivers: Array<string>, parameters?: Array<string>, sender?: string);
+    constructor(sdk: number, control: number, receivers: Array<string>, parameters?: Array<string>, sender?: string);
 }
 export interface InterfaceInitParamOption {
     remote_service_address?: string;
@@ -182,17 +182,17 @@ export declare class InterfaceDescripter {
     configable: boolean;
     constructor(name: string, version: string, support: string, configable?: boolean);
 }
-export declare enum DeviceEventType {
-    Unknown = -1,
-    Status = 0,
-    Normal = 1,
-    Alarm = 2,
-    Fault = 3
-}
+export declare const DeviceEventType: {
+    unknown: number;
+    status: number;
+    normal: number;
+    alarm: number;
+    fault: number;
+};
 export declare class DeviceEventData {
     resource_code: number;
     address: string;
-    event_type: DeviceEventType;
+    event_type: number;
     event_code: number;
     alarm_code: number;
     status_code: number;
@@ -200,5 +200,5 @@ export declare class DeviceEventData {
     event_time: string;
     event_desp: string;
     event_extra: string;
-    constructor(resourceCode: number, address: string, eventType: DeviceEventType, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
+    constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
 }

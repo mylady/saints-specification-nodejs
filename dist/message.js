@@ -1,31 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MessageTopics = exports.Message = exports.translateMessageType = exports.MessageType = void 0;
+exports.MessageTopic = exports.Message = exports.MessageType = void 0;
 const code_map_1 = require("./code-map");
-var MessageType;
-(function (MessageType) {
-    MessageType[MessageType["Unknown"] = -1] = "Unknown";
-    MessageType[MessageType["DeviceStatus"] = 0] = "DeviceStatus";
-    MessageType[MessageType["DeviceEvent"] = 1] = "DeviceEvent";
-    MessageType[MessageType["DeviceFault"] = 2] = "DeviceFault";
-    MessageType[MessageType["DeviceControl"] = 3] = "DeviceControl";
-    MessageType[MessageType["Custom"] = 99] = "Custom";
-    MessageType[MessageType["Others"] = 100] = "Others";
-})(MessageType = exports.MessageType || (exports.MessageType = {}));
-let sysMessageTypeMap = new Map([
-    [MessageType.Unknown, '未知类型'],
-    [MessageType.DeviceStatus, '设备状态'],
-    [MessageType.DeviceEvent, '设备事件'],
-    [MessageType.DeviceFault, '设备故障'],
-    [MessageType.DeviceControl, '设备控制'],
-    [MessageType.Custom, '自定义'],
-    [MessageType.Others, '其他'],
-]);
-function translateMessageType(type) {
-    return sysMessageTypeMap.get(type);
-}
-exports.translateMessageType = translateMessageType;
-;
+exports.MessageType = {
+    unknown: code_map_1.CodeMap.from('未知服务', -1),
+    deviceEvent: code_map_1.CodeMap.from('身份认证服务', 0),
+    deviceStatus: code_map_1.CodeMap.from('文件管理服务', 1),
+    deviceFault: code_map_1.CodeMap.from('设备信息服务', 2),
+    deviceControl: code_map_1.CodeMap.from('云代理服务', 3),
+    monitorService: code_map_1.CodeMap.from('实时监控服务', 4),
+    messageHub: code_map_1.CodeMap.from('消息服务', 5),
+    eventService: code_map_1.CodeMap.from('事件服务', 6),
+    logService: code_map_1.CodeMap.from('日志服务', 7),
+    timeSerialService: code_map_1.CodeMap.from('时间流服务', 8)
+};
 //for biz message exchange
 class Message {
     constructor(type, content, sender) {
@@ -35,11 +23,11 @@ class Message {
     }
 }
 exports.Message = Message;
-exports.MessageTopics = [
-    code_map_1.CodeMap.from('设备状态', 'saints-device-status'),
-    code_map_1.CodeMap.from('设备事件', 'saints-device-event'),
-    code_map_1.CodeMap.from('设备故障', 'saints-device-fault'),
-    code_map_1.CodeMap.from('设备控制', 'saints-device-control'),
-    code_map_1.CodeMap.from('自定义', 'saints-custom'),
-    code_map_1.CodeMap.from('其他', 'others')
-];
+exports.MessageTopic = {
+    deviceEvent: code_map_1.CodeMap.from('设备事件', 'saints-device-event'),
+    deviceStatus: code_map_1.CodeMap.from('设备状态', 'saints-device-status'),
+    deviceFault: code_map_1.CodeMap.from('设备故障', 'saints-device-fault'),
+    deviceControl: code_map_1.CodeMap.from('设备控制', 'saints-device-control'),
+    custom: code_map_1.CodeMap.from('自定义', 'saints-custom'),
+    others: code_map_1.CodeMap.from('其他', 'others')
+};

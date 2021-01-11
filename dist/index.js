@@ -18,7 +18,7 @@ const spec = {
     ResourceCode: device_code_1.ResourceCode,
     InterfaceCategory: device_code_1.InterfaceCategory,
     Message: message_1.Message,
-    MessageTopics: message_1.MessageTopics,
+    MessageTopic: message_1.MessageTopic,
     MessageType: message_1.MessageType,
     DeviceAlarmCode: device_code_1.DeviceAlarmCode,
     DeviceEventCode: device_code_1.DeviceEventCode,

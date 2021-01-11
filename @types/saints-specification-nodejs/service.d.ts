@@ -1,27 +1,27 @@
-export declare enum ServiceType {
-    Unknown = -1,
-    IdentityService = 0,
-    FileHub = 1,
-    DeviceService = 2,
-    CloudProxyService = 3,
-    MonitorService = 4,
-    MessageHub = 5,
-    EventService = 6,
-    LogService = 7,
-    TimeSerialService = 8
-}
-export declare function translateServiceType(type: ServiceType): string;
+import { CodeMap } from './code-map';
+export declare const ServiceType: {
+    unknown: CodeMap;
+    identityService: CodeMap;
+    fileHub: CodeMap;
+    deviceService: CodeMap;
+    cloudProxyService: CodeMap;
+    monitorService: CodeMap;
+    messageHub: CodeMap;
+    eventService: CodeMap;
+    logService: CodeMap;
+    timeSerialService: CodeMap;
+};
 export declare class Service {
     address: string;
-    type: ServiceType;
+    type: number;
     priority: number;
-    constructor(address: string, type: ServiceType, priority: number);
+    constructor(address: string, type: number, priority: number);
 }
 export declare class ServiceFinder {
     hub: string;
     constructor(ip: string);
     listService(): Promise<unknown>;
-    searchService(type: ServiceType): Promise<unknown>;
+    searchService(type: number): Promise<unknown>;
 }
 export declare class ServiceRegister {
     private running;

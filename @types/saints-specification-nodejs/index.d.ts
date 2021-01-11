@@ -2,9 +2,9 @@ import { CodeMap } from './code-map';
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
 import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam } from './device-interface';
-import { Message, MessageType } from './message';
+import { Message } from './message';
 import { RestQuery, RestResponse } from './rest';
-import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
+import { Service, ServiceFinder, ServiceRegister } from './service';
 declare const spec: {
     CodeMap: typeof CodeMap;
     SpecError: typeof SpecError;
@@ -19,8 +19,26 @@ declare const spec: {
     ResourceCode: CodeMap[];
     InterfaceCategory: CodeMap[];
     Message: typeof Message;
-    MessageTopics: CodeMap[];
-    MessageType: typeof MessageType;
+    MessageTopic: {
+        deviceEvent: CodeMap;
+        deviceStatus: CodeMap;
+        deviceFault: CodeMap;
+        deviceControl: CodeMap;
+        custom: CodeMap;
+        others: CodeMap;
+    };
+    MessageType: {
+        unknown: CodeMap;
+        deviceEvent: CodeMap;
+        deviceStatus: CodeMap;
+        deviceFault: CodeMap;
+        deviceControl: CodeMap;
+        monitorService: CodeMap;
+        messageHub: CodeMap;
+        eventService: CodeMap;
+        logService: CodeMap;
+        timeSerialService: CodeMap;
+    };
     DeviceAlarmCode: CodeMap[];
     DeviceEventCode: CodeMap[];
     DeviceStatusCode: CodeMap[];
@@ -39,7 +57,18 @@ declare const spec: {
     Service: typeof Service;
     ServiceFinder: typeof ServiceFinder;
     ServiceRegister: typeof ServiceRegister;
-    ServiceType: typeof ServiceType;
+    ServiceType: {
+        unknown: CodeMap;
+        identityService: CodeMap;
+        fileHub: CodeMap;
+        deviceService: CodeMap;
+        cloudProxyService: CodeMap;
+        monitorService: CodeMap;
+        messageHub: CodeMap;
+        eventService: CodeMap;
+        logService: CodeMap;
+        timeSerialService: CodeMap;
+    };
     DeviceControlParam: typeof DeviceControlParam;
     InterfaceInitParam: typeof InterfaceInitParam;
 };

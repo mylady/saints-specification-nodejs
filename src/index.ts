@@ -4,7 +4,7 @@ import { ResourceCode, DeviceAlarmCode, DeviceEventCode, DeviceStatusCode, Devic
 import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
 import { EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceInitParamOption } from './device-interface';
-import { Message, MessageType, MessageTopics } from './message';
+import { Message, MessageType, MessageTopic } from './message';
 import { RestQuery, RestQueryOption, RestResponse, RestResponseOption } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
 
@@ -17,7 +17,7 @@ const spec = {
     ResourceCode,
     InterfaceCategory,
     Message,
-    MessageTopics,
+    MessageTopic,
     MessageType,
     DeviceAlarmCode,
     DeviceEventCode,
