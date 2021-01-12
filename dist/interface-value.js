@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VideoAnalyseValue = exports.CarPlate = exports.Face = exports.VideoAnalyseType = exports.CallValue = exports.UPSValue = exports.RFIDTagValue = exports.PowerGridValue = exports.EnvMonitorValue = exports.DoorValue = void 0;
+const code_map_1 = require("./code-map");
 class DoorValue {
     constructor(card, name, sceneImage, sceneImagePath) {
         this.person_card = card;
@@ -31,39 +32,45 @@ class PowerGridValue {
 }
 exports.PowerGridValue = PowerGridValue;
 class RFIDTagValue {
-    constructor(x, y, battery, heartRate) {
+    constructor(x, y, z, tagId, personId, personName, battery, heartRate, bph, bpl) {
         this.x = x;
         this.y = y;
+        this.z = z;
+        this.tag_id = tagId;
+        this.person_id = personId;
+        this.person_name = personName;
         this.battery = battery;
         this.heart_rate = heartRate;
+        this.blood_presssure_high = bph;
+        this.blood_presssure_low = bpl;
     }
 }
 exports.RFIDTagValue = RFIDTagValue;
 class UPSValue {
-    constructor(backupTime, aVolter, bVolter, cVolter, aElec, bElec, cElec) {
+    constructor(backupTime, battry, aVolter, bVolter, cVolter, aElec, bElec, cElec) {
         this.backup_time = backupTime;
-        this.av = aVolter;
-        this.bv = bVolter;
-        this.cv = cVolter;
-        this.ae = aElec;
-        this.be = bElec;
-        this.ce = cElec;
+        this.battery = battry;
+        this.a_volter = aVolter;
+        this.b_volter = bVolter;
+        this.c_volter = cVolter;
+        this.a_elec = aElec;
+        this.b_elec = bElec;
+        this.c_elec = cElec;
     }
 }
 exports.UPSValue = UPSValue;
 class CallValue {
-    constructor(master, slave) {
-        this.master = master;
-        this.slave = slave;
+    constructor(caller, called) {
+        this.caller = caller;
+        this.called = called;
     }
 }
 exports.CallValue = CallValue;
-var VideoAnalyseType;
-(function (VideoAnalyseType) {
-    VideoAnalyseType[VideoAnalyseType["Face"] = 0] = "Face";
-    VideoAnalyseType[VideoAnalyseType["Behavior"] = 1] = "Behavior";
-    VideoAnalyseType[VideoAnalyseType["CarPlate"] = 2] = "CarPlate";
-})(VideoAnalyseType = exports.VideoAnalyseType || (exports.VideoAnalyseType = {}));
+exports.VideoAnalyseType = {
+    behavior: code_map_1.CodeMap.from('行为分析', 0),
+    face: code_map_1.CodeMap.from('人脸识别', 1),
+    carPlate: code_map_1.CodeMap.from('车牌识别', 2)
+};
 class Face {
     constructor(personId, personName, similarity, faceImage, faceImagePath) {
         this.person_id = personId;
@@ -75,8 +82,8 @@ class Face {
 }
 exports.Face = Face;
 class CarPlate {
-    constructor(platenumber, plateColor, plateType, carColor) {
-        this.plate_number = platenumber;
+    constructor(plateNumber, plateColor, plateType, carColor) {
+        this.plate_number = plateNumber;
         this.plate_color = plateColor;
         this.plate_type = plateType;
         this.car_color = carColor;
