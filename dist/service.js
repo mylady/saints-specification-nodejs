@@ -61,7 +61,7 @@ class ServiceRegister {
         }
         this.running = true;
         this.timer = setInterval(() => {
-            registerService(this.hub, this.service);
+            registerService(`${this.hub}/register`, this.service);
         }, ServiceRegisterInterval * 1000);
     }
     stop() {
