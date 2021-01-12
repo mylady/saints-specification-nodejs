@@ -51,7 +51,7 @@ export class RestResponse {
     static boolResponse(b: boolean, err: string | Error | SpecError) {
         let resp = new RestResponse({ result: b });
         if (err) {
-            if (err instanceof String) {
+            if (typeof err === 'string') {
                 resp.err_msg = err as string;
             } else if (err instanceof SpecError) {
                 let specErr = err as SpecError;

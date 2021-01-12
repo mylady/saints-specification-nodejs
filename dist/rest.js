@@ -24,7 +24,7 @@ class RestResponse {
     static boolResponse(b, err) {
         let resp = new RestResponse({ result: b });
         if (err) {
-            if (err instanceof String) {
+            if (typeof err === 'string') {
                 resp.err_msg = err;
             }
             else if (err instanceof error_1.SpecError) {
