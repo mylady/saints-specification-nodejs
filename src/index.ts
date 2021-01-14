@@ -41,7 +41,7 @@ const spec: any = {
     DeviceEventData,
 }
 
-if (!window) {
+if (process) {
     import('./service').then(service => {
         spec.ServiceType = service.ServiceType
         spec.Service = service.Service

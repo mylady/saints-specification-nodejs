@@ -41,7 +41,7 @@ const spec = {
     DeviceEventType: device_interface_1.DeviceEventType,
     DeviceEventData: device_interface_1.DeviceEventData,
 };
-if (!window) {
+if (process) {
     Promise.resolve().then(() => require('./service')).then(service => {
         spec.ServiceType = service.ServiceType;
         spec.Service = service.Service;
