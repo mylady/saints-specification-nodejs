@@ -8,7 +8,6 @@ const error_1 = require("./error");
 const device_interface_1 = require("./device-interface");
 const message_1 = require("./message");
 const rest_1 = require("./rest");
-const service_1 = require("./service");
 const spec = {
     CodeMap: code_map_1.CodeMap,
     SpecError: error_1.SpecError,
@@ -36,16 +35,26 @@ const spec = {
     CarPlate: device_interface_1.CarPlate,
     RestQuery: rest_1.RestQuery,
     RestResponse: rest_1.RestResponse,
-    Service: service_1.Service,
-    ServiceFinder: service_1.ServiceFinder,
-    ServiceRegister: service_1.ServiceRegister,
-    ServiceType: service_1.ServiceType,
     DeviceControlParam: device_interface_1.DeviceControlParam,
     InterfaceInitParam: device_interface_1.InterfaceInitParam,
     InterfaceDescripter: device_interface_1.InterfaceDescripter,
     DeviceEventType: device_interface_1.DeviceEventType,
     DeviceEventData: device_interface_1.DeviceEventData,
 };
+if (!window) {
+    Promise.resolve().then(() => require('./service')).then(service => {
+        spec.ServiceType = service.ServiceType;
+        spec.Service = service.Service;
+        spec.ServiceRegister = service.ServiceRegister;
+        spec.ServiceFinder = service.ServiceFinder;
+    });
+}
+else {
+    Promise.resolve().then(() => require('./service-browser')).then(service => {
+        spec.ServiceType = service.ServiceType;
+        spec.Service = service.Service;
+    });
+}
 exports.default = spec;
 module.exports = spec;
 module.exports.default = spec;

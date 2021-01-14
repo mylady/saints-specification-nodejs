@@ -6,9 +6,8 @@ import { SpecError } from './error';
 import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceInitParamOption, InterfaceDescripter, DeviceEventData, DeviceEventType } from './device-interface';
 import { Message, MessageType, MessageTopic } from './message';
 import { RestQuery, RestQueryOption, RestResponse, RestResponseOption } from './rest';
-import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
 
-const spec = {
+const spec: any = {
     CodeMap,
     SpecError,
     TwoDimension,
@@ -35,15 +34,25 @@ const spec = {
     CarPlate,
     RestQuery,
     RestResponse,
-    Service,
-    ServiceFinder,
-    ServiceRegister,
-    ServiceType,
     DeviceControlParam,
     InterfaceInitParam,
     InterfaceDescripter,
     DeviceEventType,
     DeviceEventData,
+}
+
+if (!window) {
+    import('./service').then(service => {
+        spec.ServiceType = service.ServiceType
+        spec.Service = service.Service
+        spec.ServiceRegister = service.ServiceRegister
+        spec.ServiceFinder = service.ServiceFinder
+    });
+} else {
+    import('./service-browser').then(service => {
+        spec.ServiceType = service.ServiceType
+        spec.Service = service.Service
+    });
 }
 
 export default spec;
