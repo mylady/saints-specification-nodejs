@@ -3,11 +3,7 @@
         "outDir": "./dist",
         "allowJs": false,
         "module": "CommonJS",
-        "target": "es2019",
-        "lib": [
-            "ES2019",
-            "DOM"
-        ],
+        "target": "ES6",
         "declaration": true,
         "declarationDir": "@types/saints-specification-nodejs"
     },

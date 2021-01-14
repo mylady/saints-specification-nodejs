@@ -1,4 +1,13 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ServiceRegister = exports.ServiceFinder = exports.Service = exports.ServiceType = void 0;
 const config_1 = require("./config");
@@ -31,19 +40,23 @@ class ServiceFinder {
     constructor(ip) {
         this.hub = HubTemplateAddress.replace('ip', ip);
     }
-    async listService() {
-        let v = await got_1.default.get(`${this.hub}/list`, {
-            responseType: 'json'
+    listService() {
+        return __awaiter(this, void 0, void 0, function* () {
+            let v = yield got_1.default.get(`${this.hub}/list`, {
+                responseType: 'json'
+            });
+            return v.body;
         });
-        return v.body;
     }
-    async searchService(type) {
-        let qs = new url_1.URLSearchParams([['service_type', type.toString()]]);
-        let v = await got_1.default.get(`${this.hub}/search`, {
-            searchParams: qs,
-            responseType: 'json'
+    searchService(type) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let qs = new url_1.URLSearchParams([['service_type', type.toString()]]);
+            let v = yield got_1.default.get(`${this.hub}/search`, {
+                searchParams: qs,
+                responseType: 'json'
+            });
+            return v.body;
         });
-        return v.body;
     }
 }
 exports.ServiceFinder = ServiceFinder;
@@ -75,9 +88,9 @@ class ServiceRegister {
     }
 }
 exports.ServiceRegister = ServiceRegister;
-const registerService = async (url, service) => {
+const registerService = (url, service) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        let v = await got_1.default.post(url, {
+        let v = yield got_1.default.post(url, {
             json: service,
             responseType: 'json'
         });
@@ -89,4 +102,4 @@ const registerService = async (url, service) => {
     catch (err) {
         console.error('register service failed', err.message);
     }
-};
+});
