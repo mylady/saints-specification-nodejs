@@ -41,17 +41,17 @@ const spec: any = {
     DeviceEventData,
 }
 
-if (process) {
+if (process["browser"]) {
+    import('./service-browser').then(service => {
+        spec.ServiceType = service.ServiceType
+        spec.Service = service.Service
+    });
+} else {
     import('./service').then(service => {
         spec.ServiceType = service.ServiceType
         spec.Service = service.Service
         spec.ServiceRegister = service.ServiceRegister
         spec.ServiceFinder = service.ServiceFinder
-    });
-} else {
-    import('./service-browser').then(service => {
-        spec.ServiceType = service.ServiceType
-        spec.Service = service.Service
     });
 }
 

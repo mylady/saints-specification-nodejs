@@ -41,18 +41,18 @@ const spec = {
     DeviceEventType: device_interface_1.DeviceEventType,
     DeviceEventData: device_interface_1.DeviceEventData,
 };
-if (process) {
+if (process["browser"]) {
+    Promise.resolve().then(() => require('./service-browser')).then(service => {
+        spec.ServiceType = service.ServiceType;
+        spec.Service = service.Service;
+    });
+}
+else {
     Promise.resolve().then(() => require('./service')).then(service => {
         spec.ServiceType = service.ServiceType;
         spec.Service = service.Service;
         spec.ServiceRegister = service.ServiceRegister;
         spec.ServiceFinder = service.ServiceFinder;
-    });
-}
-else {
-    Promise.resolve().then(() => require('./service-browser')).then(service => {
-        spec.ServiceType = service.ServiceType;
-        spec.Service = service.Service;
     });
 }
 exports.default = spec;
