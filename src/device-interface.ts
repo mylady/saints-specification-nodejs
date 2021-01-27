@@ -187,32 +187,33 @@ export const DeviceControlCode = {
     disconnectRelay: 4,//断开继电器
     byPass: 5,//旁路
     cancelByPass: 6,//解除旁路
-    callSlave: 7,//呼叫分机
-    listenSlave: 8,//监听分机
-    hangupSlave: 9,//挂断分机
-    startBroadcast: 10,//启动广播
-    stopBroadcast: 11,//停止广播
-    setContent: 12,//设置内容
-    sesumeContent: 13,//恢复内容
-    switchDecoderChannel: 14,//设置解码器通道
-    switchMatrixChannel: 15,//设置矩阵通道
-    matrixPTZ: 16,//矩阵云台控制
-    matrixPreset: 17,//矩阵预置位控制
-    tvWallLayout: 18,//设置大屏布局
-    openDoor: 19,//开门
-    closeDoor: 20,//关门
-    resetArm: 21,//复位布防
-    stayClose: 22,//戒严-常关
-    resumeStatus: 23,//恢复-常关
-    voiceBroadcast: 24,//语音广播
-    openWindow: 25,//开窗
-    closeWindow: 26,//关窗
-    stopProcedure: 27,//停止流程
-    acOn: 28,//打开空调
-    acOff: 29,//关闭空调
-    acMode: 30,//设置空调模式
-    acTemperature: 31,//设置空调温度
-    cmd: 32//命令
+    query:7,
+    callSlave: 8,//呼叫分机
+    listenSlave: 9,//监听分机
+    hangupSlave: 10,//挂断分机
+    startBroadcast: 11,//启动广播
+    stopBroadcast: 12,//停止广播
+    setContent: 13,//设置内容
+    sesumeContent: 14,//恢复内容
+    switchDecoderChannel: 15,//设置解码器通道
+    switchMatrixChannel: 16,//设置矩阵通道
+    matrixPTZ: 17,//矩阵云台控制
+    matrixPreset: 18,//矩阵预置位控制
+    tvWallLayout: 19,//设置大屏布局
+    openDoor: 20,//开门
+    closeDoor: 21,//关门
+    resetArm: 22,//复位布防
+    stayClose: 23,//戒严-常关
+    resumeStatus: 24,//恢复-常关
+    voiceBroadcast: 25,//语音广播
+    openWindow: 26,//开窗
+    closeWindow: 27,//关窗
+    stopProcedure: 28,//停止流程
+    acOn: 29,//打开空调
+    acOff: 30,//关闭空调
+    acMode: 31,//设置空调模式
+    acTemperature: 32,//设置空调温度
+    cmd: 33//命令
 }
 
 export class DeviceControlParam {

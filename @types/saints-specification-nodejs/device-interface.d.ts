@@ -109,6 +109,7 @@ export declare const DeviceControlCode: {
     disconnectRelay: number;
     byPass: number;
     cancelByPass: number;
+    query: number;
     callSlave: number;
     listenSlave: number;
     hangupSlave: number;
