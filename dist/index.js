@@ -23,6 +23,7 @@ const spec = {
     DeviceEventCode: device_code_1.DeviceEventCode,
     DeviceStatusCode: device_code_1.DeviceStatusCode,
     DeviceFaultCode: device_code_1.DeviceFaultCode,
+    DeviceControlCode: device_interface_1.DeviceControlCode,
     DoorValue: device_interface_1.DoorValue,
     EnvMonitorValue: device_interface_1.EnvMonitorValue,
     PowerGridValue: device_interface_1.PowerGridValue,
