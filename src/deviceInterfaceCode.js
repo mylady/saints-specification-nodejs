@@ -469,6 +469,14 @@ let deviceInterfaceCode = {
         name: '汉威空气质量监测V2',
         value: 114
     },
+    xuFeiElecDoorTCP: {
+        name: '旭飞电动门接口',
+        value: 115
+    },
+    hanweiElecDoorSDK: {
+        name: '汉威电动门接口',
+        value: 116
+    },
 
 
     //saints define
