@@ -56,6 +56,14 @@ let schoolNoticeType = {
     safetyReportNotice:{
         name:'平安上报通知',
         value:13
+    },
+    urgeCheckRedress:{
+        name:'催促整改',
+        value:14
+    },
+    urgeEnquiryTask:{
+        name:'催促调查问卷',
+        value:15
     }
 };
 
