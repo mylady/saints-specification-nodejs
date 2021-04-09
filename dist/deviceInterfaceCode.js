@@ -480,6 +480,10 @@ var deviceInterfaceCode = {
     name: '汉威电动门接口',
     value: 116
   },
+  unknownSoundAlarmerModbusSERIAL: {
+    name: '未知声光报警接口',
+    value: 117
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
