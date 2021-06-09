@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "outDir": "./lib/esm",
-        "allowJs": false,
         "target": "ES2015",
         "module": "ES6",
         "strict": true,
@@ -9,6 +8,7 @@
         "moduleResolution": "Node",
         "forceConsistentCasingInFileNames": true,
         "declaration": true,
+        "checkJs": true,
         "typeRoots": [
             "node_modules/@types"
         ],

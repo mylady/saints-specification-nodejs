@@ -1,10 +1,9 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "3.1.12",
+  "version": "3.1.14",
   "description": "saints specification for nodejs",
   "main": "./lib/node/index.js",
   "module": "./lib/esm/browser.js",
-  "preview": true,
   "scripts": {
     "build": "tsc -p tsconfig-es.json && tsc -p tsconfig-node.json"
   },
