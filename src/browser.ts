@@ -5,9 +5,15 @@ import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
 import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceDescripter, DeviceControlCode, DeviceEventData, DeviceEventType } from './device-interface';
 import { Message, MessageType, MessageTopic } from './message';
+import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceType } from './service-browser';
+import { Option } from './option';
 
-const spec: any = {
+let InterfaceInitParamOption: Option.IInterfaceInitParamOption = {};
+let RestQueryOption: Option.IRestQueryOption = { start: 0 };
+let RestResponseOption: Option.IRestResponseOption = { result: true };
+
+export default {
     CodeMap,
     SpecError,
     TwoDimension,
@@ -15,6 +21,8 @@ const spec: any = {
     Config,
     ResourceCode,
     InterfaceCategory,
+    InterfaceInitParamOption,
+    InterfaceInitParam,
     Message,
     MessageTopic,
     MessageType,
@@ -33,16 +41,14 @@ const spec: any = {
     VideoAnalyseType,
     Face,
     CarPlate,
+    RestQuery,
+    RestResponse,
+    RestQueryOption,
+    RestResponseOption,
     DeviceControlParam,
-    InterfaceInitParam,
     InterfaceDescripter,
     DeviceEventType,
     DeviceEventData,
     Service,
     ServiceType
 }
-
-export default spec;
-
-module.exports = spec;
-module.exports.default = spec;

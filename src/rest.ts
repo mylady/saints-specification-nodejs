@@ -1,22 +1,5 @@
 import { SpecError } from './error';
-
-export namespace RestOption {
-    export interface RestQueryOption {
-        start: number;
-        limit?: number;
-        sort?: string;
-        dir?: string;
-        keyword?: string;
-    }
-
-    export interface RestResponseOption {
-        result: boolean;
-        err_code?: number;
-        err_msg?: string;
-        data?: any;
-        total?: number;
-    }
-}
+import { Option } from './option';
 
 //this is for server process not for client
 export class RestQuery {
@@ -26,7 +9,7 @@ export class RestQuery {
     dir: string;
     keyword: string;
 
-    constructor(opt: RestOption.RestQueryOption) {
+    constructor(opt: Option.IRestQueryOption) {
         this.start = opt.start || 0;
         this.limit = opt.limit || 0;
         this.sort = opt.sort || '';
@@ -42,7 +25,7 @@ export class RestResponse {
     data: any;
     total: number;
 
-    constructor(opt: RestOption.RestResponseOption) {
+    constructor(opt: Option.IRestResponseOption) {
         this.result = opt.result || false;
         this.err_code = opt.err_code || 0;
         this.err_msg = opt.err_msg || '';

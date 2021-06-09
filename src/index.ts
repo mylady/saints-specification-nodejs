@@ -7,8 +7,13 @@ import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, Cal
 import { Message, MessageType, MessageTopic } from './message';
 import { RestQuery, RestResponse } from './rest';
 import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
+import { Option } from './option';
 
-const spec: any = {
+let InterfaceInitParamOption: Option.IInterfaceInitParamOption = {};
+let RestQueryOption: Option.IRestQueryOption = { start: 0 };
+let RestResponseOption: Option.IRestResponseOption = { result: true };
+
+export default {
     CodeMap,
     SpecError,
     TwoDimension,
@@ -16,6 +21,8 @@ const spec: any = {
     Config,
     ResourceCode,
     InterfaceCategory,
+    InterfaceInitParamOption,
+    InterfaceInitParam,
     Message,
     MessageTopic,
     MessageType,
@@ -36,8 +43,9 @@ const spec: any = {
     CarPlate,
     RestQuery,
     RestResponse,
+    RestQueryOption,
+    RestResponseOption,
     DeviceControlParam,
-    InterfaceInitParam,
     InterfaceDescripter,
     DeviceEventType,
     DeviceEventData,
@@ -46,8 +54,3 @@ const spec: any = {
     ServiceRegister,
     ServiceType
 }
-
-export default spec;
-
-module.exports = spec;
-module.exports.default = spec;

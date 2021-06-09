@@ -1,4 +1,5 @@
 import moment from 'moment';
+import { Option } from './option';
 
 export class DoorValue {
     person_name?: string;
@@ -232,21 +233,6 @@ export class DeviceControlParam {
         this.parameters = parameters;
     }
 }
-export interface InterfaceInitParamOption {
-    remote_service_address?: string;
-    remote_ip_address?: string;
-    remote_port?: number;
-    local_port?: number;
-    user_name?: string;
-    user_pwd?: string;
-    com_port?: string;
-    baud_rate?: number;
-    data_bits?: number;
-    stop_bits?: number;
-    parity?: number;
-    connection_string?: string;
-    extra?: string;
-}
 
 export class InterfaceInitParam {
     remote_service_address: string;
@@ -263,7 +249,7 @@ export class InterfaceInitParam {
     connection_string: string;
     extra: string;
 
-    constructor(opt: InterfaceInitParamOption) {
+    constructor(opt: Option.IInterfaceInitParamOption) {
         this.remote_service_address = opt.remote_service_address || '';
         this.remote_ip_address = opt.remote_ip_address || '';
         this.remote_port = opt.remote_port || 0;
