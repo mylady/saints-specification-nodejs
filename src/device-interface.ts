@@ -1,10 +1,10 @@
-import * as moment from 'moment';
+import moment from 'moment';
 
 export class DoorValue {
-    person_name: string;
+    person_name?: string;
     person_card: string;
-    scene_image: string;
-    scene_image_path: string;
+    scene_image?: string;
+    scene_image_path?: string;
 
     constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
         this.person_card = card;
@@ -76,6 +76,7 @@ export class RFIDTagValue {
         this.z = opt.z || 0;
         this.tag_id = opt.tag_id || '';
         this.person_id = opt.person_id || '';
+        this.person_name = opt.person_name || '';
         this.battery = opt.battery || 0;
         this.heart_rate = opt.heart_rate || 0;
         this.blood_pressure_high = opt.blood_pressure_high || 0;
@@ -136,8 +137,8 @@ export class Face {
     person_id: string;
     person_name: string;
     similarity: number;
-    face_image: string;
-    face_image_path: string;
+    face_image?: string;
+    face_image_path?: string;
 
     constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string) {
         this.person_id = personId;
@@ -150,12 +151,12 @@ export class Face {
 
 export class CarPlate {
     plate_number: string;
-    plate_color: string;
-    plate_type: string;
-    car_color: string;
+    plate_color?: string;
+    plate_type?: string;
+    car_color?: string;
 
-    constructor(platenumber: string, plateColor?: string, plateType?: string, carColor?: string) {
-        this.plate_number = platenumber;
+    constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string) {
+        this.plate_number = plateNumber;
         this.plate_color = plateColor;
         this.plate_type = plateType;
         this.car_color = carColor;
@@ -164,10 +165,10 @@ export class CarPlate {
 
 export class VideoAnalyseValue {
     analyse_type: VideoAnalyseType;
-    scene_image: string;
-    scene_image_path: string;
-    face: Face;
-    car: CarPlate;
+    scene_image?: string;
+    scene_image_path?: string;
+    face?: Face;
+    car?: CarPlate;
 
     constructor(analyseType: VideoAnalyseType, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate) {
         this.analyse_type = analyseType;
@@ -187,7 +188,7 @@ export const DeviceControlCode = {
     disconnectRelay: 4,//断开继电器
     byPass: 5,//旁路
     cancelByPass: 6,//解除旁路
-    query:7,
+    query: 7,
     callSlave: 8,//呼叫分机
     listenSlave: 9,//监听分机
     hangupSlave: 10,//挂断分机
@@ -220,15 +221,15 @@ export class DeviceControlParam {
     sdk_code: number;
     control_code: number;
     receivers: Array<string>;
-    sender: string;
-    parameters: Array<string>;
+    sender?: string;
+    parameters?: Array<string>;
 
-    constructor(sdk: number, control: number, receivers: Array<string>, parameters?: Array<string>, sender?: string) {
+    constructor(sdk: number, control: number, receivers: Array<string>, sender?: string, parameters?: Array<string>,) {
         this.sdk_code = sdk;
         this.control_code = control;
         this.receivers = receivers;
-        this.parameters = parameters;
         this.sender = sender;
+        this.parameters = parameters;
     }
 }
 export interface InterfaceInitParamOption {
@@ -311,7 +312,7 @@ export class DeviceEventData {
     fault_code: number;
     event_time: string;
     event_desp: string;
-    event_extra: string;
+    event_extra?: string;
 
     constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
         this.resource_code = resourceCode;

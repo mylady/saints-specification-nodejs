@@ -1,17 +1,15 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "3.1.9",
+  "version": "3.1.11",
   "description": "saints specification for nodejs",
-  "main": "./dist/index.js",
-  "types": "@types/saints-specification-nodejs/index.d.ts",
+  "main": "./lib/node/index.js",
+  "module": "./lib/esm/browser.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc -p tsconfig-es.json && tsc -p tsconfig-node.json"
   },
-  "type": "module",
-  "exports": {
-    "node": "./dist/index.js",
-    "default": "./dist/browser.js"
-  },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mylady/saints-specification-nodejs.git"

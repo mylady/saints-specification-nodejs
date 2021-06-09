@@ -59,13 +59,12 @@ export class ServiceFinder {
 
 export class ServiceRegister {
     private running: boolean;
-    private timer = null;
+    private timer?: NodeJS.Timeout;
     private hub: string;
     service: Service;
 
     constructor(ip: string, service: Service) {
         this.running = false;
-        this.timer = null;
         this.service = service;
         this.hub = HubTemplateAddress.replace('ip', ip);
     }

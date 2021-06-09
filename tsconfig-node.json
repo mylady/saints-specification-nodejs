@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig-es.json",
+    "compilerOptions": {
+        "outDir": "./lib/node",
+        "module": "CommonJS"
+    },
+    "exclude": [
+        "./src/service-browser.ts",
+        "./src/browser.ts"
+    ]
+}

@@ -25,7 +25,7 @@ export declare class ServiceFinder {
 }
 export declare class ServiceRegister {
     private running;
-    private timer;
+    private timer?;
     private hub;
     service: Service;
     constructor(ip: string, service: Service);

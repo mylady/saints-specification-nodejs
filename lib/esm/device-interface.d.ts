@@ -1,8 +1,8 @@
 export declare class DoorValue {
-    person_name: string;
+    person_name?: string;
     person_card: string;
-    scene_image: string;
-    scene_image_path: string;
+    scene_image?: string;
+    scene_image_path?: string;
     constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string);
 }
 export declare class EnvMonitorValue {
@@ -81,23 +81,23 @@ export declare class Face {
     person_id: string;
     person_name: string;
     similarity: number;
-    face_image: string;
-    face_image_path: string;
+    face_image?: string;
+    face_image_path?: string;
     constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string);
 }
 export declare class CarPlate {
     plate_number: string;
-    plate_color: string;
-    plate_type: string;
-    car_color: string;
-    constructor(platenumber: string, plateColor?: string, plateType?: string, carColor?: string);
+    plate_color?: string;
+    plate_type?: string;
+    car_color?: string;
+    constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string);
 }
 export declare class VideoAnalyseValue {
     analyse_type: VideoAnalyseType;
-    scene_image: string;
-    scene_image_path: string;
-    face: Face;
-    car: CarPlate;
+    scene_image?: string;
+    scene_image_path?: string;
+    face?: Face;
+    car?: CarPlate;
     constructor(analyseType: VideoAnalyseType, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate);
 }
 export declare const DeviceControlCode: {
@@ -141,9 +141,9 @@ export declare class DeviceControlParam {
     sdk_code: number;
     control_code: number;
     receivers: Array<string>;
-    sender: string;
-    parameters: Array<string>;
-    constructor(sdk: number, control: number, receivers: Array<string>, parameters?: Array<string>, sender?: string);
+    sender?: string;
+    parameters?: Array<string>;
+    constructor(sdk: number, control: number, receivers: Array<string>, sender?: string, parameters?: Array<string>);
 }
 export interface InterfaceInitParamOption {
     remote_service_address?: string;
@@ -200,6 +200,6 @@ export declare class DeviceEventData {
     fault_code: number;
     event_time: string;
     event_desp: string;
-    event_extra: string;
+    event_extra?: string;
     constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
 }

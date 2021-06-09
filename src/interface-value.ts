@@ -1,10 +1,10 @@
 import { CodeMap } from './code-map';
 
 export class DoorValue {
-    person_name: string;
     person_card: string;
-    scene_image: string;
-    scene_image_path: string;
+    person_name?: string;
+    scene_image?: string;
+    scene_image_path?: string;
 
     constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
         this.person_card = card;
@@ -53,9 +53,9 @@ export class RFIDTagValue {
     person_id: string;
     person_name: string;
     battery: number;
-    heart_rate: number;
-    blood_presssure_high: number;
-    blood_presssure_low: number;
+    heart_rate?: number;
+    blood_presssure_high?: number;
+    blood_presssure_low?: number;
 
     constructor(x: number, y: number, z: number, tagId: string, personId: string, personName: string, battery: number, heartRate?: number, bph?: number, bpl?: number) {
         this.x = x;
@@ -74,12 +74,12 @@ export class RFIDTagValue {
 export class UPSValue {
     backup_time: string;
     battery: string;
-    a_volter: number;
-    b_volter: number;
-    c_volter: number;
-    a_elec: number;
-    b_elec: number;
-    c_elec: number;
+    a_volter?: number;
+    b_volter?: number;
+    c_volter?: number;
+    a_elec?: number;
+    b_elec?: number;
+    c_elec?: number;
 
     constructor(backupTime: string, battry: string, aVolter?: number, bVolter?: number, cVolter?: number, aElec?: number, bElec?: number, cElec?: number) {
         this.backup_time = backupTime;
@@ -113,8 +113,8 @@ export class Face {
     person_id: string;
     person_name: string;
     similarity: number;
-    face_image: string;
-    face_image_path: string;
+    face_image?: string;
+    face_image_path?: string;
 
     constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string) {
         this.person_id = personId;
@@ -127,9 +127,9 @@ export class Face {
 
 export class CarPlate {
     plate_number: string;
-    plate_color: string;
-    plate_type: string;
-    car_color: string;
+    plate_color?: string;
+    plate_type?: string;
+    car_color?: string;
 
     constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string) {
         this.plate_number = plateNumber;
@@ -141,10 +141,10 @@ export class CarPlate {
 
 export class VideoAnalyseValue {
     analyse_type: number;
-    scene_image: string;
-    scene_image_path: string;
-    face: Face;
-    car: CarPlate;
+    scene_image?: string;
+    scene_image_path?: string;
+    face?: Face;
+    car?: CarPlate;
 
     constructor(analyseType: number, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate) {
         this.analyse_type = analyseType;

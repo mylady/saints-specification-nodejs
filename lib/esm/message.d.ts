@@ -11,7 +11,7 @@ export declare const MessageType: {
 export declare class Message {
     type: number;
     content: string;
-    sender: string;
+    sender?: string;
     constructor(type: number, content: string, sender?: string);
 }
 export declare const MessageTopic: {
