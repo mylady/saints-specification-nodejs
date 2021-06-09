@@ -7,8 +7,7 @@ const dimension_1 = require("./dimension");
 const error_1 = require("./error");
 const device_interface_1 = require("./device-interface");
 const message_1 = require("./message");
-const rest_1 = require("./rest");
-const service_1 = require("./service");
+const service_browser_1 = require("./service-browser");
 const spec = {
     CodeMap: code_map_1.CodeMap,
     SpecError: error_1.SpecError,
@@ -35,17 +34,13 @@ const spec = {
     VideoAnalyseType: device_interface_1.VideoAnalyseType,
     Face: device_interface_1.Face,
     CarPlate: device_interface_1.CarPlate,
-    RestQuery: rest_1.RestQuery,
-    RestResponse: rest_1.RestResponse,
     DeviceControlParam: device_interface_1.DeviceControlParam,
     InterfaceInitParam: device_interface_1.InterfaceInitParam,
     InterfaceDescripter: device_interface_1.InterfaceDescripter,
     DeviceEventType: device_interface_1.DeviceEventType,
     DeviceEventData: device_interface_1.DeviceEventData,
-    Service: service_1.Service,
-    ServiceFinder: service_1.ServiceFinder,
-    ServiceRegister: service_1.ServiceRegister,
-    ServiceType: service_1.ServiceType
+    Service: service_browser_1.Service,
+    ServiceType: service_browser_1.ServiceType
 };
 exports.default = spec;
 module.exports = spec;

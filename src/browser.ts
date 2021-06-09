@@ -5,8 +5,7 @@ import { TwoDimension, ThreeDimension } from './dimension';
 import { SpecError } from './error';
 import { DoorValue, EnvMonitorValue, PowerGridValue, UPSValue, RFIDTagValue, CallValue, VideoAnalyseValue, VideoAnalyseType, Face, CarPlate, DeviceControlParam, InterfaceInitParam, InterfaceDescripter, DeviceControlCode, DeviceEventData, DeviceEventType } from './device-interface';
 import { Message, MessageType, MessageTopic } from './message';
-import { RestQuery, RestResponse } from './rest';
-import { Service, ServiceFinder, ServiceRegister, ServiceType } from './service';
+import { Service, ServiceType } from './service-browser';
 
 const spec: any = {
     CodeMap,
@@ -34,16 +33,12 @@ const spec: any = {
     VideoAnalyseType,
     Face,
     CarPlate,
-    RestQuery,
-    RestResponse,
     DeviceControlParam,
     InterfaceInitParam,
     InterfaceDescripter,
     DeviceEventType,
     DeviceEventData,
     Service,
-    ServiceFinder,
-    ServiceRegister,
     ServiceType
 }
 

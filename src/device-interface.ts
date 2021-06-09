@@ -231,7 +231,6 @@ export class DeviceControlParam {
         this.sender = sender;
     }
 }
-
 export interface InterfaceInitParamOption {
     remote_service_address?: string;
     remote_ip_address?: string;

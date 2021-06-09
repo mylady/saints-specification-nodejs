@@ -5,7 +5,10 @@
         "module": "CommonJS",
         "target": "ES6",
         "declaration": true,
-        "declarationDir": "@types/saints-specification-nodejs"
+        "declarationDir": "@types/saints-specification-nodejs",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     },
     "include": [
         "./src/**/*"

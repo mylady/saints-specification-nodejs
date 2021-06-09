@@ -3,8 +3,14 @@
   "version": "3.1.9",
   "description": "saints specification for nodejs",
   "main": "./dist/index.js",
+  "types": "@types/saints-specification-nodejs/index.d.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "type": "module",
+  "exports": {
+    "node": "./dist/index.js",
+    "default": "./dist/browser.js"
   },
   "repository": {
     "type": "git",
