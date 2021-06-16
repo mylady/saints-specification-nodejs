@@ -289,6 +289,7 @@ export const DeviceEventType = {
 }
 
 export class DeviceEventData {
+    serial: string;
     resource_code: number;
     address: string;
     event_type: number;
@@ -300,7 +301,8 @@ export class DeviceEventData {
     event_desp: string;
     event_extra?: string;
 
-    constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
+    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
+        this.serial = serial;
         this.resource_code = resourceCode;
         this.address = address;
         this.event_type = eventType;

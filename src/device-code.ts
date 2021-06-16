@@ -37,6 +37,17 @@ export const DeviceAlarmCode: Array<CodeMap> = [
     CodeMap.from('32', '视频分析报警')
 ];
 
+
+export const AlarmProcessStatus: Array<CodeMap> = [
+    CodeMap.from('-1', '未知状态'),
+    CodeMap.from('0', '待确认'),
+    CodeMap.from('1', '确认误报'),
+    CodeMap.from('2', '确认报警'),
+    CodeMap.from('3', '已接收'),
+    CodeMap.from('4', '已处理')
+];
+
+
 export const DeviceEventCode: Array<CodeMap> = [
     CodeMap.from('-1', '未知类型'),
     CodeMap.from('0', '刷卡开门'),

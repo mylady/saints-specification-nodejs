@@ -1,6 +1,6 @@
 {
   "name": "saints-specification-nodejs",
-  "version": "3.1.14",
+  "version": "3.1.15",
   "description": "saints specification for nodejs",
   "main": "./lib/node/index.js",
   "module": "./lib/esm/browser.js",

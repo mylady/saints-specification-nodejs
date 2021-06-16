@@ -177,6 +177,7 @@ export declare const DeviceEventType: {
     fault: number;
 };
 export declare class DeviceEventData {
+    serial: string;
     resource_code: number;
     address: string;
     event_type: number;
@@ -187,5 +188,5 @@ export declare class DeviceEventData {
     event_time: string;
     event_desp: string;
     event_extra?: string;
-    constructor(resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
+    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
 }
