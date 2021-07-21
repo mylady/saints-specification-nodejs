@@ -181,7 +181,6 @@ export class VideoAnalyseValue {
 }
 
 export const DeviceControlCode = {
-    stopInterface: -1,
     awayArm: 0,//外出布防
     stayArm: 1,//留守布防
     disArm: 2,//解除布防
@@ -215,7 +214,12 @@ export const DeviceControlCode = {
     acOff: 30,//关闭空调
     acMode: 31,//设置空调模式
     acTemperature: 32,//设置空调温度
-    cmd: 33//命令
+    cmd: 33,//命令
+
+    enableInterface: 65500,
+    disableInterface: 65501,
+    startInterface: 65502,
+    stopInterface: 65503
 }
 
 export class DeviceControlParam {

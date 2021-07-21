@@ -102,7 +102,6 @@ export declare class VideoAnalyseValue {
     constructor(analyseType: VideoAnalyseType, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate);
 }
 export declare const DeviceControlCode: {
-    stopInterface: number;
     awayArm: number;
     stayArm: number;
     disArm: number;
@@ -137,6 +136,10 @@ export declare const DeviceControlCode: {
     acMode: number;
     acTemperature: number;
     cmd: number;
+    enableInterface: number;
+    disableInterface: number;
+    startInterface: number;
+    stopInterface: number;
 };
 export declare class DeviceControlParam {
     sdk_code: number;
