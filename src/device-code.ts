@@ -140,7 +140,8 @@ export const ResourceCode: Array<CodeMap> = [
     CodeMap.from('263', '环境监测主机'),
     CodeMap.from('264', '不间断电源主机'),
     CodeMap.from('265', '视频分析主机'),
-    CodeMap.from('266', '继电器控制器')
+    CodeMap.from('266', '继电器控制器'),
+    CodeMap.from('267', '视频国标服务器')
 ];
 
 
