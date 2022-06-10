@@ -6,3 +6,4 @@ export declare const DeviceStatusCode: Array<CodeMap>;
 export declare const DeviceFaultCode: Array<CodeMap>;
 export declare const ResourceCode: Array<CodeMap>;
 export declare const InterfaceCategory: Array<CodeMap>;
+export declare const VideoEncode: Array<CodeMap>;

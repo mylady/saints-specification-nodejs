@@ -262,3 +262,9 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('115', '旭飞电动门接口'),
     CodeMap.from('116', '汉威电动门接口')
 ];
+
+export const VideoEncode: Array<CodeMap> = [
+    CodeMap.from('-1', '未知编码'),
+    CodeMap.from('0', 'H264'),
+    CodeMap.from('1', 'H265'),
+];
