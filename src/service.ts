@@ -104,6 +104,10 @@ const registerService = async (url: string, service: Service) => {
             console.error('register service failed', res.err_msg);
         }
     } catch (err) {
-        console.error('register service failed', err.message);
+        if (err instanceof Error) {
+            console.error('register service failed', err.message);
+        } else {
+            console.error('register service failed', err);
+        }
     }
 }

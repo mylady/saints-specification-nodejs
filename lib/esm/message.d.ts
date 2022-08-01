@@ -10,9 +10,9 @@ export declare const MessageType: {
 };
 export declare class Message {
     type: number;
-    content: string;
+    content: any;
     sender?: string;
-    constructor(type: number, content: string, sender?: string);
+    constructor(type: number, content: any, sender?: string);
 }
 export declare const MessageTopic: {
     deviceEvent: CodeMap;

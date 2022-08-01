@@ -13,10 +13,10 @@ export const MessageType = {
 //for biz message exchange
 export class Message {
     type: number;
-    content: string;
+    content: any;
     sender?: string;
 
-    constructor(type: number, content: string, sender?: string) {
+    constructor(type: number, content: any, sender?: string) {
         this.type = type;
         this.content = content;
         this.sender = sender;
