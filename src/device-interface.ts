@@ -85,6 +85,18 @@ export class RFIDTagValue {
     }
 }
 
+export interface RelayValueOption {
+    open?: boolean;
+}
+
+export class RelayValue {
+    open: boolean;
+    
+    constructor(opt: RelayValueOption) {
+        this.open = (opt.open === null ? opt.open : false);
+    }
+}
+
 export interface UPSValueOption {
     backup_time: string;
     battry: string;

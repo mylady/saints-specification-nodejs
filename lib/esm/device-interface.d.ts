@@ -47,6 +47,13 @@ export declare class RFIDTagValue {
     blood_pressure_low: number;
     constructor(opt: RFIDTagValueOption);
 }
+export interface RelayValueOption {
+    open?: boolean;
+}
+export declare class RelayValue {
+    open: boolean;
+    constructor(opt: RelayValueOption);
+}
 export interface UPSValueOption {
     backup_time: string;
     battry: string;
