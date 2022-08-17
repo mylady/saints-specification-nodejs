@@ -315,9 +315,9 @@ export class DeviceEventData {
     fault_code: number;
     event_time: string;
     event_desp: string;
-    event_extra?: string;
+    event_extra?: object;
 
-    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: string) {
+    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode: number = -1, alarmCode: number = -1, statusCode: number = -1, faultCode: number = -1, extra?: object) {
         this.serial = serial;
         this.resource_code = resourceCode;
         this.address = address;

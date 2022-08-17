@@ -197,6 +197,6 @@ export declare class DeviceEventData {
     fault_code: number;
     event_time: string;
     event_desp: string;
-    event_extra?: string;
-    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: string);
+    event_extra?: object;
+    constructor(serial: string, resourceCode: number, address: string, eventType: number, desp: string, eventCode?: number, alarmCode?: number, statusCode?: number, faultCode?: number, extra?: object);
 }
