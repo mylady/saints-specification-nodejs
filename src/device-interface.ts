@@ -1,199 +1,4 @@
 import moment from 'moment';
-import { Option } from './option';
-
-export class DoorValue {
-    person_name?: string;
-    person_card: string;
-    scene_image?: string;
-    scene_image_path?: string;
-
-    constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
-        this.person_card = card;
-        this.person_name = name;
-        this.scene_image = sceneImage;
-        this.scene_image_path = sceneImagePath;
-    }
-}
-
-export class EnvMonitorValue {
-    temp: number;
-    humi: number;
-    hcho: number;
-    co2: number;
-    pm25: number;
-    tvoc: number;
-    n3h: number;
-    h2s: number;
-
-    constructor(temp: number, humi: number, hcho: number = 0, co2: number = 0, pm25: number = 0, tvoc: number = 0, n3h: number = 0, h2s: number = 0) {
-        this.temp = temp;
-        this.humi = humi;
-        this.hcho = hcho;
-        this.co2 = co2;
-        this.pm25 = pm25;
-        this.tvoc = tvoc;
-        this.n3h = n3h;
-        this.h2s = h2s;
-    }
-}
-
-export class PowerGridValue {
-    volter: number;
-    elec: number;
-    constructor(v: number, e: number) {
-        this.volter = v;
-        this.elec = e;
-    }
-}
-
-export interface RFIDTagValueOption {
-    x: number;
-    y: number;
-    z?: number;
-    tag_id: string;
-    person_id?: string;
-    person_name?: string;
-    battery: number;
-    heart_rate?: number;
-    blood_pressure_high?: number;
-    blood_pressure_low?: number;
-}
-
-export class RFIDTagValue {
-    x: number;
-    y: number;
-    z: number;
-    tag_id: string;
-    person_id: string;
-    person_name: string;
-    battery: number;
-    heart_rate: number;
-    blood_pressure_high: number;
-    blood_pressure_low: number;
-
-    constructor(opt: RFIDTagValueOption) {
-        this.x = opt.x || 0;
-        this.y = opt.y || 0;
-        this.z = opt.z || 0;
-        this.tag_id = opt.tag_id || '';
-        this.person_id = opt.person_id || '';
-        this.person_name = opt.person_name || '';
-        this.battery = opt.battery || 0;
-        this.heart_rate = opt.heart_rate || 0;
-        this.blood_pressure_high = opt.blood_pressure_high || 0;
-        this.blood_pressure_low = opt.blood_pressure_low || 0;
-    }
-}
-
-export interface RelayValueOption {
-    switch_state: number;
-    enabled: boolean;
-}
-
-export class RelayValue {
-    switch_state: number;
-    enabled: boolean;
-    
-    constructor(opt: RelayValueOption) {
-        this.switch_state = opt.switch_state;
-        this.enabled = opt.enabled;
-    }
-}
-
-export interface UPSValueOption {
-    backup_time: string;
-    battry: string;
-    a_volter: number;
-    b_volter: number;
-    c_volter: number;
-    a_elec: number;
-    b_elec: number;
-    c_elec: number;
-}
-
-export class UPSValue {
-    backup_time: string;
-    battry: string;
-    a_volter: number;
-    b_volter: number;
-    c_volter: number;
-    a_elec: number;
-    b_elec: number;
-    c_elec: number;
-
-    constructor(opt: UPSValueOption) {
-        this.backup_time = opt.backup_time || '';
-        this.battry = opt.battry || '';
-        this.a_volter = opt.a_volter || 0;
-        this.b_volter = opt.b_volter || 0;
-        this.c_volter = opt.c_volter || 0;
-        this.a_elec = opt.a_elec || 0;
-        this.b_elec = opt.b_elec || 0;
-        this.c_elec = opt.c_elec || 0;
-    }
-}
-
-export class CallValue {
-    caller: string;
-    called: string;
-
-    constructor(caller: string, called: string) {
-        this.caller = caller;
-        this.called = called;
-    }
-}
-
-export enum VideoAnalyseType {
-    Behavior = 0,
-    Face = 1,
-    CarPlate = 2
-}
-
-export class Face {
-    person_id: string;
-    person_name: string;
-    similarity: number;
-    face_image?: string;
-    face_image_path?: string;
-
-    constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string) {
-        this.person_id = personId;
-        this.person_name = personName;
-        this.similarity = similarity;
-        this.face_image = faceImage;
-        this.face_image_path = faceImagePath;
-    }
-}
-
-export class CarPlate {
-    plate_number: string;
-    plate_color?: string;
-    plate_type?: string;
-    car_color?: string;
-
-    constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string) {
-        this.plate_number = plateNumber;
-        this.plate_color = plateColor;
-        this.plate_type = plateType;
-        this.car_color = carColor;
-    }
-}
-
-export class VideoAnalyseValue {
-    analyse_type: VideoAnalyseType;
-    scene_image?: string;
-    scene_image_path?: string;
-    face?: Face;
-    car?: CarPlate;
-
-    constructor(analyseType: VideoAnalyseType, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate) {
-        this.analyse_type = analyseType;
-        this.scene_image = sceneImage;
-        this.scene_image_path = sceneImagePath;
-        this.face = face;
-        this.car = car;
-    }
-}
 
 export const DeviceControlCode = {
     awayArm: 0,//外出布防
@@ -253,6 +58,22 @@ export class DeviceControlParam {
     }
 }
 
+export interface InterfaceInitParamOption {
+    remote_service_address?: string;
+    remote_ip_address?: string;
+    remote_port?: number;
+    local_port?: number;
+    user_name?: string;
+    user_pwd?: string;
+    com_port?: string;
+    baud_rate?: number;
+    data_bits?: number;
+    stop_bits?: number;
+    parity?: number;
+    connection_string?: string;
+    extra?: string;
+}
+
 export class InterfaceInitParam {
     remote_service_address: string;
     remote_ip_address: string;
@@ -268,7 +89,7 @@ export class InterfaceInitParam {
     connection_string: string;
     extra: string;
 
-    constructor(opt: Option.IInterfaceInitParamOption) {
+    constructor(opt: InterfaceInitParamOption) {
         this.remote_service_address = opt.remote_service_address || '';
         this.remote_ip_address = opt.remote_ip_address || '';
         this.remote_port = opt.remote_port || 0;

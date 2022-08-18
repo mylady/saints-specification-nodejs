@@ -1,12 +1,25 @@
 import { SpecError } from './error';
-import { Option } from './option';
+export interface RestQueryOption {
+    start: number;
+    limit?: number;
+    sort?: string;
+    dir?: string;
+    keyword?: string;
+}
 export declare class RestQuery {
     start: number;
     limit: number;
     sort: string;
     dir: string;
     keyword: string;
-    constructor(opt: Option.IRestQueryOption);
+    constructor(opt: RestQueryOption);
+}
+export interface RestResponseOption {
+    result: boolean;
+    err_code?: number;
+    err_msg?: string;
+    data?: any;
+    total?: number;
 }
 export declare class RestResponse {
     result: boolean;
@@ -14,7 +27,7 @@ export declare class RestResponse {
     err_msg: string;
     data: any;
     total: number;
-    constructor(opt: Option.IRestResponseOption);
+    constructor(opt: RestResponseOption);
     static boolResponse(b: boolean, err: string | Error | SpecError): RestResponse;
     static dataResponse(d: any, cnt: number): RestResponse;
 }

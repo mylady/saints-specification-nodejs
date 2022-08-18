@@ -1,10 +1,34 @@
-import { CodeMap } from './code-map';
-export declare class DoorValue {
-    person_card: string;
+export interface CallValueOption {
+    caller: string;
+    called: string;
+}
+export declare class CallValue {
+    caller: string;
+    called: string;
+    constructor(opt: CallValueOption);
+}
+export interface DoorValueOption {
     person_name?: string;
+    person_card: string;
     scene_image?: string;
     scene_image_path?: string;
-    constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string);
+}
+export declare class DoorValue {
+    person_name?: string;
+    person_card: string;
+    scene_image?: string;
+    scene_image_path?: string;
+    constructor(opt: DoorValueOption);
+}
+export interface EnvMonitorValueOption {
+    temp: number;
+    humi: number;
+    hcho: number;
+    co2: number;
+    pm25: number;
+    tvoc: number;
+    n3h: number;
+    h2s: number;
 }
 export declare class EnvMonitorValue {
     temp: number;
@@ -15,12 +39,28 @@ export declare class EnvMonitorValue {
     tvoc: number;
     n3h: number;
     h2s: number;
-    constructor(temp: number, humi: number, hcho?: number, co2?: number, pm25?: number, tvoc?: number, n3h?: number, h2s?: number);
+    constructor(opt: EnvMonitorValueOption);
+}
+export interface PowerGridValueOption {
+    volter: number;
+    elec: number;
 }
 export declare class PowerGridValue {
     volter: number;
     elec: number;
-    constructor(v: number, e: number);
+    constructor(opt: PowerGridValueOption);
+}
+export interface RFIDTagValueOption {
+    x: number;
+    y: number;
+    z?: number;
+    tag_id: string;
+    person_id?: string;
+    person_name?: string;
+    battery: number;
+    heart_rate?: number;
+    blood_pressure_high?: number;
+    blood_pressure_low?: number;
 }
 export declare class RFIDTagValue {
     x: number;
@@ -30,52 +70,86 @@ export declare class RFIDTagValue {
     person_id: string;
     person_name: string;
     battery: number;
-    heart_rate?: number;
-    blood_presssure_high?: number;
-    blood_presssure_low?: number;
-    constructor(x: number, y: number, z: number, tagId: string, personId: string, personName: string, battery: number, heartRate?: number, bph?: number, bpl?: number);
+    heart_rate: number;
+    blood_pressure_high: number;
+    blood_pressure_low: number;
+    constructor(opt: RFIDTagValueOption);
+}
+export interface RelayValueOption {
+    switch_state: number;
+    enabled: boolean;
+}
+export declare class RelayValue {
+    switch_state: number;
+    enabled: boolean;
+    constructor(opt: RelayValueOption);
+}
+export interface UPSValueOption {
+    backup_time: string;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
 }
 export declare class UPSValue {
     backup_time: string;
-    battery: string;
-    a_volter?: number;
-    b_volter?: number;
-    c_volter?: number;
-    a_elec?: number;
-    b_elec?: number;
-    c_elec?: number;
-    constructor(backupTime: string, battry: string, aVolter?: number, bVolter?: number, cVolter?: number, aElec?: number, bElec?: number, cElec?: number);
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
+    constructor(opt: UPSValueOption);
 }
-export declare class CallValue {
-    caller: string;
-    called: string;
-    constructor(caller: string, called: string);
+export declare enum VideoAnalyseType {
+    Behavior = 0,
+    Face = 1,
+    CarPlate = 2
 }
-export declare const VideoAnalyseType: {
-    behavior: CodeMap;
-    face: CodeMap;
-    carPlate: CodeMap;
-};
+export interface FaceOption {
+    person_id: string;
+    person_name: string;
+    similarity: number;
+    face_image?: string;
+    face_image_path?: string;
+}
 export declare class Face {
     person_id: string;
     person_name: string;
     similarity: number;
     face_image?: string;
     face_image_path?: string;
-    constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string);
+    constructor(opt: FaceOption);
+}
+export interface CarPlateOption {
+    plate_number: string;
+    plate_color?: string;
+    plate_type?: string;
+    car_color?: string;
 }
 export declare class CarPlate {
     plate_number: string;
     plate_color?: string;
     plate_type?: string;
     car_color?: string;
-    constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string);
+    constructor(opt: CarPlateOption);
 }
-export declare class VideoAnalyseValue {
-    analyse_type: number;
+export interface VideoAnalyseValueOption {
+    analyse_type: VideoAnalyseType;
     scene_image?: string;
     scene_image_path?: string;
     face?: Face;
     car?: CarPlate;
-    constructor(analyseType: number, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate);
+}
+export declare class VideoAnalyseValue {
+    analyse_type: VideoAnalyseType;
+    scene_image?: string;
+    scene_image_path?: string;
+    face?: Face;
+    car?: CarPlate;
+    constructor(opt: VideoAnalyseValueOption);
 }

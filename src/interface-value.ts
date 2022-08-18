@@ -1,17 +1,48 @@
-import { CodeMap } from './code-map';
+export interface CallValueOption {
+    caller: string;
+    called: string;
+}
+
+export class CallValue {
+    caller: string;
+    called: string;
+
+    constructor(opt: CallValueOption) {
+        this.caller = opt.caller;
+        this.called = opt.called;
+    }
+}
+
+export interface DoorValueOption {
+    person_name?: string;
+    person_card: string;
+    scene_image?: string;
+    scene_image_path?: string;
+}
 
 export class DoorValue {
-    person_card: string;
     person_name?: string;
+    person_card: string;
     scene_image?: string;
     scene_image_path?: string;
 
-    constructor(card: string, name?: string, sceneImage?: string, sceneImagePath?: string) {
-        this.person_card = card;
-        this.person_name = name;
-        this.scene_image = sceneImage;
-        this.scene_image_path = sceneImagePath;
+    constructor(opt: DoorValueOption) {
+        this.person_card = opt.person_card || '';
+        this.person_name = opt.person_name || '';
+        this.scene_image = opt.scene_image || '';
+        this.scene_image_path = opt.scene_image_path || '';
     }
+}
+
+export interface EnvMonitorValueOption {
+    temp: number;
+    humi: number;
+    hcho: number;
+    co2: number;
+    pm25: number;
+    tvoc: number;
+    n3h: number;
+    h2s: number;
 }
 
 export class EnvMonitorValue {
@@ -24,25 +55,43 @@ export class EnvMonitorValue {
     n3h: number;
     h2s: number;
 
-    constructor(temp: number, humi: number, hcho: number = 0, co2: number = 0, pm25: number = 0, tvoc: number = 0, n3h: number = 0, h2s: number = 0) {
-        this.temp = temp;
-        this.humi = humi;
-        this.hcho = hcho;
-        this.co2 = co2;
-        this.pm25 = pm25;
-        this.tvoc = tvoc;
-        this.n3h = n3h;
-        this.h2s = h2s;
+    constructor(opt: EnvMonitorValueOption) {
+        this.temp = opt.temp;
+        this.humi = opt.humi;
+        this.hcho = opt.hcho;
+        this.co2 = opt.co2;
+        this.pm25 = opt.pm25;
+        this.tvoc = opt.tvoc;
+        this.n3h = opt.n3h;
+        this.h2s = opt.h2s;
     }
+}
+
+export interface PowerGridValueOption {
+    volter: number;
+    elec: number;
 }
 
 export class PowerGridValue {
     volter: number;
     elec: number;
-    constructor(v: number, e: number) {
-        this.volter = v;
-        this.elec = e;
+    constructor(opt: PowerGridValueOption) {
+        this.volter = opt.volter;
+        this.elec = opt.elec;
     }
+}
+
+export interface RFIDTagValueOption {
+    x: number;
+    y: number;
+    z?: number;
+    tag_id: string;
+    person_id?: string;
+    person_name?: string;
+    battery: number;
+    heart_rate?: number;
+    blood_pressure_high?: number;
+    blood_pressure_low?: number;
 }
 
 export class RFIDTagValue {
@@ -53,60 +102,84 @@ export class RFIDTagValue {
     person_id: string;
     person_name: string;
     battery: number;
-    heart_rate?: number;
-    blood_presssure_high?: number;
-    blood_presssure_low?: number;
+    heart_rate: number;
+    blood_pressure_high: number;
+    blood_pressure_low: number;
 
-    constructor(x: number, y: number, z: number, tagId: string, personId: string, personName: string, battery: number, heartRate?: number, bph?: number, bpl?: number) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.tag_id = tagId;
-        this.person_id = personId;
-        this.person_name = personName;
-        this.battery = battery;
-        this.heart_rate = heartRate;
-        this.blood_presssure_high = bph;
-        this.blood_presssure_low = bpl;
+    constructor(opt: RFIDTagValueOption) {
+        this.x = opt.x || 0;
+        this.y = opt.y || 0;
+        this.z = opt.z || 0;
+        this.tag_id = opt.tag_id || '';
+        this.person_id = opt.person_id || '';
+        this.person_name = opt.person_name || '';
+        this.battery = opt.battery || 0;
+        this.heart_rate = opt.heart_rate || 0;
+        this.blood_pressure_high = opt.blood_pressure_high || 0;
+        this.blood_pressure_low = opt.blood_pressure_low || 0;
     }
+}
+
+export interface RelayValueOption {
+    switch_state: number;
+    enabled: boolean;
+}
+
+export class RelayValue {
+    switch_state: number;
+    enabled: boolean;
+
+    constructor(opt: RelayValueOption) {
+        this.switch_state = opt.switch_state;
+        this.enabled = opt.enabled;
+    }
+}
+
+export interface UPSValueOption {
+    backup_time: string;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
 }
 
 export class UPSValue {
     backup_time: string;
-    battery: string;
-    a_volter?: number;
-    b_volter?: number;
-    c_volter?: number;
-    a_elec?: number;
-    b_elec?: number;
-    c_elec?: number;
+    battry: string;
+    a_volter: number;
+    b_volter: number;
+    c_volter: number;
+    a_elec: number;
+    b_elec: number;
+    c_elec: number;
 
-    constructor(backupTime: string, battry: string, aVolter?: number, bVolter?: number, cVolter?: number, aElec?: number, bElec?: number, cElec?: number) {
-        this.backup_time = backupTime;
-        this.battery = battry;
-        this.a_volter = aVolter;
-        this.b_volter = bVolter;
-        this.c_volter = cVolter;
-        this.a_elec = aElec;
-        this.b_elec = bElec;
-        this.c_elec = cElec;
+    constructor(opt: UPSValueOption) {
+        this.backup_time = opt.backup_time || '';
+        this.battry = opt.battry || '';
+        this.a_volter = opt.a_volter || 0;
+        this.b_volter = opt.b_volter || 0;
+        this.c_volter = opt.c_volter || 0;
+        this.a_elec = opt.a_elec || 0;
+        this.b_elec = opt.b_elec || 0;
+        this.c_elec = opt.c_elec || 0;
     }
 }
 
-export class CallValue {
-    caller: string;
-    called: string;
-
-    constructor(caller: string, called: string) {
-        this.caller = caller;
-        this.called = called;
-    }
+export enum VideoAnalyseType {
+    Behavior = 0,
+    Face = 1,
+    CarPlate = 2
 }
 
-export const VideoAnalyseType = {
-    behavior: CodeMap.from('行为分析', 0),
-    face: CodeMap.from('人脸识别', 1),
-    carPlate: CodeMap.from('车牌识别', 2)
+export interface FaceOption {
+    person_id: string;
+    person_name: string;
+    similarity: number;
+    face_image?: string;
+    face_image_path?: string;
 }
 
 export class Face {
@@ -116,13 +189,20 @@ export class Face {
     face_image?: string;
     face_image_path?: string;
 
-    constructor(personId: string, personName: string, similarity: number, faceImage?: string, faceImagePath?: string) {
-        this.person_id = personId;
-        this.person_name = personName;
-        this.similarity = similarity;
-        this.face_image = faceImage;
-        this.face_image_path = faceImagePath;
+    constructor(opt: FaceOption) {
+        this.person_id = opt.person_id;
+        this.person_name = opt.person_name;
+        this.similarity = opt.similarity;
+        this.face_image = opt.face_image;
+        this.face_image_path = opt.face_image_path;
     }
+}
+
+export interface CarPlateOption {
+    plate_number: string;
+    plate_color?: string;
+    plate_type?: string;
+    car_color?: string;
 }
 
 export class CarPlate {
@@ -131,26 +211,34 @@ export class CarPlate {
     plate_type?: string;
     car_color?: string;
 
-    constructor(plateNumber: string, plateColor?: string, plateType?: string, carColor?: string) {
-        this.plate_number = plateNumber;
-        this.plate_color = plateColor;
-        this.plate_type = plateType;
-        this.car_color = carColor;
+    constructor(opt: CarPlateOption) {
+        this.plate_number = opt.plate_number;
+        this.plate_color = opt.plate_color;
+        this.plate_type = opt.plate_type;
+        this.car_color = opt.car_color;
     }
 }
 
+export interface VideoAnalyseValueOption {
+    analyse_type: VideoAnalyseType;
+    scene_image?: string;
+    scene_image_path?: string;
+    face?: Face;
+    car?: CarPlate;
+}
+
 export class VideoAnalyseValue {
-    analyse_type: number;
+    analyse_type: VideoAnalyseType;
     scene_image?: string;
     scene_image_path?: string;
     face?: Face;
     car?: CarPlate;
 
-    constructor(analyseType: number, sceneImage?: string, sceneImagePath?: string, face?: Face, car?: CarPlate) {
-        this.analyse_type = analyseType;
-        this.scene_image = sceneImage;
-        this.scene_image_path = sceneImagePath;
-        this.face = face;
-        this.car = car;
+    constructor(opt: VideoAnalyseValueOption) {
+        this.analyse_type = opt.analyse_type;
+        this.scene_image = opt.scene_image;
+        this.scene_image_path = opt.scene_image_path;
+        this.face = opt.face;
+        this.car = opt.car;
     }
 }

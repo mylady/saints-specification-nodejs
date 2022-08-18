@@ -260,7 +260,8 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('113', '依图视频分析接口'),
     CodeMap.from('114', '汉威空气质量接口v2'),
     CodeMap.from('115', '旭飞电动门接口'),
-    CodeMap.from('116', '汉威电动门接口')
+    CodeMap.from('116', '汉威电动门接口'),
+    CodeMap.from('117', '四方博瑞用电平台接口')
 ];
 
 export const VideoEncode: Array<CodeMap> = [

@@ -1,7 +1,14 @@
 import { SpecError } from './error';
-import { Option } from './option';
 
 //this is for server process not for client
+export interface RestQueryOption {
+    start: number;
+    limit?: number;
+    sort?: string;
+    dir?: string;
+    keyword?: string;
+}
+
 export class RestQuery {
     start: number;
     limit: number;
@@ -9,13 +16,21 @@ export class RestQuery {
     dir: string;
     keyword: string;
 
-    constructor(opt: Option.IRestQueryOption) {
+    constructor(opt: RestQueryOption) {
         this.start = opt.start || 0;
         this.limit = opt.limit || 0;
         this.sort = opt.sort || '';
         this.dir = opt.dir || '';
         this.keyword = opt.keyword || '';
     }
+}
+
+export interface RestResponseOption {
+    result: boolean;
+    err_code?: number;
+    err_msg?: string;
+    data?: any;
+    total?: number;
 }
 
 export class RestResponse {
@@ -25,7 +40,7 @@ export class RestResponse {
     data: any;
     total: number;
 
-    constructor(opt: Option.IRestResponseOption) {
+    constructor(opt: RestResponseOption) {
         this.result = opt.result || false;
         this.err_code = opt.err_code || 0;
         this.err_msg = opt.err_msg || '';
