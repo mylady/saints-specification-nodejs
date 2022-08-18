@@ -86,14 +86,17 @@ export class RFIDTagValue {
 }
 
 export interface RelayValueOption {
-    open?: boolean;
+    switch_state: number;
+    enabled: boolean;
 }
 
 export class RelayValue {
-    open: boolean;
+    switch_state: number;
+    enabled: boolean;
     
     constructor(opt: RelayValueOption) {
-        this.open = (opt.open === null ? opt.open : false);
+        this.switch_state = opt.switch_state;
+        this.enabled = opt.enabled;
     }
 }
 

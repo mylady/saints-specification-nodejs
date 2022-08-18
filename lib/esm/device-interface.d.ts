@@ -48,10 +48,12 @@ export declare class RFIDTagValue {
     constructor(opt: RFIDTagValueOption);
 }
 export interface RelayValueOption {
-    open?: boolean;
+    switch_state: number;
+    enabled: boolean;
 }
 export declare class RelayValue {
-    open: boolean;
+    switch_state: number;
+    enabled: boolean;
     constructor(opt: RelayValueOption);
 }
 export interface UPSValueOption {
