@@ -264,7 +264,9 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('汉威空气质量接口v2', 114),
     CodeMap.from('旭飞电动门接口', 115),
     CodeMap.from('汉威电动门接口', 116),
-    CodeMap.from('四方博瑞用电平台接口', 117)
+    CodeMap.from('四方博瑞用电平台接口', 117),
+
+    CodeMap.from('圣熙门禁接口V1', 10001)
 ];
 
 export const VideoEncode: Array<CodeMap> = [
