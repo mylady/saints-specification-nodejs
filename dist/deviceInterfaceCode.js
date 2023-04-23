@@ -484,6 +484,10 @@ var deviceInterfaceCode = {
     name: '未知声光报警接口',
     value: 117
   },
+  meizanmeiFaceAnalyseHTTP: {
+    name: '美赞美人脸识别接口',
+    value: 118
+  },
   //saints define
   shengxiDoorUDP: {
     name: '圣熙门禁接口',
