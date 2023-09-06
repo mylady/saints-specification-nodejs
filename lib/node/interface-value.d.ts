@@ -51,6 +51,8 @@ export declare class PowerGridValue {
     constructor(opt: PowerGridValueOption);
 }
 export interface RFIDTagValueOption {
+    map_id?: string;
+    locator_id?: string;
     x: number;
     y: number;
     z?: number;
@@ -63,6 +65,8 @@ export interface RFIDTagValueOption {
     blood_pressure_low?: number;
 }
 export declare class RFIDTagValue {
+    map_id: string;
+    locator_id: string;
     x: number;
     y: number;
     z: number;

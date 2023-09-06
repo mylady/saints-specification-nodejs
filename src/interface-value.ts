@@ -82,6 +82,8 @@ export class PowerGridValue {
 }
 
 export interface RFIDTagValueOption {
+    map_id?: string;
+    locator_id?: string;
     x: number;
     y: number;
     z?: number;
@@ -95,6 +97,8 @@ export interface RFIDTagValueOption {
 }
 
 export class RFIDTagValue {
+    map_id: string;
+    locator_id: string;
     x: number;
     y: number;
     z: number;
@@ -107,6 +111,8 @@ export class RFIDTagValue {
     blood_pressure_low: number;
 
     constructor(opt: RFIDTagValueOption) {
+        this.map_id = opt.map_id || '';
+        this.locator_id = opt.locator_id || '';
         this.x = opt.x || 0;
         this.y = opt.y || 0;
         this.z = opt.z || 0;
