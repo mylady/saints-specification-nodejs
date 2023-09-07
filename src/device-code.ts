@@ -34,7 +34,9 @@ export const DeviceAlarmCode: Array<CodeMap> = [
     CodeMap.from('高压断网报警', 29),
     CodeMap.from('高压触网报警', 30),
     CodeMap.from('高压短路报警', 31),
-    CodeMap.from('视频分析报警', 32)
+    CodeMap.from('视频分析报警', 32),
+    CodeMap.from('疑似自缢', 33),
+    CodeMap.from('蒙头睡觉', 34),
 ];
 
 
@@ -267,6 +269,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('四方博瑞用电平台接口', 117),
     CodeMap.from('美赞美人脸识别接口', 118),
     CodeMap.from('笃一人员定位接口', 119),
+    CodeMap.from('禾视视频分析接口', 120),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
