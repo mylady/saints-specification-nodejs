@@ -270,6 +270,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('美赞美人脸识别接口', 118),
     CodeMap.from('笃一人员定位接口', 119),
     CodeMap.from('禾视视频分析接口', 120),
+    CodeMap.from('腾达环境监测接口',121),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];

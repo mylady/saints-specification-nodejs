@@ -24,6 +24,7 @@ export interface EnvMonitorValueOption {
     temp: number;
     humi: number;
     hcho: number;
+    co: number;
     co2: number;
     pm25: number;
     tvoc: number;
@@ -34,6 +35,7 @@ export declare class EnvMonitorValue {
     temp: number;
     humi: number;
     hcho: number;
+    co: number;
     co2: number;
     pm25: number;
     tvoc: number;
