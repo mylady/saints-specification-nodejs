@@ -146,6 +146,7 @@ export declare class CarPlate {
 }
 export interface VideoAnalyseValueOption {
     analyse_type: VideoAnalyseType;
+    video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
     face?: Face;
@@ -153,6 +154,7 @@ export interface VideoAnalyseValueOption {
 }
 export declare class VideoAnalyseValue {
     analyse_type: VideoAnalyseType;
+    video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
     face?: Face;
