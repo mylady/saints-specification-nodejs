@@ -10,6 +10,7 @@ export declare const ServiceType: {
     eventService: CodeMap;
     logService: CodeMap;
     timeSerialService: CodeMap;
+    videoRecordService: CodeMap;
 };
 export declare class Service {
     address: string;

@@ -18,7 +18,8 @@ export const ServiceType = {
     messageHub: CodeMap.from('消息服务', 5),
     eventService: CodeMap.from('事件服务', 6),
     logService: CodeMap.from('日志服务', 7),
-    timeSerialService: CodeMap.from('时间流服务', 8)
+    timeSerialService: CodeMap.from('时间流服务', 8),
+    videoRecordService: CodeMap.from('视频录制服务', 9)
 };
 
 export class Service {
