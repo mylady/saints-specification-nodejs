@@ -258,7 +258,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('君凌用电检测接口', 104),
     CodeMap.from('懋特人员定位接口', 105),
     CodeMap.from('美的空调串口控制接口', 106),
-    CodeMap.from('美的空调网络控制接口', 107),
+    CodeMap.from('美的空调网络控制接口V4', 107),
     CodeMap.from('永林继电器串口控制接口', 108),
     CodeMap.from('永林继电器网络控制接口', 109),
     CodeMap.from('比易特电窗串口控制接口', 110),
@@ -274,6 +274,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('禾视视频分析接口', 120),
     CodeMap.from('腾达环境监测接口', 121),
     CodeMap.from('腾达人员定位接口', 122),
+    CodeMap.from('美的空调控制器接口V5', 123),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
