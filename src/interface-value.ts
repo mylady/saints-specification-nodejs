@@ -187,23 +187,33 @@ export interface FaceOption {
     person_id: string;
     person_name: string;
     similarity: number;
+    repo_id?: string;
     face_image?: string;
     face_image_path?: string;
+    repo_image?: string;
+    repo_image_path?: string;
 }
 
 export class Face {
     person_id: string;
     person_name: string;
     similarity: number;
+    repo_id?: string;
     face_image?: string;
     face_image_path?: string;
+    repo_image?: string;
+    repo_image_path?: string;
+
 
     constructor(opt: FaceOption) {
         this.person_id = opt.person_id;
         this.person_name = opt.person_name;
         this.similarity = opt.similarity;
+        this.repo_id = opt.repo_id;
         this.face_image = opt.face_image;
         this.face_image_path = opt.face_image_path;
+        this.repo_image = opt.repo_image;
+        this.repo_image_path = opt.repo_image_path;
     }
 }
 

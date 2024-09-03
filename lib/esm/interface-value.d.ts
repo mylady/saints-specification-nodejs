@@ -120,15 +120,21 @@ export interface FaceOption {
     person_id: string;
     person_name: string;
     similarity: number;
+    repo_id?: string;
     face_image?: string;
     face_image_path?: string;
+    repo_image?: string;
+    repo_image_path?: string;
 }
 export declare class Face {
     person_id: string;
     person_name: string;
     similarity: number;
+    repo_id?: string;
     face_image?: string;
     face_image_path?: string;
+    repo_image?: string;
+    repo_image_path?: string;
     constructor(opt: FaceOption);
 }
 export interface CarPlateOption {
