@@ -280,6 +280,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('海康威视视频设备通用接口V2', 124),
     CodeMap.from('禾视视频分析接口V2', 125),
     CodeMap.from('交大精工门禁接口V2', 126),
+    CodeMap.from('中国电子视频分析接口', 127),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
