@@ -35,6 +35,7 @@ export const DeviceControlCode = {
     acMode: 31,//设置空调模式
     acTemperature: 32,//设置空调温度
     cmd: 33,//命令
+    acSpeed: 34,//设置空调风速
 
     enableInterface: 65500,
     disableInterface: 65501,

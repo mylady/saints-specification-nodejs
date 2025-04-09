@@ -33,6 +33,7 @@ export declare const DeviceControlCode: {
     acMode: number;
     acTemperature: number;
     cmd: number;
+    acSpeed: number;
     enableInterface: number;
     disableInterface: number;
     startInterface: number;
