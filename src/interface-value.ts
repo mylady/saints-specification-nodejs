@@ -180,7 +180,8 @@ export class UPSValue {
 export enum VideoAnalyseType {
     Behavior = 0,
     Face = 1,
-    CarPlate = 2
+    CarPlate = 2,
+    Voice = 3
 }
 
 export interface FaceOption {

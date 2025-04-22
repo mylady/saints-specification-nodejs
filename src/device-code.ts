@@ -37,6 +37,11 @@ export const DeviceAlarmCode: Array<CodeMap> = [
     CodeMap.from('视频分析报警', 32),
     CodeMap.from('疑似自缢', 33),
     CodeMap.from('蒙头睡觉', 34),
+    CodeMap.from('撞墙', 35),
+    CodeMap.from('非休息时间段躺平', 36),
+    CodeMap.from('跪地/跪床', 37),
+    CodeMap.from('大声说话', 38),
+    CodeMap.from('语音关键字报警', 39),
 ];
 
 
@@ -283,6 +288,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('中国电子视频分析接口', 127),
     CodeMap.from('腾达电源接口', 128),
     CodeMap.from('腾达风扇接口', 129),
+    CodeMap.from('快鱼语音分析接口', 130),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
