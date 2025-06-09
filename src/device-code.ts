@@ -289,6 +289,8 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('腾达电源接口', 128),
     CodeMap.from('腾达风扇接口', 129),
     CodeMap.from('快鱼语音分析接口', 130),
+    CodeMap.from('旷视人脸识别盒子接口V3', 131),
+    CodeMap.from('商汤人脸识别盒子接口V2.4', 132),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
