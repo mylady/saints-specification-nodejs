@@ -42,6 +42,7 @@ export const DeviceAlarmCode: Array<CodeMap> = [
     CodeMap.from('跪地/跪床', 37),
     CodeMap.from('大声说话', 38),
     CodeMap.from('语音关键字报警', 39),
+    CodeMap.from('设备运行报警', 40),
 ];
 
 
@@ -153,6 +154,8 @@ export const ResourceCode: Array<CodeMap> = [
     CodeMap.from('继电器控制器', 266),
     CodeMap.from('视频国标服务器', 267),
     CodeMap.from('空调控制器', 268),
+
+    CodeMap.from('服务器', 512),
 ];
 
 
@@ -291,6 +294,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('快鱼语音分析接口', 130),
     CodeMap.from('旷视人脸识别盒子接口V3', 131),
     CodeMap.from('商汤人脸识别盒子接口V2.4', 132),
+    CodeMap.from('汉威设备运行监测接口', 133),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];
