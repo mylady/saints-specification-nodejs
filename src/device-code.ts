@@ -299,6 +299,7 @@ export const InterfaceCategory: Array<CodeMap> = [
     CodeMap.from('计通温湿度接口V7', 135),
     CodeMap.from('华盾安检门接口', 136),
     CodeMap.from('海康视频分析平台接口', 137),
+    CodeMap.from('大华天策视频分析平台接口', 138),
 
     CodeMap.from('圣熙门禁接口V1', 10001)
 ];

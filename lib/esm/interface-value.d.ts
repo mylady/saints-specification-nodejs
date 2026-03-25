@@ -156,6 +156,7 @@ export interface VideoAnalyseValueOption {
     video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
+    source_id?: string;
     face?: Face;
     car?: CarPlate;
 }
@@ -164,6 +165,7 @@ export declare class VideoAnalyseValue {
     video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
+    source_id?: string;
     face?: Face;
     car?: CarPlate;
     constructor(opt: VideoAnalyseValueOption);

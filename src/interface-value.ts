@@ -244,6 +244,7 @@ export interface VideoAnalyseValueOption {
     video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
+    source_id?: string;
     face?: Face;
     car?: CarPlate;
 }
@@ -253,6 +254,7 @@ export class VideoAnalyseValue {
     video_path?: string;
     scene_image?: string;
     scene_image_path?: string;
+    source_id?: string;
     face?: Face;
     car?: CarPlate;
 
@@ -261,6 +263,7 @@ export class VideoAnalyseValue {
         this.video_path = opt.video_path;
         this.scene_image = opt.scene_image;
         this.scene_image_path = opt.scene_image_path;
+        this.source_id = opt.source_id;
         this.face = opt.face;
         this.car = opt.car;
     }
