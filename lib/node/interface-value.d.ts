@@ -12,12 +12,16 @@ export interface DoorValueOption {
     person_card: string;
     scene_image?: string;
     scene_image_path?: string;
+    pass_count?: number;
+    alarm_count?: number;
 }
 export declare class DoorValue {
     person_name?: string;
     person_card: string;
     scene_image?: string;
     scene_image_path?: string;
+    pass_count?: number;
+    alarm_count?: number;
     constructor(opt: DoorValueOption);
 }
 export interface EnvMonitorValueOption {

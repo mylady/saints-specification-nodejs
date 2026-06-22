@@ -18,6 +18,8 @@ export interface DoorValueOption {
     person_card: string;
     scene_image?: string;
     scene_image_path?: string;
+    pass_count?: number;
+    alarm_count?: number;
 }
 
 export class DoorValue {
@@ -25,12 +27,16 @@ export class DoorValue {
     person_card: string;
     scene_image?: string;
     scene_image_path?: string;
+    pass_count?: number;
+    alarm_count?: number;
 
     constructor(opt: DoorValueOption) {
         this.person_card = opt.person_card || '';
         this.person_name = opt.person_name || '';
         this.scene_image = opt.scene_image || '';
         this.scene_image_path = opt.scene_image_path || '';
+        this.pass_count = opt.pass_count || 0;
+        this.alarm_count = opt.alarm_count || 0;
     }
 }
 
